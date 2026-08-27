@@ -1,0 +1,9 @@
+{
+  "schema": "PA800_AUTONOMOUS_PREMIUM_R9_STATUS_V1",
+  "checkpoint": "R9",
+  "regression": {"passed": 156, "failed": 0},
+  "public_api": {"modules": 115, "public_functions": 378, "unclassified": 0},
+  "transactional_refiners": ["velocity_conductor", "performance_director_velocity", "performance_director_cc11", "baja_percussion_40pct"],
+  "remaining_direct_performance_mutation": ["cumulative_velocity_budget_projector"],
+  "hardware_validation": "PENDING_EXTERNAL"
+}

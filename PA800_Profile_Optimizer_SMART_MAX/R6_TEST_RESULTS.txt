@@ -1,0 +1,8 @@
+R6 targeted regression
+======================
+Block A: 50 passed
+Block B: 50 passed
+Block C: 24 passed
+TOTAL: 124 passed / 0 failed in completed R6 blocks
+
+Not claimed: full fresh complete stress release evidence.

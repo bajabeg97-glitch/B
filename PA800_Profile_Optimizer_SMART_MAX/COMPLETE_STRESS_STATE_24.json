@@ -1,0 +1,46 @@
+{
+  "schema": "PA800_COMPLETE_STRESS_STATE_V1",
+  "shard_count": 24,
+  "shards": {
+    "0": {
+      "tests": [
+        "tests/test_automation.py",
+        "tests/test_instrument_family_holdout.py",
+        "tests/test_instrument_fingerprints.py",
+        "tests/test_process_negative_matrix.py"
+      ],
+      "returncode": 0,
+      "stdout": "....................................                                     [100%]\n36 passed in 21.43s\n",
+      "stderr": "",
+      "hits": [
+        "pa800_optimizer.analysis.hardware_campaign:campaign_template",
+        "pa800_optimizer.analysis.hardware_campaign:evaluate_hardware_campaign",
+        "pa800_optimizer.analysis.instrument_fingerprints:audit_instrument_fingerprints",
+        "pa800_optimizer.analysis.instrument_fingerprints:snapshot_instrument_state",
+        "pa800_optimizer.analysis.style_import_contract:analyze_style_import_contract",
+        "pa800_optimizer.authority:authorize",
+        "pa800_optimizer.automation:decide_automation",
+        "pa800_optimizer.automation:materialize_config",
+        "pa800_optimizer.config:OptimizeConfig.enable_autonomous_baja_max",
+        "pa800_optimizer.config:OptimizeConfig.enable_full_optimization_test",
+        "pa800_optimizer.config:OptimizeConfig.for_mode",
+        "pa800_optimizer.config:OptimizeConfig.lock_preserve",
+        "pa800_optimizer.instruments.guards:exact_onset_groups",
+        "pa800_optimizer.instruments.guards:expressive_controller_channels",
+        "pa800_optimizer.instruments.guards:near_onset_groups",
+        "pa800_optimizer.instruments.guards:note_id",
+        "pa800_optimizer.instruments.guards:sustained_tail_note_ids",
+        "pa800_optimizer.instruments.policies:normalized_family",
+        "pa800_optimizer.instruments.policies:policy_for",
+        "pa800_optimizer.instruments.policies:profile_evidence_allows_mutation",
+        "pa800_optimizer.models:NoteEvent.duration",
+        "pa800_optimizer.runtime_safety:OutputLock.acquire",
+        "pa800_optimizer.runtime_safety:OutputLock.release",
+        "pa800_optimizer.runtime_safety:commit_artifacts",
+        "pa800_optimizer.runtime_safety:temp_path_for",
+        "pa800_optimizer.verifier:verify",
+        "tools.instrument_family_holdout:evaluate"
+      ]
+    }
+  }
+}

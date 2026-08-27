@@ -1,0 +1,479 @@
+{
+  "schema": "PA800_NEURAL_FORENSIC_REGRESSION_V1",
+  "created_utc": "2026-08-26T11:05:11.105107+00:00",
+  "pass": true,
+  "cases": 14,
+  "changed_cases": 8,
+  "timing_changes": 77,
+  "gate_changes": 104,
+  "model_acceptance": {
+    "schema": "PA800_NEURAL_MODEL_ACCEPTANCE_V1",
+    "pass": true,
+    "reasons": [],
+    "confidence": 0.031935,
+    "validation_improvement": 0.041754,
+    "test_improvement": 0.031935,
+    "minimum_confidence": 0.01,
+    "explicit_application_only": true,
+    "allowed_outputs": [
+      "timing",
+      "gate"
+    ],
+    "forbidden_outputs": [
+      "velocity",
+      "pitch",
+      "voice",
+      "sound_kit",
+      "articulation",
+      "fx"
+    ],
+    "authority_granted": false
+  },
+  "evaluation": {
+    "schema": "PA800_SELF_SUPERVISED_ENCODER_EVALUATION_V1",
+    "metrics": {
+      "train": {
+        "notes": 100,
+        "masked_values": 377,
+        "model_mse": 0.85367633,
+        "mean_baseline_mse": 1.02110587,
+        "improvement": 0.163969
+      },
+      "validation": {
+        "notes": 80,
+        "masked_values": 302,
+        "model_mse": 1.54256436,
+        "mean_baseline_mse": 1.6097792,
+        "improvement": 0.041754
+      },
+      "test": {
+        "notes": 32,
+        "masked_values": 121,
+        "model_mse": 4.05924813,
+        "mean_baseline_mse": 4.19315658,
+        "improvement": 0.031935
+      }
+    },
+    "validation_improves_baseline": true,
+    "test_improves_baseline": true,
+    "mutations": 0,
+    "authority_granted": false
+  },
+  "rows": [
+    {
+      "file": "AUT-003_negative.mid",
+      "pass": true,
+      "changes": 0,
+      "timing_changes": 0,
+      "gate_changes": 0,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 2,
+        "tracks": 1,
+        "max_onset_delta": 0,
+        "max_off_delta": 0,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": []
+      }
+    },
+    {
+      "file": "BAS-005_positive.mid",
+      "pass": true,
+      "changes": 6,
+      "timing_changes": 0,
+      "gate_changes": 6,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 17,
+        "tracks": 2,
+        "max_onset_delta": 0,
+        "max_off_delta": 6,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": [
+          "gate"
+        ]
+      }
+    },
+    {
+      "file": "DRM-001_positive.mid",
+      "pass": true,
+      "changes": 21,
+      "timing_changes": 11,
+      "gate_changes": 10,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 13,
+        "tracks": 1,
+        "max_onset_delta": 6,
+        "max_off_delta": 12,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": [
+          "gate",
+          "timing"
+        ]
+      }
+    },
+    {
+      "file": "EXP-002_positive.mid",
+      "pass": true,
+      "changes": 0,
+      "timing_changes": 0,
+      "gate_changes": 0,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 10,
+        "tracks": 1,
+        "max_onset_delta": 0,
+        "max_off_delta": 0,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": []
+      }
+    },
+    {
+      "file": "GTR-001_positive.mid",
+      "pass": true,
+      "changes": 10,
+      "timing_changes": 3,
+      "gate_changes": 7,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 12,
+        "tracks": 1,
+        "max_onset_delta": 6,
+        "max_off_delta": 8,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": [
+          "gate",
+          "timing"
+        ]
+      }
+    },
+    {
+      "file": "GTR-001_transposed.mid",
+      "pass": true,
+      "changes": 10,
+      "timing_changes": 3,
+      "gate_changes": 7,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 12,
+        "tracks": 1,
+        "max_onset_delta": 6,
+        "max_off_delta": 8,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": [
+          "gate",
+          "timing"
+        ]
+      }
+    },
+    {
+      "file": "INT-001_positive.mid",
+      "pass": true,
+      "changes": 0,
+      "timing_changes": 0,
+      "gate_changes": 0,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 16,
+        "tracks": 2,
+        "max_onset_delta": 0,
+        "max_off_delta": 0,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": []
+      }
+    },
+    {
+      "file": "INT-002_positive.mid",
+      "pass": true,
+      "changes": 0,
+      "timing_changes": 0,
+      "gate_changes": 0,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 8,
+        "tracks": 1,
+        "max_onset_delta": 0,
+        "max_off_delta": 0,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": []
+      }
+    },
+    {
+      "file": "NEURAL_CHORD_COMP.mid",
+      "pass": true,
+      "changes": 0,
+      "timing_changes": 0,
+      "gate_changes": 0,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 12,
+        "tracks": 1,
+        "max_onset_delta": 0,
+        "max_off_delta": 0,
+        "simultaneous_groups": 4,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": []
+      }
+    },
+    {
+      "file": "PNO-002_positive.mid",
+      "pass": true,
+      "changes": 24,
+      "timing_changes": 12,
+      "gate_changes": 12,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 14,
+        "tracks": 1,
+        "max_onset_delta": 6,
+        "max_off_delta": 12,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": [
+          "gate",
+          "timing"
+        ]
+      }
+    },
+    {
+      "file": "SEC3-001_positive.mid",
+      "pass": true,
+      "changes": 81,
+      "timing_changes": 37,
+      "gate_changes": 44,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 56,
+        "tracks": 4,
+        "max_onset_delta": 6,
+        "max_off_delta": 12,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": [
+          "gate",
+          "timing"
+        ]
+      }
+    },
+    {
+      "file": "SEC3-004_positive.mid",
+      "pass": true,
+      "changes": 0,
+      "timing_changes": 0,
+      "gate_changes": 0,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 7,
+        "tracks": 2,
+        "max_onset_delta": 0,
+        "max_off_delta": 0,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": []
+      }
+    },
+    {
+      "file": "SEC3-006_positive.mid",
+      "pass": true,
+      "changes": 21,
+      "timing_changes": 7,
+      "gate_changes": 14,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 25,
+        "tracks": 4,
+        "max_onset_delta": 6,
+        "max_off_delta": 6,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": [
+          "gate",
+          "timing"
+        ]
+      }
+    },
+    {
+      "file": "SEC3-012_positive.mid",
+      "pass": true,
+      "changes": 8,
+      "timing_changes": 4,
+      "gate_changes": 4,
+      "audit": {
+        "schema": "PA800_NEURAL_APPLICATION_FORENSIC_V1",
+        "pass": true,
+        "errors": [],
+        "notes": 8,
+        "tracks": 3,
+        "max_onset_delta": 6,
+        "max_off_delta": 12,
+        "simultaneous_groups": 0,
+        "broken_simultaneous_groups": 0,
+        "phrase_order_changes": 0,
+        "voice_events_preserved": true,
+        "non_note_events_preserved": true,
+        "velocity_preserved": true,
+        "pitch_preserved": true,
+        "allowed_change_kinds": [
+          "gate",
+          "timing"
+        ],
+        "reported_change_kinds": [
+          "gate",
+          "timing"
+        ]
+      }
+    }
+  ]
+}

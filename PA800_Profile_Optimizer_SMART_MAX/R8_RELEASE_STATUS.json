@@ -1,0 +1,11 @@
+{
+  "schema": "PA800_AUTONOMOUS_PREMIUM_R8_STATUS_V1",
+  "status": "CHECKPOINT_SOFTWARE_VERIFIED",
+  "combined_regression": {"passed": 138, "failed": 0},
+  "public_api": {"modules": 115, "public_functions": 375, "unclassified": 0},
+  "event_proposal_pipeline": true,
+  "production_midi_mutated_during_proposal_generation": false,
+  "shared_event_commit": true,
+  "fresh_complete_stress": false,
+  "hardware_validation": "PENDING"
+}

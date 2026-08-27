@@ -1,0 +1,10 @@
+{
+  "schema": "PA800_FX_SERIALIZATION_EVIDENCE_V1",
+  "status": "CLOSED_RECOMMENDATION_ONLY",
+  "insert_master_fx_schema_confirmed": false,
+  "automatic_insert_master_rewrite": false,
+  "automatic_existing_cc91_cc93_contour_offset": true,
+  "unknown_sysex_preserved": true,
+  "authority_granted": false,
+  "reason": "Insert/Master serialization nema byte-level Pa800 roundtrip dokaz; samo postojeci CC91/CC93 smiju dobiti bounded smanjenje."
+}

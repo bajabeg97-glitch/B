@@ -1,0 +1,50 @@
+{
+  "schema": "PA800_DNC_MANUAL_REGISTRY_V1",
+  "device": "Korg Pa800",
+  "os_baseline": "2.0+",
+  "sources": {
+    "sound_table": "Pa800 OS 2.0 Upgrade Manual, Musical Resources, pp. 17-18",
+    "dnc_parameters": "Pa800 OS 2.0 Upgrade Manual, Sound Mode, pp. 9-12"
+  },
+  "controller_semantics": {
+    "sound_controller_1": {"midi_cc": 80, "mode": "switch/state"},
+    "sound_controller_2": {"midi_cc": 81, "mode": "switch/state"},
+    "joystick_y_plus": {"midi_cc": 1, "threshold": 64, "release": 0},
+    "joystick_y_minus": {"midi_cc": 2, "threshold": 64, "release": 0},
+    "aftertouch_trigger": {"type": "channel_aftertouch", "threshold": 90, "release": 0},
+    "damper": {"midi_cc": 64}
+  },
+  "generic_mechanics": {
+    "legato_max_time_range_ms": [1, 999],
+    "legato_typical_chord_example_ms": 15,
+    "nylon_guitar_dnc_max_range_example_semitones": 5,
+    "cycle": "oscillators in a Cycle group rotate in programmed order",
+    "random": "oscillator is selected randomly inside its programmed group",
+    "damper_trigger": "Damper On/Off may trigger a special sample outside Transpose Range"
+  },
+  "sounds": [
+    {"name":"EP+Damper1 DNC","msb":121,"lsb":25,"program":4,"family":"PIANO","capabilities":["damper","resonance_halo"],"notes":["damper adds extra oscillators and electric-piano damper/resonance behavior"]},
+    {"name":"EP+Damper2 DNC","msb":121,"lsb":26,"program":4,"family":"PIANO","capabilities":["damper","resonance_halo"],"notes":["damper adds resonance using Grand Piano RX-style resonance principles"]},
+    {"name":"Harmonica DNC","msb":121,"lsb":5,"program":22,"family":"ACCORDION_REED","capabilities":["cycle","sc1","sc2","joystick_y_plus","joystick_y_minus","rx_noise","damper_trigger"],"articulations":{"sc1":"bend","sc2":"harmonics_smooth_attack","joystick_y_plus":"swell_attack","joystick_y_minus":"filter_richer","damper_trigger":"breath"}},
+    {"name":"Jimmy Organ DNC","msb":121,"lsb":13,"program":18,"family":"ORGAN","capabilities":["legato","staccato"],"articulations":{"staccato":"percussion_present","legato":"different_timbre"}},
+    {"name":"Nylon Guitar DNC","msb":121,"lsb":18,"program":24,"family":"GUITAR","capabilities":["legato","sc1","sc2","joystick_y_minus","key_off_noise","rx_noise"],"articulations":{"sc1":"slide","sc2":"harmonics","joystick_y_minus":"body_resonance","key_off_noise":"release_noise_fret_noise"},"legato":{"max_range_example_semitones":5}},
+    {"name":"Natural Nylon DNC","msb":121,"lsb":19,"program":24,"family":"GUITAR","capabilities":["random"],"notes":["twelve oscillators with different multisamples/programming are selected randomly"]},
+    {"name":"RealFolk Gtr DNC","msb":121,"lsb":34,"program":25,"family":"GUITAR","capabilities":["legato","sc1","sc2","aftertouch","joystick_y_minus","key_off_noise","rx_noise"],"articulations":{"sc1":"slide","sc2":"harmonics","aftertouch":"vibrato","joystick_y_minus":"body_noise","key_off_noise":"note_off_fret_noise"}},
+    {"name":"Steel Gtr DNC","msb":121,"lsb":35,"program":25,"family":"GUITAR","capabilities":["velocity_switch_complex","legato"],"notes":["manual explicitly describes several velocity switches for harmonics/mute/slide nuances"]},
+    {"name":"Jazz Guitar DNC","msb":121,"lsb":7,"program":26,"family":"GUITAR","capabilities":["legato","staccato","sc1","sc2","joystick_y_plus","key_off_noise"],"articulations":{"sc1":"slide","sc2":"harmonics","joystick_y_plus":"auto_bending","staccato":"note_off_noise"}},
+    {"name":"Crunch Gtr DNC","msb":121,"lsb":3,"program":29,"family":"GUITAR","capabilities":["legato","sc1","sc2","joystick_y_plus","joystick_y_minus","rx_noise"],"articulations":{"sc1":"slide","sc2":"mute","joystick_y_plus":"dist_gtr_harmonics","joystick_y_minus":"feedback","rx_noise":"fret_noise_occasional"}},
+    {"name":"Movie Str.1 DNC","msb":121,"lsb":7,"program":49,"family":"ENSEMBLE","capabilities":["sc1","sc2","joystick_y_plus","joystick_y_minus","aftertouch","velocity_condition"],"articulations":{"sc1":"viola","sc2":"pizzicato","joystick_y_plus":"strings_tremolo","joystick_y_minus":"violin","aftertouch":"timpani","velocity_condition":"previous_velocity_gt_70_adds_orchestral_crash_with_timpani"}},
+    {"name":"Movie Str.2 DNC","msb":121,"lsb":8,"program":49,"family":"ENSEMBLE","capabilities":["sc1","sc2","joystick_y_plus","joystick_y_minus","aftertouch","velocity_condition"],"articulations":{"sc1":"smooth_strings_ensemble","sc2":"pizzicato","joystick_y_plus":"strings_tremolo","joystick_y_minus":"violin","aftertouch":"timpani","velocity_condition":"previous_velocity_gt_70_adds_orchestral_crash_with_timpani"}},
+    {"name":"Scat Voices DNC","msb":121,"lsb":20,"program":52,"family":"ENSEMBLE","capabilities":["legato","sc1","sc2","joystick_y_plus","joystick_y_minus","register_split"],"articulations":{"sc1":"bend_scat","sc2":"slow_attack_choir","joystick_y_plus":"alternate_scat_voices","joystick_y_minus":"filter","register_split":"lower_keyboard_scat_bass"}},
+    {"name":"Trumpet DNC","msb":121,"lsb":24,"program":56,"family":"BRASS","capabilities":["legato","sc1","sc2","joystick_y_plus","key_on_noise","key_off_noise","damper_trigger"],"articulations":{"sc1":"doit","sc2":"fall","joystick_y_plus":"bend","damper_trigger":"breath"}},
+    {"name":"Cornet DNC","msb":121,"lsb":25,"program":56,"family":"BRASS","capabilities":["legato","sc1","sc2","joystick_y_plus","key_on_noise","key_off_noise","damper_trigger"],"articulations":{"sc1":"doit_like_trumpet","sc2":"fall_like_trumpet","joystick_y_plus":"bend","damper_trigger":"breath"}},
+    {"name":"Trombone DNC","msb":121,"lsb":13,"program":57,"family":"BRASS","capabilities":["legato","sc1","sc2","joystick_y_plus","key_off_noise","damper_trigger"],"articulations":{"sc1":"doit","sc2":"fall","joystick_y_plus":"bend","damper_trigger":"breath"}},
+    {"name":"Alto Sax DNC","msb":121,"lsb":12,"program":65,"family":"REED","capabilities":["legato","sc1","sc2","joystick_y_plus","key_on_noise","key_off_noise","damper_trigger"],"articulations":{"sc1":"soft_sax","sc2":"growl_sax","joystick_y_plus":"fall_down","damper_trigger":"breath"}},
+    {"name":"Tenor Sax DNC","msb":121,"lsb":12,"program":66,"family":"REED","capabilities":["legato","sc1","sc2","joystick_y_plus","key_on_noise","key_off_noise","damper_trigger"],"articulations":{"sc1":"soft_sax","sc2":"straight_sax","joystick_y_plus":"fall_down","damper_trigger":"breath"}},
+    {"name":"Clarinet DNC","msb":121,"lsb":13,"program":71,"family":"REED","capabilities":["legato","sc1","sc2","joystick_y_plus","joystick_y_minus","rx_noise","damper_trigger"],"articulations":{"sc1":"bending_1","sc2":"bending_2","joystick_y_plus":"crescendo_attack","joystick_y_minus":"filter_richer","rx_noise":"key_on_key_off","damper_trigger":"breath"}},
+    {"name":"Flute DNC","msb":121,"lsb":11,"program":73,"family":"PIPE","capabilities":["legato","sc1","sc2","joystick_y_plus","joystick_y_minus","rx_noise","damper_trigger"],"articulations":{"sc1":"voice_flute","sc2":"frullato","joystick_y_plus":"flute_fifth","joystick_y_minus":"octave_voice_flute","rx_noise":"key_on_key_off","damper_trigger":"breath"}},
+    {"name":"Whistle DNC","msb":121,"lsb":5,"program":78,"family":"PIPE","capabilities":["sc1","sc2","joystick_y_plus","random","damper_trigger"],"articulations":{"sc1":"gliss_whistle","sc2":"sforzando_whistle","joystick_y_plus":"fall_down_while_note_sounding","random":"breath_occasional","damper_trigger":"breath"}},
+    {"name":"Wave Cycle DNC","msb":121,"lsb":3,"program":96,"family":"SYNTH_FX","capabilities":["cycle"],"notes":["sixteen oscillators cycle across sixteen synth sounds"]},
+    {"name":"Finger Bass DNC","msb":121,"lsb":16,"program":33,"family":"BASS","capabilities":["legato","sc1","sc2","joystick_y_plus","joystick_y_minus","key_off_noise"],"articulations":{"sc1":"slap","sc2":"harmonics","joystick_y_plus":"gliss","joystick_y_minus":"bass_stop","key_off_noise":"note_off"}}
+  ]
+}

@@ -1,0 +1,968 @@
+{
+  "schema": "PA800_FAMILY_INTENT_STRESS_RESULT_V1",
+  "fixture_schema": "PA800_INSTRUMENT_INTENT_STRESS_V1",
+  "midi_case_count": 38,
+  "scenario_count": 19,
+  "category_case_counts": {
+    "BAS": 10,
+    "DRM": 12,
+    "GTR": 8,
+    "PNO": 8
+  },
+  "passed_cases": 38,
+  "failed_cases": 0,
+  "pair_separation_passed": 19,
+  "pair_separation_total": 19,
+  "all_pairs_separated": true,
+  "mutations": 0,
+  "authority_granted": false,
+  "rows": [
+    {
+      "scenario_id": "DRM-001",
+      "polarity": "positive",
+      "file": "DRM-001_positive.mid",
+      "family_digest": "afa49ae5baa8de10d634852cccb752fc2e3fd69d30e34a2da8049f052cc30a7b",
+      "classified_notes": 13,
+      "by_family": {
+        "DRUM_KIT": 13
+      },
+      "by_label": {
+        "BACKBEAT_SNARE": 2,
+        "FILL_RUN_CANDIDATE": 3,
+        "GHOST_HIT_CANDIDATE": 1,
+        "KICK_ANCHOR": 3,
+        "SUBDIVISION_OR_SECONDARY_HIT": 4
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-001",
+      "polarity": "negative",
+      "file": "DRM-001_negative.mid",
+      "family_digest": "72934501faf94d18160a3ea6bd436b9812e5c30d50d488f019799b18a5ac19c7",
+      "classified_notes": 12,
+      "by_family": {
+        "DRUM_KIT": 12
+      },
+      "by_label": {
+        "SUBDIVISION_OR_SECONDARY_HIT": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-002",
+      "polarity": "positive",
+      "file": "DRM-002_positive.mid",
+      "family_digest": "8f0abb26e11b38311620efa459be5cf1ca7b7a6509174b45fc56bdb39206752a",
+      "classified_notes": 12,
+      "by_family": {
+        "DRUM_KIT": 12
+      },
+      "by_label": {
+        "BACKBEAT_SNARE": 2,
+        "KICK_ANCHOR": 3,
+        "SUBDIVISION_OR_SECONDARY_HIT": 7
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-002",
+      "polarity": "negative",
+      "file": "DRM-002_negative.mid",
+      "family_digest": "72934501faf94d18160a3ea6bd436b9812e5c30d50d488f019799b18a5ac19c7",
+      "classified_notes": 12,
+      "by_family": {
+        "DRUM_KIT": 12
+      },
+      "by_label": {
+        "SUBDIVISION_OR_SECONDARY_HIT": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-003",
+      "polarity": "positive",
+      "file": "DRM-003_positive.mid",
+      "family_digest": "afa49ae5baa8de10d634852cccb752fc2e3fd69d30e34a2da8049f052cc30a7b",
+      "classified_notes": 13,
+      "by_family": {
+        "DRUM_KIT": 13
+      },
+      "by_label": {
+        "BACKBEAT_SNARE": 2,
+        "FILL_RUN_CANDIDATE": 3,
+        "GHOST_HIT_CANDIDATE": 1,
+        "KICK_ANCHOR": 3,
+        "SUBDIVISION_OR_SECONDARY_HIT": 4
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-003",
+      "polarity": "negative",
+      "file": "DRM-003_negative.mid",
+      "family_digest": "72934501faf94d18160a3ea6bd436b9812e5c30d50d488f019799b18a5ac19c7",
+      "classified_notes": 12,
+      "by_family": {
+        "DRUM_KIT": 12
+      },
+      "by_label": {
+        "SUBDIVISION_OR_SECONDARY_HIT": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-004",
+      "polarity": "positive",
+      "file": "DRM-004_positive.mid",
+      "family_digest": "8f0abb26e11b38311620efa459be5cf1ca7b7a6509174b45fc56bdb39206752a",
+      "classified_notes": 12,
+      "by_family": {
+        "DRUM_KIT": 12
+      },
+      "by_label": {
+        "BACKBEAT_SNARE": 2,
+        "KICK_ANCHOR": 3,
+        "SUBDIVISION_OR_SECONDARY_HIT": 7
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-004",
+      "polarity": "negative",
+      "file": "DRM-004_negative.mid",
+      "family_digest": "72934501faf94d18160a3ea6bd436b9812e5c30d50d488f019799b18a5ac19c7",
+      "classified_notes": 12,
+      "by_family": {
+        "DRUM_KIT": 12
+      },
+      "by_label": {
+        "SUBDIVISION_OR_SECONDARY_HIT": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-005",
+      "polarity": "positive",
+      "file": "DRM-005_positive.mid",
+      "family_digest": "afa49ae5baa8de10d634852cccb752fc2e3fd69d30e34a2da8049f052cc30a7b",
+      "classified_notes": 13,
+      "by_family": {
+        "DRUM_KIT": 13
+      },
+      "by_label": {
+        "BACKBEAT_SNARE": 2,
+        "FILL_RUN_CANDIDATE": 3,
+        "GHOST_HIT_CANDIDATE": 1,
+        "KICK_ANCHOR": 3,
+        "SUBDIVISION_OR_SECONDARY_HIT": 4
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-005",
+      "polarity": "negative",
+      "file": "DRM-005_negative.mid",
+      "family_digest": "72934501faf94d18160a3ea6bd436b9812e5c30d50d488f019799b18a5ac19c7",
+      "classified_notes": 12,
+      "by_family": {
+        "DRUM_KIT": 12
+      },
+      "by_label": {
+        "SUBDIVISION_OR_SECONDARY_HIT": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-006",
+      "polarity": "positive",
+      "file": "DRM-006_positive.mid",
+      "family_digest": "8f0abb26e11b38311620efa459be5cf1ca7b7a6509174b45fc56bdb39206752a",
+      "classified_notes": 12,
+      "by_family": {
+        "DRUM_KIT": 12
+      },
+      "by_label": {
+        "BACKBEAT_SNARE": 2,
+        "KICK_ANCHOR": 3,
+        "SUBDIVISION_OR_SECONDARY_HIT": 7
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-006",
+      "polarity": "negative",
+      "file": "DRM-006_negative.mid",
+      "family_digest": "72934501faf94d18160a3ea6bd436b9812e5c30d50d488f019799b18a5ac19c7",
+      "classified_notes": 12,
+      "by_family": {
+        "DRUM_KIT": 12
+      },
+      "by_label": {
+        "SUBDIVISION_OR_SECONDARY_HIT": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-001",
+      "polarity": "positive",
+      "file": "BAS-001_positive.mid",
+      "family_digest": "3b1aaacc81d3cb0fb43b6587294b6286807377b08f1d65926db71342bd28d094",
+      "classified_notes": 16,
+      "by_family": {
+        "BASS": 8,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 3,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-001",
+      "polarity": "negative",
+      "file": "BAS-001_negative.mid",
+      "family_digest": "51d208946c25d91ecec96185760607a367c66e34fa151634dc1f9cdc646e5a07",
+      "classified_notes": 16,
+      "by_family": {
+        "BASS": 8,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 3,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-002",
+      "polarity": "positive",
+      "file": "BAS-002_positive.mid",
+      "family_digest": "3b1aaacc81d3cb0fb43b6587294b6286807377b08f1d65926db71342bd28d094",
+      "classified_notes": 16,
+      "by_family": {
+        "BASS": 8,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 3,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-002",
+      "polarity": "negative",
+      "file": "BAS-002_negative.mid",
+      "family_digest": "51d208946c25d91ecec96185760607a367c66e34fa151634dc1f9cdc646e5a07",
+      "classified_notes": 16,
+      "by_family": {
+        "BASS": 8,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 3,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-003",
+      "polarity": "positive",
+      "file": "BAS-003_positive.mid",
+      "family_digest": "3b1aaacc81d3cb0fb43b6587294b6286807377b08f1d65926db71342bd28d094",
+      "classified_notes": 16,
+      "by_family": {
+        "BASS": 8,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 3,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-003",
+      "polarity": "negative",
+      "file": "BAS-003_negative.mid",
+      "family_digest": "51d208946c25d91ecec96185760607a367c66e34fa151634dc1f9cdc646e5a07",
+      "classified_notes": 16,
+      "by_family": {
+        "BASS": 8,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 3,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-004",
+      "polarity": "positive",
+      "file": "BAS-004_positive.mid",
+      "family_digest": "3b1aaacc81d3cb0fb43b6587294b6286807377b08f1d65926db71342bd28d094",
+      "classified_notes": 16,
+      "by_family": {
+        "BASS": 8,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 3,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-004",
+      "polarity": "negative",
+      "file": "BAS-004_negative.mid",
+      "family_digest": "51d208946c25d91ecec96185760607a367c66e34fa151634dc1f9cdc646e5a07",
+      "classified_notes": 16,
+      "by_family": {
+        "BASS": 8,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 3,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-005",
+      "polarity": "positive",
+      "file": "BAS-005_positive.mid",
+      "family_digest": "4f3bdf2351be51c34ba10c076472b7cd8b963eef6b61148b583f228d07ae57ed",
+      "classified_notes": 17,
+      "by_family": {
+        "BASS": 9,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 4,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-005",
+      "polarity": "negative",
+      "file": "BAS-005_negative.mid",
+      "family_digest": "ecc136855640afec2756846044f425b53ccfd3a41880ff01066e0550b24fbbf2",
+      "classified_notes": 17,
+      "by_family": {
+        "BASS": 9,
+        "DRUM_KIT": 8
+      },
+      "by_label": {
+        "APPROACH_TONE_CANDIDATE": 3,
+        "FOUNDATION_LINE_TONE": 4,
+        "KICK_ANCHOR": 8,
+        "PASSING_TONE_CANDIDATE": 1,
+        "REPEATED_OR_PEDAL_TONE": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-001",
+      "polarity": "positive",
+      "file": "GTR-001_positive.mid",
+      "family_digest": "e4aadd96906c1dd6f3387c205055bc90f011692f75e3650040a07c1e58adfdc0",
+      "classified_notes": 12,
+      "by_family": {
+        "GUITAR": 12
+      },
+      "by_label": {
+        "ORDERED_ASCENDING_STRUM_CANDIDATE": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-001",
+      "polarity": "negative",
+      "file": "GTR-001_negative.mid",
+      "family_digest": "c571103e95e3dca27034999a36d718baa0c36ec83ecf046d68b9c5ea4320596f",
+      "classified_notes": 12,
+      "by_family": {
+        "GUITAR": 12
+      },
+      "by_label": {
+        "RIFF_OSTINATO_TONE": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-002",
+      "polarity": "positive",
+      "file": "GTR-002_positive.mid",
+      "family_digest": "e4aadd96906c1dd6f3387c205055bc90f011692f75e3650040a07c1e58adfdc0",
+      "classified_notes": 12,
+      "by_family": {
+        "GUITAR": 12
+      },
+      "by_label": {
+        "ORDERED_ASCENDING_STRUM_CANDIDATE": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-002",
+      "polarity": "negative",
+      "file": "GTR-002_negative.mid",
+      "family_digest": "c571103e95e3dca27034999a36d718baa0c36ec83ecf046d68b9c5ea4320596f",
+      "classified_notes": 12,
+      "by_family": {
+        "GUITAR": 12
+      },
+      "by_label": {
+        "RIFF_OSTINATO_TONE": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-003",
+      "polarity": "positive",
+      "file": "GTR-003_positive.mid",
+      "family_digest": "e4aadd96906c1dd6f3387c205055bc90f011692f75e3650040a07c1e58adfdc0",
+      "classified_notes": 12,
+      "by_family": {
+        "GUITAR": 12
+      },
+      "by_label": {
+        "ORDERED_ASCENDING_STRUM_CANDIDATE": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-003",
+      "polarity": "negative",
+      "file": "GTR-003_negative.mid",
+      "family_digest": "c571103e95e3dca27034999a36d718baa0c36ec83ecf046d68b9c5ea4320596f",
+      "classified_notes": 12,
+      "by_family": {
+        "GUITAR": 12
+      },
+      "by_label": {
+        "RIFF_OSTINATO_TONE": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-004",
+      "polarity": "positive",
+      "file": "GTR-004_positive.mid",
+      "family_digest": "e4aadd96906c1dd6f3387c205055bc90f011692f75e3650040a07c1e58adfdc0",
+      "classified_notes": 12,
+      "by_family": {
+        "GUITAR": 12
+      },
+      "by_label": {
+        "ORDERED_ASCENDING_STRUM_CANDIDATE": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-004",
+      "polarity": "negative",
+      "file": "GTR-004_negative.mid",
+      "family_digest": "c571103e95e3dca27034999a36d718baa0c36ec83ecf046d68b9c5ea4320596f",
+      "classified_notes": 12,
+      "by_family": {
+        "GUITAR": 12
+      },
+      "by_label": {
+        "RIFF_OSTINATO_TONE": 12
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-001",
+      "polarity": "positive",
+      "file": "PNO-001_positive.mid",
+      "family_digest": "84b06de3d3b6c32a4c82f4fe1c740e8215ed538dfc2d8e260969363456400e99",
+      "classified_notes": 14,
+      "by_family": {
+        "PIANO_EP": 14
+      },
+      "by_label": {
+        "ARPEGGIATED_CHORD_TONE": 9,
+        "MELODY_OR_SINGLE_LINE": 5
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-001",
+      "polarity": "negative",
+      "file": "PNO-001_negative.mid",
+      "family_digest": "d875e079834fba26aba42dc0c01500cacc3663dc9433d66f4fdd0fa0d79a0957",
+      "classified_notes": 8,
+      "by_family": {
+        "PIANO_EP": 8
+      },
+      "by_label": {
+        "MELODY_OR_SINGLE_LINE": 8
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-002",
+      "polarity": "positive",
+      "file": "PNO-002_positive.mid",
+      "family_digest": "9e80d0e8f7ff34df7ad6cce8c89d46298616d2f36a73ab313b0f884b36c816ab",
+      "classified_notes": 14,
+      "by_family": {
+        "PIANO_EP": 14
+      },
+      "by_label": {
+        "ARPEGGIATED_CHORD_TONE": 9,
+        "MELODY_OR_SINGLE_LINE": 5
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-002",
+      "polarity": "negative",
+      "file": "PNO-002_negative.mid",
+      "family_digest": "744aadf9cd5854e5484e8e76a7eb72ecd21cf53bb062e604d139c54b416d05c4",
+      "classified_notes": 8,
+      "by_family": {
+        "PIANO_EP": 8
+      },
+      "by_label": {
+        "MELODY_OR_SINGLE_LINE": 8
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-003",
+      "polarity": "positive",
+      "file": "PNO-003_positive.mid",
+      "family_digest": "84b06de3d3b6c32a4c82f4fe1c740e8215ed538dfc2d8e260969363456400e99",
+      "classified_notes": 14,
+      "by_family": {
+        "PIANO_EP": 14
+      },
+      "by_label": {
+        "ARPEGGIATED_CHORD_TONE": 9,
+        "MELODY_OR_SINGLE_LINE": 5
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-003",
+      "polarity": "negative",
+      "file": "PNO-003_negative.mid",
+      "family_digest": "d875e079834fba26aba42dc0c01500cacc3663dc9433d66f4fdd0fa0d79a0957",
+      "classified_notes": 8,
+      "by_family": {
+        "PIANO_EP": 8
+      },
+      "by_label": {
+        "MELODY_OR_SINGLE_LINE": 8
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-004",
+      "polarity": "positive",
+      "file": "PNO-004_positive.mid",
+      "family_digest": "84b06de3d3b6c32a4c82f4fe1c740e8215ed538dfc2d8e260969363456400e99",
+      "classified_notes": 14,
+      "by_family": {
+        "PIANO_EP": 14
+      },
+      "by_label": {
+        "ARPEGGIATED_CHORD_TONE": 9,
+        "MELODY_OR_SINGLE_LINE": 5
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-004",
+      "polarity": "negative",
+      "file": "PNO-004_negative.mid",
+      "family_digest": "d875e079834fba26aba42dc0c01500cacc3663dc9433d66f4fdd0fa0d79a0957",
+      "classified_notes": 8,
+      "by_family": {
+        "PIANO_EP": 8
+      },
+      "by_label": {
+        "MELODY_OR_SINGLE_LINE": 8
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "deterministic_digest": true,
+        "has_input_notes": true,
+        "all_rows_authority_free": true,
+        "integrated_digest": true
+      },
+      "pass": true
+    }
+  ],
+  "pass": true
+}

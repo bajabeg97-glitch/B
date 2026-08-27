@@ -1,0 +1,5 @@
+{
+  "schema": "PA800_HARDWARE_VOICE_WHITELIST_V1",
+  "approved_targets": [],
+  "note": "Dodati target adresu tek nakon fizičkog A/B testa. SAFE_GM_UPGRADE istog Program broja ne zavisi od ove liste."
+}

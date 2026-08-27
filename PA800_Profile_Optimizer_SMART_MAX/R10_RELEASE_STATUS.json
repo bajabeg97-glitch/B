@@ -1,0 +1,23 @@
+{
+  "build_id": "3d9bf6b103a4d52235db78e919658f36a9ac3faaa96eb0d68de6a3c3882dad0f",
+  "fresh_complete_stress_finalized": false,
+  "public_api": {
+    "functions": 380,
+    "modules": 115,
+    "unclassified": 0
+  },
+  "schema": "PA800_AUTONOMOUS_PREMIUM_R10_STATUS_V1",
+  "tests": {
+    "fail": 0,
+    "unified_pass": 112
+  },
+  "transactional": {
+    "articulation_insertions": false,
+    "cumulative_velocity_budget": true,
+    "event_velocity_timing_gate": true,
+    "mix_fx_cc91_cc93": true,
+    "refiner_velocity_cc11": true,
+    "sound_program_structural": false
+  },
+  "version": "3.4.0a2"
+}

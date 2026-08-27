@@ -1,0 +1,24 @@
+{
+  "schema": "PA800_INSTRUMENT_FAMILY_HOLDOUT_V2",
+  "status": "LOCAL_PROXY_PASS",
+  "authority_granted": false,
+  "hardware_gate": "EXTERNAL_REQUIRED",
+  "allowed_profiles": [
+    {"family": "PIANO", "address": [121, 3, 0]},
+    {"family": "BASS", "address": [121, 7, 33]},
+    {"family": "ENSEMBLE", "address": [121, 2, 50]},
+    {"family": "ENSEMBLE", "address": [121, 5, 48]},
+    {"family": "REED", "address": [121, 1, 71]}
+  ],
+  "families": {
+    "PIANO": {"proxy_pass": 1},
+    "BASS": {"proxy_pass": 1},
+    "ENSEMBLE": {"proxy_pass": 2},
+    "REED": {"proxy_pass": 1},
+    "GUITAR": {"proxy_pass": 0},
+    "ORGAN": {"proxy_pass": 0},
+    "BRASS": {"proxy_pass": 0},
+    "ACCORDION_REED": {"proxy_pass": 0},
+    "SYNTH_PAD": {"proxy_pass": 0}
+  }
+}

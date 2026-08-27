@@ -1,0 +1,746 @@
+{
+  "schema": "PA800_SECTION_NARRATIVE_STRESS_RESULT_V1",
+  "fixture_schema": "PA800_SECTION_NARRATIVE_STRESS_MANIFEST_V1",
+  "scenario_count": 12,
+  "midi_case_count": 24,
+  "passed_cases": 24,
+  "failed_cases": 0,
+  "pair_separation_passed": 12,
+  "pair_separation_total": 12,
+  "all_pairs_separated": true,
+  "mutations": 0,
+  "authority_granted": false,
+  "rows": [
+    {
+      "scenario_id": "SEC3-001",
+      "polarity": "positive",
+      "file": "SEC3-001_positive.mid",
+      "digest": "7087de7f5a2d25160ec27ef49327c0e06118d0ab0dbe7945c58c0658183d7479",
+      "labels": [
+        "VERSE_OR_RETURN_CANDIDATE",
+        "CHORUS"
+      ],
+      "transitions": [
+        "START",
+        "RETURN_OR_CONTINUATION"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 1,
+        "inferred_sections": 1,
+        "accepted_boundaries": 1,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-001",
+      "polarity": "negative",
+      "file": "SEC3-001_negative.mid",
+      "digest": "a10444f99bc78eadcd20914d21545e97ba9099f50d27bff95840db39af2ff20f",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-002",
+      "polarity": "positive",
+      "file": "SEC3-002_positive.mid",
+      "digest": "3acce017eb2025cfe1bbdde56b8c02c75531ad2c5a81ffc5a978393f52417754",
+      "labels": [
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START",
+        "BUILD"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 0,
+        "inferred_sections": 2,
+        "accepted_boundaries": 1,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-002",
+      "polarity": "negative",
+      "file": "SEC3-002_negative.mid",
+      "digest": "98b0b517c948d075d12f784172a5ef09e26118b51d5f4935c0c69ce6d61febd5",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 1,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-003",
+      "polarity": "positive",
+      "file": "SEC3-003_positive.mid",
+      "digest": "9404dc21672db983890300ee4f3406c8cbef48a3369db6c64eabe34930e24199",
+      "labels": [
+        "INTRO_CANDIDATE",
+        "CHORUS_CANDIDATE",
+        "VERSE_OR_RETURN_CANDIDATE",
+        "CHORUS_CANDIDATE"
+      ],
+      "transitions": [
+        "START",
+        "BUILD",
+        "RELEASE",
+        "BUILD"
+      ],
+      "summary": {
+        "sections": 4,
+        "explicit_sections": 0,
+        "inferred_sections": 4,
+        "accepted_boundaries": 3,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-003",
+      "polarity": "negative",
+      "file": "SEC3-003_negative.mid",
+      "digest": "71205b005a2cc4fc58278f249d0f38bbce37cfad3430da74c97cf4e976bf2070",
+      "labels": [
+        "VERSE_OR_RETURN_CANDIDATE",
+        "BRIDGE_OR_CONTRAST_CANDIDATE",
+        "VERSE_OR_RETURN_CANDIDATE"
+      ],
+      "transitions": [
+        "START",
+        "BUILD",
+        "RELEASE"
+      ],
+      "summary": {
+        "sections": 3,
+        "explicit_sections": 0,
+        "inferred_sections": 3,
+        "accepted_boundaries": 2,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-004",
+      "polarity": "positive",
+      "file": "SEC3-004_positive.mid",
+      "digest": "bfad724ab85096aa9d4809363f0e0a205559850f2b632ae0205ae8cfee34d374",
+      "labels": [
+        "VERSE_OR_RETURN_CANDIDATE",
+        "BREAK_CANDIDATE",
+        "CHORUS_CANDIDATE"
+      ],
+      "transitions": [
+        "START",
+        "RELEASE",
+        "BUILD"
+      ],
+      "summary": {
+        "sections": 3,
+        "explicit_sections": 0,
+        "inferred_sections": 3,
+        "accepted_boundaries": 2,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-004",
+      "polarity": "negative",
+      "file": "SEC3-004_negative.mid",
+      "digest": "e2fd7244c605d3bdccf0e6dd3dd7df8d4cf9cfd142f88ff93ca3f74bc3927bed",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 2,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-005",
+      "polarity": "positive",
+      "file": "SEC3-005_positive.mid",
+      "digest": "0cc56fa129baca34bea2fe1461663956954aaacaa56c4912823a6523838f6e50",
+      "labels": [
+        "INTRO_CANDIDATE",
+        "VERSE"
+      ],
+      "transitions": [
+        "START",
+        "CONTRAST"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 1,
+        "inferred_sections": 1,
+        "accepted_boundaries": 1,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-005",
+      "polarity": "negative",
+      "file": "SEC3-005_negative.mid",
+      "digest": "70d96f2a9fe73f8a8c1ce622d2ec5c3d0b1c16e442bb7d8f5b9d6d60d1f7627f",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-006",
+      "polarity": "positive",
+      "file": "SEC3-006_positive.mid",
+      "digest": "b462dab86728115665d96ea6b44654a659f730e31e1a479c4d904770318a1860",
+      "labels": [
+        "VERSE_OR_RETURN_CANDIDATE",
+        "BRIDGE"
+      ],
+      "transitions": [
+        "START",
+        "RETURN_OR_CONTINUATION"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 1,
+        "inferred_sections": 1,
+        "accepted_boundaries": 1,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 1
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-006",
+      "polarity": "negative",
+      "file": "SEC3-006_negative.mid",
+      "digest": "cbbbd6c806189c8226a794e8cfff213ded0e9fb74572d008a6140cb4fefca01c",
+      "labels": [
+        "UNKNOWN",
+        "BRIDGE"
+      ],
+      "transitions": [
+        "START",
+        "CONTRAST"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 1,
+        "inferred_sections": 1,
+        "accepted_boundaries": 1,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-007",
+      "polarity": "positive",
+      "file": "SEC3-007_positive.mid",
+      "digest": "566b916abb270635d0f1c33ca514276d7615c6277287a4631a5ecfe4cb6e0d6b",
+      "labels": [
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START",
+        "BUILD"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 0,
+        "inferred_sections": 2,
+        "accepted_boundaries": 1,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-007",
+      "polarity": "negative",
+      "file": "SEC3-007_negative.mid",
+      "digest": "c9a14917315c1bd4ed284a36ee952b6ab67dbef3745c491fe26aaa66c1b05f57",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-008",
+      "polarity": "positive",
+      "file": "SEC3-008_positive.mid",
+      "digest": "6f87ff4d009d9d97567a6b873c9676e11f7ad11fa013038f69a202f094c9e11f",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-008",
+      "polarity": "negative",
+      "file": "SEC3-008_negative.mid",
+      "digest": "c32acf686e5c90ccf134953f3ee8dd22a7982b3768fc4b123789adbfd92cf948",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-009",
+      "polarity": "positive",
+      "file": "SEC3-009_positive.mid",
+      "digest": "3a881c7dd6599f7fa6668243c3de97d3ab9fd14b573e7191ab5368c1e13c2227",
+      "labels": [
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START",
+        "BUILD"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 0,
+        "inferred_sections": 2,
+        "accepted_boundaries": 1,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-009",
+      "polarity": "negative",
+      "file": "SEC3-009_negative.mid",
+      "digest": "032e9214a983a810a907045d827ec4bcc21cf92b500727314f30a240449dea6a",
+      "labels": [
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START",
+        "BUILD"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 0,
+        "inferred_sections": 2,
+        "accepted_boundaries": 1,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-010",
+      "polarity": "positive",
+      "file": "SEC3-010_positive.mid",
+      "digest": "ad64a8de2a43395e3548f1d3d8bbb42145640d4f16e69b6e3ceea7e3a9761b4a",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 1,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-010",
+      "polarity": "negative",
+      "file": "SEC3-010_negative.mid",
+      "digest": "e566407d651c1b92e0705c4ea8330e04b14456c1af882f70616dd1eed17b8fbb",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-011",
+      "polarity": "positive",
+      "file": "SEC3-011_positive.mid",
+      "digest": "1628459e265737a388c6b3e31768d73b876f7bcaafdb52d49769b0788319a2f8",
+      "labels": [
+        "VERSE_OR_RETURN_CANDIDATE",
+        "ENDING"
+      ],
+      "transitions": [
+        "START",
+        "RETURN_OR_CONTINUATION"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 1,
+        "inferred_sections": 1,
+        "accepted_boundaries": 1,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-011",
+      "polarity": "negative",
+      "file": "SEC3-011_negative.mid",
+      "digest": "d7d935294698446cad23f7b8cf333e4e23e0ac23d1f791b5228d26dabf84327f",
+      "labels": [
+        "UNKNOWN"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-012",
+      "polarity": "positive",
+      "file": "SEC3-012_positive.mid",
+      "digest": "5d639ce51d90ee718852995cbb4adfec955cb5fdf305d90dee4155dc1039e078",
+      "labels": [
+        "Fill 1",
+        "Variation 1"
+      ],
+      "transitions": [
+        "START",
+        "CONTRAST"
+      ],
+      "summary": {
+        "sections": 2,
+        "explicit_sections": 2,
+        "inferred_sections": 0,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC3-012",
+      "polarity": "negative",
+      "file": "SEC3-012_negative.mid",
+      "digest": "541714c60f90791612732565f0a535d938441fdd8f0bf93c0d385decc622cb9a",
+      "labels": [
+        "STYLE_WHOLE_UNLABELED"
+      ],
+      "transitions": [
+        "START"
+      ],
+      "summary": {
+        "sections": 1,
+        "explicit_sections": 0,
+        "inferred_sections": 1,
+        "accepted_boundaries": 0,
+        "rejected_velocity_only": 0,
+        "overlap_boundaries": 0
+      },
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_apply": true,
+        "deterministic": true,
+        "has_sections": true,
+        "intent_integration": true
+      },
+      "pass": true
+    }
+  ],
+  "pass": true
+}

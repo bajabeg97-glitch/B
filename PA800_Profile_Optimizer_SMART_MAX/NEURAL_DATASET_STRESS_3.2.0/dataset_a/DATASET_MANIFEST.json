@@ -1,0 +1,4177 @@
+{
+  "schema": "PA800_NEURAL_DATASET_V2",
+  "dataset_use": "CERTIFICATION",
+  "license": "PROJECT_SYNTHETIC_FIXTURE",
+  "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+  "sources": [
+    {
+      "file": "AUT-003_negative.mid",
+      "sha256": "6a493cdc74b6eb5ae17732aa92d224ee13ca402292747393b23b0b6e11bb951a",
+      "source_group_id": "dc6ada016b837a7b7a82009aafce947cc5b53fc522d0e98b404ed218718a9a99",
+      "split": "train",
+      "notes": 2,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "BAS-005_positive.mid",
+      "sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "source_group_id": "02117ddc9ea8b2419a423a563e779efecd076d2a261fa7b2d2f474b6b662f4f1",
+      "split": "train",
+      "notes": 17,
+      "protected_notes": 1,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "DRM-001_positive.mid",
+      "sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "source_group_id": "c9771dbaf87ef5219694cacaed6c8855e125174f8ebff8b7a31e14f185d2edc5",
+      "split": "train",
+      "notes": 13,
+      "protected_notes": 1,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "EXP-002_positive.mid",
+      "sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454",
+      "split": "train",
+      "notes": 10,
+      "protected_notes": 10,
+      "protected_only": true,
+      "included": true
+    },
+    {
+      "file": "GTR-001_positive.mid",
+      "sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "split": "validation",
+      "notes": 12,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "GTR-001_transposed.mid",
+      "sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "split": "validation",
+      "notes": 12,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "INT-001_positive.mid",
+      "sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "source_group_id": "b2a1e3fbdc1763ead3ebfa2aef7b799d8bdaeeddb32b13f82ffdeb659e022d54",
+      "split": "train",
+      "notes": 16,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "INT-002_positive.mid",
+      "sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "source_group_id": "52734468fcb15bd3a5dfd8b36ef0ed7adf5af300c35108bb749b9eb338b6dbea",
+      "split": "train",
+      "notes": 8,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "NEURAL_CHORD_COMP.mid",
+      "sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "source_group_id": "9cc7a6be014a66418707a641dcf20f554127f07fa9c520e6ad09a7818c8c9243",
+      "split": "train",
+      "notes": 12,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "PNO-002_positive.mid",
+      "sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f",
+      "split": "train",
+      "notes": 14,
+      "protected_notes": 14,
+      "protected_only": true,
+      "included": true
+    },
+    {
+      "file": "SEC3-001_positive.mid",
+      "sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "source_group_id": "8fec6b3c245fd0c75ea2e860375294c75fd2015d09f92fec0194bba641d127e3",
+      "split": "validation",
+      "notes": 56,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "SEC3-004_positive.mid",
+      "sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "source_group_id": "e2fab962cda214da26ac4c354dde71d92ddf96112244801332310e1f4c29a609",
+      "split": "test",
+      "notes": 7,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "SEC3-006_positive.mid",
+      "sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "source_group_id": "d336a9f67688e4c26fb38113e9f6569878bd069f08978ac33c4d0b4330a9a17a",
+      "split": "test",
+      "notes": 25,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    },
+    {
+      "file": "SEC3-012_positive.mid",
+      "sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "source_group_id": "7be610e2d5713c0101152d96df9a2890b703ee18f51ad14711898aedbc6038e5",
+      "split": "train",
+      "notes": 8,
+      "protected_notes": 0,
+      "protected_only": false,
+      "included": true
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "844c16ef8f86292f250c",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "AUT-003_negative.mid",
+      "source_sha256": "6a493cdc74b6eb5ae17732aa92d224ee13ca402292747393b23b0b6e11bb951a",
+      "source_group_id": "dc6ada016b837a7b7a82009aafce947cc5b53fc522d0e98b404ed218718a9a99",
+      "clean_file": "844c16ef8f86292f250c/clean.mid",
+      "clean_sha256": "6a493cdc74b6eb5ae17732aa92d224ee13ca402292747393b23b0b6e11bb951a",
+      "corrupt_file": "844c16ef8f86292f250c/corrupt.mid",
+      "corrupt_sha256": "c9361fdc5ef14465c72026cbea06f7042217f4bd0013278fab3154690a2a7644",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N60:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 96,
+          "new": 160
+        },
+        {
+          "note_key": "T0:C0:N60:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 1,
+          "field": "off",
+          "old": 168,
+          "new": 232
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N60:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "04a00983fd7d6c25bf17",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "AUT-003_negative.mid",
+      "source_sha256": "6a493cdc74b6eb5ae17732aa92d224ee13ca402292747393b23b0b6e11bb951a",
+      "source_group_id": "dc6ada016b837a7b7a82009aafce947cc5b53fc522d0e98b404ed218718a9a99",
+      "clean_file": "04a00983fd7d6c25bf17/clean.mid",
+      "clean_sha256": "6a493cdc74b6eb5ae17732aa92d224ee13ca402292747393b23b0b6e11bb951a",
+      "corrupt_file": "04a00983fd7d6c25bf17/corrupt.mid",
+      "corrupt_sha256": "b51f4ed79ad357b22a078fd61e6ec1afef48ea905538bb3d590512dda140a544",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N60:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 1,
+          "field": "off",
+          "old": 168,
+          "new": 114
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N60:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "cf32ce50a7df0f0605dc",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "AUT-003_negative.mid",
+      "source_sha256": "6a493cdc74b6eb5ae17732aa92d224ee13ca402292747393b23b0b6e11bb951a",
+      "source_group_id": "dc6ada016b837a7b7a82009aafce947cc5b53fc522d0e98b404ed218718a9a99",
+      "clean_file": "cf32ce50a7df0f0605dc/clean.mid",
+      "clean_sha256": "6a493cdc74b6eb5ae17732aa92d224ee13ca402292747393b23b0b6e11bb951a",
+      "corrupt_file": "cf32ce50a7df0f0605dc/corrupt.mid",
+      "corrupt_sha256": "e2bcc55f480081f95c706bd81b145ba2993805739342b18e49d40d566e52741d",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N60:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 1,
+          "field": "off",
+          "old": 168,
+          "new": 264
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N60:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "4af25a3aa964363d648a",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "AUT-003_negative.mid",
+      "source_sha256": "6a493cdc74b6eb5ae17732aa92d224ee13ca402292747393b23b0b6e11bb951a",
+      "source_group_id": "dc6ada016b837a7b7a82009aafce947cc5b53fc522d0e98b404ed218718a9a99",
+      "clean_file": "4af25a3aa964363d648a/clean.mid",
+      "clean_sha256": "6a493cdc74b6eb5ae17732aa92d224ee13ca402292747393b23b0b6e11bb951a",
+      "corrupt_file": "4af25a3aa964363d648a/corrupt.mid",
+      "corrupt_sha256": "36881b69911fde10f3893e63900282dbf34d1039be13825d7bde6f683a369c56",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N60:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 1,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N60:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "99087988b5d2e756d168",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "BAS-005_positive.mid",
+      "source_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "source_group_id": "02117ddc9ea8b2419a423a563e779efecd076d2a261fa7b2d2f474b6b662f4f1",
+      "clean_file": "99087988b5d2e756d168/clean.mid",
+      "clean_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "corrupt_file": "99087988b5d2e756d168/corrupt.mid",
+      "corrupt_sha256": "eb68729d92f62f3387ae3c6daef8680a94600c65fb07de8cf2f848d812505f02",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N38:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 492,
+          "new": 556
+        },
+        {
+          "note_key": "T1:C1:N38:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 1,
+          "field": "off",
+          "old": 552,
+          "new": 616
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N38:O1"
+      ],
+      "protected_note_keys": [
+        "T1:C1:N24:O0"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "19d52b2b7b44679f9eed",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "BAS-005_positive.mid",
+      "source_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "source_group_id": "02117ddc9ea8b2419a423a563e779efecd076d2a261fa7b2d2f474b6b662f4f1",
+      "clean_file": "19d52b2b7b44679f9eed/clean.mid",
+      "clean_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "corrupt_file": "19d52b2b7b44679f9eed/corrupt.mid",
+      "corrupt_sha256": "3bf2c9c862eb74a4ae4c2f0caed11359d0601adb29529588e4cb6a6284eddd67",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N38:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 1,
+          "field": "off",
+          "old": 552,
+          "new": 507
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N38:O1"
+      ],
+      "protected_note_keys": [
+        "T1:C1:N24:O0"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "157a497b36696d7a6605",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "BAS-005_positive.mid",
+      "source_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "source_group_id": "02117ddc9ea8b2419a423a563e779efecd076d2a261fa7b2d2f474b6b662f4f1",
+      "clean_file": "157a497b36696d7a6605/clean.mid",
+      "clean_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "corrupt_file": "157a497b36696d7a6605/corrupt.mid",
+      "corrupt_sha256": "e192213f5eb7d3ec70ea47288a4a19887baf3fbeb9111db453599d77ec1ace57",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N38:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 1,
+          "field": "off",
+          "old": 552,
+          "new": 648
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N38:O1"
+      ],
+      "protected_note_keys": [
+        "T1:C1:N24:O0"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "588f1c5dc34a589c81fd",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "BAS-005_positive.mid",
+      "source_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "source_group_id": "02117ddc9ea8b2419a423a563e779efecd076d2a261fa7b2d2f474b6b662f4f1",
+      "clean_file": "588f1c5dc34a589c81fd/clean.mid",
+      "clean_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "corrupt_file": "588f1c5dc34a589c81fd/corrupt.mid",
+      "corrupt_sha256": "5e8d7137b8dedeb84671d3caf93d7ef8c9cd6d8c68e068d55a460bb22ee30e51",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N38:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 1,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N38:O1"
+      ],
+      "protected_note_keys": [
+        "T1:C1:N24:O0"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "9219801424ecff96f735",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "BAS-005_positive.mid",
+      "source_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "source_group_id": "02117ddc9ea8b2419a423a563e779efecd076d2a261fa7b2d2f474b6b662f4f1",
+      "clean_file": "9219801424ecff96f735/clean.mid",
+      "clean_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "corrupt_file": "9219801424ecff96f735/corrupt.mid",
+      "corrupt_sha256": "5ee9191a3e1be380356b5098c448a4d1eaa72aeb18ae9cf94904a0ea77021ad8",
+      "change_mask": [
+        {
+          "note_key": "T0:C9:N36:O0",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T0:C9:N36:O0",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 0,
+          "field": "off",
+          "old": 12,
+          "new": 16
+        },
+        {
+          "note_key": "T0:C9:N36:O1",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 96,
+          "new": 104
+        },
+        {
+          "note_key": "T0:C9:N36:O1",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 1,
+          "field": "off",
+          "old": 108,
+          "new": 116
+        },
+        {
+          "note_key": "T0:C9:N36:O2",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 2,
+          "field": "onset",
+          "old": 192,
+          "new": 204
+        },
+        {
+          "note_key": "T0:C9:N36:O2",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 2,
+          "field": "off",
+          "old": 204,
+          "new": 216
+        },
+        {
+          "note_key": "T0:C9:N36:O3",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 3,
+          "field": "onset",
+          "old": 288,
+          "new": 304
+        },
+        {
+          "note_key": "T0:C9:N36:O3",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 3,
+          "field": "off",
+          "old": 300,
+          "new": 316
+        },
+        {
+          "note_key": "T0:C9:N36:O4",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 4,
+          "field": "onset",
+          "old": 384,
+          "new": 404
+        },
+        {
+          "note_key": "T0:C9:N36:O4",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 4,
+          "field": "off",
+          "old": 396,
+          "new": 416
+        },
+        {
+          "note_key": "T0:C9:N36:O5",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 5,
+          "field": "onset",
+          "old": 480,
+          "new": 504
+        },
+        {
+          "note_key": "T0:C9:N36:O5",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 5,
+          "field": "off",
+          "old": 492,
+          "new": 516
+        },
+        {
+          "note_key": "T0:C9:N36:O6",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 6,
+          "field": "onset",
+          "old": 576,
+          "new": 604
+        },
+        {
+          "note_key": "T0:C9:N36:O6",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 6,
+          "field": "off",
+          "old": 588,
+          "new": 616
+        },
+        {
+          "note_key": "T0:C9:N36:O7",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 7,
+          "field": "onset",
+          "old": 672,
+          "new": 704
+        },
+        {
+          "note_key": "T0:C9:N36:O7",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 7,
+          "field": "off",
+          "old": 684,
+          "new": 716
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C9:N36:O0",
+        "T0:C9:N36:O1",
+        "T0:C9:N36:O2",
+        "T0:C9:N36:O3",
+        "T0:C9:N36:O4",
+        "T0:C9:N36:O5",
+        "T0:C9:N36:O6",
+        "T0:C9:N36:O7"
+      ],
+      "protected_note_keys": [
+        "T1:C1:N24:O0"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "8d96873e5f42c21d2058",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "DRM-001_positive.mid",
+      "source_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "source_group_id": "c9771dbaf87ef5219694cacaed6c8855e125174f8ebff8b7a31e14f185d2edc5",
+      "clean_file": "8d96873e5f42c21d2058/clean.mid",
+      "clean_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "corrupt_file": "8d96873e5f42c21d2058/corrupt.mid",
+      "corrupt_sha256": "d86d61f0f8472ecd0dc55aca5c19dc50a92549a39479211e2d759a373dcec806",
+      "change_mask": [
+        {
+          "note_key": "T0:C9:N42:O2",
+          "track": 0,
+          "channel": 9,
+          "pitch": 42,
+          "occurrence": 2,
+          "field": "onset",
+          "old": 480,
+          "new": 544
+        },
+        {
+          "note_key": "T0:C9:N42:O2",
+          "track": 0,
+          "channel": 9,
+          "pitch": 42,
+          "occurrence": 2,
+          "field": "off",
+          "old": 492,
+          "new": 556
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C9:N42:O2"
+      ],
+      "protected_note_keys": [
+        "T0:C9:N38:O6"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "58a84a214c4fe3848102",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "DRM-001_positive.mid",
+      "source_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "source_group_id": "c9771dbaf87ef5219694cacaed6c8855e125174f8ebff8b7a31e14f185d2edc5",
+      "clean_file": "58a84a214c4fe3848102/clean.mid",
+      "clean_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "corrupt_file": "58a84a214c4fe3848102/corrupt.mid",
+      "corrupt_sha256": "7bb545952ae6de90c67d39e7efda5d60095e40dc074184ce63eb7759caf25a6d",
+      "change_mask": [
+        {
+          "note_key": "T0:C9:N42:O2",
+          "track": 0,
+          "channel": 9,
+          "pitch": 42,
+          "occurrence": 2,
+          "field": "off",
+          "old": 492,
+          "new": 483
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C9:N42:O2"
+      ],
+      "protected_note_keys": [
+        "T0:C9:N38:O6"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "62377eb0fdbc21032846",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "DRM-001_positive.mid",
+      "source_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "source_group_id": "c9771dbaf87ef5219694cacaed6c8855e125174f8ebff8b7a31e14f185d2edc5",
+      "clean_file": "62377eb0fdbc21032846/clean.mid",
+      "clean_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "corrupt_file": "62377eb0fdbc21032846/corrupt.mid",
+      "corrupt_sha256": "017c04d74d0119f3911509a9ca5fdb7f572eaef5dba71bbb8741f2a700c16553",
+      "change_mask": [
+        {
+          "note_key": "T0:C9:N42:O2",
+          "track": 0,
+          "channel": 9,
+          "pitch": 42,
+          "occurrence": 2,
+          "field": "off",
+          "old": 492,
+          "new": 588
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C9:N42:O2"
+      ],
+      "protected_note_keys": [
+        "T0:C9:N38:O6"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "7ede52eba542f6853188",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "DRM-001_positive.mid",
+      "source_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "source_group_id": "c9771dbaf87ef5219694cacaed6c8855e125174f8ebff8b7a31e14f185d2edc5",
+      "clean_file": "7ede52eba542f6853188/clean.mid",
+      "clean_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "corrupt_file": "7ede52eba542f6853188/corrupt.mid",
+      "corrupt_sha256": "246b35e9532974e0a8a94f5bc7dcf8965d1bf32efd9fe7e527e9d5a0dbea2260",
+      "change_mask": [
+        {
+          "note_key": "T0:C9:N42:O2",
+          "track": 0,
+          "channel": 9,
+          "pitch": 42,
+          "occurrence": 2,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C9:N42:O2"
+      ],
+      "protected_note_keys": [
+        "T0:C9:N38:O6"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "bdc190c0d4f09de04b2b",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "DRM-001_positive.mid",
+      "source_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "source_group_id": "c9771dbaf87ef5219694cacaed6c8855e125174f8ebff8b7a31e14f185d2edc5",
+      "clean_file": "bdc190c0d4f09de04b2b/clean.mid",
+      "clean_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "corrupt_file": "bdc190c0d4f09de04b2b/corrupt.mid",
+      "corrupt_sha256": "9838e5a8d400e8ec972c61be1677efd876f7d3ba5c9c41d553c50e4d8dafc22e",
+      "change_mask": [
+        {
+          "note_key": "T0:C9:N36:O0",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T0:C9:N36:O0",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 0,
+          "field": "off",
+          "old": 12,
+          "new": 16
+        },
+        {
+          "note_key": "T0:C9:N38:O0",
+          "track": 0,
+          "channel": 9,
+          "pitch": 38,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 48,
+          "new": 56
+        },
+        {
+          "note_key": "T0:C9:N38:O0",
+          "track": 0,
+          "channel": 9,
+          "pitch": 38,
+          "occurrence": 0,
+          "field": "off",
+          "old": 60,
+          "new": 68
+        },
+        {
+          "note_key": "T0:C9:N42:O0",
+          "track": 0,
+          "channel": 9,
+          "pitch": 42,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 96,
+          "new": 108
+        },
+        {
+          "note_key": "T0:C9:N42:O0",
+          "track": 0,
+          "channel": 9,
+          "pitch": 42,
+          "occurrence": 0,
+          "field": "off",
+          "old": 108,
+          "new": 120
+        },
+        {
+          "note_key": "T0:C9:N38:O1",
+          "track": 0,
+          "channel": 9,
+          "pitch": 38,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 144,
+          "new": 160
+        },
+        {
+          "note_key": "T0:C9:N38:O1",
+          "track": 0,
+          "channel": 9,
+          "pitch": 38,
+          "occurrence": 1,
+          "field": "off",
+          "old": 156,
+          "new": 172
+        },
+        {
+          "note_key": "T0:C9:N36:O1",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 192,
+          "new": 212
+        },
+        {
+          "note_key": "T0:C9:N36:O1",
+          "track": 0,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 1,
+          "field": "off",
+          "old": 204,
+          "new": 224
+        },
+        {
+          "note_key": "T0:C9:N38:O2",
+          "track": 0,
+          "channel": 9,
+          "pitch": 38,
+          "occurrence": 2,
+          "field": "onset",
+          "old": 240,
+          "new": 264
+        },
+        {
+          "note_key": "T0:C9:N38:O2",
+          "track": 0,
+          "channel": 9,
+          "pitch": 38,
+          "occurrence": 2,
+          "field": "off",
+          "old": 252,
+          "new": 276
+        },
+        {
+          "note_key": "T0:C9:N42:O1",
+          "track": 0,
+          "channel": 9,
+          "pitch": 42,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 288,
+          "new": 316
+        },
+        {
+          "note_key": "T0:C9:N42:O1",
+          "track": 0,
+          "channel": 9,
+          "pitch": 42,
+          "occurrence": 1,
+          "field": "off",
+          "old": 300,
+          "new": 328
+        },
+        {
+          "note_key": "T0:C9:N38:O3",
+          "track": 0,
+          "channel": 9,
+          "pitch": 38,
+          "occurrence": 3,
+          "field": "onset",
+          "old": 336,
+          "new": 368
+        },
+        {
+          "note_key": "T0:C9:N38:O3",
+          "track": 0,
+          "channel": 9,
+          "pitch": 38,
+          "occurrence": 3,
+          "field": "off",
+          "old": 348,
+          "new": 380
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C9:N36:O0",
+        "T0:C9:N36:O1",
+        "T0:C9:N38:O0",
+        "T0:C9:N38:O1",
+        "T0:C9:N38:O2",
+        "T0:C9:N38:O3",
+        "T0:C9:N42:O0",
+        "T0:C9:N42:O1"
+      ],
+      "protected_note_keys": [
+        "T0:C9:N38:O6"
+      ],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "673ff9e6f71db42bd77e",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_positive.mid",
+      "source_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "673ff9e6f71db42bd77e/clean.mid",
+      "clean_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "corrupt_file": "673ff9e6f71db42bd77e/corrupt.mid",
+      "corrupt_sha256": "ce76c54417f6f65f1f326163b4a6c0150f5d6fe46062fd798c3844cc54ae4200",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N53:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 53,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 252,
+          "new": 316
+        },
+        {
+          "note_key": "T0:C0:N53:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 53,
+          "occurrence": 1,
+          "field": "off",
+          "old": 336,
+          "new": 400
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N53:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "ece491decc3ea81afda6",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_positive.mid",
+      "source_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "ece491decc3ea81afda6/clean.mid",
+      "clean_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "corrupt_file": "ece491decc3ea81afda6/corrupt.mid",
+      "corrupt_sha256": "37a9c8559f8bd6486a50ae70530775354e45ef3993b5f9b1aff639f448eab55b",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N53:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 53,
+          "occurrence": 1,
+          "field": "off",
+          "old": 336,
+          "new": 273
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N53:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "55336c6f5a1c95be33c0",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_positive.mid",
+      "source_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "55336c6f5a1c95be33c0/clean.mid",
+      "clean_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "corrupt_file": "55336c6f5a1c95be33c0/corrupt.mid",
+      "corrupt_sha256": "86b79e1560312a923864f95ace54d2e49b0fa589e9d70c8b7cb40955e1721321",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N53:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 53,
+          "occurrence": 1,
+          "field": "off",
+          "old": 336,
+          "new": 432
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N53:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "a073c9c6eaffb1addf22",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_positive.mid",
+      "source_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "a073c9c6eaffb1addf22/clean.mid",
+      "clean_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "corrupt_file": "a073c9c6eaffb1addf22/corrupt.mid",
+      "corrupt_sha256": "78ed3c327a40e5fa8990b269b702f386e2bc357b2a2e6999aea29deed031e8de",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N53:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 53,
+          "occurrence": 1,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N53:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "ebbb4cfb8ad2ede14c90",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_positive.mid",
+      "source_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "ebbb4cfb8ad2ede14c90/clean.mid",
+      "clean_sha256": "955334d2c5b8120cab27938a62af3ba74f9b66b156748da893a8495f8d74e1bd",
+      "corrupt_file": "ebbb4cfb8ad2ede14c90/corrupt.mid",
+      "corrupt_sha256": "90ad4a454d8829ee4b6c4193c15a4e714512144d21d15c0401e705e4da5d380f",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N48:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 48,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T0:C0:N48:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 48,
+          "occurrence": 0,
+          "field": "off",
+          "old": 84,
+          "new": 88
+        },
+        {
+          "note_key": "T0:C0:N52:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 52,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 4,
+          "new": 12
+        },
+        {
+          "note_key": "T0:C0:N52:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 52,
+          "occurrence": 0,
+          "field": "off",
+          "old": 84,
+          "new": 92
+        },
+        {
+          "note_key": "T0:C0:N55:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 12,
+          "new": 24
+        },
+        {
+          "note_key": "T0:C0:N55:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 0,
+          "field": "off",
+          "old": 84,
+          "new": 96
+        },
+        {
+          "note_key": "T0:C0:N50:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 50,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 84,
+          "new": 100
+        },
+        {
+          "note_key": "T0:C0:N50:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 50,
+          "occurrence": 0,
+          "field": "off",
+          "old": 168,
+          "new": 184
+        },
+        {
+          "note_key": "T0:C0:N53:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 53,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 88,
+          "new": 108
+        },
+        {
+          "note_key": "T0:C0:N53:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 53,
+          "occurrence": 0,
+          "field": "off",
+          "old": 168,
+          "new": 188
+        },
+        {
+          "note_key": "T0:C0:N57:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 57,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 96,
+          "new": 120
+        },
+        {
+          "note_key": "T0:C0:N57:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 57,
+          "occurrence": 0,
+          "field": "off",
+          "old": 168,
+          "new": 192
+        },
+        {
+          "note_key": "T0:C0:N52:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 52,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 168,
+          "new": 196
+        },
+        {
+          "note_key": "T0:C0:N52:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 52,
+          "occurrence": 1,
+          "field": "off",
+          "old": 252,
+          "new": 280
+        },
+        {
+          "note_key": "T0:C0:N55:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 172,
+          "new": 204
+        },
+        {
+          "note_key": "T0:C0:N55:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 1,
+          "field": "off",
+          "old": 252,
+          "new": 284
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N48:O0",
+        "T0:C0:N50:O0",
+        "T0:C0:N52:O0",
+        "T0:C0:N52:O1",
+        "T0:C0:N53:O0",
+        "T0:C0:N55:O0",
+        "T0:C0:N55:O1",
+        "T0:C0:N57:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "c9448c822bbf53f1d478",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_transposed.mid",
+      "source_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "c9448c822bbf53f1d478/clean.mid",
+      "clean_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "corrupt_file": "c9448c822bbf53f1d478/corrupt.mid",
+      "corrupt_sha256": "084a00bda3be65b05c7ccdccfec3660ff62d9c5207898b056560c7d2e536e46d",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N55:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 252,
+          "new": 316
+        },
+        {
+          "note_key": "T0:C0:N55:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 1,
+          "field": "off",
+          "old": 336,
+          "new": 400
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N55:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "a9d5b40a353bc9318aaa",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_transposed.mid",
+      "source_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "a9d5b40a353bc9318aaa/clean.mid",
+      "clean_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "corrupt_file": "a9d5b40a353bc9318aaa/corrupt.mid",
+      "corrupt_sha256": "68bf0842a8fa4427fdf011ae22c2d3276aacb199e034d01b82dd1651fa88c24f",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N55:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 1,
+          "field": "off",
+          "old": 336,
+          "new": 273
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N55:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "dd85d9d9710666e5b43c",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_transposed.mid",
+      "source_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "dd85d9d9710666e5b43c/clean.mid",
+      "clean_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "corrupt_file": "dd85d9d9710666e5b43c/corrupt.mid",
+      "corrupt_sha256": "f2fc1830a37d34be455fed230f03afb68c1a0f205ea02a1df2caa9a5b3eb47af",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N55:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 1,
+          "field": "off",
+          "old": 336,
+          "new": 432
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N55:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "5f57218738aa6451e96b",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_transposed.mid",
+      "source_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "5f57218738aa6451e96b/clean.mid",
+      "clean_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "corrupt_file": "5f57218738aa6451e96b/corrupt.mid",
+      "corrupt_sha256": "9f1474e5a9c15541b0d694818cf496b3a284a29b5c6ba0fb18c1be5b8478d13c",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N55:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 1,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N55:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "1bedc5f19eea13f2728c",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "GTR-001_transposed.mid",
+      "source_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "clean_file": "1bedc5f19eea13f2728c/clean.mid",
+      "clean_sha256": "4aacec2c96033c98749b74079273c917b78bf4471dec68db9b4f2969854ba656",
+      "corrupt_file": "1bedc5f19eea13f2728c/corrupt.mid",
+      "corrupt_sha256": "93ccd696dd94637e80b6199b27dbadc377c2beb56b9962052c0f0a914093d126",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N50:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 50,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T0:C0:N50:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 50,
+          "occurrence": 0,
+          "field": "off",
+          "old": 84,
+          "new": 88
+        },
+        {
+          "note_key": "T0:C0:N54:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 54,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 4,
+          "new": 12
+        },
+        {
+          "note_key": "T0:C0:N54:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 54,
+          "occurrence": 0,
+          "field": "off",
+          "old": 84,
+          "new": 92
+        },
+        {
+          "note_key": "T0:C0:N57:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 57,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 12,
+          "new": 24
+        },
+        {
+          "note_key": "T0:C0:N57:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 57,
+          "occurrence": 0,
+          "field": "off",
+          "old": 84,
+          "new": 96
+        },
+        {
+          "note_key": "T0:C0:N52:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 52,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 84,
+          "new": 100
+        },
+        {
+          "note_key": "T0:C0:N52:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 52,
+          "occurrence": 0,
+          "field": "off",
+          "old": 168,
+          "new": 184
+        },
+        {
+          "note_key": "T0:C0:N55:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 88,
+          "new": 108
+        },
+        {
+          "note_key": "T0:C0:N55:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 55,
+          "occurrence": 0,
+          "field": "off",
+          "old": 168,
+          "new": 188
+        },
+        {
+          "note_key": "T0:C0:N59:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 59,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 96,
+          "new": 120
+        },
+        {
+          "note_key": "T0:C0:N59:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 59,
+          "occurrence": 0,
+          "field": "off",
+          "old": 168,
+          "new": 192
+        },
+        {
+          "note_key": "T0:C0:N54:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 54,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 168,
+          "new": 196
+        },
+        {
+          "note_key": "T0:C0:N54:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 54,
+          "occurrence": 1,
+          "field": "off",
+          "old": 252,
+          "new": 280
+        },
+        {
+          "note_key": "T0:C0:N57:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 57,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 172,
+          "new": 204
+        },
+        {
+          "note_key": "T0:C0:N57:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 57,
+          "occurrence": 1,
+          "field": "off",
+          "old": 252,
+          "new": 284
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N50:O0",
+        "T0:C0:N52:O0",
+        "T0:C0:N54:O0",
+        "T0:C0:N54:O1",
+        "T0:C0:N55:O0",
+        "T0:C0:N57:O0",
+        "T0:C0:N57:O1",
+        "T0:C0:N59:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "011f0549c98f1bb02fa1",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-001_positive.mid",
+      "source_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "source_group_id": "b2a1e3fbdc1763ead3ebfa2aef7b799d8bdaeeddb32b13f82ffdeb659e022d54",
+      "clean_file": "011f0549c98f1bb02fa1/clean.mid",
+      "clean_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "corrupt_file": "011f0549c98f1bb02fa1/corrupt.mid",
+      "corrupt_sha256": "418c94ac6472cedc0fff0574d5f73287cc6ef98549767727c4169eb31f5d196c",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 672,
+          "new": 736
+        },
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "off",
+          "old": 744,
+          "new": 808
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N40:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "1dc5aedaa45bfe3d32a2",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-001_positive.mid",
+      "source_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "source_group_id": "b2a1e3fbdc1763ead3ebfa2aef7b799d8bdaeeddb32b13f82ffdeb659e022d54",
+      "clean_file": "1dc5aedaa45bfe3d32a2/clean.mid",
+      "clean_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "corrupt_file": "1dc5aedaa45bfe3d32a2/corrupt.mid",
+      "corrupt_sha256": "5eb724baefc1284a2c45248f57d02e5f680d873fffeb70196940fa20d2ba8a0a",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "off",
+          "old": 744,
+          "new": 690
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N40:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "bb91fcaf618754f5655f",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-001_positive.mid",
+      "source_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "source_group_id": "b2a1e3fbdc1763ead3ebfa2aef7b799d8bdaeeddb32b13f82ffdeb659e022d54",
+      "clean_file": "bb91fcaf618754f5655f/clean.mid",
+      "clean_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "corrupt_file": "bb91fcaf618754f5655f/corrupt.mid",
+      "corrupt_sha256": "92b483d689e2e46d3233b941450c28a9111063f61f1b6f78bec7e6c8534d87db",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "off",
+          "old": 744,
+          "new": 840
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N40:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "0ee670f4bcf8b6d1a63e",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-001_positive.mid",
+      "source_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "source_group_id": "b2a1e3fbdc1763ead3ebfa2aef7b799d8bdaeeddb32b13f82ffdeb659e022d54",
+      "clean_file": "0ee670f4bcf8b6d1a63e/clean.mid",
+      "clean_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "corrupt_file": "0ee670f4bcf8b6d1a63e/corrupt.mid",
+      "corrupt_sha256": "263260f812ccad30a211cf2b4dedfafac5de9e9ecd8e5d1af1303f1ef4affbd8",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N40:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "376a68e362764514aaea",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-001_positive.mid",
+      "source_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "source_group_id": "b2a1e3fbdc1763ead3ebfa2aef7b799d8bdaeeddb32b13f82ffdeb659e022d54",
+      "clean_file": "376a68e362764514aaea/clean.mid",
+      "clean_sha256": "b843e559f5968f8fd2a9132bc37c2346b77b9f79853c6903e3d8505fad8f6c4c",
+      "corrupt_file": "376a68e362764514aaea/corrupt.mid",
+      "corrupt_sha256": "00f740d94bdf868634437e4ebffecc4c0107305ca6ebe8eed6e31ef20f0a2b9f",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N72:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T0:C0:N72:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 0,
+          "field": "off",
+          "old": 72,
+          "new": 76
+        },
+        {
+          "note_key": "T0:C0:N74:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 74,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 96,
+          "new": 104
+        },
+        {
+          "note_key": "T0:C0:N74:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 74,
+          "occurrence": 0,
+          "field": "off",
+          "old": 168,
+          "new": 176
+        },
+        {
+          "note_key": "T0:C0:N76:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 76,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 192,
+          "new": 204
+        },
+        {
+          "note_key": "T0:C0:N76:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 76,
+          "occurrence": 0,
+          "field": "off",
+          "old": 264,
+          "new": 276
+        },
+        {
+          "note_key": "T0:C0:N79:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 79,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 288,
+          "new": 304
+        },
+        {
+          "note_key": "T0:C0:N79:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 79,
+          "occurrence": 0,
+          "field": "off",
+          "old": 360,
+          "new": 376
+        },
+        {
+          "note_key": "T0:C0:N81:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 81,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 384,
+          "new": 404
+        },
+        {
+          "note_key": "T0:C0:N81:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 81,
+          "occurrence": 0,
+          "field": "off",
+          "old": 456,
+          "new": 476
+        },
+        {
+          "note_key": "T0:C0:N72:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 480,
+          "new": 504
+        },
+        {
+          "note_key": "T0:C0:N72:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 1,
+          "field": "off",
+          "old": 552,
+          "new": 576
+        },
+        {
+          "note_key": "T0:C0:N74:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 74,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 576,
+          "new": 604
+        },
+        {
+          "note_key": "T0:C0:N74:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 74,
+          "occurrence": 1,
+          "field": "off",
+          "old": 648,
+          "new": 676
+        },
+        {
+          "note_key": "T0:C0:N76:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 76,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 672,
+          "new": 704
+        },
+        {
+          "note_key": "T0:C0:N76:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 76,
+          "occurrence": 1,
+          "field": "off",
+          "old": 744,
+          "new": 776
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N72:O0",
+        "T0:C0:N72:O1",
+        "T0:C0:N74:O0",
+        "T0:C0:N74:O1",
+        "T0:C0:N76:O0",
+        "T0:C0:N76:O1",
+        "T0:C0:N79:O0",
+        "T0:C0:N81:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "d368ebad242d1fde2d13",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-002_positive.mid",
+      "source_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "source_group_id": "52734468fcb15bd3a5dfd8b36ef0ed7adf5af300c35108bb749b9eb338b6dbea",
+      "clean_file": "d368ebad242d1fde2d13/clean.mid",
+      "clean_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "corrupt_file": "d368ebad242d1fde2d13/corrupt.mid",
+      "corrupt_sha256": "946e214d68cdc09cf4da1b9cb610ac1a2790776667acc1e779f02b509e115c3a",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N81:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 81,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 384,
+          "new": 448
+        },
+        {
+          "note_key": "T0:C0:N81:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 81,
+          "occurrence": 0,
+          "field": "off",
+          "old": 456,
+          "new": 520
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N81:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "918c6aec8d1ab45bbe48",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-002_positive.mid",
+      "source_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "source_group_id": "52734468fcb15bd3a5dfd8b36ef0ed7adf5af300c35108bb749b9eb338b6dbea",
+      "clean_file": "918c6aec8d1ab45bbe48/clean.mid",
+      "clean_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "corrupt_file": "918c6aec8d1ab45bbe48/corrupt.mid",
+      "corrupt_sha256": "318454919efa8b813b18a2cb4a0b9496f54e3e78c07c708e72b6537a10bbe6e1",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N81:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 81,
+          "occurrence": 0,
+          "field": "off",
+          "old": 456,
+          "new": 402
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N81:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "14783e44d99dfdfcebc2",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-002_positive.mid",
+      "source_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "source_group_id": "52734468fcb15bd3a5dfd8b36ef0ed7adf5af300c35108bb749b9eb338b6dbea",
+      "clean_file": "14783e44d99dfdfcebc2/clean.mid",
+      "clean_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "corrupt_file": "14783e44d99dfdfcebc2/corrupt.mid",
+      "corrupt_sha256": "6790c7b069d4f117b420b9694d689caa61eb51cfdb28d13de3fc090019ca263f",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N81:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 81,
+          "occurrence": 0,
+          "field": "off",
+          "old": 456,
+          "new": 552
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N81:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "23108efb2ee1531055c7",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-002_positive.mid",
+      "source_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "source_group_id": "52734468fcb15bd3a5dfd8b36ef0ed7adf5af300c35108bb749b9eb338b6dbea",
+      "clean_file": "23108efb2ee1531055c7/clean.mid",
+      "clean_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "corrupt_file": "23108efb2ee1531055c7/corrupt.mid",
+      "corrupt_sha256": "16779e7ba5ea297b4fb00e233dda1702e7e2dfe730922fe5f1936ca94dfa12d9",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N81:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 81,
+          "occurrence": 0,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N81:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "45a69354b41ec91ff26a",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "INT-002_positive.mid",
+      "source_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "source_group_id": "52734468fcb15bd3a5dfd8b36ef0ed7adf5af300c35108bb749b9eb338b6dbea",
+      "clean_file": "45a69354b41ec91ff26a/clean.mid",
+      "clean_sha256": "1173604050d9b69f4bbde7a5c40418c0d5a4b4399ad5988aa19b1f95532b2361",
+      "corrupt_file": "45a69354b41ec91ff26a/corrupt.mid",
+      "corrupt_sha256": "ab5ef81aa0bb392a89ff7509ac6e081df90160bfb64dccba31972a950cf10a7e",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N72:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T0:C0:N72:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 0,
+          "field": "off",
+          "old": 72,
+          "new": 76
+        },
+        {
+          "note_key": "T0:C0:N74:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 74,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 96,
+          "new": 104
+        },
+        {
+          "note_key": "T0:C0:N74:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 74,
+          "occurrence": 0,
+          "field": "off",
+          "old": 168,
+          "new": 176
+        },
+        {
+          "note_key": "T0:C0:N76:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 76,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 192,
+          "new": 204
+        },
+        {
+          "note_key": "T0:C0:N76:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 76,
+          "occurrence": 0,
+          "field": "off",
+          "old": 264,
+          "new": 276
+        },
+        {
+          "note_key": "T0:C0:N79:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 79,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 288,
+          "new": 304
+        },
+        {
+          "note_key": "T0:C0:N79:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 79,
+          "occurrence": 0,
+          "field": "off",
+          "old": 360,
+          "new": 376
+        },
+        {
+          "note_key": "T0:C0:N81:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 81,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 384,
+          "new": 404
+        },
+        {
+          "note_key": "T0:C0:N81:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 81,
+          "occurrence": 0,
+          "field": "off",
+          "old": 456,
+          "new": 476
+        },
+        {
+          "note_key": "T0:C0:N72:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 480,
+          "new": 504
+        },
+        {
+          "note_key": "T0:C0:N72:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 1,
+          "field": "off",
+          "old": 552,
+          "new": 576
+        },
+        {
+          "note_key": "T0:C0:N74:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 74,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 576,
+          "new": 604
+        },
+        {
+          "note_key": "T0:C0:N74:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 74,
+          "occurrence": 1,
+          "field": "off",
+          "old": 648,
+          "new": 676
+        },
+        {
+          "note_key": "T0:C0:N76:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 76,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 672,
+          "new": 704
+        },
+        {
+          "note_key": "T0:C0:N76:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 76,
+          "occurrence": 1,
+          "field": "off",
+          "old": 744,
+          "new": 776
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N72:O0",
+        "T0:C0:N72:O1",
+        "T0:C0:N74:O0",
+        "T0:C0:N74:O1",
+        "T0:C0:N76:O0",
+        "T0:C0:N76:O1",
+        "T0:C0:N79:O0",
+        "T0:C0:N81:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "96ac5469fc4a174bfb73",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "NEURAL_CHORD_COMP.mid",
+      "source_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "source_group_id": "9cc7a6be014a66418707a641dcf20f554127f07fa9c520e6ad09a7818c8c9243",
+      "clean_file": "96ac5469fc4a174bfb73/clean.mid",
+      "clean_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "corrupt_file": "96ac5469fc4a174bfb73/corrupt.mid",
+      "corrupt_sha256": "5375b4afbb62150b106fca9e291462ea84d33a0774143259de3d0e635487dc29",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N72:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 288,
+          "new": 352
+        },
+        {
+          "note_key": "T0:C0:N72:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 0,
+          "field": "off",
+          "old": 384,
+          "new": 448
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N72:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "08001d400c5edb61a0eb",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "NEURAL_CHORD_COMP.mid",
+      "source_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "source_group_id": "9cc7a6be014a66418707a641dcf20f554127f07fa9c520e6ad09a7818c8c9243",
+      "clean_file": "08001d400c5edb61a0eb/clean.mid",
+      "clean_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "corrupt_file": "08001d400c5edb61a0eb/corrupt.mid",
+      "corrupt_sha256": "812172fb4858ec72b467deb252a05f2e0f5f864f413fd7312411da706a84cb74",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N72:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 0,
+          "field": "off",
+          "old": 384,
+          "new": 312
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N72:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "69e81f0b70cc3bb88f63",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "NEURAL_CHORD_COMP.mid",
+      "source_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "source_group_id": "9cc7a6be014a66418707a641dcf20f554127f07fa9c520e6ad09a7818c8c9243",
+      "clean_file": "69e81f0b70cc3bb88f63/clean.mid",
+      "clean_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "corrupt_file": "69e81f0b70cc3bb88f63/corrupt.mid",
+      "corrupt_sha256": "15c3bcc4e1acdf7c506256424609a4e7369f9fcaf610d0d3e240c640e235dc1d",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N72:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 0,
+          "field": "off",
+          "old": 384,
+          "new": 480
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N72:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "5177ed60ed03f709eab2",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "NEURAL_CHORD_COMP.mid",
+      "source_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "source_group_id": "9cc7a6be014a66418707a641dcf20f554127f07fa9c520e6ad09a7818c8c9243",
+      "clean_file": "5177ed60ed03f709eab2/clean.mid",
+      "clean_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "corrupt_file": "5177ed60ed03f709eab2/corrupt.mid",
+      "corrupt_sha256": "74488c55edb322b2452037179f5cd62a1e3bee796e1ffd48154d51ef10528ff7",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N72:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 72,
+          "occurrence": 0,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N72:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "b5d372d1078cb9835d1a",
+      "corruption_type": "CHORD_DESYNC",
+      "defect_label": "CHORD_DESYNC",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "NEURAL_CHORD_COMP.mid",
+      "source_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "source_group_id": "9cc7a6be014a66418707a641dcf20f554127f07fa9c520e6ad09a7818c8c9243",
+      "clean_file": "b5d372d1078cb9835d1a/clean.mid",
+      "clean_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "corrupt_file": "b5d372d1078cb9835d1a/corrupt.mid",
+      "corrupt_sha256": "2da1d2620afb87c5c6b4b07c21e80fe3456d475fb55d58ceb12e466a80de7a4c",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N67:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 24
+        },
+        {
+          "note_key": "T0:C0:N67:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "off",
+          "old": 96,
+          "new": 120
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N67:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "232228c94d4ec222714d",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "NEURAL_CHORD_COMP.mid",
+      "source_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "source_group_id": "9cc7a6be014a66418707a641dcf20f554127f07fa9c520e6ad09a7818c8c9243",
+      "clean_file": "232228c94d4ec222714d/clean.mid",
+      "clean_sha256": "715f229debac2581652ca53f734a8698224675dd9a96836b0ffbbd520c4f2e69",
+      "corrupt_file": "232228c94d4ec222714d/corrupt.mid",
+      "corrupt_sha256": "6a432b96be14bf8508b93e6f08614716dd00fe378ac2c031df9b629f028f83c3",
+      "change_mask": [
+        {
+          "note_key": "T0:C0:N60:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T0:C0:N60:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 0,
+          "field": "off",
+          "old": 96,
+          "new": 100
+        },
+        {
+          "note_key": "T0:C0:N64:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 8
+        },
+        {
+          "note_key": "T0:C0:N64:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 0,
+          "field": "off",
+          "old": 96,
+          "new": 104
+        },
+        {
+          "note_key": "T0:C0:N67:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 12
+        },
+        {
+          "note_key": "T0:C0:N67:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "off",
+          "old": 96,
+          "new": 108
+        },
+        {
+          "note_key": "T0:C0:N62:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 62,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 96,
+          "new": 112
+        },
+        {
+          "note_key": "T0:C0:N62:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 62,
+          "occurrence": 0,
+          "field": "off",
+          "old": 192,
+          "new": 208
+        },
+        {
+          "note_key": "T0:C0:N65:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 65,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 96,
+          "new": 116
+        },
+        {
+          "note_key": "T0:C0:N65:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 65,
+          "occurrence": 0,
+          "field": "off",
+          "old": 192,
+          "new": 212
+        },
+        {
+          "note_key": "T0:C0:N69:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 69,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 96,
+          "new": 120
+        },
+        {
+          "note_key": "T0:C0:N69:O0",
+          "track": 0,
+          "channel": 0,
+          "pitch": 69,
+          "occurrence": 0,
+          "field": "off",
+          "old": 192,
+          "new": 216
+        },
+        {
+          "note_key": "T0:C0:N64:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 192,
+          "new": 220
+        },
+        {
+          "note_key": "T0:C0:N64:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 1,
+          "field": "off",
+          "old": 288,
+          "new": 316
+        },
+        {
+          "note_key": "T0:C0:N67:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 192,
+          "new": 224
+        },
+        {
+          "note_key": "T0:C0:N67:O1",
+          "track": 0,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 1,
+          "field": "off",
+          "old": 288,
+          "new": 320
+        }
+      ],
+      "changed_note_keys": [
+        "T0:C0:N60:O0",
+        "T0:C0:N62:O0",
+        "T0:C0:N64:O0",
+        "T0:C0:N64:O1",
+        "T0:C0:N65:O0",
+        "T0:C0:N67:O0",
+        "T0:C0:N67:O1",
+        "T0:C0:N69:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "cd2a6b9874cb8288d460",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "SEC3-001_positive.mid",
+      "source_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "source_group_id": "8fec6b3c245fd0c75ea2e860375294c75fd2015d09f92fec0194bba641d127e3",
+      "clean_file": "cd2a6b9874cb8288d460/clean.mid",
+      "clean_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "corrupt_file": "cd2a6b9874cb8288d460/corrupt.mid",
+      "corrupt_sha256": "96a027cc809cff995155b08311f7fce2e2f311b48d3535146948d275a4135ce0",
+      "change_mask": [
+        {
+          "note_key": "T3:C0:N67:O9",
+          "track": 3,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 9,
+          "field": "onset",
+          "old": 5568,
+          "new": 5632
+        },
+        {
+          "note_key": "T3:C0:N67:O9",
+          "track": 3,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 9,
+          "field": "off",
+          "old": 5688,
+          "new": 5752
+        }
+      ],
+      "changed_note_keys": [
+        "T3:C0:N67:O9"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "7a49ced3e024e4949201",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "SEC3-001_positive.mid",
+      "source_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "source_group_id": "8fec6b3c245fd0c75ea2e860375294c75fd2015d09f92fec0194bba641d127e3",
+      "clean_file": "7a49ced3e024e4949201/clean.mid",
+      "clean_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "corrupt_file": "7a49ced3e024e4949201/corrupt.mid",
+      "corrupt_sha256": "957f9bde1a250b4a59e4699ebf21bc297082dce0335d1f99c44755df48ea3efd",
+      "change_mask": [
+        {
+          "note_key": "T3:C0:N67:O9",
+          "track": 3,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 9,
+          "field": "off",
+          "old": 5688,
+          "new": 5598
+        }
+      ],
+      "changed_note_keys": [
+        "T3:C0:N67:O9"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "e4f13a7ec8d8260f71b6",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "SEC3-001_positive.mid",
+      "source_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "source_group_id": "8fec6b3c245fd0c75ea2e860375294c75fd2015d09f92fec0194bba641d127e3",
+      "clean_file": "e4f13a7ec8d8260f71b6/clean.mid",
+      "clean_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "corrupt_file": "e4f13a7ec8d8260f71b6/corrupt.mid",
+      "corrupt_sha256": "66eeb5ce662c4bd1f1f7d4017b261d024c748e1774eaae1e59af546bd2c74caf",
+      "change_mask": [
+        {
+          "note_key": "T3:C0:N67:O9",
+          "track": 3,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 9,
+          "field": "off",
+          "old": 5688,
+          "new": 5808
+        }
+      ],
+      "changed_note_keys": [
+        "T3:C0:N67:O9"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "58a026b7b5930e4b3226",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "SEC3-001_positive.mid",
+      "source_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "source_group_id": "8fec6b3c245fd0c75ea2e860375294c75fd2015d09f92fec0194bba641d127e3",
+      "clean_file": "58a026b7b5930e4b3226/clean.mid",
+      "clean_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "corrupt_file": "58a026b7b5930e4b3226/corrupt.mid",
+      "corrupt_sha256": "6231b9474fb82554feb3f822ebeb2075af0115edfd13214a432394bd1d388da1",
+      "change_mask": [
+        {
+          "note_key": "T3:C0:N67:O9",
+          "track": 3,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 9,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T3:C0:N67:O9"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "f95acb431fa754dd07e4",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "validation",
+      "source_file": "SEC3-001_positive.mid",
+      "source_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "source_group_id": "8fec6b3c245fd0c75ea2e860375294c75fd2015d09f92fec0194bba641d127e3",
+      "clean_file": "f95acb431fa754dd07e4/clean.mid",
+      "clean_sha256": "1a1a01a2ef2ddfc3ad261369410ae18662ab74f5a205cccff72f5565e3309184",
+      "corrupt_file": "f95acb431fa754dd07e4/corrupt.mid",
+      "corrupt_sha256": "eb87239fb58f5b50b43ca1cfae173b8da6b549b4a3ca49f0fcd2848ac7c5877e",
+      "change_mask": [
+        {
+          "note_key": "T3:C0:N60:O0",
+          "track": 3,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T3:C0:N60:O0",
+          "track": 3,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 0,
+          "field": "off",
+          "old": 120,
+          "new": 124
+        },
+        {
+          "note_key": "T3:C0:N64:O0",
+          "track": 3,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 192,
+          "new": 200
+        },
+        {
+          "note_key": "T3:C0:N64:O0",
+          "track": 3,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 0,
+          "field": "off",
+          "old": 312,
+          "new": 320
+        },
+        {
+          "note_key": "T3:C0:N67:O0",
+          "track": 3,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 384,
+          "new": 396
+        },
+        {
+          "note_key": "T3:C0:N67:O0",
+          "track": 3,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "off",
+          "old": 504,
+          "new": 516
+        },
+        {
+          "note_key": "T3:C0:N60:O1",
+          "track": 3,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 576,
+          "new": 592
+        },
+        {
+          "note_key": "T3:C0:N60:O1",
+          "track": 3,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 1,
+          "field": "off",
+          "old": 696,
+          "new": 712
+        },
+        {
+          "note_key": "T3:C0:N64:O1",
+          "track": 3,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 768,
+          "new": 788
+        },
+        {
+          "note_key": "T3:C0:N64:O1",
+          "track": 3,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 1,
+          "field": "off",
+          "old": 888,
+          "new": 908
+        },
+        {
+          "note_key": "T3:C0:N67:O1",
+          "track": 3,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 960,
+          "new": 984
+        },
+        {
+          "note_key": "T3:C0:N67:O1",
+          "track": 3,
+          "channel": 0,
+          "pitch": 67,
+          "occurrence": 1,
+          "field": "off",
+          "old": 1080,
+          "new": 1104
+        },
+        {
+          "note_key": "T3:C0:N60:O2",
+          "track": 3,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 2,
+          "field": "onset",
+          "old": 1152,
+          "new": 1180
+        },
+        {
+          "note_key": "T3:C0:N60:O2",
+          "track": 3,
+          "channel": 0,
+          "pitch": 60,
+          "occurrence": 2,
+          "field": "off",
+          "old": 1272,
+          "new": 1300
+        },
+        {
+          "note_key": "T3:C0:N64:O2",
+          "track": 3,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 2,
+          "field": "onset",
+          "old": 1344,
+          "new": 1376
+        },
+        {
+          "note_key": "T3:C0:N64:O2",
+          "track": 3,
+          "channel": 0,
+          "pitch": 64,
+          "occurrence": 2,
+          "field": "off",
+          "old": 1464,
+          "new": 1496
+        }
+      ],
+      "changed_note_keys": [
+        "T3:C0:N60:O0",
+        "T3:C0:N60:O1",
+        "T3:C0:N60:O2",
+        "T3:C0:N64:O0",
+        "T3:C0:N64:O1",
+        "T3:C0:N64:O2",
+        "T3:C0:N67:O0",
+        "T3:C0:N67:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "8284dd11fce10824c4ee",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-004_positive.mid",
+      "source_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "source_group_id": "e2fab962cda214da26ac4c354dde71d92ddf96112244801332310e1f4c29a609",
+      "clean_file": "8284dd11fce10824c4ee/clean.mid",
+      "clean_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "corrupt_file": "8284dd11fce10824c4ee/corrupt.mid",
+      "corrupt_sha256": "a690ce731fbd4fd77c1902f674310113b23e231708b47a4b0d9a24e3cd07cd60",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 4608,
+          "new": 4672
+        },
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "off",
+          "old": 4728,
+          "new": 4792
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N40:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "32f5acfd882e533e7667",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-004_positive.mid",
+      "source_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "source_group_id": "e2fab962cda214da26ac4c354dde71d92ddf96112244801332310e1f4c29a609",
+      "clean_file": "32f5acfd882e533e7667/clean.mid",
+      "clean_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "corrupt_file": "32f5acfd882e533e7667/corrupt.mid",
+      "corrupt_sha256": "b5acd5df52395c87bcccca686d01137e1f03de2697583efbaa82fab2381708b2",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "off",
+          "old": 4728,
+          "new": 4638
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N40:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "268a20878706605d76b0",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-004_positive.mid",
+      "source_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "source_group_id": "e2fab962cda214da26ac4c354dde71d92ddf96112244801332310e1f4c29a609",
+      "clean_file": "268a20878706605d76b0/clean.mid",
+      "clean_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "corrupt_file": "268a20878706605d76b0/corrupt.mid",
+      "corrupt_sha256": "65029a62be54d4cbabd648a011256bdf34c5ab29d4547995a3a5a48e1307aa90",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "off",
+          "old": 4728,
+          "new": 4848
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N40:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "88eb3ecba88f79cde0ca",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-004_positive.mid",
+      "source_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "source_group_id": "e2fab962cda214da26ac4c354dde71d92ddf96112244801332310e1f4c29a609",
+      "clean_file": "88eb3ecba88f79cde0ca/clean.mid",
+      "clean_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "corrupt_file": "88eb3ecba88f79cde0ca/corrupt.mid",
+      "corrupt_sha256": "297112a3af4a99f6da6eacfbedafcedd66e8ef6c13186de8237498de6b38949d",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N40:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "cea5a7d7ded9e2ff33a9",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-004_positive.mid",
+      "source_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "source_group_id": "e2fab962cda214da26ac4c354dde71d92ddf96112244801332310e1f4c29a609",
+      "clean_file": "cea5a7d7ded9e2ff33a9/clean.mid",
+      "clean_sha256": "f83f307549cfd53bdb8a1deb717ee6bacea918c04375cbe45e547e77e903f621",
+      "corrupt_file": "cea5a7d7ded9e2ff33a9/corrupt.mid",
+      "corrupt_sha256": "91b1d3093a93eac08b4526a44a6e2499507300d35f606d841118cb29b2a1d9bd",
+      "change_mask": [
+        {
+          "note_key": "T1:C1:N36:O0",
+          "track": 1,
+          "channel": 1,
+          "pitch": 36,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T1:C1:N36:O0",
+          "track": 1,
+          "channel": 1,
+          "pitch": 36,
+          "occurrence": 0,
+          "field": "off",
+          "old": 120,
+          "new": 124
+        },
+        {
+          "note_key": "T1:C1:N38:O0",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 768,
+          "new": 776
+        },
+        {
+          "note_key": "T1:C1:N38:O0",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 0,
+          "field": "off",
+          "old": 888,
+          "new": 896
+        },
+        {
+          "note_key": "T1:C1:N40:O0",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 1536,
+          "new": 1548
+        },
+        {
+          "note_key": "T1:C1:N40:O0",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 0,
+          "field": "off",
+          "old": 1656,
+          "new": 1668
+        },
+        {
+          "note_key": "T1:C1:N38:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 2304,
+          "new": 2320
+        },
+        {
+          "note_key": "T1:C1:N38:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 1,
+          "field": "off",
+          "old": 2424,
+          "new": 2440
+        },
+        {
+          "note_key": "T1:C1:N38:O2",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 2,
+          "field": "onset",
+          "old": 3840,
+          "new": 3860
+        },
+        {
+          "note_key": "T1:C1:N38:O2",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 2,
+          "field": "off",
+          "old": 3960,
+          "new": 3980
+        },
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 4608,
+          "new": 4632
+        },
+        {
+          "note_key": "T1:C1:N40:O1",
+          "track": 1,
+          "channel": 1,
+          "pitch": 40,
+          "occurrence": 1,
+          "field": "off",
+          "old": 4728,
+          "new": 4752
+        },
+        {
+          "note_key": "T1:C1:N38:O3",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 3,
+          "field": "onset",
+          "old": 5376,
+          "new": 5404
+        },
+        {
+          "note_key": "T1:C1:N38:O3",
+          "track": 1,
+          "channel": 1,
+          "pitch": 38,
+          "occurrence": 3,
+          "field": "off",
+          "old": 5496,
+          "new": 5524
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C1:N36:O0",
+        "T1:C1:N38:O0",
+        "T1:C1:N38:O1",
+        "T1:C1:N38:O2",
+        "T1:C1:N38:O3",
+        "T1:C1:N40:O0",
+        "T1:C1:N40:O1"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "c335d5b18fafdc95c84b",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-006_positive.mid",
+      "source_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "source_group_id": "d336a9f67688e4c26fb38113e9f6569878bd069f08978ac33c4d0b4330a9a17a",
+      "clean_file": "c335d5b18fafdc95c84b/clean.mid",
+      "clean_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "corrupt_file": "c335d5b18fafdc95c84b/corrupt.mid",
+      "corrupt_sha256": "fc61975cc591fbca73d32afbd4b5ea4e495fd579076803cdc7e7f91cd910e8b5",
+      "change_mask": [
+        {
+          "note_key": "T3:C2:N55:O0",
+          "track": 3,
+          "channel": 2,
+          "pitch": 55,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 2880,
+          "new": 2944
+        },
+        {
+          "note_key": "T3:C2:N55:O0",
+          "track": 3,
+          "channel": 2,
+          "pitch": 55,
+          "occurrence": 0,
+          "field": "off",
+          "old": 3264,
+          "new": 3328
+        }
+      ],
+      "changed_note_keys": [
+        "T3:C2:N55:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "3e325c97819a37772906",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-006_positive.mid",
+      "source_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "source_group_id": "d336a9f67688e4c26fb38113e9f6569878bd069f08978ac33c4d0b4330a9a17a",
+      "clean_file": "3e325c97819a37772906/clean.mid",
+      "clean_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "corrupt_file": "3e325c97819a37772906/corrupt.mid",
+      "corrupt_sha256": "28039bdc6e9575d2cf4d699db10d71bd7c22c33cfa90364eb5c3b25d82277550",
+      "change_mask": [
+        {
+          "note_key": "T3:C2:N55:O0",
+          "track": 3,
+          "channel": 2,
+          "pitch": 55,
+          "occurrence": 0,
+          "field": "off",
+          "old": 3264,
+          "new": 2976
+        }
+      ],
+      "changed_note_keys": [
+        "T3:C2:N55:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "7e91aba0b871493b0735",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-006_positive.mid",
+      "source_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "source_group_id": "d336a9f67688e4c26fb38113e9f6569878bd069f08978ac33c4d0b4330a9a17a",
+      "clean_file": "7e91aba0b871493b0735/clean.mid",
+      "clean_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "corrupt_file": "7e91aba0b871493b0735/corrupt.mid",
+      "corrupt_sha256": "66d1d5bb265f2d4389484cda20c876718ba606fced76d53b6be9606adfcf1d61",
+      "change_mask": [
+        {
+          "note_key": "T3:C2:N55:O0",
+          "track": 3,
+          "channel": 2,
+          "pitch": 55,
+          "occurrence": 0,
+          "field": "off",
+          "old": 3264,
+          "new": 3648
+        }
+      ],
+      "changed_note_keys": [
+        "T3:C2:N55:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "603629771c9df1132a93",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-006_positive.mid",
+      "source_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "source_group_id": "d336a9f67688e4c26fb38113e9f6569878bd069f08978ac33c4d0b4330a9a17a",
+      "clean_file": "603629771c9df1132a93/clean.mid",
+      "clean_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "corrupt_file": "603629771c9df1132a93/corrupt.mid",
+      "corrupt_sha256": "50048a9aee8931b3206574238a8261f344ceab88f2e627d42f5ac38cdc6a3d84",
+      "change_mask": [
+        {
+          "note_key": "T3:C2:N55:O0",
+          "track": 3,
+          "channel": 2,
+          "pitch": 55,
+          "occurrence": 0,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T3:C2:N55:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "e9e50d95fa8f1559ff36",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "test",
+      "source_file": "SEC3-006_positive.mid",
+      "source_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "source_group_id": "d336a9f67688e4c26fb38113e9f6569878bd069f08978ac33c4d0b4330a9a17a",
+      "clean_file": "e9e50d95fa8f1559ff36/clean.mid",
+      "clean_sha256": "296efa099e98da7056a5c711123821b48768abfee1681f6c08bdd16775e0eac0",
+      "corrupt_file": "e9e50d95fa8f1559ff36/corrupt.mid",
+      "corrupt_sha256": "276f61d0ab0dc72c24578c997e157dc198e39824bd2fb716a7eb17e2e824b54e",
+      "change_mask": [
+        {
+          "note_key": "T1:C9:N36:O0",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T1:C9:N36:O0",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 0,
+          "field": "off",
+          "old": 24,
+          "new": 28
+        },
+        {
+          "note_key": "T1:C9:N36:O1",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 384,
+          "new": 392
+        },
+        {
+          "note_key": "T1:C9:N36:O1",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 1,
+          "field": "off",
+          "old": 408,
+          "new": 416
+        },
+        {
+          "note_key": "T1:C9:N36:O2",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 2,
+          "field": "onset",
+          "old": 768,
+          "new": 780
+        },
+        {
+          "note_key": "T1:C9:N36:O2",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 2,
+          "field": "off",
+          "old": 792,
+          "new": 804
+        },
+        {
+          "note_key": "T1:C9:N36:O3",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 3,
+          "field": "onset",
+          "old": 1152,
+          "new": 1168
+        },
+        {
+          "note_key": "T1:C9:N36:O3",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 3,
+          "field": "off",
+          "old": 1176,
+          "new": 1192
+        },
+        {
+          "note_key": "T1:C9:N36:O4",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 4,
+          "field": "onset",
+          "old": 1536,
+          "new": 1556
+        },
+        {
+          "note_key": "T1:C9:N36:O4",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 4,
+          "field": "off",
+          "old": 1560,
+          "new": 1580
+        },
+        {
+          "note_key": "T1:C9:N36:O5",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 5,
+          "field": "onset",
+          "old": 1920,
+          "new": 1944
+        },
+        {
+          "note_key": "T1:C9:N36:O5",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 5,
+          "field": "off",
+          "old": 1944,
+          "new": 1968
+        },
+        {
+          "note_key": "T1:C9:N36:O6",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 6,
+          "field": "onset",
+          "old": 2304,
+          "new": 2332
+        },
+        {
+          "note_key": "T1:C9:N36:O6",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 6,
+          "field": "off",
+          "old": 2328,
+          "new": 2356
+        },
+        {
+          "note_key": "T1:C9:N36:O7",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 7,
+          "field": "onset",
+          "old": 2688,
+          "new": 2720
+        },
+        {
+          "note_key": "T1:C9:N36:O7",
+          "track": 1,
+          "channel": 9,
+          "pitch": 36,
+          "occurrence": 7,
+          "field": "off",
+          "old": 2712,
+          "new": 2744
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C9:N36:O0",
+        "T1:C9:N36:O1",
+        "T1:C9:N36:O2",
+        "T1:C9:N36:O3",
+        "T1:C9:N36:O4",
+        "T1:C9:N36:O5",
+        "T1:C9:N36:O6",
+        "T1:C9:N36:O7"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "54cf85bfb5f974e2b30b",
+      "corruption_type": "ONSET_SPIKE",
+      "defect_label": "ONSET_SPIKE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "SEC3-012_positive.mid",
+      "source_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "source_group_id": "7be610e2d5713c0101152d96df9a2890b703ee18f51ad14711898aedbc6038e5",
+      "clean_file": "54cf85bfb5f974e2b30b/clean.mid",
+      "clean_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "corrupt_file": "54cf85bfb5f974e2b30b/corrupt.mid",
+      "corrupt_sha256": "acb7d784eb5bd776b26fda1abd2cf4ab1c68bd2e2177681e50f1ecae33ba7582",
+      "change_mask": [
+        {
+          "note_key": "T1:C11:N67:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 384,
+          "new": 448
+        },
+        {
+          "note_key": "T1:C11:N67:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "off",
+          "old": 484,
+          "new": 548
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C11:N67:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "deb7ca3a0157fd1e35ec",
+      "corruption_type": "GATE_TRUNCATE",
+      "defect_label": "GATE_TRUNCATE",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "SEC3-012_positive.mid",
+      "source_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "source_group_id": "7be610e2d5713c0101152d96df9a2890b703ee18f51ad14711898aedbc6038e5",
+      "clean_file": "deb7ca3a0157fd1e35ec/clean.mid",
+      "clean_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "corrupt_file": "deb7ca3a0157fd1e35ec/corrupt.mid",
+      "corrupt_sha256": "7d0ff21f7d2a2e8922b20f1e00fd3f9ad2bafdf2340c8fb4958b2d151f326dad",
+      "change_mask": [
+        {
+          "note_key": "T1:C11:N67:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "off",
+          "old": 484,
+          "new": 409
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C11:N67:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "055256ed497002c95543",
+      "corruption_type": "GATE_OVERLAP",
+      "defect_label": "GATE_OVERLAP",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "SEC3-012_positive.mid",
+      "source_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "source_group_id": "7be610e2d5713c0101152d96df9a2890b703ee18f51ad14711898aedbc6038e5",
+      "clean_file": "055256ed497002c95543/clean.mid",
+      "clean_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "corrupt_file": "055256ed497002c95543/corrupt.mid",
+      "corrupt_sha256": "6de9f29e47eed388ce86e2dec28fba4b09717a0b73cf6efe95c1f8a59f860807",
+      "change_mask": [
+        {
+          "note_key": "T1:C11:N67:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "off",
+          "old": 484,
+          "new": 584
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C11:N67:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "06c02eabfc9f4bfb2694",
+      "corruption_type": "DUPLICATE_HIT",
+      "defect_label": "DUPLICATE_HIT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "SEC3-012_positive.mid",
+      "source_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "source_group_id": "7be610e2d5713c0101152d96df9a2890b703ee18f51ad14711898aedbc6038e5",
+      "clean_file": "06c02eabfc9f4bfb2694/clean.mid",
+      "clean_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "corrupt_file": "06c02eabfc9f4bfb2694/corrupt.mid",
+      "corrupt_sha256": "f7125474246bc4faf86a5dfbdad7025e9926e25c2c158356a4c1ba4d0799315f",
+      "change_mask": [
+        {
+          "note_key": "T1:C11:N67:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "duplicate_hit",
+          "old": 0,
+          "new": 1
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C11:N67:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    },
+    {
+      "case_id": "a4e6ffb5d146ef97daef",
+      "corruption_type": "GROOVE_DRIFT",
+      "defect_label": "GROOVE_DRIFT",
+      "repairability": "BOUNDED_EVENT_REPAIR",
+      "split": "train",
+      "source_file": "SEC3-012_positive.mid",
+      "source_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "source_group_id": "7be610e2d5713c0101152d96df9a2890b703ee18f51ad14711898aedbc6038e5",
+      "clean_file": "a4e6ffb5d146ef97daef/clean.mid",
+      "clean_sha256": "a07d55f38ab77fe7e413a16d4da6699c7bc3851a2f6293f7c93c86e9ca583e87",
+      "corrupt_file": "a4e6ffb5d146ef97daef/corrupt.mid",
+      "corrupt_sha256": "5b3d4097bd5afee3ad6aa524fe8dcf7f66f46f0940f530d5f9197eaf200393e3",
+      "change_mask": [
+        {
+          "note_key": "T1:C11:N60:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 60,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 0,
+          "new": 4
+        },
+        {
+          "note_key": "T1:C11:N60:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 60,
+          "occurrence": 0,
+          "field": "off",
+          "old": 100,
+          "new": 104
+        },
+        {
+          "note_key": "T1:C11:N67:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 384,
+          "new": 392
+        },
+        {
+          "note_key": "T1:C11:N67:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 67,
+          "occurrence": 0,
+          "field": "off",
+          "old": 484,
+          "new": 492
+        },
+        {
+          "note_key": "T1:C11:N64:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 64,
+          "occurrence": 0,
+          "field": "onset",
+          "old": 768,
+          "new": 780
+        },
+        {
+          "note_key": "T1:C11:N64:O0",
+          "track": 1,
+          "channel": 11,
+          "pitch": 64,
+          "occurrence": 0,
+          "field": "off",
+          "old": 868,
+          "new": 880
+        },
+        {
+          "note_key": "T1:C11:N60:O1",
+          "track": 1,
+          "channel": 11,
+          "pitch": 60,
+          "occurrence": 1,
+          "field": "onset",
+          "old": 1152,
+          "new": 1168
+        },
+        {
+          "note_key": "T1:C11:N60:O1",
+          "track": 1,
+          "channel": 11,
+          "pitch": 60,
+          "occurrence": 1,
+          "field": "off",
+          "old": 1252,
+          "new": 1268
+        }
+      ],
+      "changed_note_keys": [
+        "T1:C11:N60:O0",
+        "T1:C11:N60:O1",
+        "T1:C11:N64:O0",
+        "T1:C11:N67:O0"
+      ],
+      "protected_note_keys": [],
+      "license": "PROJECT_SYNTHETIC_FIXTURE",
+      "provenance": "PA800_CANONICAL_STRESS_GENERATORS",
+      "authority_granted": false
+    }
+  ],
+  "hard_negatives": [
+    {
+      "note_key": "T1:C1:N24:O0",
+      "protected_dependencies": [
+        "LOW_VELOCITY_SPECIAL_CANDIDATE"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "89e3f12c584d7a70a7587a2496ba968584f6b8694672a9a0cf196ac3b6550094",
+      "source_group_id": "02117ddc9ea8b2419a423a563e779efecd076d2a261fa7b2d2f474b6b662f4f1"
+    },
+    {
+      "note_key": "T0:C9:N38:O6",
+      "protected_dependencies": [
+        "LOW_VELOCITY_SPECIAL_CANDIDATE"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d163d44528e2b10f6bb6a3196fd3d0cc294366d0fb046ee177935b65a1e1c2cc",
+      "source_group_id": "c9771dbaf87ef5219694cacaed6c8855e125174f8ebff8b7a31e14f185d2edc5"
+    },
+    {
+      "note_key": "T0:C0:N60:O0",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N62:O0",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N64:O0",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N67:O0",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N65:O0",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N60:O1",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N62:O1",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N64:O1",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N67:O1",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N65:O1",
+      "protected_dependencies": [
+        "CC1",
+        "PITCH_BEND"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "d054bdaf0dd71c631852f7802616d19fdc5678dc48332b35100a09d49ded7451",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454"
+    },
+    {
+      "note_key": "T0:C0:N48:O0",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N52:O0",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N55:O0",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N53:O0",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N55:O1",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N50:O0",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N54:O0",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N57:O0",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N48:O1",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N53:O1",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N55:O2",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N59:O0",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N62:O0",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    },
+    {
+      "note_key": "T0:C0:N50:O1",
+      "protected_dependencies": [
+        "CC64"
+      ],
+      "expected_action": "PRESERVE",
+      "source_sha256": "c16e17e7a4365d36e9bdee471342fc9e74552f089bf6055751eb7e7e7cde6c5b",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f"
+    }
+  ],
+  "summary": {
+    "input_files": 14,
+    "unique_sources": 14,
+    "duplicates_rejected": 0,
+    "cases": 60,
+    "hard_negatives": 26,
+    "protected_only_sources": 2,
+    "corruption_types": [
+      "CHORD_DESYNC",
+      "DUPLICATE_HIT",
+      "GATE_OVERLAP",
+      "GATE_TRUNCATE",
+      "GROOVE_DRIFT",
+      "ONSET_SPIKE"
+    ],
+    "splits": {
+      "train": 35,
+      "validation": 15,
+      "test": 10
+    },
+    "source_group_splits": {
+      "train": 9,
+      "validation": 2,
+      "test": 2
+    }
+  },
+  "mutations_to_original_sources": 0,
+  "authority_granted": false,
+  "dataset_digest": "67a3d2eaad8663d808b845c953a956819b02539531d7ec13770a9c08cd2d7ca9"
+}

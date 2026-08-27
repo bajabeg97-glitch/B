@@ -1,0 +1,5 @@
+-r requirements-forensics.txt
+pytest>=7,<9
+hypothesis>=6,<7
+memory-profiler>=0.61,<1
+build>=1,<2

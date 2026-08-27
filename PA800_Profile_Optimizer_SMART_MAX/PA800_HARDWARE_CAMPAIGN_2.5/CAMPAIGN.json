@@ -1,0 +1,19 @@
+{
+  "schema": "PA800_HARDWARE_CAMPAIGN_V1",
+  "device": {
+    "model": "Pa800",
+    "os_version": "",
+    "musical_resources_version": "",
+    "set_id": "",
+    "audio_chain_id": ""
+  },
+  "requirements": {
+    "voice_trials_per_major_family": 30,
+    "fx_trials_per_major_role": 30,
+    "manual_dnc_addresses": 23,
+    "voice_top1_min": 0.85,
+    "voice_false_positive_max_exclusive": 0.02,
+    "better_or_equal_min": 0.9
+  },
+  "records": []
+}

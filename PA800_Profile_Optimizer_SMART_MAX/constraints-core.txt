@@ -1,0 +1,3 @@
+# Reproducible core runtime, verified against the Windows validation branch.
+mido==1.3.3
+packaging==26.3

@@ -1,0 +1,11 @@
+-r requirements-core.txt
+numpy>=1.23,<3
+scipy>=1.9,<2
+scikit-learn>=1.1,<2
+statsmodels>=0.13,<1
+networkx>=2.8,<4
+pydantic>=1.10,<3
+jsonschema>=4.17,<5
+orjson>=3.8,<4
+joblib>=1.2,<2
+numba>=0.56,<1
