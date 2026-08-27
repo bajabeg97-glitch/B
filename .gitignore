@@ -1,26 +1,44 @@
 ```
-# Python compiled files
-*.pyc
+# Python
 __pycache__/
-
-# Dependencies
-venv/
-.venv/
+*.pyc
+*.pyo
+*.pyd
 
 # Logs
 *.log
 
-# Compressed files
-*.zip
+# Environment
+.env
+.env.local
+*.env.*
 
-# Dataset and research files (if they are large/generated)
-research_max/
-*.sqlite
-*.ndjson.gz
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
 
-# Cache directories
+# Build artifacts
+dist/
+build/
+target/
+*.o
+*.obj
+*.out
+
+# Dependencies
+.venv/
+venv/
+node_modules/
 .mypy_cache/
 .pytest_cache/
-__pycache__/
+.coverage
+coverage/
+htmlcov/
 
+# System
+.DS_Store
+Thumbs.db
 ```
