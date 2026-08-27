@@ -102,7 +102,7 @@ class ProcessingMode(Enum):
 @dataclass
 class SourceInfo:
     """Informacije o izvoru događaja"""
-    source_type: str  # 'file', 'user', 'ai', 'transfer', 'generator'
+    source_type: str = 'unknown'  # 'file', 'user', 'ai', 'transfer', 'generator'
     source_id: Optional[str] = None  # ID fajla, sessiona, modela
     timestamp: datetime = field(default_factory=datetime.now)
     confidence: float = 1.0  # 0.0 - 1.0
@@ -285,12 +285,18 @@ class NoteEvent(MidiEvent):
     - artikulacijske metapodatke
     """
     
+    document: Optional['MidiDocument'] = None
+    track: Optional['MidiTrack'] = None
     note_on: bool = True  # True = Note On, False = Note Off
     pitch: int = 60  # 0-127
     velocity: int = 64  # 0-127
     release_velocity: int = 0  # Note Off velocity (često ignorisan ali važan)
     duration_ticks: int = 0
+    duration: int = 0  # alias za duration_ticks
     gate_time: float = 0.0  # u odnosu na duration (1.0 = full)
+    channel: int = 0
+    absolute_tick: int = 0
+    delta_tick: int = 0
     
     # Link na povezani Note Off događaj
     linked_note_off: Optional[str] = None
@@ -301,6 +307,8 @@ class NoteEvent(MidiEvent):
     
     def __post_init__(self):
         self.event_type = EventType.NOTE_ON if self.note_on else EventType.NOTE_OFF
+        if self.duration == 0 and self.duration_ticks > 0:
+            self.duration = self.duration_ticks
         self.data.update({
             'pitch': self.pitch,
             'velocity': self.velocity,
@@ -310,6 +318,10 @@ class NoteEvent(MidiEvent):
             'articulation': self.articulation,
             'ornament': self.ornament
         })
+        
+        # Dodaj event na track ako je proslijeđen
+        if self.track is not None:
+            self.track.add_event(self)
     
     @property
     def note_name(self) -> str:
@@ -347,8 +359,13 @@ class ControllerEvent(MidiEvent):
     - Standard CC mapping
     """
     
+    document: Optional['MidiDocument'] = None
+    track: Optional['MidiTrack'] = None
     cc_number: int = 0  # 0-127
     value: int = 0  # 0-127
+    channel: int = 0
+    absolute_tick: int = 0
+    delta_tick: int = 0
     
     # Za RPN/NRPN sekvence
     is_rpn: bool = False
@@ -382,6 +399,10 @@ class ControllerEvent(MidiEvent):
             'rpn_value': self.rpn_value,
             'cc_name': self.cc_name
         })
+        
+        # Dodaj event na track ako je proslijeđen
+        if self.track is not None:
+            self.track.add_event(self)
     
     def _get_cc_name(self) -> str:
         """Vraća ljudsko čitljivo ime za standardne CC brojeve"""
@@ -749,6 +770,7 @@ class MidiTrack:
     - Informacije o kanalu/instrumentu
     """
     
+    document: Optional['MidiDocument'] = None
     track_index: int = 0
     name: str = ""
     channel: int = 0
@@ -787,6 +809,17 @@ class MidiTrack:
                 self._update_analytics()
                 return True
         return False
+
+    def remove_event_by_id(self, event_id: int) -> bool:
+        """Uklanja događaj po ID-u (alias za remove_event radi kompatibilnosti)"""
+        return self.remove_event(str(event_id))
+
+    def get_event_by_id(self, event_id: int) -> Optional['MidiEvent']:
+        """Pronalazi događaj po ID-u"""
+        for event in self.events:
+            if event.event_id == event_id:
+                return event
+        return None
     
     def _update_analytics(self):
         """Ažurira analitičke podatke track-a"""
@@ -853,8 +886,8 @@ class MidiDocument:
     - Tempo i meter map-e
     """
     
-    format: int = 1  # 0, 1, ili 2
     ppqn: int = 480  # Standardni PPQN
+    format: int = 1  # 0, 1, ili 2
     project: Optional['MidiProject'] = None  # Reference na parent project
     tracks: List[MidiTrack] = field(default_factory=list)
     

@@ -86,17 +86,16 @@ class MidiParser:
             name=os.path.basename(filepath),
             source_file=filepath,
             original_filename=os.path.basename(filepath),
-            source_hash=file_hash,
-            document=MidiDocument(
-                project=None,
-                format=mid.type,
-                ppqn=mid.ticks_per_beat
-            )
+            source_hash=file_hash
         )
         
-        # Post-init setup
-        project.document.project = project
-        project.document.ppqn = mid.ticks_per_beat
+        # Create document
+        document = MidiDocument(
+            project=project,
+            format=mid.type,
+            ppqn=mid.ticks_per_beat
+        )
+        project.document = document
         
         # Parse tracks
         absolute_tick = 0
@@ -155,7 +154,7 @@ class MidiParser:
                     velocity=msg.velocity,
                     length=0,  # Will be resolved in post-process
                     event_type=event_type,
-                    source=EventSource.FILE_IMPORT
+                    source=SourceInfo(source_type="file")
                 )
             else:
                 # note_on with velocity 0 is note_off
@@ -172,7 +171,7 @@ class MidiParser:
                     release_velocity=velocity,
                     length=0,
                     event_type=event_type,
-                    source=EventSource.FILE_IMPORT
+                    source=SourceInfo(source_type="file")
                 )
                 
         elif msg.type == 'note_off':
@@ -188,7 +187,7 @@ class MidiParser:
                 release_velocity=msg.velocity,
                 length=0,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'control_change':
@@ -202,7 +201,7 @@ class MidiParser:
                 cc=msg.control,
                 value=msg.value,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
             # Handle RPN/NRPN state machine
@@ -220,7 +219,7 @@ class MidiParser:
                 original_index=original_index,
                 program=msg.program,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'pitchwheel':
@@ -233,7 +232,7 @@ class MidiParser:
                 original_index=original_index,
                 pitch=msg.pitch,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'aftertouch':
@@ -246,7 +245,7 @@ class MidiParser:
                 original_index=original_index,
                 pressure=msg.value,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'polytouch':
@@ -260,7 +259,7 @@ class MidiParser:
                 pressure=msg.value,
                 note=msg.note,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'sysex':
@@ -273,7 +272,7 @@ class MidiParser:
                 original_index=original_index,
                 data=list(msg.data),
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         # Meta events
@@ -286,7 +285,7 @@ class MidiParser:
                 original_index=original_index,
                 tempo=msg.tempo,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'time_signature':
@@ -301,7 +300,7 @@ class MidiParser:
                 clocks_per_click=msg.clocks_per_click,
                 notated_32nd_notes_per_beat=msg.notated_32nd_notes_per_beat,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'marker':
@@ -313,7 +312,7 @@ class MidiParser:
                 original_index=original_index,
                 text=msg.text,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'lyrics':
@@ -325,7 +324,7 @@ class MidiParser:
                 original_index=original_index,
                 text=msg.text,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'text':
@@ -337,7 +336,7 @@ class MidiParser:
                 original_index=original_index,
                 text=msg.text,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'track_name':
@@ -350,7 +349,7 @@ class MidiParser:
                 original_index=original_index,
                 text=msg.text,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'instrument_name':
@@ -362,7 +361,7 @@ class MidiParser:
                 original_index=original_index,
                 text=msg.text,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'copyright':
@@ -374,7 +373,7 @@ class MidiParser:
                 original_index=original_index,
                 text=msg.text,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         elif msg.type == 'end_of_track':
@@ -385,7 +384,7 @@ class MidiParser:
                 delta_tick=delta_tick,
                 original_index=original_index,
                 event_type=event_type,
-                source=EventSource.FILE_IMPORT
+                source=SourceInfo(source_type="file")
             )
             
         # Generic fallback for unknown types
@@ -397,7 +396,7 @@ class MidiParser:
             original_index=original_index,
             event_type=MidiEventType.UNKNOWN,
             raw_bytes=getattr(msg, 'bin', None),
-            source=EventSource.FILE_IMPORT
+            source=SourceInfo(source_type="file")
         )
         
     def _process_rpn_nrpn(self, cc_event: ControllerEvent):
