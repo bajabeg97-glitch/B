@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pa800-profile-optimizer-nodna"
+version = "3.4.0a2"
+description = "Evidence-gated Korg Pa800 MIDI optimizer with exact per-instrument neural profiles"
+requires-python = ">=3.10"
+dependencies = ["mido>=1.3,<2"]
+
+[project.optional-dependencies]
+forensics = [
+  "numpy>=1.23,<3",
+  "scipy>=1.9,<2",
+  "scikit-learn>=1.1,<2",
+  "statsmodels>=0.13,<1",
+  "networkx>=2.8,<4",
+  "pydantic>=1.10,<3",
+  "jsonschema>=4.17,<5",
+  "orjson>=3.8,<4",
+  "joblib>=1.2,<2",
+  "numba>=0.56,<1",
+]
+neural = [
+  "numpy>=1.23,<3",
+  "scipy>=1.9,<2",
+  "scikit-learn>=1.1,<2",
+  "networkx>=2.8,<4",
+  "pydantic>=1.10,<3",
+  "jsonschema>=4.17,<5",
+  "orjson>=3.8,<4",
+  "joblib>=1.2,<2",
+  "numba>=0.56,<1",
+  "torch>=2.0,<3; python_version >= '3.10'",
+]
+dev = [
+  "pytest>=7,<9",
+  "hypothesis>=6,<7",
+  "memory-profiler>=0.61,<1",
+]
+validation = [
+  "pytest>=7,<10",
+  "build>=1,<2",
+]
+
+[project.scripts]
+pa800-optimize = "pa800_optimizer.cli:main"
+pa800-detect-velocity-max = "pa800_optimizer.note_velocity_cli:main"
+pa800-understand = "pa800_optimizer.understanding_cli:main"
+pa800-deps = "pa800_optimizer.optional_deps:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pa800_optimizer*"]
+
+[tool.setuptools.package-data]
+"pa800_optimizer.profiles" = ["data/*.json", "data/*.csv"]

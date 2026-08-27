@@ -1,0 +1,41 @@
+{
+  "schema": "PA800_ENCODER_PROMOTION_V1",
+  "source_filename": "encoder_20260826_063405_635129_UTC.json",
+  "active_path": "models/encoder.json",
+  "file_sha256": "02f701bfeff31ff8cdca04dfd0d5d68d9a5f897e63a01fa2d1329ffae22ba0d7",
+  "model_digest": "13f5ab0f446212e6a745a452352c70894080c2d3f49d082adce4dd5e3692b28f",
+  "model_validated": true,
+  "inference_ready": true,
+  "mutation_authority": false,
+  "runtime_admission": {
+    "schema": "PA800_ENCODER_RUNTIME_ADMISSION_V1",
+    "model_validated": true,
+    "inference_ready": true,
+    "mutation_authority": false,
+    "proposal_allowed": true,
+    "mode": "ALLOW_WITH_FACTORY_VERIFY",
+    "confidence": 0.696373,
+    "confidence_semantics": "held_out_reconstruction_improvement_not_calibrated_probability",
+    "thresholds": {
+      "proposal_with_factory_verify": 0.65,
+      "advisor_only": 0.45
+    },
+    "factory_gold_verifier_required": true,
+    "allowed_outputs": [
+      "timing",
+      "gate"
+    ],
+    "forbidden_outputs": [
+      "velocity",
+      "pitch",
+      "voice",
+      "sound_kit",
+      "articulation",
+      "fx"
+    ],
+    "authority_granted": false
+  },
+  "weights_modified": false,
+  "retrained": false,
+  "promotion_reason": "accepted held-out encoder promoted unchanged as timing/gate context advisor"
+}

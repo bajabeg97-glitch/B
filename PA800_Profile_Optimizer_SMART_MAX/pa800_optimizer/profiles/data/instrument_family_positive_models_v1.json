@@ -1,0 +1,59 @@
+{
+  "schema": "PA800_INSTRUMENT_FAMILY_POSITIVE_MODELS_V1",
+  "source": "INSTRUMENT_FAMILY_HOLDOUT_2.4.json",
+  "authority": "Factory grouped proxy only; hardware authority is false",
+  "allowed": [
+    {
+      "family": "PIANO",
+      "address": [121, 3, 0],
+      "sound": "Grand Piano",
+      "stability": "MODERATE",
+      "median_loo_error": 3.0,
+      "max_loo_error": 4.5,
+      "models": ["coherent_chord_timing", "coherent_chord_velocity"]
+    },
+    {
+      "family": "BASS",
+      "address": [121, 7, 33],
+      "sound": "Finger Bass 3",
+      "stability": "MODERATE",
+      "median_loo_error": 4.5,
+      "max_loo_error": 4.5,
+      "models": ["drum_anchor_timing"]
+    },
+    {
+      "family": "ENSEMBLE",
+      "address": [121, 2, 50],
+      "sound": "Analog Strings 2",
+      "stability": "STABLE",
+      "median_loo_error": 2.0,
+      "max_loo_error": 4.0,
+      "models": ["coherent_phrase_velocity", "coherent_sustain_chord_timing"]
+    },
+    {
+      "family": "ENSEMBLE",
+      "address": [121, 5, 48],
+      "sound": "i3 Strings",
+      "stability": "MODERATE",
+      "median_loo_error": 4.0,
+      "max_loo_error": 8.0,
+      "models": ["coherent_phrase_velocity", "coherent_sustain_chord_timing"]
+    },
+    {
+      "family": "REED",
+      "address": [121, 1, 71],
+      "sound": "Jazz Clarinet",
+      "stability": "MODERATE",
+      "median_loo_error": 4.0,
+      "max_loo_error": 6.5,
+      "models": ["breath_phrase_velocity"]
+    }
+  ],
+  "denied_families": {
+    "GUITAR": "No profile passed both stability and grouped proxy error gates.",
+    "ORGAN": "No profile passed both stability and grouped proxy error gates.",
+    "BRASS": "No profile passed both stability and grouped proxy error gates.",
+    "ACCORDION_REED": "No profile passed both stability and grouped proxy error gates.",
+    "SYNTH_PAD": "No profile passed both stability and grouped proxy error gates."
+  }
+}

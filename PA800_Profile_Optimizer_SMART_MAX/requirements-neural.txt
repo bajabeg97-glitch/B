@@ -1,0 +1,3 @@
+-r requirements-forensics.txt
+# Optional neural layer. The deterministic optimizer remains authoritative.
+torch>=2.0,<3; python_version >= "3.10"

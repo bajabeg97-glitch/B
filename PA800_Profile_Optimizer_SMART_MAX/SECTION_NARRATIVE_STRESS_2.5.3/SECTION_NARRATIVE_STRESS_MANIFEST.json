@@ -1,0 +1,273 @@
+{
+  "schema": "PA800_SECTION_NARRATIVE_STRESS_MANIFEST_V1",
+  "scenario_count": 12,
+  "midi_case_count": 24,
+  "positive_cases": 12,
+  "negative_cases": 12,
+  "cases": [
+    {
+      "scenario_id": "SEC3-001",
+      "description": "explicit chorus marker versus unrelated text",
+      "polarity": "positive",
+      "file": "SEC3-001_positive.mid",
+      "content_type": "song",
+      "bytes": 660,
+      "sha256": "6c53f6e58663f8a4f404a268aacd62e9926812ddb8e5c7b5c4af27a92596139f",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-001",
+      "description": "explicit chorus marker versus unrelated text",
+      "polarity": "negative",
+      "file": "SEC3-001_negative.mid",
+      "content_type": "song",
+      "bytes": 670,
+      "sha256": "0fd171236cff0deefc32d1145508f3e6d7b8b9741a14505f02adb94d40e72db3",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-002",
+      "description": "layer build versus velocity-only loudness",
+      "polarity": "positive",
+      "file": "SEC3-002_positive.mid",
+      "content_type": "song",
+      "bytes": 475,
+      "sha256": "a350d341627675a0166c66becfe221524b3e33f7fa6b615764076c423a0b6fc6",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-002",
+      "description": "layer build versus velocity-only loudness",
+      "polarity": "negative",
+      "file": "SEC3-002_negative.mid",
+      "content_type": "song",
+      "bytes": 395,
+      "sha256": "fda1dec8e0aeba06ddb71ba8a1224e5463fbc7f058e5ecbc34a0b04c5e9489c8",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-003",
+      "description": "repeated chorus material versus accidental dense bar",
+      "polarity": "positive",
+      "file": "SEC3-003_positive.mid",
+      "content_type": "song",
+      "bytes": 900,
+      "sha256": "a090e5528e3f4cca388dff0b630a6c13b9996093994d228240cf6da94de4b70a",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-003",
+      "description": "repeated chorus material versus accidental dense bar",
+      "polarity": "negative",
+      "file": "SEC3-003_negative.mid",
+      "content_type": "song",
+      "bytes": 647,
+      "sha256": "3a1c4bf437f950a79a86d3547dc622dad053ef7b5ca2b9e61a152a82c8ec6ed1",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-004",
+      "description": "one-bar break versus quiet continuing pattern",
+      "polarity": "positive",
+      "file": "SEC3-004_positive.mid",
+      "content_type": "song",
+      "bytes": 173,
+      "sha256": "e59469fe4f8b751044523dcd8c00e0d79bbfb2a62ae74ba31089d33812a710cd",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-004",
+      "description": "one-bar break versus quiet continuing pattern",
+      "polarity": "negative",
+      "file": "SEC3-004_negative.mid",
+      "content_type": "song",
+      "bytes": 182,
+      "sha256": "981eac3688cc48968538ef579e4d98801e10e104c4856481ff765bafb6c7000d",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-005",
+      "description": "pickup into marked verse versus unmarked opening",
+      "polarity": "positive",
+      "file": "SEC3-005_positive.mid",
+      "content_type": "song",
+      "bytes": 548,
+      "sha256": "ad88230ca2c8fdded0d7389b09511dfecc9b1ac18fbbddd3091b18950615001e",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-005",
+      "description": "pickup into marked verse versus unmarked opening",
+      "polarity": "negative",
+      "file": "SEC3-005_negative.mid",
+      "content_type": "song",
+      "bytes": 537,
+      "sha256": "0ac53395e2f3f0af380b0d5c5f5c5aeb6008d222a6fa455395f50f6d4255afd9",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-006",
+      "description": "note overlap across boundary versus completed tail",
+      "polarity": "positive",
+      "file": "SEC3-006_positive.mid",
+      "content_type": "song",
+      "bytes": 408,
+      "sha256": "8b0ea0924ed436dc60fbda44c22bb7d43f6fc7eca501cae3640ae139bb353eb9",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-006",
+      "description": "note overlap across boundary versus completed tail",
+      "polarity": "negative",
+      "file": "SEC3-006_negative.mid",
+      "content_type": "song",
+      "bytes": 407,
+      "sha256": "0da25315058e11ad0fa04a0f1560d3cd887612fb4809265ee69518ef139945cc",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-007",
+      "description": "multi-signal contrast versus transposition-only change",
+      "polarity": "positive",
+      "file": "SEC3-007_positive.mid",
+      "content_type": "song",
+      "bytes": 700,
+      "sha256": "5d8cd8cc75f39ee371cd7fe4d152e2570f1bbe4167a3e45cc90e3ec60c120962",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-007",
+      "description": "multi-signal contrast versus transposition-only change",
+      "polarity": "negative",
+      "file": "SEC3-007_negative.mid",
+      "content_type": "song",
+      "bytes": 532,
+      "sha256": "69d7dbb6240fbe9d8efa51d9d457a8c7335034493d89045d1d407b5965c5a088",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-008",
+      "description": "harmonic-rhythm build versus harmony-only change",
+      "polarity": "positive",
+      "file": "SEC3-008_positive.mid",
+      "content_type": "song",
+      "bytes": 682,
+      "sha256": "3ac85b0071899adc8a0f67edd4347cb4e5a3080209f5a798cdd6d5b4e924d119",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-008",
+      "description": "harmonic-rhythm build versus harmony-only change",
+      "polarity": "negative",
+      "file": "SEC3-008_negative.mid",
+      "content_type": "song",
+      "bytes": 470,
+      "sha256": "7779c617016e2fe0e7b8dd2d33fb960ede1ecabbd68ed927156de7a93f76ab61",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-009",
+      "description": "return of opening material versus one-way development",
+      "polarity": "positive",
+      "file": "SEC3-009_positive.mid",
+      "content_type": "song",
+      "bytes": 568,
+      "sha256": "c516092b83c42837cc3948d6fcab11fc7f08d42b3f387f58d19a43e4abc93db8",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-009",
+      "description": "return of opening material versus one-way development",
+      "polarity": "negative",
+      "file": "SEC3-009_negative.mid",
+      "content_type": "song",
+      "bytes": 640,
+      "sha256": "e560104a6290344c6ffc8576dc2287f37b4a4a1b6b1b43fe039c3535e48569b2",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-010",
+      "description": "velocity-only false build rejection",
+      "polarity": "positive",
+      "file": "SEC3-010_positive.mid",
+      "content_type": "song",
+      "bytes": 532,
+      "sha256": "876470853bce6be80680ad7dc4542901a22a8054058569274942f691162fd066",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-010",
+      "description": "velocity-only false build rejection",
+      "polarity": "negative",
+      "file": "SEC3-010_negative.mid",
+      "content_type": "song",
+      "bytes": 532,
+      "sha256": "3d994f5bc7ef48f7d1bcf0251738c0bd10e3b235e51ec4c4439a2674d689be60",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-011",
+      "description": "explicit ending marker versus generic text",
+      "polarity": "positive",
+      "file": "SEC3-011_positive.mid",
+      "content_type": "song",
+      "bytes": 540,
+      "sha256": "c67119fedbfd2c708e9fda6f412439b35e4767327cec221025c76adb96353b05",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-011",
+      "description": "explicit ending marker versus generic text",
+      "polarity": "negative",
+      "file": "SEC3-011_negative.mid",
+      "content_type": "song",
+      "bytes": 545,
+      "sha256": "2f3417ec04b2bb981b5f0ad44a11dab3779b6c9603cb2c24acb395bf25429bb3",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-012",
+      "description": "serialized Style Element/CV versus unlabeled Style",
+      "polarity": "positive",
+      "file": "SEC3-012_positive.mid",
+      "content_type": "style",
+      "bytes": 236,
+      "sha256": "186bc34f06fc9e42b4e916ea37e741aed07138bbaa09ecb91bcde2c104fb78f9",
+      "expected_mutations": 0,
+      "expected_authority": false
+    },
+    {
+      "scenario_id": "SEC3-012",
+      "description": "serialized Style Element/CV versus unlabeled Style",
+      "polarity": "negative",
+      "file": "SEC3-012_negative.mid",
+      "content_type": "style",
+      "bytes": 221,
+      "sha256": "b417e9d4223c1f39ae8fc8292cbee6a4d7f103fcbde1b7e675f0add9a4e09464",
+      "expected_mutations": 0,
+      "expected_authority": false
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "schema": "PA800_NEURAL_DATASET_CERTIFICATION_V2",
+  "release": "3.2.0-alpha1",
+  "sources": 14,
+  "roundtrip_passed": 14,
+  "dataset_cases": 60,
+  "hard_negatives": 26,
+  "protected_only_sources": 2,
+  "corruption_types": [
+    "CHORD_DESYNC",
+    "DUPLICATE_HIT",
+    "GATE_OVERLAP",
+    "GATE_TRUNCATE",
+    "GROOVE_DRIFT",
+    "ONSET_SPIKE"
+  ],
+  "source_groups": 13,
+  "dataset_digest": "67a3d2eaad8663d808b845c953a956819b02539531d7ec13770a9c08cd2d7ca9",
+  "roundtrip": [
+    {
+      "file": "INT-001_positive.mid",
+      "contract_digest": "5301a983b0162120b84dd247e842f9ad509cfdbf849b66c3d51c6487d0d612d4",
+      "source_group_id": "b2a1e3fbdc1763ead3ebfa2aef7b799d8bdaeeddb32b13f82ffdeb659e022d54",
+      "raw_events": 43,
+      "note_tokens": 16,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "INT-002_positive.mid",
+      "contract_digest": "d9e65cd1cc7ce4ebc7cae904520aed35e49ee0f0c6a9ceebd32adaa9771236df",
+      "source_group_id": "52734468fcb15bd3a5dfd8b36ef0ed7adf5af300c35108bb749b9eb338b6dbea",
+      "raw_events": 22,
+      "note_tokens": 8,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "DRM-001_positive.mid",
+      "contract_digest": "ee22eccb9b4835d5ee29a83e163615e5e3df715b54b3899859eead8c92672936",
+      "source_group_id": "c9771dbaf87ef5219694cacaed6c8855e125174f8ebff8b7a31e14f185d2edc5",
+      "raw_events": 32,
+      "note_tokens": 13,
+      "protected_notes": 1,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "BAS-005_positive.mid",
+      "contract_digest": "1fdbaf63d86e6c6a2e02923106bd7e05b41dd09e9bc73d573824230405828bcb",
+      "source_group_id": "02117ddc9ea8b2419a423a563e779efecd076d2a261fa7b2d2f474b6b662f4f1",
+      "raw_events": 45,
+      "note_tokens": 17,
+      "protected_notes": 1,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "GTR-001_positive.mid",
+      "contract_digest": "def66d938a5fe0968061ab7ab68162d363f0e72b47917b3205085d67967ab6bf",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "raw_events": 30,
+      "note_tokens": 12,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "PNO-002_positive.mid",
+      "contract_digest": "c6b2bfb7a40cd540a9eda5f856307ba3f542de57a5c85460fb2d9a921d37a748",
+      "source_group_id": "524255d859a73c19b5bb674371b20fdd6a9a9ca2a2ffa5cce3f4e2305a84a06f",
+      "raw_events": 36,
+      "note_tokens": 14,
+      "protected_notes": 14,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "EXP-002_positive.mid",
+      "contract_digest": "9349403d76b3047de00ea51029faf7f5282d0b3b5f8fb9f1319e5c5d7fc533d9",
+      "source_group_id": "8d3c1ee54f07a16562a129468737ac49209c83f496a321452854c1b3c44f2454",
+      "raw_events": 29,
+      "note_tokens": 10,
+      "protected_notes": 10,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "AUT-003_negative.mid",
+      "contract_digest": "3af7a4518ade0fa14ee8cb4e943731a28967cab9296870a3fbee29e01f85670f",
+      "source_group_id": "dc6ada016b837a7b7a82009aafce947cc5b53fc522d0e98b404ed218718a9a99",
+      "raw_events": 10,
+      "note_tokens": 2,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "SEC3-001_positive.mid",
+      "contract_digest": "5ed33173be5588a692276873a34a04af383834f84b43e6c0463664e83098c418",
+      "source_group_id": "8fec6b3c245fd0c75ea2e860375294c75fd2015d09f92fec0194bba641d127e3",
+      "raw_events": 131,
+      "note_tokens": 56,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "SEC3-004_positive.mid",
+      "contract_digest": "6acf8cff31848abee89db60b3c69aa146362f91af2c0ce3b4e0fb64087524672",
+      "source_group_id": "e2fab962cda214da26ac4c354dde71d92ddf96112244801332310e1f4c29a609",
+      "raw_events": 22,
+      "note_tokens": 7,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "SEC3-006_positive.mid",
+      "contract_digest": "32ee0c8ae407672d6f9f7cdb637705e5c802bff50e72629eca4eb97c401c5dbd",
+      "source_group_id": "d336a9f67688e4c26fb38113e9f6569878bd069f08978ac33c4d0b4330a9a17a",
+      "raw_events": 69,
+      "note_tokens": 25,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "SEC3-012_positive.mid",
+      "contract_digest": "7fdf90ecf883614a8dcf9cea63538c6da43f49ed3e9bfb58bd92bf4b1d53310f",
+      "source_group_id": "7be610e2d5713c0101152d96df9a2890b703ee18f51ad14711898aedbc6038e5",
+      "raw_events": 29,
+      "note_tokens": 8,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "GTR-001_transposed.mid",
+      "contract_digest": "0cd3565c70fba12124bb0339c719133951156bafaadb97a5a2ba0d51de391d52",
+      "source_group_id": "8545876bbf1a1d87eccf10367d107f8a7255057ff7443961467a2e36505359ff",
+      "raw_events": 30,
+      "note_tokens": 12,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    },
+    {
+      "file": "NEURAL_CHORD_COMP.mid",
+      "contract_digest": "69c3a260081ef252b5cbefd478be043310d1a49ea970f353af277c048ed38fd4",
+      "source_group_id": "9cc7a6be014a66418707a641dcf20f554127f07fa9c520e6ad09a7818c8c9243",
+      "raw_events": 29,
+      "note_tokens": 12,
+      "protected_notes": 0,
+      "validation_pass": true,
+      "byte_identical": true
+    }
+  ],
+  "dataset_audit": {
+    "schema": "PA800_NEURAL_DATASET_AUDIT_V2",
+    "pass": true,
+    "errors": [],
+    "cases": 60,
+    "hard_negatives": 26,
+    "source_groups": 11,
+    "group_split_leakage": {},
+    "source_split_conflicts": {},
+    "unique_corrupted_files": 60,
+    "corruption_types": [
+      "CHORD_DESYNC",
+      "DUPLICATE_HIT",
+      "GATE_OVERLAP",
+      "GATE_TRUNCATE",
+      "GROOVE_DRIFT",
+      "ONSET_SPIKE"
+    ],
+    "authority_granted": false
+  },
+  "checks": {
+    "source_count": true,
+    "roundtrip": true,
+    "event_attribution": true,
+    "all_corruption_types": true,
+    "dataset_scale": true,
+    "hard_negatives": true,
+    "protected_only_sources_fail_closed": true,
+    "dataset_audit": true,
+    "deterministic_dataset_digest": true,
+    "transposition_grouping": true,
+    "original_sources_unchanged": true,
+    "no_raw_private_payload_in_json": true,
+    "authority": true,
+    "velocity_is_profile_only": true
+  },
+  "mutations_to_original_sources": 0,
+  "authority_granted": false,
+  "trained_model": false,
+  "pass": true
+}

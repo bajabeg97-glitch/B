@@ -1,0 +1,643 @@
+{
+  "schema": "PA800_PROCESS_COVERAGE_RUN_V2",
+  "scope": "STRUCTURAL_AND_TEST_MANIFEST_COVERAGE_NOT_REAL_MIDO_OR_HARDWARE_CERTIFICATION",
+  "created_utc": "2026-08-23T20:20:42.455222+00:00",
+  "scenario_count": 52,
+  "positive_scenarios": 26,
+  "negative_scenarios": 26,
+  "collected_test_count": 223,
+  "coverage": {
+    "schema": "PA800_PROCESS_CERTIFICATION_AZ_V1",
+    "stages": [
+      {
+        "stage": "A",
+        "name": "Artifact integrity",
+        "process": "Factory/profile/package hashes",
+        "positive_tests": [
+          "tests/test_release_integrity.py::test_release_audit_passes"
+        ],
+        "negative_tests": [
+          "tests/test_optional_deps.py::OptionalDependencyTests::test_missing_required_dependency_disables_core"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "B",
+        "name": "Binary SMF preflight",
+        "process": "Header, chunks and track-length validation",
+        "positive_tests": [
+          "tests/test_smf_preflight.py::test_preflight_accepts_complete_container"
+        ],
+        "negative_tests": [
+          "tests/test_smf_preflight.py::test_preflight_quarantines_truncated_track"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "C",
+        "name": "Container recovery",
+        "process": "Tolerant load and deterministic quarantine",
+        "positive_tests": [
+          "tests/test_compatibility.py::test_recovery_package_is_deterministic_and_keeps_original"
+        ],
+        "negative_tests": [
+          "tests/test_corrupt_midi_corpus.py::test_eighty_golden_mid_kar_containers_are_deterministically_rejected"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "D",
+        "name": "Doctor repair",
+        "process": "Pairing, tempo, duration and channel-mode repair",
+        "positive_tests": [
+          "tests/test_midi_doctor.py::test_doctor_repairs_structural_note_and_track_errors"
+        ],
+        "negative_tests": [
+          "tests/test_midi_doctor.py::test_conflicting_same_tick_tempo_is_unrecoverable_not_guessed"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "E",
+        "name": "Environment compatibility",
+        "process": "Tempo/program/exporter compatibility",
+        "positive_tests": [
+          "tests/test_compatibility.py::test_redundant_same_tempo_is_safe_but_conflict_is_not"
+        ],
+        "negative_tests": [
+          "tests/test_compatibility.py::test_optimizer_emits_recovery_package_for_unrecoverable_container"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "F",
+        "name": "Format/content detection",
+        "process": "Explicit and automatic Song/Style classification",
+        "positive_tests": [
+          "tests/test_content_type.py::ContentTypeTests::test_auto_style_from_cv"
+        ],
+        "negative_tests": [
+          "tests/test_automation.py::test_ambiguous_input_falls_back_to_preserve_suggest"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "G",
+        "name": "Ground-truth context",
+        "process": "Track-function and section scoring",
+        "positive_tests": [
+          "tests/test_context_ground_truth.py::test_valid_ground_truth_and_perfect_prediction_pass"
+        ],
+        "negative_tests": [
+          "tests/test_context_ground_truth.py::test_wrong_function_and_boundary_fail_roadmap_gates"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "H",
+        "name": "High-level automation",
+        "process": "Autopilot mode and safe policy selection",
+        "positive_tests": [
+          "tests/test_automation.py::test_high_confidence_style_uses_strong_apply"
+        ],
+        "negative_tests": [
+          "tests/test_automation.py::test_missing_factory_coverage_falls_back_to_preserve"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "I",
+        "name": "Identity/profile resolution",
+        "process": "Exact Sound/address/name/support resolution",
+        "positive_tests": [
+          "tests/test_registry.py::T::test_load"
+        ],
+        "negative_tests": [
+          "tests/test_registry.py::T::test_conflicts_guarded"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "J",
+        "name": "Kit/key evidence",
+        "process": "Exact Drum Kit+Key profile routing",
+        "positive_tests": [
+          "tests/test_drum_key_profile.py::T::test_standard_rx3_key36"
+        ],
+        "negative_tests": [
+          "tests/test_factory_usage_meter.py::test_usage_meter_fails_if_a_blocked_note_was_mutated"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "K",
+        "name": "Korg Style contract",
+        "process": "Format-0 marker-separated Pa800 import contract",
+        "positive_tests": [
+          "tests/test_style_import_contract.py::test_official_marker_style_contract_accepts_strict_format_zero_file"
+        ],
+        "negative_tests": [
+          "tests/test_style_import_contract.py::test_style_contract_rejects_uppercase_marker_outside_channel_and_cc"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "L",
+        "name": "Low-level RX/DNC guard",
+        "process": "Sensitive notes/controllers and channel-scoped state",
+        "positive_tests": [
+          "tests/test_rx_guard.py::T::test_low_rx_velocity_survives"
+        ],
+        "negative_tests": [
+          "tests/test_articulation_director.py::test_expressive_growl_requires_hardware_e3_for_apply"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "M",
+        "name": "Mapping Sound/FX",
+        "process": "Voice ranking, address rewrite and bounded FX",
+        "positive_tests": [
+          "tests/test_optimizer.py::T::test_auto_sound_and_fx_change_end_to_end"
+        ],
+        "negative_tests": [
+          "tests/test_authority_quality.py::test_final_quality_gate_rejects_applied_broad_voice_without_e3"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "N",
+        "name": "Note intent",
+        "process": "Metric, passing, anchor and special-note intent",
+        "positive_tests": [
+          "tests/test_intent.py::T::test_bass_intents"
+        ],
+        "negative_tests": [
+          "tests/test_preserve_unknown.py::T::test_unknown_exact_sound_preserved"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "O",
+        "name": "Orchestration context",
+        "process": "Sections, functions, balance and interaction analysis",
+        "positive_tests": [
+          "tests/test_musical_context.py::test_song_context_analysis_is_analyzer_only_and_finds_sections"
+        ],
+        "negative_tests": [
+          "tests/test_context_ground_truth.py::test_invalid_labels_are_rejected_without_guessing"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "P",
+        "name": "Performance direction",
+        "process": "Phrase/section/function bounded performance shaping",
+        "positive_tests": [
+          "tests/test_performance_director.py::test_e2_style_phrase_can_apply_bounded_offset_and_protect_notes"
+        ],
+        "negative_tests": [
+          "tests/test_performance_director.py::test_song_e1_context_stays_shadow_even_when_apply_requested"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "Q",
+        "name": "Quantile velocity",
+        "process": "Profile curve, conductor and IQR preservation",
+        "positive_tests": [
+          "tests/test_velocity_conductor.py::test_different_instruments_receive_different_normal_centers"
+        ],
+        "negative_tests": [
+          "tests/test_velocity_conductor.py::test_protected_note_velocity_is_untouched"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "R",
+        "name": "Rhythm/timing",
+        "process": "Profile residual and instrument timing fingerprints",
+        "positive_tests": [
+          "tests/test_instrument_engine_guards.py::test_bass_timing_follows_nearest_drum_shift"
+        ],
+        "negative_tests": [
+          "tests/test_instrument_fingerprints.py::test_fingerprint_audit_detects_shortened_string_tail_and_controller_change"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "S",
+        "name": "Sustain/gate",
+        "process": "Gate evidence, damper, legato and tail preservation",
+        "positive_tests": [
+          "tests/test_instrument_engine_guards.py::test_piano_gate_is_not_rewritten_while_damper_is_held"
+        ],
+        "negative_tests": [
+          "tests/test_gate_null_profile.py::test_null_gate_profile_is_preserved_without_crash"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "T",
+        "name": "Technique/articulation",
+        "process": "DNC audition, insertion and pulse ordering",
+        "positive_tests": [
+          "tests/test_articulation_director.py::test_exact_dnc_slide_apply_inserts_verified_cc80_pulse"
+        ],
+        "negative_tests": [
+          "tests/test_verifier.py::T::test_articulation_pulse_must_bracket_note_on_at_same_tick"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "U",
+        "name": "Usage accounting",
+        "process": "Per-note available/resolved/used/mutated/blocked meter",
+        "positive_tests": [
+          "tests/test_factory_usage_meter.py::test_usage_meter_classifies_every_note_once_and_counts_mutations"
+        ],
+        "negative_tests": [
+          "tests/test_factory_usage_batch.py::test_batch_aggregation_rejects_missing_usage_meter"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "V",
+        "name": "Verifier",
+        "process": "Canonical note/controller/address authorization diff",
+        "positive_tests": [
+          "tests/test_verifier.py::T::test_equal"
+        ],
+        "negative_tests": [
+          "tests/test_verifier.py::T::test_missing_note_off_fails"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "W",
+        "name": "Workstation/commit",
+        "process": "Locking, rollback, journal and atomic artifact commit",
+        "positive_tests": [
+          "tests/test_runtime_safety.py::test_artifact_group_commits_together"
+        ],
+        "negative_tests": [
+          "tests/test_runtime_safety.py::test_artifact_group_rolls_back_on_second_replace"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "X",
+        "name": "eXport/report/release",
+        "process": "Reports, package data, GUI state and wheel inputs",
+        "positive_tests": [
+          "tests/test_release_integrity.py::test_runtime_profile_package_data_present"
+        ],
+        "negative_tests": [
+          "tests/test_gui_state.py::test_suffix_is_path_safe"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "Y",
+        "name": "Yield/determinism/stress",
+        "process": "Same-input determinism and bounded stress behavior",
+        "positive_tests": [
+          "tests/test_optimizer.py::T::test_deterministic"
+        ],
+        "negative_tests": [
+          "tests/test_corrupt_midi_corpus.py::test_eighty_golden_mid_kar_containers_are_deterministically_rejected"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      },
+      {
+        "stage": "Z",
+        "name": "Zero unauthorized changes",
+        "process": "Authority ledger and final quality gate",
+        "positive_tests": [
+          "tests/test_authority_quality.py::test_final_quality_gate_passes_consistent_safe_report"
+        ],
+        "negative_tests": [
+          "tests/test_authority_quality.py::test_final_quality_gate_rejects_instrument_fingerprint_regression"
+        ],
+        "required_fixture_polarities": [
+          "positive",
+          "negative"
+        ],
+        "missing_positive_tests": [],
+        "missing_negative_tests": [],
+        "fixture_polarities": [
+          "negative",
+          "positive"
+        ],
+        "missing_fixture_polarities": [],
+        "pass": true
+      }
+    ],
+    "stage_count": 26,
+    "passed_stages": 26,
+    "pass": true
+  },
+  "test_collection": {
+    "command": [
+      "/usr/bin/python",
+      "-m",
+      "pytest",
+      "--collect-only",
+      "-q"
+    ],
+    "returncode": 0,
+    "stdout": "tests/test_articulation_audition.py::test_audition_generator_covers_all_manual_dnc_sounds\ntests/test_articulation_director.py::test_exact_dnc_slide_apply_inserts_verified_cc80_pulse\ntests/test_articulation_director.py::test_suggest_policy_never_mutates_events\ntests/test_articulation_director.py::test_expressive_growl_requires_hardware_e3_for_apply\ntests/test_articulation_director.py::test_dnc_keyoff_noise_context_is_protected_from_generic_shaping\ntests/test_articulation_director.py::test_preserve_mode_blocks_explicit_articulation_apply\ntests/test_articulation_director.py::test_optimizer_apply_policy_roundtrips_articulation_events\ntests/test_articulation_director.py::test_dnc_controller_state_is_scoped_per_midi_channel\ntests/test_audition_queue.py::test_audition_queue_combines_voice_and_articulation_without_mutation\ntests/test_audition_queue.py::test_audition_queue_exports_csv_and_json\ntests/test_authority_quality.py::test_central_authority_matrix_enforces_evidence_and_safety\ntests/test_authority_quality.py::test_final_quality_gate_passes_consistent_safe_report\ntests/test_authority_quality.py::test_quality_gate_does_not_report_empty_optional_checks_as_passed\ntests/test_authority_quality.py::test_final_quality_gate_rejects_applied_broad_voice_without_e3\ntests/test_authority_quality.py::test_final_quality_gate_rejects_fx_contour_or_authorization_mismatch\ntests/test_authority_quality.py::test_final_quality_gate_rejects_incomplete_factory_usage_accounting\ntests/test_authority_quality.py::test_final_quality_gate_rejects_instrument_fingerprint_regression\ntests/test_authority_quality.py::test_direct_fx_path_is_recorded_in_authority_ledger\ntests/test_authority_quality.py::test_style_export_gate_requires_minimum_import_contract\ntests/test_authority_quality.py::test_preserve_gate_rejects_any_mutation\ntests/test_automation.py::test_high_confidence_style_uses_strong_apply\ntests/test_automation.py::test_maximum_confidence_large_style_uses_max_apply\ntests/test_automation.py::test_ambiguous_input_falls_back_to_preserve_suggest\ntests/test_automation.py::test_missing_factory_coverage_falls_back_to_preserve\ntests/test_automation.py::test_exact_but_weak_current_profile_can_use_per_context_apply_gate\ntests/test_automation.py::test_preserve_blocks_forced_apply_override\ntests/test_automation.py::test_auto_preserve_is_strict_when_evidence_is_insufficient\ntests/test_automation.py::test_explicit_preserve_is_strict_and_gentle_is_separate\ntests/test_compatibility.py::test_redundant_same_tempo_is_safe_but_conflict_is_not\ntests/test_compatibility.py::test_multi_program_channel_is_segmented_and_preserved\ntests/test_compatibility.py::test_kar_and_redundant_bank_exporter_profiles_are_reported\ntests/test_compatibility.py::test_recovery_package_is_deterministic_and_keeps_original\ntests/test_compatibility.py::test_optimizer_emits_recovery_package_for_unrecoverable_container\ntests/test_config_safety.py::test_smart_mutation_is_not_default\ntests/test_config_safety.py::test_preserve_never_enables_smart_mutation\ntests/test_config_safety.py::test_gentle_retains_the_old_low_strength_profile_pass\ntests/test_config_safety.py::test_auto_mode_enables_single_pass_autopilot\ntests/test_content_type.py::ContentTypeTests::test_auto_style_from_cv\ntests/test_content_type.py::ContentTypeTests::test_explicit_selection_is_audited\ntests/test_content_type.py::ContentTypeTests::test_song_channel_is_not_arranger_role\ntests/test_context_ground_truth.py::test_valid_ground_truth_and_perfect_prediction_pass\ntests/test_context_ground_truth.py::test_wrong_function_and_boundary_fail_roadmap_gates\ntests/test_context_ground_truth.py::test_invalid_labels_are_rejected_without_guessing\ntests/test_corrupt_midi_corpus.py::test_eighty_golden_mid_kar_containers_are_deterministically_rejected\ntests/test_drum_key_profile.py::T::test_standard_rx3_key36\ntests/test_factory_atomic.py::FactoryAtomicMaxTests::test_controller_forensics\ntests/test_factory_atomic.py::FactoryAtomicMaxTests::test_corpus_is_complete\ntests/test_factory_atomic.py::FactoryAtomicMaxTests::test_cv_and_variation_knowledge_present\ntests/test_factory_atomic.py::FactoryAtomicMaxTests::test_manual_dnc_registry_is_separate\ntests/test_factory_atomic.py::FactoryAtomicMaxTests::test_variation_orchestration_growth\ntests/test_factory_usage_batch.py::test_batch_aggregation_preserves_100_percent_classification\ntests/test_factory_usage_batch.py::test_batch_writer_emits_machine_readable_json_and_csv\ntests/test_factory_usage_batch.py::test_batch_aggregation_rejects_missing_usage_meter\ntests/test_factory_usage_meter.py::test_usage_meter_classifies_every_note_once_and_counts_mutations\ntests/test_factory_usage_meter.py::test_usage_meter_fails_if_a_blocked_note_was_mutated\ntests/test_gate_null_profile.py::test_null_gate_profile_is_preserved_without_crash\ntests/test_gui_state.py::test_list_midi_files_and_output_name\ntests/test_gui_state.py::test_gui_settings_roundtrip\ntests/test_gui_state.py::test_suffix_is_path_safe\ntests/test_gui_state.py::test_auto_pilot_gui_defaults\ntests/test_gui_state.py::test_old_settings_are_migrated_to_auto_pilot\ntests/test_hardware_campaign.py::test_complete_hardware_campaign_passes_all_roadmap_gates\ntests/test_hardware_campaign.py::test_critical_playback_failure_blocks_campaign_even_with_good_scores\ntests/test_hardware_campaign.py::test_empty_campaign_is_infrastructure_not_evidence\ntests/test_hardware_campaign_tools.py::test_campaign_generator_contains_all_required_rows\ntests/test_hardware_evidence.py::test_hardware_registry_matches_voice_and_articulation_e3\ntests/test_hardware_evidence.py::test_invalid_hardware_record_never_grants_authority\ntests/test_instrument_engine_guards.py::test_bass_timing_follows_nearest_drum_shift\ntests/test_instrument_engine_guards.py::test_piano_gate_is_not_rewritten_while_damper_is_held\ntests/test_instrument_engine_guards.py::test_long_string_tail_is_not_rewritten\ntests/test_instrument_engine_guards.py::test_brass_with_modulation_controller_skips_timing_and_gate\ntests/test_instrument_engine_guards.py::test_overlapping_same_pitch_occurrences_skip_timing_and_gate\ntests/test_instrument_engine_guards.py::test_organ_legato_note_skips_timing\ntests/test_instrument_engine_guards.py::test_gate_does_not_extend_note_past_next_same_pitch_onset\ntests/test_instrument_engine_guards.py::test_timing_preserves_legal_zero_duration_drum_one_shot\ntests/test_instrument_fingerprints.py::test_fingerprint_audit_passes_unchanged_bass_guitar_and_piano_shapes\ntests/test_instrument_fingerprints.py::test_fingerprint_audit_detects_piano_chord_flattening\ntests/test_instrument_fingerprints.py::test_fingerprint_audit_detects_shortened_string_tail_and_controller_change\ntests/test_instrument_fingerprints.py::test_fingerprint_audit_detects_organ_velocity_pump_and_lost_legato\ntests/test_instrument_guards.py::test_piano_chord_spread_guard_restores_minimum_dynamic_shape\ntests/test_instrument_guards.py::test_timing_guards_cover_guitar_strums_and_piano_chords\ntests/test_instrument_guards.py::test_separated_guitar_notes_remain_eligible_for_profile_timing\ntests/test_instrument_guards.py::test_sustained_chords_and_long_tails_are_guarded\ntests/test_instrument_guards.py::test_organ_legato_and_expressive_controller_channels_are_detected\ntests/test_instrument_policies.py::test_rhythmic_and_tonal_families_have_explicit_policies\ntests/test_instrument_policies.py::test_aliases_and_safe_fallbacks_are_deterministic\ntests/test_instrument_policies.py::test_unknown_and_effect_families_block_generic_note_shaping\ntests/test_instrument_policies.py::test_rare_families_require_strong_or_good_stable_exact_profile\ntests/test_intent.py::T::test_bass_intents\ntests/test_midi_doctor.py::test_doctor_repairs_structural_note_and_track_errors\ntests/test_midi_doctor.py::test_doctor_is_idempotent_after_first_repair\ntests/test_midi_doctor.py::test_zero_duration_drum_style_event_is_preserved\ntests/test_midi_doctor.py::test_doctor_repairs_invalid_tempo_and_resolution\ntests/test_midi_doctor.py::test_channel_mode_all_notes_off_materializes_pairing\ntests/test_midi_doctor.py::test_invalid_tempo_uses_previous_valid_value_not_arbitrary_new_tempo\ntests/test_midi_doctor.py::test_conflicting_same_tick_tempo_is_unrecoverable_not_guessed\ntests/test_midi_doctor.py::test_doctor_canonical_replay_reproduces_exact_repair_stream\ntests/test_mix_fx_director.py::test_shadow_mode_is_analyzer_only\ntests/test_mix_fx_director.py::test_non_e3_apply_is_dry_only_and_preserves_contour\ntests/test_mix_fx_director.py::test_positive_depth_requires_e3_hardware_approval\ntests/test_mix_fx_director.py::test_rx_context_is_never_rewritten\ntests/test_musical_context.py::test_track_function_uses_structural_foundation_roles\ntests/test_musical_context.py::test_pad_and_lead_are_musically_distinct\ntests/test_musical_context.py::test_song_context_analysis_is_analyzer_only_and_finds_sections\ntests/test_musical_context.py::test_style_uses_serialized_element_cv_as_e2_section\ntests/test_musical_context.py::test_ground_truth_generator_writes_track_and_section_sheets\ntests/test_note_velocity_max.py::NoteVelocityMaxTests::test_127_detected\ntests/test_note_velocity_max.py::NoteVelocityMaxTests::test_event_level_element_and_sound\ntests/test_note_velocity_max.py::NoteVelocityMaxTests::test_full_detection_fields\ntests/test_note_velocity_max.py::NoteVelocityMaxTests::test_json_csv_write\ntests/test_note_velocity_max.py::NoteVelocityMaxTests::test_rx_low_velocity_protected\ntests/test_note_velocity_max.py::DncManualVelocityTests::test_manual_dnc_exact_and_controller_mapping\ntests/test_note_velocity_max.py::DncManualVelocityTests::test_semantic_velocity_v2_present\ntests/test_optimizer.py::T::test_auto_sound_and_fx_change_end_to_end\ntests/test_optimizer.py::T::test_deterministic\ntests/test_optimizer.py::T::test_live\ntests/test_optimizer.py::T::test_midi_doctor_repairs_broken_input_end_to_end\ntests/test_optimizer.py::T::test_multi_program_channel_is_preserved_end_to_end\ntests/test_optimizer.py::T::test_natural\ntests/test_optimizer.py::T::test_optimizer_emits_ordered_workstation_phase_callbacks\ntests/test_optimizer.py::T::test_persisted_report_contains_commit_phase\ntests/test_optimizer.py::T::test_pitch_count_preserved\ntests/test_optimizer.py::T::test_preserve_is_byte_identical_and_has_no_mutation_authority\ntests/test_optimizer.py::T::test_report_path_cannot_alias_input_or_output\ntests/test_optimizer.py::T::test_velocity_conductor_aligns_quiet_and_loud_files\ntests/test_optional_deps.py::OptionalDependencyTests::test_capability_probe_never_required_for_core\ntests/test_optional_deps.py::OptionalDependencyTests::test_missing_optional_import_does_not_break_probe\ntests/test_optional_deps.py::OptionalDependencyTests::test_missing_required_dependency_disables_core\ntests/test_pc_ab_pack.py::test_user_validation_creates_persistent_single_pass_ab_pack\ntests/test_pc_ab_pack.py::test_release_test_manifest_lists_every_current_test_module\ntests/test_pc_ab_pack.py::test_missing_user_folder_is_not_a_pass\ntests/test_pc_ab_pack.py::test_support_archive_excludes_private_midi_content_by_default\ntests/test_pc_ab_pack.py::test_support_archive_requires_explicit_private_opt_in\ntests/test_performance_director.py::test_phrase_segmentation_splits_large_silence\ntests/test_performance_director.py::test_song_e1_context_stays_shadow_even_when_apply_requested\ntests/test_performance_director.py::test_e2_style_phrase_can_apply_bounded_offset_and_protect_notes\ntests/test_performance_director.py::test_interaction_report_contains_drum_bass_drum_perc_and_lead_margin\ntests/test_performance_director.py::test_shadow_policy_never_changes_midi_even_with_e2_style_evidence\ntests/test_preserve_unknown.py::T::test_unknown_exact_sound_preserved\ntests/test_process_certification_manifest.py::test_process_matrix_contains_every_a_to_z_stage_once\ntests/test_process_certification_manifest.py::test_process_coverage_requires_both_fixture_polarities_and_registered_tests\ntests/test_process_certification_midis.py::test_a_to_z_certification_suite_is_complete_and_matches_declared_outcomes\ntests/test_process_certification_midis.py::test_generation_is_byte_deterministic\ntests/test_process_certification_midis.py::test_manifest_is_machine_readable_and_self_consistent\ntests/test_process_certification_midis.py::test_style_contract_positive_and_negative_fixtures_are_real\ntests/test_process_certification_midis.py::test_semantic_negative_files_remain_loadable_for_downstream_rejection\ntests/test_process_certification_runner.py::test_generated_pack_closes_every_a_to_z_stage\ntests/test_process_negative_matrix.py::test_authority_negative_matrix_refuses_unsafe_apply[SOUND_SAFE_GM-E3-kwargs0-identity_or_multi_program_conflict]\ntests/test_process_negative_matrix.py::test_authority_negative_matrix_refuses_unsafe_apply[FX_DRY_GUARD-E3-kwargs1-preserve_preset_blocks_creative_mutation]\ntests/test_process_negative_matrix.py::test_authority_negative_matrix_refuses_unsafe_apply[ARTICULATION_EXPRESSIVE-E2-kwargs2-requires_E3_or_higher]\ntests/test_process_negative_matrix.py::test_authority_negative_matrix_refuses_unsafe_apply[INSERT_MASTER_FX-E3-kwargs3-serialization_or_hardware_schema_not_authorized]\ntests/test_process_negative_matrix.py::test_verifier_rejects_unlisted_controller_change_even_when_note_change_is_valid\ntests/test_process_negative_matrix.py::test_verifier_rejects_stale_note_authority_and_address_reordering\ntests/test_process_negative_matrix.py::test_verifier_rejects_partial_or_wrong_tick_articulation_pulse\ntests/test_process_negative_matrix.py::test_style_contract_rejects_second_marker_without_time_signature\ntests/test_process_negative_matrix.py::test_style_contract_unsupported_cc_blocks_strict_export_but_not_minimum_import\ntests/test_process_negative_matrix.py::test_hardware_campaign_unknown_dnc_and_duplicate_addresses_never_become_e3\ntests/test_process_negative_matrix.py::test_hardware_campaign_exact_false_positive_threshold_is_exclusive\ntests/test_process_negative_matrix.py::test_foreign_host_lock_is_not_deleted_as_stale\ntests/test_process_negative_matrix.py::test_malformed_local_lock_is_recovered_and_released\ntests/test_process_negative_matrix.py::test_atomic_group_restores_first_target_when_second_backup_fails\ntests/test_process_negative_matrix.py::test_rare_exact_only_policy_rejects_unstable_or_family_aggregate_profile[SYNTH_LEAD]\ntests/test_process_negative_matrix.py::test_rare_exact_only_policy_rejects_unstable_or_family_aggregate_profile[MALLET]\ntests/test_process_negative_matrix.py::test_rare_exact_only_policy_rejects_unstable_or_family_aggregate_profile[PLUCK]\ntests/test_process_negative_matrix.py::test_rare_exact_only_policy_rejects_unstable_or_family_aggregate_profile[ETHNIC]\ntests/test_process_negative_matrix.py::test_sustained_and_expressive_guards_are_channel_scoped\ntests/test_rare_family_guards.py::test_weak_exact_rare_profile_cannot_mutate_velocity\ntests/test_rare_family_guards.py::test_rare_family_never_uses_family_velocity_fallback\ntests/test_rare_family_guards.py::test_usage_meter_marks_weak_exact_evidence_blocked_and_detects_illegal_change\ntests/test_rare_family_guards.py::test_sfx_and_cycle_random_names_are_always_note_protected\ntests/test_registry.py::T::test_conflicts_guarded\ntests/test_registry.py::T::test_family_velocity_fallback_exists_for_gm_song_instruments\ntests/test_registry.py::T::test_finger_bass_rx\ntests/test_registry.py::T::test_load\ntests/test_registry.py::T::test_required_json_is_cached_across_registry_instances\ntests/test_release_integrity.py::test_runtime_profile_package_data_present\ntests/test_release_integrity.py::test_release_audit_passes\ntests/test_runtime_safety.py::test_stale_lock_is_recovered\ntests/test_runtime_safety.py::test_live_lock_blocks_duplicate_process\ntests/test_runtime_safety.py::test_artifact_group_rolls_back_on_second_replace\ntests/test_runtime_safety.py::test_artifact_group_commits_together\ntests/test_rx_guard.py::T::test_low_rx_velocity_survives\ntests/test_smf_preflight.py::test_preflight_accepts_complete_container\ntests/test_smf_preflight.py::test_preflight_quarantines_truncated_track\ntests/test_smf_preflight.py::test_preflight_rejects_track_count_mismatch\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_accordion_is_not_harmonica\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_auto_gate_excludes_weak_unstable_and_conflicting_profiles\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_contextual_fx_is_drier_for_dense_material_and_bounded\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_exact_good_factory_sound_can_be_kept\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_factory_ranking_emits_safe_gm_upgrade_for_strong_same_program_fit\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_fx_contour_breakpoints_are_preserved_by_common_offset\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_instrument_change_requires_measurable_improvement\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_redundant_bank_setup_with_one_program_is_safe_to_rewrite\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_safe_gm_upgrade_requires_same_program_and_large_evidence_gap\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_sound_apply_requires_single_unambiguous_address_sequence\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_suggest_hardware_record_does_not_grant_auto_authority\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_unknown_preserve_fx\ntests/test_sound_fx_intelligence.py::TestSoundFxIntelligence::test_voice_aesthetic_models_have_distinct_scores\ntests/test_style_import_contract.py::test_official_marker_style_contract_accepts_strict_format_zero_file\ntests/test_style_import_contract.py::test_style_contract_rejects_uppercase_marker_outside_channel_and_cc\ntests/test_style_import_contract.py::test_incomplete_header_is_importable_minimum_but_not_strict_export_contract\ntests/test_style_import_contract.py::test_style_export_preset_activates_import_contract_gate\ntests/test_velocity_conductor.py::test_different_instruments_receive_different_normal_centers\ntests/test_velocity_conductor.py::test_conductor_preserves_internal_dynamic_distances\ntests/test_velocity_conductor.py::test_protected_note_velocity_is_untouched\ntests/test_velocity_conductor.py::test_cc7_cc11_affect_energy_report_but_are_not_rewritten\ntests/test_velocity_conductor.py::test_dynamic_iqr_retention_gate_is_reported\ntests/test_velocity_conductor.py::test_organ_family_cap_wins_over_distant_profile_rails\ntests/test_verifier.py::T::test_articulation_pulse_must_bracket_note_on_at_same_tick\ntests/test_verifier.py::T::test_equal\ntests/test_verifier.py::T::test_fx_event_requires_exact_value_authorization\ntests/test_verifier.py::T::test_missing_note_off_fails\ntests/test_verifier.py::T::test_note_mutation_requires_exact_change_chain\ntests/test_verifier.py::T::test_only_authorized_fx_can_change\ntests/test_verifier.py::T::test_sound_target_must_match_allowlist\ntests/test_verifier.py::T::test_timing_and_gate_authorization_chain\ntests/test_voice_holdout.py::test_voice_holdout_is_explicit_proxy_and_has_family_metrics\ntests/test_voice_upgrade_audition.py::test_voice_upgrade_audition_contains_only_same_program_pairs\ntests/test_workstation.py::test_session_variants_undo_redo_are_non_destructive\ntests/test_workstation.py::test_audio_reference_records_wave_metadata_and_hash\ntests/test_workstation.py::test_phase_journal_resumes_only_nonterminal_files\ntests/test_workstation.py::test_export_presets_enforce_content_and_preserve_authority\ntests/test_workstation.py::test_mixer_snapshot_joins_context_velocity_fx_and_voice\n\n223 tests collected in 0.09s\n",
+    "stderr": "",
+    "pass": true
+  },
+  "regression": {
+    "pass": true,
+    "skipped": true
+  },
+  "release_audit": {
+    "command": [
+      "/usr/bin/python",
+      "tools/release_audit.py"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"schema\": \"PA800_RELEASE_FACTORY_MANIFEST_V1\",\n  \"files\": [\n    {\n      \"path\": \"pa800_optimizer/profiles/data/factory_sound_profiles_v1.json\",\n      \"bytes\": 6483070,\n      \"sha256\": \"824e702527a85e9bc38d5079ffbba32acdbb3d2e424098d48ec361f730fea4d3\",\n      \"check\": {\n        \"profiles\": 542\n      }\n    },\n    {\n      \"path\": \"pa800_optimizer/profiles/data/factory_drum_key_profiles_v1.json\",\n      \"bytes\": 4661336,\n      \"sha256\": \"9d654f060d8783603f2cffe14d0a7276a3ff096388da7b7ee00400c4981870ca\",\n      \"check\": {\n        \"profiles\": 2004\n      }\n    },\n    {\n      \"path\": \"pa800_optimizer/profiles/data/factory_velocity_semantics_v2.json\",\n      \"bytes\": 26375552,\n      \"sha256\": \"54104434a40709f8e2f183debc7fe099ff6c471bb9bcb74bdcf4fda3ad1dc8c3\",\n      \"check\": {\n        \"parent_profiles\": 542\n      }\n    },\n    {\n      \"path\": \"pa800_optimizer/profiles/data/factory_atomic_max_summary.json\",\n      \"bytes\": 1010470,\n      \"sha256\": \"753015d6667726a5ef333af5bbd4c75405b1e66a5862804783dd068290668198\",\n      \"check\": {\n        \"styles\": 252\n      }\n    },\n    {\n      \"path\": \"pa800_optimizer/profiles/data/factory_profile_stability_v1.json\",\n      \"bytes\": 221108,\n      \"sha256\": \"ed5cf47bb7c2439e3438e745af43241acf83f270f3afa573ecbf2b42b570d9f5\",\n      \"check\": {\n        \"profiles\": 148\n      }\n    },\n    {\n      \"path\": \"pa800_optimizer/profiles/data/pa800_dnc_manual_registry_v1.json\",\n      \"bytes\": 7878,\n      \"sha256\": \"28be1226fa78f2c50ffc9e4e2aa48813bfc1175cf59f9273a308743b3afcad98\",\n      \"check\": {\n        \"sounds\": 23\n      }\n    },\n    {\n      \"path\": \"corpus/Factory Styles.zip\",\n      \"bytes\": 3719473,\n      \"sha256\": \"e330277c090009d76647db512f68c14fd95f313fadc8d53c2246155fe9523c8f\"\n    }\n  ],\n  \"errors\": []\n}\n",
+    "stderr": "",
+    "pass": true
+  },
+  "pass": true
+}

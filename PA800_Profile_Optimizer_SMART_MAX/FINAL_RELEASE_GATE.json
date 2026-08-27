@@ -1,0 +1,19 @@
+{
+  "schema": "PA800_FINAL_RELEASE_GATE_V1",
+  "created_utc": "2026-08-26T11:16:37.515547+00:00",
+  "pass": false,
+  "release_class": "BLOCKED",
+  "software_checks": {
+    "build_identity_present": true,
+    "factory_release_clean": false,
+    "complete_stress_pass": false,
+    "neural_forensic_pass": true,
+    "neural_authority_bounded": true
+  },
+  "software_certified": false,
+  "hardware_status": "EXTERNAL_REQUIRED",
+  "hardware_auto_authority": false,
+  "hardware_evaluation": null,
+  "build_id": "423d4b47cdf9a494b2c6364d3cf768022fbd49af4d15e38e1043134d5d4f10c4",
+  "neural_forensic_cases": 14
+}

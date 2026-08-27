@@ -1,0 +1,13 @@
+﻿msb,lsb,program,names,status
+120,0,35,Jazz Kit RX2 | Jazz Kit RX3,IDENTITY_CONFLICT
+121,0,28,AcousticPiano GM | Muted Guitar GM,IDENTITY_CONFLICT
+121,3,57,Hard Trombone | Mute Ensemble 1,IDENTITY_CONFLICT
+121,3,61,Glen & Friends | Mute Ensemble 1,IDENTITY_CONFLICT
+121,5,27,Proces.E.Guitar | Soft Jazz Guitar,IDENTITY_CONFLICT
+121,32,0,Classic Piano | Grand Piano,IDENTITY_CONFLICT
+121,32,4,Club E. Piano | Detuned EP 1 | Studio EP | Vintage EP,IDENTITY_CONFLICT
+121,32,24,Nylon Gtr Pro2 | Nylon Slide Pro | Real Nylon Gtr,IDENTITY_CONFLICT
+121,32,25,Real Folk Gtr | Steel Guitar 3,IDENTITY_CONFLICT
+121,32,26,Pedal Steel Gtr1 | Pedal Steel Gtr2,IDENTITY_CONFLICT
+121,32,27,Chorus Gtr Pro | Clean Gtr Pro1 | Real El.Gtr ST2,IDENTITY_CONFLICT
+121,32,61,Big Band Brass 1 | Tight Brass 3,IDENTITY_CONFLICT

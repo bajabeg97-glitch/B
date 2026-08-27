@@ -1,0 +1,131 @@
+{
+  "schema": "PA800_PROFILE_SEMANTICS_SOURCES_V1",
+  "device": "Korg Pa800",
+  "os_baseline": "2.0",
+  "retrieved_on": "2026-08-23",
+  "authority_policy": {
+    "factory_corpus": "May supply observed numeric distributions only for the exact measured context.",
+    "official_manual": "May define device mechanics, controller meaning and preserve/suggest rules; it does not supply Factory performance distributions.",
+    "community_forum": "Candidate or operational warning only; never AUTO mutation authority.",
+    "hardware": "Required for audible timbre, undocumented RX/DNC behavior and E3 approval.",
+    "unknown": "Must remain explicit and must not be replaced by a guessed default."
+  },
+  "official_sources": [
+    {
+      "id": "PA800_OWNER_EN_2015",
+      "title": "Pa800 Owner's Manual (English)",
+      "publisher": "Korg",
+      "url": "https://www.korg.com/us/support/download/manual/1/193/2268/",
+      "scope": ["operating modes", "MIDI", "Style and Song behavior", "controllers"]
+    },
+    {
+      "id": "PA800_ADVANCED_EDIT_OS2",
+      "title": "Pa800 Advanced Edit, OS 2.0",
+      "publisher": "Korg",
+      "url": "https://www.korg.com/us/support/download/manual/1/193/1859/",
+      "scope": ["sound architecture", "velocity and key zones", "legato", "damper", "drawbars", "FX1/FX2"]
+    },
+    {
+      "id": "PA800_OS2_UPGRADE_GUIDE",
+      "title": "Pa800 Upgrade Guide for OS v2.0",
+      "publisher": "Korg",
+      "url": "https://www.korg.com/us/support/download/manual/1/193/2532/",
+      "scope": ["DNC mechanics", "23 DNC Sound addresses", "SC1/SC2", "Cycle/Random", "Musical Resources dependency"]
+    }
+  ],
+  "community_sources": [
+    {
+      "id": "KORG_FORUMS_ENHANCED_GM_PA800",
+      "title": "Enhanced GM sounds for Pa800",
+      "url": "https://www.korgforums.com/forum/phpBB3/viewtopic.php?t=38808",
+      "candidate_claims": ["Users discuss preserving custom work while loading OS2 Musical Resources containing new DNC sounds."],
+      "authority": false
+    },
+    {
+      "id": "KORG_FORUMS_VELOCITY_TRIGGER_GUITAR",
+      "title": "I know it's silly question",
+      "url": "https://www.korgforums.com/forum/phpBB3/viewtopic.php?t=49630",
+      "candidate_claims": ["Users identify velocity-triggered sample switching and aftertouch response in guitar sounds."],
+      "authority": false
+    },
+    {
+      "id": "KORG_FORUMS_OS2_PREVIEW",
+      "title": "Pa2X/Pa800 Operating System Version 2 Preview",
+      "url": "https://korgforums.com/forum/phpBB3/viewtopic.php?p=249375",
+      "candidate_claims": ["Users anticipated a matching Musical Resources release for OS2 DNC features."],
+      "authority": false
+    },
+    {
+      "id": "KORG_FORUMS_ROM_RESOURCES_PA800",
+      "title": "Korg can update ROM samples in PA800/2X",
+      "url": "https://www.korgforums.com/forum/phpBB3/viewtopic.php?t=38542",
+      "candidate_claims": ["Community discussion treats Musical Resources as a coupled set of Sounds, Styles, Pads, Performances, STS and global data."],
+      "authority": false
+    }
+  ],
+  "documented_mechanics": {
+    "bank_program": {
+      "messages": ["CC00 Bank Select MSB", "CC32 Bank Select LSB", "Program Change"],
+      "range": [0, 127],
+      "source": "PA800_ADVANCED_EDIT_OS2"
+    },
+    "velocity_zone": {
+      "range": [0, 127],
+      "meaning": "Oscillators can be restricted to a velocity window and scaled internally.",
+      "source": "PA800_ADVANCED_EDIT_OS2"
+    },
+    "legato": {
+      "meaning": "In Mono+Legato, later Note-On events may update pitch without retriggering oscillator, envelope or LFO.",
+      "source": "PA800_ADVANCED_EDIT_OS2"
+    },
+    "damper": {
+      "cc": 64,
+      "modes": ["Normal", "Damper Off", "Resonance/Halo", "Repedaling"],
+      "source": "PA800_ADVANCED_EDIT_OS2"
+    },
+    "sound_controllers": {
+      "sc1_cc": 80,
+      "sc2_cc": 81,
+      "joystick_y_plus_cc": 1,
+      "joystick_y_minus_cc": 2,
+      "source": "PA800_OS2_UPGRADE_GUIDE"
+    },
+    "cycle": {
+      "meaning": "Oscillators in the same Cycle trigger group rotate in programmed order.",
+      "source": "PA800_OS2_UPGRADE_GUIDE"
+    },
+    "random": {
+      "meaning": "One oscillator is selected from a programmed Random trigger group.",
+      "source": "PA800_OS2_UPGRADE_GUIDE"
+    },
+    "sound_fx": {
+      "processors": ["FX1", "FX2"],
+      "note": "Sound-mode FX are distinct from Style/Song A-D routing; absent serialization must remain UNKNOWN.",
+      "source": "PA800_ADVANCED_EDIT_OS2"
+    },
+    "musical_resources": {
+      "meaning": "OS 2.0 requires compatible Musical Resources 2.0 or newer to obtain the matching DNC resource set.",
+      "source": "PA800_OS2_UPGRADE_GUIDE"
+    }
+  },
+  "family_semantics": {
+    "DRUM_KIT": {"guards": ["per_key_identity", "one_shot_duration_caution"], "manual_scope": "family_guard"},
+    "PERCUSSIVE": {"guards": ["transient_timing", "do_not_infer_pitch_semantics"], "manual_scope": "family_guard"},
+    "PIANO": {"controllers": [64], "guards": ["damper_state", "resonance_halo_possible", "chord_balance"], "manual_scope": "family_guard"},
+    "ORGAN": {"guards": ["digital_drawbar_state", "percussion_first_note_mode", "velocity_is_not_primary_expression"], "manual_scope": "family_guard"},
+    "GUITAR": {"controllers": [1, 2, 64, 80, 81], "guards": ["velocity_zone_may_select_noise_or_articulation", "key_off_noise_possible", "special_pitch_preserve"], "community_candidates": ["velocity_triggered_sample_switching"], "manual_scope": "family_guard"},
+    "BASS": {"controllers": [1, 2, 64, 80, 81], "guards": ["legato_possible", "key_off_noise_possible", "drum_lock"], "manual_scope": "family_guard"},
+    "STRINGS": {"controllers": [1, 2, 64, 80, 81], "guards": ["sustain_tail", "simultaneous_chord", "articulation_unknown_without_exact_dnc"], "manual_scope": "family_guard"},
+    "ENSEMBLE": {"controllers": [1, 2, 64, 80, 81], "guards": ["sustain_tail", "simultaneous_chord", "articulation_unknown_without_exact_dnc"], "manual_scope": "family_guard"},
+    "BRASS": {"controllers": [1, 2, 64, 80, 81, "aftertouch", "pitch_bend"], "guards": ["mono_legato_possible", "breath_phrase", "key_noise_possible"], "manual_scope": "family_guard"},
+    "REED": {"controllers": [1, 2, 64, 80, 81, "aftertouch", "pitch_bend"], "guards": ["mono_legato_possible", "breath_phrase", "key_noise_possible"], "manual_scope": "family_guard"},
+    "PIPE": {"controllers": [1, 2, 64, 80, 81, "aftertouch", "pitch_bend"], "guards": ["mono_legato_possible", "breath_phrase", "key_noise_possible"], "manual_scope": "family_guard"},
+    "ACCORDION_REED": {"controllers": [1, 2, 64, 80, 81, "aftertouch", "pitch_bend"], "guards": ["bellows_like_dynamics_candidate", "legato_unknown_without_exact_dnc"], "manual_scope": "family_guard"},
+    "SYNTH_LEAD": {"controllers": [1, 2, 64, 80, 81, "aftertouch", "pitch_bend"], "guards": ["modulation_contour", "cycle_random_name_preserve"], "manual_scope": "family_guard"},
+    "SYNTH_PAD": {"controllers": [1, 2, 64, 80, 81], "guards": ["sustain_tail", "phrase_first"], "manual_scope": "family_guard"},
+    "SYNTH_FX": {"guards": ["cycle_random_preserve", "no_generic_note_mutation"], "manual_scope": "family_guard"},
+    "SFX": {"guards": ["unknown_semantics_preserve", "no_generic_note_mutation"], "manual_scope": "family_guard"},
+    "ETHNIC": {"guards": ["exact_only", "do_not_remap_to_western_gm_name"], "manual_scope": "project_safety"},
+    "CHROMATIC_PERC": {"guards": ["transient_timing", "exact_only"], "manual_scope": "project_safety"}
+  }
+}

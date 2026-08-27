@@ -1,0 +1,221 @@
+{
+  "schema": "PA800_NEURAL_ENCODER_CERTIFICATION_V1",
+  "release": "3.3.0-alpha1",
+  "sources": 14,
+  "unique_source_groups": 13,
+  "split_groups": {
+    "train": 9,
+    "validation": 2,
+    "test": 2
+  },
+  "model_digest": "f175b3c727d98fe20fcf13b01cc8d7070cd5b3cd3ed6093f79ca5c8292f8c68c",
+  "hidden_size": 24,
+  "epochs": 450,
+  "loss_history": [
+    {
+      "epoch": 1,
+      "epochs": 450,
+      "percent": 0.2,
+      "masked_mse": 0.94749708,
+      "learning_rate": 0.035
+    },
+    {
+      "epoch": 22,
+      "epochs": 450,
+      "percent": 4.9,
+      "masked_mse": 0.83454936,
+      "learning_rate": 0.03393597
+    },
+    {
+      "epoch": 44,
+      "epochs": 450,
+      "percent": 9.8,
+      "masked_mse": 0.69454647,
+      "learning_rate": 0.03282127
+    },
+    {
+      "epoch": 66,
+      "epochs": 450,
+      "percent": 14.7,
+      "masked_mse": 0.52308515,
+      "learning_rate": 0.03170657
+    },
+    {
+      "epoch": 88,
+      "epochs": 450,
+      "percent": 19.6,
+      "masked_mse": 0.49311105,
+      "learning_rate": 0.03059187
+    },
+    {
+      "epoch": 110,
+      "epochs": 450,
+      "percent": 24.4,
+      "masked_mse": 0.53683325,
+      "learning_rate": 0.02947717
+    },
+    {
+      "epoch": 132,
+      "epochs": 450,
+      "percent": 29.3,
+      "masked_mse": 0.42845566,
+      "learning_rate": 0.02836247
+    },
+    {
+      "epoch": 154,
+      "epochs": 450,
+      "percent": 34.2,
+      "masked_mse": 0.38979155,
+      "learning_rate": 0.02724777
+    },
+    {
+      "epoch": 176,
+      "epochs": 450,
+      "percent": 39.1,
+      "masked_mse": 0.36977141,
+      "learning_rate": 0.02613307
+    },
+    {
+      "epoch": 198,
+      "epochs": 450,
+      "percent": 44.0,
+      "masked_mse": 0.35234649,
+      "learning_rate": 0.02501837
+    },
+    {
+      "epoch": 220,
+      "epochs": 450,
+      "percent": 48.9,
+      "masked_mse": 0.31856896,
+      "learning_rate": 0.02390367
+    },
+    {
+      "epoch": 242,
+      "epochs": 450,
+      "percent": 53.8,
+      "masked_mse": 0.372356,
+      "learning_rate": 0.02278898
+    },
+    {
+      "epoch": 264,
+      "epochs": 450,
+      "percent": 58.7,
+      "masked_mse": 0.31358311,
+      "learning_rate": 0.02167428
+    },
+    {
+      "epoch": 286,
+      "epochs": 450,
+      "percent": 63.6,
+      "masked_mse": 0.35456419,
+      "learning_rate": 0.02055958
+    },
+    {
+      "epoch": 308,
+      "epochs": 450,
+      "percent": 68.4,
+      "masked_mse": 0.31759379,
+      "learning_rate": 0.01944488
+    },
+    {
+      "epoch": 330,
+      "epochs": 450,
+      "percent": 73.3,
+      "masked_mse": 0.32501909,
+      "learning_rate": 0.01833018
+    },
+    {
+      "epoch": 352,
+      "epochs": 450,
+      "percent": 78.2,
+      "masked_mse": 0.31618354,
+      "learning_rate": 0.01721548
+    },
+    {
+      "epoch": 374,
+      "epochs": 450,
+      "percent": 83.1,
+      "masked_mse": 0.32452885,
+      "learning_rate": 0.01610078
+    },
+    {
+      "epoch": 396,
+      "epochs": 450,
+      "percent": 88.0,
+      "masked_mse": 0.26932577,
+      "learning_rate": 0.01498608
+    },
+    {
+      "epoch": 418,
+      "epochs": 450,
+      "percent": 92.9,
+      "masked_mse": 0.27869939,
+      "learning_rate": 0.01387138
+    },
+    {
+      "epoch": 440,
+      "epochs": 450,
+      "percent": 97.8,
+      "masked_mse": 0.24907787,
+      "learning_rate": 0.01275668
+    },
+    {
+      "epoch": 450,
+      "epochs": 450,
+      "percent": 100.0,
+      "masked_mse": 0.24148957,
+      "learning_rate": 0.01225
+    }
+  ],
+  "evaluation": {
+    "schema": "PA800_SELF_SUPERVISED_ENCODER_EVALUATION_V1",
+    "metrics": {
+      "train": {
+        "notes": 100,
+        "masked_values": 377,
+        "model_mse": 0.27013008,
+        "mean_baseline_mse": 1.02110587,
+        "improvement": 0.735453
+      },
+      "validation": {
+        "notes": 80,
+        "masked_values": 302,
+        "model_mse": 1.52040058,
+        "mean_baseline_mse": 1.6097792,
+        "improvement": 0.055522
+      },
+      "test": {
+        "notes": 32,
+        "masked_values": 121,
+        "model_mse": 3.14770898,
+        "mean_baseline_mse": 4.19315658,
+        "improvement": 0.249322
+      }
+    },
+    "validation_improves_baseline": true,
+    "test_improves_baseline": true,
+    "mutations": 0,
+    "authority_granted": false
+  },
+  "transposition_cosine": 1.0,
+  "protected_sources": 2,
+  "checks": {
+    "dataset_v2": true,
+    "deterministic_training": true,
+    "model_roundtrip": true,
+    "non_empty_grouped_splits": true,
+    "zero_group_leakage": true,
+    "validation_improves_baseline": true,
+    "test_improves_baseline": true,
+    "transposition_invariance": true,
+    "protected_sources_present": true,
+    "finite_embeddings": true,
+    "authority": true
+  },
+  "trained_on_synthetic_proxy": true,
+  "trained_model": true,
+  "production_ready": false,
+  "mutations": 0,
+  "authority_granted": false,
+  "pass": true
+}

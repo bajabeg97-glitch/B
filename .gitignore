@@ -1,0 +1,26 @@
+```
+# Python compiled files
+*.pyc
+__pycache__/
+
+# Dependencies
+venv/
+.venv/
+
+# Logs
+*.log
+
+# Compressed files
+*.zip
+
+# Dataset and research files (if they are large/generated)
+research_max/
+*.sqlite
+*.ndjson.gz
+
+# Cache directories
+.mypy_cache/
+.pytest_cache/
+__pycache__/
+
+```

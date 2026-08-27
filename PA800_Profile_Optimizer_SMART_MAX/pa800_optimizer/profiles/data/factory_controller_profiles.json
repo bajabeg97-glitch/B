@@ -1,0 +1,3918 @@
+[
+  {
+    "score": 6564,
+    "msb": 121,
+    "lsb": 1,
+    "program": 26,
+    "sound": "Pedal Steel Gtr1",
+    "counts": {
+      "cc:64": 122,
+      "pb:None": 4841,
+      "cc:11": 102,
+      "cc:7": 102,
+      "cc:0": 99,
+      "cc:32": 104,
+      "cc:22": 98,
+      "cc:1": 1601,
+      "cc:8": 6,
+      "cc:67": 12,
+      "cc:114": 3,
+      "cc:116": 6,
+      "cc:110": 6,
+      "cc:6": 3,
+      "cc:66": 3,
+      "cc:115": 3,
+      "cc:100": 6,
+      "cc:121": 3,
+      "cc:19": 3
+    }
+  },
+  {
+    "score": 4359,
+    "msb": 121,
+    "lsb": 10,
+    "program": 30,
+    "sound": "Dist. Guitar RX2",
+    "counts": {
+      "cc:11": 35,
+      "cc:7": 35,
+      "cc:0": 35,
+      "cc:32": 32,
+      "pb:None": 4202,
+      "cc:22": 64,
+      "cc:1": 157,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1,
+      "cc:115": 2,
+      "cc:106": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:10": 1,
+      "cc:19": 1
+    }
+  },
+  {
+    "score": 3561,
+    "msb": 121,
+    "lsb": 3,
+    "program": 0,
+    "sound": "Grand Piano",
+    "counts": {
+      "cc:11": 849,
+      "cc:7": 849,
+      "cc:0": 849,
+      "cc:32": 801,
+      "cc:22": 761,
+      "cc:64": 2811,
+      "pb:None": 739,
+      "cc:1": 11,
+      "cc:8": 22,
+      "cc:67": 22,
+      "cc:100": 13,
+      "cc:103": 11,
+      "cc:6": 9,
+      "cc:66": 11,
+      "cc:115": 3,
+      "cc:110": 4,
+      "cc:121": 4,
+      "cc:3": 4,
+      "cc:19": 4,
+      "cc:97": 4,
+      "cc:5": 2,
+      "cc:114": 1,
+      "cc:119": 1
+    }
+  },
+  {
+    "score": 2385,
+    "msb": 121,
+    "lsb": 3,
+    "program": 120,
+    "sound": "Vox Wah Chick RX",
+    "counts": {
+      "cc:22": 132,
+      "cc:11": 119,
+      "cc:7": 119,
+      "cc:0": 119,
+      "cc:32": 115,
+      "pb:None": 2385
+    }
+  },
+  {
+    "score": 2134,
+    "msb": 121,
+    "lsb": 1,
+    "program": 71,
+    "sound": "Jazz Clarinet",
+    "counts": {
+      "cc:22": 159,
+      "cc:11": 108,
+      "cc:7": 108,
+      "cc:0": 108,
+      "cc:32": 101,
+      "cc:1": 1505,
+      "pb:None": 629
+    }
+  },
+  {
+    "score": 2092,
+    "msb": 121,
+    "lsb": 15,
+    "program": 27,
+    "sound": "Clean Gtr Pro2",
+    "counts": {
+      "cc:1": 384,
+      "pb:None": 1708,
+      "cc:11": 107,
+      "cc:7": 107,
+      "cc:0": 107,
+      "cc:32": 93,
+      "cc:22": 96
+    }
+  },
+  {
+    "score": 2019,
+    "msb": 121,
+    "lsb": 3,
+    "program": 33,
+    "sound": "Finger E.Bass2",
+    "counts": {
+      "cc:11": 155,
+      "cc:7": 155,
+      "cc:0": 155,
+      "cc:22": 125,
+      "cc:32": 152,
+      "pb:None": 1996,
+      "cc:64": 23
+    }
+  },
+  {
+    "score": 1581,
+    "msb": 121,
+    "lsb": 0,
+    "program": 33,
+    "sound": "Finger Bass GM",
+    "counts": {
+      "pb:None": 1534,
+      "cc:11": 507,
+      "cc:7": 507,
+      "cc:0": 507,
+      "cc:32": 497,
+      "cc:22": 340,
+      "cc:1": 16,
+      "cc:64": 31
+    }
+  },
+  {
+    "score": 1518,
+    "msb": 121,
+    "lsb": 0,
+    "program": 0,
+    "sound": "AcousticPiano GM",
+    "counts": {
+      "cc:11": 274,
+      "cc:7": 276,
+      "cc:0": 272,
+      "cc:32": 260,
+      "cc:22": 504,
+      "cc:64": 209,
+      "pb:None": 795,
+      "cc:1": 514,
+      "cc:8": 10,
+      "cc:67": 16,
+      "cc:114": 2,
+      "cc:116": 6,
+      "cc:110": 5,
+      "cc:6": 2,
+      "cc:66": 4,
+      "cc:115": 2,
+      "cc:100": 5,
+      "cc:121": 3,
+      "cc:103": 2,
+      "cc:5": 2
+    }
+  },
+  {
+    "score": 1511,
+    "msb": 121,
+    "lsb": 14,
+    "program": 24,
+    "sound": "Nylon Slide Pro",
+    "counts": {
+      "cc:11": 117,
+      "cc:7": 117,
+      "cc:0": 117,
+      "cc:32": 115,
+      "cc:22": 90,
+      "cc:64": 32,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 2,
+      "cc:103": 1,
+      "cc:5": 1,
+      "cc:66": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:14": 1,
+      "cc:19": 1,
+      "cc:108": 1,
+      "pb:None": 1145,
+      "cc:1": 334
+    }
+  },
+  {
+    "score": 1501,
+    "msb": 121,
+    "lsb": 9,
+    "program": 27,
+    "sound": "L&R E.Guitar 1",
+    "counts": {
+      "cc:11": 31,
+      "cc:7": 31,
+      "cc:0": 31,
+      "cc:32": 31,
+      "cc:22": 26,
+      "pb:None": 914,
+      "cc:1": 587
+    }
+  },
+  {
+    "score": 1354,
+    "msb": 121,
+    "lsb": 3,
+    "program": 65,
+    "sound": "Breathy Alto Sax",
+    "counts": {
+      "cc:11": 35,
+      "cc:7": 35,
+      "cc:0": 35,
+      "cc:32": 35,
+      "cc:22": 49,
+      "pb:None": 267,
+      "cc:1": 1087
+    }
+  },
+  {
+    "score": 1337,
+    "msb": 121,
+    "lsb": 8,
+    "program": 30,
+    "sound": "Stereo Dist.Gtr",
+    "counts": {
+      "cc:11": 41,
+      "cc:7": 41,
+      "cc:0": 41,
+      "cc:32": 37,
+      "cc:22": 52,
+      "pb:None": 620,
+      "cc:1": 717
+    }
+  },
+  {
+    "score": 1282,
+    "msb": 121,
+    "lsb": 2,
+    "program": 33,
+    "sound": "Finger E.Bass1",
+    "counts": {
+      "cc:11": 73,
+      "cc:7": 73,
+      "cc:0": 73,
+      "cc:32": 71,
+      "cc:22": 62,
+      "cc:1": 512,
+      "pb:None": 770
+    }
+  },
+  {
+    "score": 1270,
+    "msb": 121,
+    "lsb": 4,
+    "program": 26,
+    "sound": "Pedal Steel Gtr2",
+    "counts": {
+      "cc:11": 38,
+      "cc:7": 38,
+      "cc:0": 38,
+      "cc:32": 38,
+      "cc:22": 48,
+      "cc:1": 504,
+      "pb:None": 766,
+      "cc:8": 4,
+      "cc:67": 4,
+      "cc:100": 6,
+      "cc:103": 2,
+      "cc:6": 2,
+      "cc:66": 2,
+      "cc:115": 2,
+      "cc:110": 2,
+      "cc:121": 2,
+      "cc:4": 2,
+      "cc:19": 2
+    }
+  },
+  {
+    "score": 1229,
+    "msb": 121,
+    "lsb": 4,
+    "program": 27,
+    "sound": "Vintage S.2",
+    "counts": {
+      "cc:11": 107,
+      "cc:7": 107,
+      "cc:0": 107,
+      "cc:32": 99,
+      "cc:22": 87,
+      "cc:64": 8,
+      "pb:None": 789,
+      "cc:1": 432
+    }
+  },
+  {
+    "score": 1229,
+    "msb": 121,
+    "lsb": 1,
+    "program": 22,
+    "sound": "Sweet Harmonica",
+    "counts": {
+      "cc:11": 27,
+      "cc:7": 27,
+      "cc:0": 27,
+      "cc:32": 23,
+      "pb:None": 648,
+      "cc:1": 581,
+      "cc:22": 90
+    }
+  },
+  {
+    "score": 1195,
+    "msb": 121,
+    "lsb": 9,
+    "program": 66,
+    "sound": "Jazz Tenor 1",
+    "counts": {
+      "pb:None": 1195,
+      "cc:11": 9,
+      "cc:7": 9,
+      "cc:0": 9,
+      "cc:32": 9,
+      "cc:22": 9
+    }
+  },
+  {
+    "score": 1062,
+    "msb": 121,
+    "lsb": 14,
+    "program": 28,
+    "sound": "Clean Guitar RX1",
+    "counts": {
+      "cc:11": 210,
+      "cc:7": 211,
+      "cc:0": 210,
+      "cc:32": 205,
+      "pb:None": 793,
+      "cc:22": 171,
+      "cc:1": 269,
+      "cc:8": 3,
+      "cc:67": 4,
+      "cc:116": 1,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1
+    }
+  },
+  {
+    "score": 1026,
+    "msb": 121,
+    "lsb": 5,
+    "program": 26,
+    "sound": "Soft Jazz Guitar",
+    "counts": {
+      "pb:None": 894,
+      "cc:11": 46,
+      "cc:7": 46,
+      "cc:0": 46,
+      "cc:22": 18,
+      "cc:32": 28,
+      "cc:1": 132
+    }
+  },
+  {
+    "score": 1019,
+    "msb": 121,
+    "lsb": 3,
+    "program": 61,
+    "sound": "Glen & Friends",
+    "counts": {
+      "cc:11": 64,
+      "cc:7": 64,
+      "cc:0": 64,
+      "cc:32": 59,
+      "pb:None": 618,
+      "cc:22": 52,
+      "cc:1": 401
+    }
+  },
+  {
+    "score": 1002,
+    "msb": 121,
+    "lsb": 2,
+    "program": 80,
+    "sound": "Lead Sine",
+    "counts": {
+      "cc:11": 9,
+      "cc:7": 9,
+      "cc:0": 9,
+      "cc:32": 9,
+      "pb:None": 526,
+      "cc:1": 476,
+      "cc:22": 10
+    }
+  },
+  {
+    "score": 994,
+    "msb": 121,
+    "lsb": 6,
+    "program": 33,
+    "sound": "Finger Bass 2",
+    "counts": {
+      "cc:11": 631,
+      "cc:7": 631,
+      "cc:0": 631,
+      "cc:32": 617,
+      "cc:22": 393,
+      "pb:None": 958,
+      "cc:64": 20,
+      "cc:1": 16
+    }
+  },
+  {
+    "score": 877,
+    "msb": 121,
+    "lsb": 6,
+    "program": 56,
+    "sound": "Dual Trumpets",
+    "counts": {
+      "pb:None": 153,
+      "cc:11": 20,
+      "cc:7": 20,
+      "cc:0": 20,
+      "cc:32": 20,
+      "cc:1": 724,
+      "cc:22": 28
+    }
+  },
+  {
+    "score": 848,
+    "msb": 121,
+    "lsb": 0,
+    "program": 21,
+    "sound": "Accordion GM",
+    "counts": {
+      "pb:None": 757,
+      "cc:11": 40,
+      "cc:7": 40,
+      "cc:0": 40,
+      "cc:32": 40,
+      "cc:1": 91,
+      "cc:22": 48
+    }
+  },
+  {
+    "score": 844,
+    "msb": 121,
+    "lsb": 13,
+    "program": 48,
+    "sound": "Arabic Strings",
+    "counts": {
+      "cc:11": 44,
+      "cc:7": 44,
+      "cc:0": 44,
+      "cc:32": 42,
+      "cc:22": 44,
+      "pb:None": 628,
+      "cc:1": 216
+    }
+  },
+  {
+    "score": 813,
+    "msb": 121,
+    "lsb": 0,
+    "program": 32,
+    "sound": "Acoustic Bass GM",
+    "counts": {
+      "cc:11": 237,
+      "cc:7": 237,
+      "cc:0": 237,
+      "cc:32": 231,
+      "cc:22": 132,
+      "pb:None": 757,
+      "cc:1": 56
+    }
+  },
+  {
+    "score": 767,
+    "msb": 121,
+    "lsb": 0,
+    "program": 35,
+    "sound": "Fretless Bass GM",
+    "counts": {
+      "pb:None": 767,
+      "cc:11": 40,
+      "cc:7": 40,
+      "cc:0": 40,
+      "cc:32": 37,
+      "cc:22": 28
+    }
+  },
+  {
+    "score": 759,
+    "msb": 121,
+    "lsb": 2,
+    "program": 111,
+    "sound": "Hichiriki",
+    "counts": {
+      "cc:11": 8,
+      "cc:7": 8,
+      "cc:0": 8,
+      "cc:32": 8,
+      "pb:None": 543,
+      "cc:1": 216,
+      "cc:22": 22
+    }
+  },
+  {
+    "score": 742,
+    "msb": 121,
+    "lsb": 14,
+    "program": 27,
+    "sound": "Single Coil Pro",
+    "counts": {
+      "cc:11": 80,
+      "cc:7": 80,
+      "cc:0": 80,
+      "cc:32": 74,
+      "pb:None": 469,
+      "cc:22": 66,
+      "cc:1": 273
+    }
+  },
+  {
+    "score": 726,
+    "msb": 121,
+    "lsb": 2,
+    "program": 26,
+    "sound": "Club Jazz Gtr 1",
+    "counts": {
+      "cc:11": 79,
+      "cc:7": 79,
+      "cc:0": 79,
+      "cc:32": 71,
+      "pb:None": 571,
+      "cc:22": 96,
+      "cc:1": 155,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:5": 1,
+      "cc:66": 1
+    }
+  },
+  {
+    "score": 704,
+    "msb": 121,
+    "lsb": 9,
+    "program": 33,
+    "sound": "Bright Finger B.",
+    "counts": {
+      "cc:11": 129,
+      "cc:7": 129,
+      "cc:0": 129,
+      "cc:32": 128,
+      "cc:22": 61,
+      "pb:None": 704
+    }
+  },
+  {
+    "score": 663,
+    "msb": 121,
+    "lsb": 0,
+    "program": 110,
+    "sound": "Fiddle GM",
+    "counts": {
+      "cc:11": 23,
+      "cc:7": 23,
+      "cc:0": 23,
+      "cc:32": 23,
+      "pb:None": 663,
+      "cc:22": 17
+    }
+  },
+  {
+    "score": 654,
+    "msb": 121,
+    "lsb": 12,
+    "program": 27,
+    "sound": "Funky Wah RX",
+    "counts": {
+      "cc:11": 54,
+      "cc:7": 54,
+      "cc:0": 54,
+      "cc:32": 49,
+      "cc:22": 54,
+      "pb:None": 312,
+      "cc:1": 342
+    }
+  },
+  {
+    "score": 653,
+    "msb": 121,
+    "lsb": 3,
+    "program": 34,
+    "sound": "Stein Bass",
+    "counts": {
+      "cc:11": 268,
+      "cc:7": 268,
+      "cc:0": 268,
+      "cc:32": 250,
+      "pb:None": 535,
+      "cc:1": 118,
+      "cc:22": 183
+    }
+  },
+  {
+    "score": 646,
+    "msb": 121,
+    "lsb": 12,
+    "program": 24,
+    "sound": "Nylon Gtr RX1",
+    "counts": {
+      "cc:11": 103,
+      "cc:7": 103,
+      "cc:0": 103,
+      "cc:32": 100,
+      "pb:None": 646,
+      "cc:22": 91
+    }
+  },
+  {
+    "score": 623,
+    "msb": 121,
+    "lsb": 11,
+    "program": 28,
+    "sound": "Clean Funk RX2",
+    "counts": {
+      "cc:1": 337,
+      "pb:None": 286,
+      "cc:11": 150,
+      "cc:7": 150,
+      "cc:0": 150,
+      "cc:32": 145,
+      "cc:22": 132
+    }
+  },
+  {
+    "score": 618,
+    "msb": 121,
+    "lsb": 12,
+    "program": 28,
+    "sound": "Funk Stein RX1",
+    "counts": {
+      "cc:11": 59,
+      "cc:7": 59,
+      "cc:0": 59,
+      "cc:22": 43,
+      "cc:32": 50,
+      "pb:None": 618
+    }
+  },
+  {
+    "score": 586,
+    "msb": 121,
+    "lsb": 6,
+    "program": 80,
+    "sound": "Sine Wave",
+    "counts": {
+      "cc:11": 8,
+      "cc:7": 8,
+      "cc:0": 8,
+      "cc:32": 8,
+      "cc:22": 6,
+      "pb:None": 413,
+      "cc:1": 173,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:5": 1,
+      "cc:66": 1,
+      "cc:110": 3,
+      "cc:121": 1,
+      "cc:6": 1,
+      "cc:19": 1,
+      "cc:87": 1,
+      "cc:101": 1
+    }
+  },
+  {
+    "score": 530,
+    "msb": 121,
+    "lsb": 11,
+    "program": 38,
+    "sound": "Digi Bass 3",
+    "counts": {
+      "cc:11": 48,
+      "cc:7": 48,
+      "cc:0": 48,
+      "cc:32": 48,
+      "pb:None": 530,
+      "cc:22": 51
+    }
+  },
+  {
+    "score": 530,
+    "msb": 121,
+    "lsb": 0,
+    "program": 8,
+    "sound": "Celesta GM",
+    "counts": {
+      "cc:11": 34,
+      "cc:7": 34,
+      "cc:0": 34,
+      "cc:32": 34,
+      "pb:None": 233,
+      "cc:22": 27,
+      "cc:1": 297
+    }
+  },
+  {
+    "score": 518,
+    "msb": 121,
+    "lsb": 3,
+    "program": 26,
+    "sound": "Club Jazz Gtr 2",
+    "counts": {
+      "cc:11": 30,
+      "cc:7": 30,
+      "cc:0": 30,
+      "cc:32": 25,
+      "pb:None": 318,
+      "cc:1": 200,
+      "cc:22": 17
+    }
+  },
+  {
+    "score": 499,
+    "msb": 121,
+    "lsb": 2,
+    "program": 40,
+    "sound": "Violin Expr. 1",
+    "counts": {
+      "pb:None": 415,
+      "cc:22": 28,
+      "cc:11": 26,
+      "cc:7": 26,
+      "cc:0": 26,
+      "cc:32": 26,
+      "cc:1": 84
+    }
+  },
+  {
+    "score": 486,
+    "msb": 121,
+    "lsb": 2,
+    "program": 64,
+    "sound": "Soprano Pro",
+    "counts": {
+      "pb:None": 262,
+      "cc:1": 224,
+      "cc:22": 14,
+      "cc:11": 2,
+      "cc:7": 2,
+      "cc:0": 2,
+      "cc:32": 2,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1
+    }
+  },
+  {
+    "score": 466,
+    "msb": 121,
+    "lsb": 3,
+    "program": 59,
+    "sound": "Mute Ensemble 1",
+    "counts": {
+      "cc:11": 101,
+      "cc:7": 101,
+      "cc:0": 101,
+      "cc:32": 85,
+      "pb:None": 373,
+      "cc:22": 72,
+      "cc:1": 93
+    }
+  },
+  {
+    "score": 462,
+    "msb": 121,
+    "lsb": 10,
+    "program": 28,
+    "sound": "Clean Funk RX1",
+    "counts": {
+      "cc:11": 230,
+      "cc:7": 230,
+      "cc:0": 230,
+      "cc:32": 213,
+      "cc:22": 156,
+      "cc:64": 7,
+      "pb:None": 400,
+      "cc:1": 55
+    }
+  },
+  {
+    "score": 454,
+    "msb": 121,
+    "lsb": 16,
+    "program": 27,
+    "sound": "Stra. Vel. Pro",
+    "counts": {
+      "cc:11": 53,
+      "cc:7": 53,
+      "cc:0": 53,
+      "cc:32": 43,
+      "cc:22": 84,
+      "pb:None": 48,
+      "cc:1": 406
+    }
+  },
+  {
+    "score": 440,
+    "msb": 121,
+    "lsb": 3,
+    "program": 90,
+    "sound": "Synth Sweeper",
+    "counts": {
+      "cc:22": 10,
+      "cc:11": 6,
+      "cc:7": 6,
+      "cc:0": 6,
+      "cc:32": 6,
+      "pb:None": 440
+    }
+  },
+  {
+    "score": 437,
+    "msb": 121,
+    "lsb": 6,
+    "program": 57,
+    "sound": "Trombone Expr. 1",
+    "counts": {
+      "cc:11": 18,
+      "cc:7": 18,
+      "cc:0": 18,
+      "pb:None": 437,
+      "cc:32": 7,
+      "cc:22": 24
+    }
+  },
+  {
+    "score": 429,
+    "msb": 121,
+    "lsb": 18,
+    "program": 27,
+    "sound": "Chorus Gtr Pro",
+    "counts": {
+      "cc:11": 76,
+      "cc:7": 76,
+      "cc:0": 76,
+      "cc:32": 65,
+      "cc:22": 100,
+      "cc:1": 391,
+      "pb:None": 38,
+      "cc:8": 4,
+      "cc:67": 4,
+      "cc:100": 2,
+      "cc:103": 2,
+      "cc:6": 2,
+      "cc:66": 2,
+      "cc:115": 2,
+      "cc:90": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:18": 1,
+      "cc:19": 1,
+      "cc:111": 1,
+      "cc:116": 1,
+      "cc:80": 1
+    }
+  },
+  {
+    "score": 418,
+    "msb": 121,
+    "lsb": 15,
+    "program": 25,
+    "sound": "Steel Guitar RX1",
+    "counts": {
+      "cc:11": 316,
+      "cc:7": 316,
+      "cc:0": 316,
+      "cc:32": 308,
+      "cc:22": 259,
+      "pb:None": 418
+    }
+  },
+  {
+    "score": 408,
+    "msb": 121,
+    "lsb": 5,
+    "program": 71,
+    "sound": "Clarinet Ens.",
+    "counts": {
+      "cc:22": 20,
+      "cc:11": 23,
+      "cc:7": 23,
+      "cc:0": 23,
+      "cc:32": 21,
+      "pb:None": 30,
+      "cc:1": 378,
+      "cc:8": 4,
+      "cc:67": 4,
+      "cc:100": 2,
+      "cc:103": 2,
+      "cc:6": 2,
+      "cc:66": 2
+    }
+  },
+  {
+    "score": 406,
+    "msb": 121,
+    "lsb": 1,
+    "program": 32,
+    "sound": "Ac. Bass Buzz",
+    "counts": {
+      "cc:11": 66,
+      "cc:7": 66,
+      "cc:0": 66,
+      "cc:32": 66,
+      "cc:22": 80,
+      "pb:None": 406
+    }
+  },
+  {
+    "score": 398,
+    "msb": 121,
+    "lsb": 4,
+    "program": 52,
+    "sound": "Take Voices 1",
+    "counts": {
+      "cc:11": 25,
+      "cc:7": 25,
+      "cc:0": 25,
+      "cc:32": 25,
+      "cc:22": 14,
+      "pb:None": 122,
+      "cc:1": 276
+    }
+  },
+  {
+    "score": 397,
+    "msb": 121,
+    "lsb": 7,
+    "program": 32,
+    "sound": "Acous. Bass RX",
+    "counts": {
+      "cc:11": 89,
+      "cc:7": 89,
+      "cc:0": 89,
+      "cc:32": 89,
+      "cc:22": 58,
+      "pb:None": 397
+    }
+  },
+  {
+    "score": 375,
+    "msb": 121,
+    "lsb": 2,
+    "program": 61,
+    "sound": "Tight Brass 3",
+    "counts": {
+      "cc:11": 108,
+      "cc:7": 108,
+      "cc:0": 108,
+      "cc:32": 103,
+      "pb:None": 318,
+      "cc:22": 109,
+      "cc:1": 53,
+      "cc:8": 8,
+      "cc:67": 8,
+      "cc:100": 8,
+      "cc:103": 8,
+      "cc:6": 4,
+      "cc:66": 4,
+      "cc:115": 4,
+      "cc:110": 4,
+      "cc:121": 4,
+      "cc:2": 4,
+      "cc:19": 4
+    }
+  },
+  {
+    "score": 373,
+    "msb": 121,
+    "lsb": 15,
+    "program": 56,
+    "sound": "Trumpet Expr.1",
+    "counts": {
+      "cc:11": 32,
+      "cc:7": 32,
+      "cc:0": 32,
+      "cc:32": 29,
+      "cc:1": 232,
+      "pb:None": 141,
+      "cc:22": 28
+    }
+  },
+  {
+    "score": 372,
+    "msb": 121,
+    "lsb": 9,
+    "program": 61,
+    "sound": "Trumpet Ens.",
+    "counts": {
+      "cc:11": 31,
+      "cc:7": 31,
+      "cc:0": 31,
+      "cc:22": 35,
+      "cc:32": 29,
+      "cc:1": 247,
+      "pb:None": 125
+    }
+  },
+  {
+    "score": 364,
+    "msb": 121,
+    "lsb": 11,
+    "program": 4,
+    "sound": "Club E. Piano",
+    "counts": {
+      "cc:11": 137,
+      "cc:7": 136,
+      "cc:0": 136,
+      "cc:32": 133,
+      "cc:22": 108,
+      "cc:64": 364,
+      "cc:8": 8,
+      "cc:67": 8,
+      "cc:100": 5,
+      "cc:103": 4,
+      "cc:5": 2,
+      "cc:66": 4,
+      "cc:110": 2,
+      "cc:121": 1,
+      "cc:19": 1,
+      "cc:117": 1,
+      "cc:69": 1,
+      "cc:80": 1,
+      "cc:6": 2
+    }
+  },
+  {
+    "score": 323,
+    "msb": 121,
+    "lsb": 4,
+    "program": 4,
+    "sound": "Vintage EP",
+    "counts": {
+      "cc:11": 118,
+      "cc:7": 119,
+      "cc:0": 118,
+      "cc:22": 87,
+      "cc:64": 323,
+      "cc:32": 103,
+      "cc:8": 5,
+      "cc:67": 6,
+      "cc:100": 3,
+      "cc:103": 3,
+      "cc:5": 1,
+      "cc:66": 2,
+      "cc:110": 2,
+      "cc:121": 1,
+      "cc:4": 1,
+      "cc:19": 1,
+      "cc:69": 1,
+      "cc:116": 1,
+      "cc:6": 1
+    }
+  },
+  {
+    "score": 313,
+    "msb": 121,
+    "lsb": 2,
+    "program": 81,
+    "sound": "Lead Saw Pulse",
+    "counts": {
+      "pb:None": 279,
+      "cc:1": 34,
+      "cc:22": 4
+    }
+  },
+  {
+    "score": 294,
+    "msb": 121,
+    "lsb": 29,
+    "program": 27,
+    "sound": "Real El.Gtr ST2",
+    "counts": {
+      "cc:11": 99,
+      "cc:7": 99,
+      "cc:0": 99,
+      "cc:32": 95,
+      "cc:22": 76,
+      "pb:None": 249,
+      "cc:64": 45,
+      "cc:8": 4,
+      "cc:67": 4,
+      "cc:100": 2,
+      "cc:103": 2,
+      "cc:6": 2,
+      "cc:66": 2,
+      "cc:115": 1,
+      "cc:127": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:30": 1,
+      "cc:19": 1,
+      "cc:97": 1,
+      "cc:69": 1
+    }
+  },
+  {
+    "score": 293,
+    "msb": 121,
+    "lsb": 1,
+    "program": 66,
+    "sound": "Tenor Sax Noise1",
+    "counts": {
+      "cc:11": 42,
+      "cc:7": 42,
+      "cc:0": 42,
+      "cc:32": 42,
+      "cc:22": 47,
+      "pb:None": 37,
+      "cc:1": 256
+    }
+  },
+  {
+    "score": 291,
+    "msb": 121,
+    "lsb": 25,
+    "program": 25,
+    "sound": "Pop SteelGtr RX2",
+    "counts": {
+      "cc:11": 49,
+      "cc:7": 49,
+      "cc:0": 49,
+      "cc:32": 49,
+      "cc:22": 30,
+      "pb:None": 291
+    }
+  },
+  {
+    "score": 290,
+    "msb": 121,
+    "lsb": 13,
+    "program": 33,
+    "sound": "Finger Bass RX",
+    "counts": {
+      "cc:11": 126,
+      "cc:7": 126,
+      "cc:0": 126,
+      "pb:None": 219,
+      "cc:32": 119,
+      "cc:22": 87,
+      "cc:1": 71
+    }
+  },
+  {
+    "score": 279,
+    "msb": 121,
+    "lsb": 0,
+    "program": 3,
+    "sound": "Honky-Tonk GM",
+    "counts": {
+      "cc:11": 22,
+      "cc:7": 22,
+      "cc:0": 22,
+      "cc:32": 22,
+      "cc:22": 24,
+      "cc:64": 12,
+      "pb:None": 133,
+      "cc:1": 134
+    }
+  },
+  {
+    "score": 276,
+    "msb": 121,
+    "lsb": 31,
+    "program": 27,
+    "sound": "Real El. Guitar2",
+    "counts": {
+      "cc:11": 17,
+      "cc:7": 17,
+      "cc:0": 17,
+      "cc:32": 17,
+      "pb:None": 276,
+      "cc:22": 19
+    }
+  },
+  {
+    "score": 276,
+    "msb": 121,
+    "lsb": 5,
+    "program": 28,
+    "sound": "Stra. Chime",
+    "counts": {
+      "cc:11": 30,
+      "cc:7": 30,
+      "cc:0": 30,
+      "cc:32": 30,
+      "cc:22": 12,
+      "cc:1": 276
+    }
+  },
+  {
+    "score": 264,
+    "msb": 121,
+    "lsb": 13,
+    "program": 61,
+    "sound": "Fat Brass",
+    "counts": {
+      "cc:11": 105,
+      "cc:7": 105,
+      "cc:0": 105,
+      "cc:32": 105,
+      "cc:22": 135,
+      "pb:None": 264
+    }
+  },
+  {
+    "score": 256,
+    "msb": 121,
+    "lsb": 7,
+    "program": 30,
+    "sound": "Solo Dist.Guitar",
+    "counts": {
+      "cc:11": 12,
+      "cc:7": 12,
+      "cc:0": 12,
+      "cc:32": 12,
+      "pb:None": 240,
+      "cc:64": 16,
+      "cc:22": 7
+    }
+  },
+  {
+    "score": 245,
+    "msb": 121,
+    "lsb": 20,
+    "program": 25,
+    "sound": "Steel Guitar 3",
+    "counts": {
+      "cc:11": 89,
+      "cc:7": 89,
+      "cc:0": 89,
+      "cc:32": 81,
+      "cc:22": 74,
+      "cc:64": 245,
+      "cc:8": 4,
+      "cc:67": 4,
+      "cc:100": 3,
+      "cc:103": 2,
+      "cc:6": 2,
+      "cc:66": 2,
+      "cc:115": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:20": 1,
+      "cc:19": 1,
+      "cc:101": 1
+    }
+  },
+  {
+    "score": 234,
+    "msb": 121,
+    "lsb": 0,
+    "program": 67,
+    "sound": "Baritone Sax GM",
+    "counts": {
+      "cc:11": 16,
+      "cc:7": 16,
+      "cc:0": 16,
+      "cc:32": 13,
+      "pb:None": 234,
+      "cc:22": 6
+    }
+  },
+  {
+    "score": 231,
+    "msb": 0,
+    "lsb": 32,
+    "program": 0,
+    "sound": "AcousticPiano GM",
+    "counts": {
+      "cc:32": 5,
+      "cc:1": 194,
+      "pb:None": 37,
+      "cc:8": 4,
+      "cc:67": 8,
+      "cc:11": 2,
+      "cc:114": 2,
+      "cc:116": 6,
+      "cc:110": 6,
+      "cc:6": 2,
+      "cc:66": 2,
+      "cc:115": 2,
+      "cc:100": 2,
+      "cc:121": 2,
+      "cc:0": 2,
+      "cc:19": 2,
+      "cc:111": 2,
+      "cc:80": 2,
+      "cc:71": 2,
+      "cc:7": 2,
+      "cc:22": 1
+    }
+  },
+  {
+    "score": 228,
+    "msb": 121,
+    "lsb": 6,
+    "program": 27,
+    "sound": "Single Coil",
+    "counts": {
+      "cc:11": 31,
+      "cc:7": 31,
+      "cc:0": 31,
+      "cc:32": 22,
+      "cc:22": 64,
+      "pb:None": 118,
+      "cc:1": 110
+    }
+  },
+  {
+    "score": 219,
+    "msb": 121,
+    "lsb": 21,
+    "program": 27,
+    "sound": "Solid Guitar",
+    "counts": {
+      "cc:11": 85,
+      "cc:7": 85,
+      "cc:0": 85,
+      "cc:32": 83,
+      "cc:22": 83,
+      "pb:None": 10,
+      "cc:64": 209
+    }
+  },
+  {
+    "score": 214,
+    "msb": 121,
+    "lsb": 5,
+    "program": 37,
+    "sound": "The Other Slap",
+    "counts": {
+      "pb:None": 214,
+      "cc:11": 20,
+      "cc:7": 20,
+      "cc:0": 20,
+      "cc:32": 20,
+      "cc:22": 12
+    }
+  },
+  {
+    "score": 211,
+    "msb": 121,
+    "lsb": 0,
+    "program": 66,
+    "sound": "Tenor Sax GM",
+    "counts": {
+      "cc:11": 7,
+      "cc:7": 7,
+      "cc:0": 7,
+      "cc:32": 5,
+      "pb:None": 211,
+      "cc:22": 13
+    }
+  },
+  {
+    "score": 208,
+    "msb": 121,
+    "lsb": 7,
+    "program": 27,
+    "sound": "New Stra.Guitar",
+    "counts": {
+      "cc:11": 76,
+      "cc:7": 76,
+      "cc:0": 76,
+      "cc:32": 68,
+      "cc:22": 71,
+      "pb:None": 208
+    }
+  },
+  {
+    "score": 208,
+    "msb": 121,
+    "lsb": 4,
+    "program": 36,
+    "sound": "SlapFing Bass RX",
+    "counts": {
+      "cc:11": 201,
+      "cc:7": 201,
+      "cc:0": 201,
+      "cc:32": 186,
+      "pb:None": 157,
+      "cc:22": 142,
+      "cc:1": 51
+    }
+  },
+  {
+    "score": 204,
+    "msb": 121,
+    "lsb": 0,
+    "program": 34,
+    "sound": "Picked E.Bass GM",
+    "counts": {
+      "cc:11": 65,
+      "cc:7": 65,
+      "cc:0": 65,
+      "cc:32": 65,
+      "cc:22": 63,
+      "pb:None": 204
+    }
+  },
+  {
+    "score": 200,
+    "msb": 121,
+    "lsb": 4,
+    "program": 32,
+    "sound": "Acous. Bass Pro2",
+    "counts": {
+      "cc:11": 33,
+      "cc:7": 33,
+      "cc:0": 33,
+      "cc:32": 33,
+      "cc:22": 23,
+      "pb:None": 200
+    }
+  },
+  {
+    "score": 199,
+    "msb": 121,
+    "lsb": 1,
+    "program": 34,
+    "sound": "Picked E.Bass 2",
+    "counts": {
+      "cc:11": 57,
+      "cc:7": 57,
+      "cc:0": 57,
+      "cc:32": 53,
+      "pb:None": 199,
+      "cc:22": 24
+    }
+  },
+  {
+    "score": 195,
+    "msb": 121,
+    "lsb": 7,
+    "program": 4,
+    "sound": "Studio EP",
+    "counts": {
+      "cc:1": 33,
+      "cc:11": 68,
+      "cc:7": 69,
+      "cc:0": 68,
+      "pb:None": 7,
+      "cc:32": 64,
+      "cc:22": 49,
+      "cc:64": 155,
+      "cc:8": 6,
+      "cc:67": 6,
+      "cc:100": 4,
+      "cc:103": 3,
+      "cc:6": 3,
+      "cc:66": 3,
+      "cc:115": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:19": 1,
+      "cc:117": 1,
+      "cc:111": 1,
+      "cc:80": 1
+    }
+  },
+  {
+    "score": 191,
+    "msb": 121,
+    "lsb": 27,
+    "program": 61,
+    "sound": "Tight Brass 1",
+    "counts": {
+      "cc:22": 62,
+      "cc:11": 64,
+      "cc:7": 64,
+      "cc:0": 64,
+      "cc:32": 56,
+      "pb:None": 40,
+      "cc:1": 151
+    }
+  },
+  {
+    "score": 180,
+    "msb": 121,
+    "lsb": 1,
+    "program": 35,
+    "sound": "Fretless Bass 2",
+    "counts": {
+      "cc:11": 134,
+      "cc:7": 134,
+      "cc:0": 134,
+      "cc:32": 134,
+      "cc:22": 83,
+      "pb:None": 180
+    }
+  },
+  {
+    "score": 178,
+    "msb": 121,
+    "lsb": 28,
+    "program": 61,
+    "sound": "Tight Brass Pro",
+    "counts": {
+      "cc:22": 150,
+      "cc:11": 68,
+      "cc:7": 68,
+      "cc:0": 68,
+      "cc:32": 64,
+      "pb:None": 50,
+      "cc:1": 128
+    }
+  },
+  {
+    "score": 176,
+    "msb": 121,
+    "lsb": 8,
+    "program": 90,
+    "sound": "Noisy Stabb",
+    "counts": {
+      "pb:None": 176,
+      "cc:11": 11,
+      "cc:7": 11,
+      "cc:0": 11,
+      "cc:32": 10,
+      "cc:22": 3
+    }
+  },
+  {
+    "score": 176,
+    "msb": 121,
+    "lsb": 2,
+    "program": 84,
+    "sound": "Synchro City",
+    "counts": {
+      "pb:None": 128,
+      "cc:1": 48,
+      "cc:11": 2,
+      "cc:7": 2,
+      "cc:0": 2,
+      "cc:22": 9,
+      "cc:32": 1
+    }
+  },
+  {
+    "score": 174,
+    "msb": 121,
+    "lsb": 13,
+    "program": 27,
+    "sound": "Clean Gtr Pro1",
+    "counts": {
+      "cc:11": 74,
+      "cc:7": 75,
+      "cc:0": 74,
+      "cc:32": 71,
+      "cc:22": 110,
+      "pb:None": 2,
+      "cc:1": 149,
+      "cc:8": 7,
+      "cc:67": 8,
+      "cc:116": 1,
+      "cc:100": 4,
+      "cc:103": 3,
+      "cc:6": 2,
+      "cc:66": 3,
+      "cc:115": 1,
+      "cc:110": 2,
+      "cc:121": 2,
+      "cc:13": 2,
+      "cc:19": 2,
+      "cc:101": 2,
+      "cc:64": 23,
+      "cc:5": 1,
+      "cc:104": 1
+    }
+  },
+  {
+    "score": 165,
+    "msb": 121,
+    "lsb": 32,
+    "program": 26,
+    "sound": "Pedal Steel Gtr1",
+    "counts": {
+      "cc:32": 3,
+      "pb:None": 137,
+      "cc:1": 28,
+      "cc:8": 3,
+      "cc:67": 6,
+      "cc:7": 3,
+      "cc:116": 3
+    }
+  },
+  {
+    "score": 165,
+    "msb": 121,
+    "lsb": 3,
+    "program": 27,
+    "sound": "Chorus Guitar",
+    "counts": {
+      "cc:11": 40,
+      "cc:7": 40,
+      "cc:0": 40,
+      "cc:32": 37,
+      "pb:None": 162,
+      "cc:22": 36,
+      "cc:64": 3
+    }
+  },
+  {
+    "score": 164,
+    "msb": 121,
+    "lsb": 2,
+    "program": 65,
+    "sound": "Sax Ensemble",
+    "counts": {
+      "cc:11": 41,
+      "cc:7": 41,
+      "cc:0": 41,
+      "cc:32": 41,
+      "cc:22": 81,
+      "cc:1": 22,
+      "pb:None": 142
+    }
+  },
+  {
+    "score": 158,
+    "msb": 121,
+    "lsb": 3,
+    "program": 67,
+    "sound": "Baritone Sax Pro",
+    "counts": {
+      "cc:11": 10,
+      "cc:7": 10,
+      "cc:0": 10,
+      "cc:22": 2,
+      "cc:32": 4,
+      "pb:None": 158
+    }
+  },
+  {
+    "score": 154,
+    "msb": 121,
+    "lsb": 2,
+    "program": 34,
+    "sound": "Picked E.Bass 3",
+    "counts": {
+      "cc:11": 133,
+      "cc:7": 133,
+      "cc:0": 133,
+      "cc:32": 133,
+      "pb:None": 149,
+      "cc:22": 130,
+      "cc:1": 5
+    }
+  },
+  {
+    "score": 150,
+    "msb": 121,
+    "lsb": 3,
+    "program": 32,
+    "sound": "Acous. Bass Pro1",
+    "counts": {
+      "cc:11": 156,
+      "cc:7": 156,
+      "cc:0": 156,
+      "cc:32": 152,
+      "cc:22": 83,
+      "pb:None": 150
+    }
+  },
+  {
+    "score": 144,
+    "msb": 121,
+    "lsb": 1,
+    "program": 93,
+    "sound": "Cosmic",
+    "counts": {
+      "cc:11": 10,
+      "cc:7": 10,
+      "cc:0": 10,
+      "cc:32": 10,
+      "pb:None": 144,
+      "cc:22": 38
+    }
+  },
+  {
+    "score": 141,
+    "msb": 121,
+    "lsb": 7,
+    "program": 48,
+    "sound": "Arco Strings",
+    "counts": {
+      "cc:11": 106,
+      "cc:7": 106,
+      "cc:0": 106,
+      "cc:32": 94,
+      "cc:22": 92,
+      "pb:None": 136,
+      "cc:64": 5
+    }
+  },
+  {
+    "score": 140,
+    "msb": 121,
+    "lsb": 2,
+    "program": 28,
+    "sound": "Mute Vel. Gtr",
+    "counts": {
+      "cc:11": 35,
+      "cc:7": 35,
+      "cc:0": 35,
+      "cc:32": 34,
+      "pb:None": 132,
+      "cc:1": 8,
+      "cc:22": 23
+    }
+  },
+  {
+    "score": 132,
+    "msb": 121,
+    "lsb": 12,
+    "program": 25,
+    "sound": "Reso. Guitar",
+    "counts": {
+      "pb:None": 120,
+      "cc:11": 17,
+      "cc:7": 17,
+      "cc:0": 17,
+      "cc:32": 17,
+      "cc:1": 12,
+      "cc:22": 16
+    }
+  },
+  {
+    "score": 124,
+    "msb": 121,
+    "lsb": 32,
+    "program": 26,
+    "sound": "Pedal Steel Gtr2",
+    "counts": {
+      "cc:32": 4,
+      "pb:None": 72,
+      "cc:1": 52,
+      "cc:8": 4,
+      "cc:67": 4,
+      "cc:100": 6,
+      "cc:103": 2,
+      "cc:6": 2,
+      "cc:66": 2,
+      "cc:115": 2,
+      "cc:110": 2,
+      "cc:121": 2,
+      "cc:4": 2,
+      "cc:19": 2
+    }
+  },
+  {
+    "score": 122,
+    "msb": 121,
+    "lsb": 19,
+    "program": 4,
+    "sound": "Tine E.Piano",
+    "counts": {
+      "cc:11": 108,
+      "cc:7": 108,
+      "cc:0": 108,
+      "cc:32": 90,
+      "cc:64": 76,
+      "cc:22": 80,
+      "cc:1": 46
+    }
+  },
+  {
+    "score": 114,
+    "msb": 121,
+    "lsb": 5,
+    "program": 39,
+    "sound": "Jungle Rez",
+    "counts": {
+      "cc:11": 36,
+      "cc:7": 36,
+      "cc:0": 36,
+      "cc:32": 35,
+      "cc:22": 27,
+      "pb:None": 110,
+      "cc:1": 4
+    }
+  },
+  {
+    "score": 112,
+    "msb": 121,
+    "lsb": 3,
+    "program": 5,
+    "sound": "EP Legend",
+    "counts": {
+      "cc:11": 9,
+      "cc:7": 9,
+      "cc:0": 9,
+      "cc:32": 9,
+      "cc:64": 112,
+      "cc:22": 9,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1
+    }
+  },
+  {
+    "score": 111,
+    "msb": 121,
+    "lsb": 8,
+    "program": 33,
+    "sound": "Chorus Fing.Bass",
+    "counts": {
+      "cc:11": 20,
+      "cc:7": 20,
+      "cc:0": 20,
+      "cc:32": 20,
+      "cc:22": 33,
+      "pb:None": 111
+    }
+  },
+  {
+    "score": 108,
+    "msb": 121,
+    "lsb": 7,
+    "program": 61,
+    "sound": "Trpts & Brass",
+    "counts": {
+      "cc:11": 28,
+      "cc:7": 28,
+      "cc:0": 28,
+      "cc:32": 24,
+      "cc:22": 16,
+      "cc:1": 6,
+      "pb:None": 102
+    }
+  },
+  {
+    "score": 102,
+    "msb": 121,
+    "lsb": 32,
+    "program": 25,
+    "sound": "Real Folk Gtr",
+    "counts": {
+      "cc:11": 177,
+      "cc:7": 177,
+      "cc:0": 177,
+      "cc:32": 175,
+      "cc:22": 155,
+      "pb:None": 54,
+      "cc:1": 48
+    }
+  },
+  {
+    "score": 102,
+    "msb": 121,
+    "lsb": 29,
+    "program": 25,
+    "sound": "RealFolk Gtr ST1",
+    "counts": {
+      "cc:11": 71,
+      "cc:7": 71,
+      "cc:0": 71,
+      "cc:32": 69,
+      "cc:22": 94,
+      "pb:None": 54,
+      "cc:1": 48
+    }
+  },
+  {
+    "score": 96,
+    "msb": 121,
+    "lsb": 4,
+    "program": 67,
+    "sound": "Baritone Sax 2",
+    "counts": {
+      "pb:None": 96,
+      "cc:11": 2,
+      "cc:7": 2,
+      "cc:0": 2,
+      "cc:22": 9
+    }
+  },
+  {
+    "score": 95,
+    "msb": 121,
+    "lsb": 10,
+    "program": 5,
+    "sound": "Phantom Tine",
+    "counts": {
+      "cc:64": 95,
+      "cc:11": 10,
+      "cc:7": 10,
+      "cc:0": 10,
+      "cc:32": 10,
+      "cc:22": 18
+    }
+  },
+  {
+    "score": 90,
+    "msb": 121,
+    "lsb": 5,
+    "program": 48,
+    "sound": "i3 Strings",
+    "counts": {
+      "cc:11": 136,
+      "cc:7": 137,
+      "cc:0": 136,
+      "cc:32": 126,
+      "cc:22": 182,
+      "cc:1": 46,
+      "pb:None": 39,
+      "cc:8": 1,
+      "cc:67": 2,
+      "cc:116": 1,
+      "cc:64": 5
+    }
+  },
+  {
+    "score": 90,
+    "msb": 121,
+    "lsb": 1,
+    "program": 81,
+    "sound": "Lead Saw 2",
+    "counts": {
+      "cc:11": 10,
+      "cc:7": 10,
+      "cc:0": 10,
+      "cc:32": 9,
+      "pb:None": 90,
+      "cc:22": 9
+    }
+  },
+  {
+    "score": 86,
+    "msb": 121,
+    "lsb": 18,
+    "program": 56,
+    "sound": "Trumpet Shake Y+",
+    "counts": {
+      "cc:11": 14,
+      "cc:7": 14,
+      "cc:0": 14,
+      "cc:32": 10,
+      "cc:22": 14,
+      "cc:1": 71,
+      "pb:None": 15
+    }
+  },
+  {
+    "score": 86,
+    "msb": 121,
+    "lsb": 9,
+    "program": 24,
+    "sound": "Brazilian Guitar",
+    "counts": {
+      "cc:11": 90,
+      "cc:7": 90,
+      "cc:0": 90,
+      "cc:32": 89,
+      "pb:None": 86,
+      "cc:22": 95
+    }
+  },
+  {
+    "score": 85,
+    "msb": 121,
+    "lsb": 2,
+    "program": 50,
+    "sound": "Analog Strings 2",
+    "counts": {
+      "cc:22": 314,
+      "cc:11": 219,
+      "cc:7": 219,
+      "cc:0": 219,
+      "cc:32": 198,
+      "pb:None": 85
+    }
+  },
+  {
+    "score": 84,
+    "msb": 121,
+    "lsb": 3,
+    "program": 7,
+    "sound": "Clav Snap",
+    "counts": {
+      "cc:22": 19,
+      "cc:11": 16,
+      "cc:7": 16,
+      "cc:0": 16,
+      "cc:32": 14,
+      "pb:None": 62,
+      "cc:1": 22
+    }
+  },
+  {
+    "score": 81,
+    "msb": 121,
+    "lsb": 34,
+    "program": 61,
+    "sound": "Trpts &Trombs",
+    "counts": {
+      "pb:None": 81,
+      "cc:11": 17,
+      "cc:7": 17,
+      "cc:0": 17,
+      "cc:32": 13,
+      "cc:22": 7
+    }
+  },
+  {
+    "score": 80,
+    "msb": 121,
+    "lsb": 11,
+    "program": 65,
+    "sound": "Cool Sax Ens.",
+    "counts": {
+      "cc:11": 36,
+      "cc:7": 36,
+      "cc:0": 36,
+      "pb:None": 9,
+      "cc:32": 30,
+      "cc:22": 26,
+      "cc:1": 71
+    }
+  },
+  {
+    "score": 79,
+    "msb": 121,
+    "lsb": 4,
+    "program": 0,
+    "sound": "Classic Piano",
+    "counts": {
+      "cc:11": 31,
+      "cc:7": 31,
+      "cc:0": 31,
+      "cc:32": 29,
+      "cc:64": 79,
+      "cc:22": 37,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 2,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1,
+      "cc:115": 1,
+      "cc:110": 2,
+      "cc:121": 1,
+      "cc:4": 1,
+      "cc:19": 1,
+      "cc:97": 1,
+      "cc:105": 1,
+      "cc:80": 1
+    }
+  },
+  {
+    "score": 78,
+    "msb": 121,
+    "lsb": 29,
+    "program": 61,
+    "sound": "Tight Brass 2",
+    "counts": {
+      "cc:22": 62,
+      "cc:11": 22,
+      "cc:7": 22,
+      "cc:0": 22,
+      "cc:32": 10,
+      "pb:None": 78
+    }
+  },
+  {
+    "score": 78,
+    "msb": 121,
+    "lsb": 10,
+    "program": 61,
+    "sound": "Trombone Ens.",
+    "counts": {
+      "cc:11": 19,
+      "cc:7": 19,
+      "cc:0": 19,
+      "cc:32": 17,
+      "cc:1": 71,
+      "cc:22": 10,
+      "pb:None": 7
+    }
+  },
+  {
+    "score": 78,
+    "msb": 121,
+    "lsb": 2,
+    "program": 35,
+    "sound": "Fretless Bass 3",
+    "counts": {
+      "pb:None": 51,
+      "cc:1": 27,
+      "cc:22": 5,
+      "cc:11": 1,
+      "cc:7": 1,
+      "cc:0": 1,
+      "cc:32": 1
+    }
+  },
+  {
+    "score": 76,
+    "msb": 121,
+    "lsb": 9,
+    "program": 4,
+    "sound": "Thin E. Piano",
+    "counts": {
+      "cc:11": 17,
+      "cc:7": 17,
+      "cc:0": 17,
+      "cc:32": 12,
+      "cc:64": 76,
+      "cc:22": 10
+    }
+  },
+  {
+    "score": 75,
+    "msb": 121,
+    "lsb": 0,
+    "program": 28,
+    "sound": "AcousticPiano GM",
+    "counts": {
+      "pb:None": 75,
+      "cc:11": 2,
+      "cc:7": 2,
+      "cc:0": 2,
+      "cc:32": 2,
+      "cc:22": 9
+    }
+  },
+  {
+    "score": 72,
+    "msb": 121,
+    "lsb": 21,
+    "program": 28,
+    "sound": "5th Mute Gtr",
+    "counts": {
+      "cc:11": 52,
+      "cc:7": 52,
+      "cc:0": 52,
+      "cc:22": 62,
+      "cc:32": 45,
+      "pb:None": 72
+    }
+  },
+  {
+    "score": 72,
+    "msb": 121,
+    "lsb": 1,
+    "program": 29,
+    "sound": "Guitar Pinch",
+    "counts": {
+      "cc:11": 11,
+      "cc:7": 11,
+      "cc:0": 11,
+      "cc:32": 10,
+      "pb:None": 72,
+      "cc:22": 8
+    }
+  },
+  {
+    "score": 70,
+    "msb": 121,
+    "lsb": 9,
+    "program": 81,
+    "sound": "Glide Lead",
+    "counts": {
+      "cc:11": 9,
+      "cc:7": 9,
+      "cc:0": 9,
+      "cc:32": 9,
+      "cc:22": 9,
+      "pb:None": 70
+    }
+  },
+  {
+    "score": 69,
+    "msb": 120,
+    "lsb": 0,
+    "program": 1,
+    "sound": "Standard Kit RX2",
+    "counts": {
+      "cc:11": 326,
+      "cc:7": 326,
+      "cc:0": 326,
+      "cc:32": 326,
+      "cc:22": 251,
+      "pb:None": 49,
+      "cc:64": 20
+    }
+  },
+  {
+    "score": 67,
+    "msb": 121,
+    "lsb": 6,
+    "program": 89,
+    "sound": "Dark Pad",
+    "counts": {
+      "cc:11": 108,
+      "cc:7": 108,
+      "cc:0": 108,
+      "cc:32": 106,
+      "cc:22": 142,
+      "pb:None": 29,
+      "cc:1": 38
+    }
+  },
+  {
+    "score": 64,
+    "msb": 121,
+    "lsb": 19,
+    "program": 25,
+    "sound": "Steel Guitar Pro",
+    "counts": {
+      "cc:11": 345,
+      "cc:7": 345,
+      "cc:0": 345,
+      "cc:32": 340,
+      "cc:22": 231,
+      "pb:None": 64
+    }
+  },
+  {
+    "score": 64,
+    "msb": 121,
+    "lsb": 8,
+    "program": 65,
+    "sound": "Alto Sax Pro",
+    "counts": {
+      "pb:None": 24,
+      "cc:11": 14,
+      "cc:7": 14,
+      "cc:0": 14,
+      "cc:32": 10,
+      "cc:1": 40
+    }
+  },
+  {
+    "score": 64,
+    "msb": 121,
+    "lsb": 1,
+    "program": 0,
+    "sound": "Ac. Piano Wide",
+    "counts": {
+      "cc:64": 38,
+      "cc:11": 64,
+      "cc:7": 64,
+      "cc:0": 64,
+      "cc:22": 60,
+      "cc:32": 62,
+      "pb:None": 20,
+      "cc:1": 6
+    }
+  },
+  {
+    "score": 63,
+    "msb": 121,
+    "lsb": 1,
+    "program": 28,
+    "sound": "Funky Cut Gtr",
+    "counts": {
+      "cc:11": 25,
+      "cc:7": 25,
+      "cc:0": 25,
+      "cc:32": 25,
+      "pb:None": 63,
+      "cc:22": 11
+    }
+  },
+  {
+    "score": 62,
+    "msb": 121,
+    "lsb": 20,
+    "program": 27,
+    "sound": "Clean Guitar 2",
+    "counts": {
+      "cc:11": 93,
+      "cc:7": 93,
+      "cc:0": 93,
+      "cc:32": 86,
+      "cc:22": 74,
+      "cc:64": 62
+    }
+  },
+  {
+    "score": 60,
+    "msb": 121,
+    "lsb": 4,
+    "program": 59,
+    "sound": "Mute Ensemble 2",
+    "counts": {
+      "cc:11": 32,
+      "cc:7": 32,
+      "cc:0": 32,
+      "cc:32": 28,
+      "pb:None": 59,
+      "cc:22": 27,
+      "cc:64": 1
+    }
+  },
+  {
+    "score": 60,
+    "msb": 121,
+    "lsb": 4,
+    "program": 48,
+    "sound": "Legato Strings",
+    "counts": {
+      "cc:11": 67,
+      "cc:7": 67,
+      "cc:0": 67,
+      "cc:32": 63,
+      "cc:22": 102,
+      "cc:1": 60
+    }
+  },
+  {
+    "score": 60,
+    "msb": 121,
+    "lsb": 2,
+    "program": 7,
+    "sound": "Clav Wah RX",
+    "counts": {
+      "cc:11": 13,
+      "cc:7": 13,
+      "cc:0": 13,
+      "cc:32": 10,
+      "pb:None": 51,
+      "cc:1": 9,
+      "cc:22": 8
+    }
+  },
+  {
+    "score": 58,
+    "msb": 121,
+    "lsb": 4,
+    "program": 71,
+    "sound": "Section Winds 2",
+    "counts": {
+      "pb:None": 58,
+      "cc:11": 33,
+      "cc:7": 33,
+      "cc:0": 33,
+      "cc:32": 33,
+      "cc:22": 15
+    }
+  },
+  {
+    "score": 58,
+    "msb": 121,
+    "lsb": 0,
+    "program": 24,
+    "sound": "Nylon Guitar GM",
+    "counts": {
+      "cc:1": 58,
+      "cc:22": 2,
+      "cc:11": 2,
+      "cc:7": 2,
+      "cc:0": 2
+    }
+  },
+  {
+    "score": 58,
+    "msb": 120,
+    "lsb": 0,
+    "program": 66,
+    "sound": "Trinity Perc.Kit",
+    "counts": {
+      "cc:11": 512,
+      "cc:7": 512,
+      "cc:0": 512,
+      "cc:32": 512,
+      "cc:22": 495,
+      "pb:None": 58
+    }
+  },
+  {
+    "score": 57,
+    "msb": 121,
+    "lsb": 5,
+    "program": 2,
+    "sound": "Chorus Piano",
+    "counts": {
+      "cc:11": 48,
+      "cc:7": 48,
+      "cc:0": 48,
+      "cc:32": 47,
+      "cc:22": 32,
+      "cc:64": 57,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:5": 1,
+      "cc:66": 1
+    }
+  },
+  {
+    "score": 56,
+    "msb": 121,
+    "lsb": 11,
+    "program": 61,
+    "sound": "Trombones",
+    "counts": {
+      "cc:11": 59,
+      "cc:7": 59,
+      "cc:0": 59,
+      "cc:32": 53,
+      "cc:22": 66,
+      "pb:None": 32,
+      "cc:1": 24
+    }
+  },
+  {
+    "score": 52,
+    "msb": 121,
+    "lsb": 10,
+    "program": 0,
+    "sound": "Grand Piano RX",
+    "counts": {
+      "cc:11": 29,
+      "cc:7": 29,
+      "cc:0": 29,
+      "cc:22": 49,
+      "cc:32": 22,
+      "cc:64": 52,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1
+    }
+  },
+  {
+    "score": 50,
+    "msb": 121,
+    "lsb": 24,
+    "program": 61,
+    "sound": "Double Brass",
+    "counts": {
+      "pb:None": 16,
+      "cc:11": 12,
+      "cc:7": 12,
+      "cc:0": 12,
+      "cc:32": 8,
+      "cc:1": 34,
+      "cc:22": 2
+    }
+  },
+  {
+    "score": 48,
+    "msb": 121,
+    "lsb": 0,
+    "program": 1,
+    "sound": "Bright Piano GM",
+    "counts": {
+      "cc:11": 83,
+      "cc:7": 83,
+      "cc:0": 83,
+      "cc:32": 83,
+      "cc:64": 48,
+      "cc:22": 88
+    }
+  },
+  {
+    "score": 44,
+    "msb": 121,
+    "lsb": 6,
+    "program": 49,
+    "sound": "Movie Strings 2",
+    "counts": {
+      "cc:11": 212,
+      "cc:7": 212,
+      "cc:0": 212,
+      "cc:32": 211,
+      "cc:22": 257,
+      "cc:1": 14,
+      "cc:64": 30
+    }
+  },
+  {
+    "score": 43,
+    "msb": 121,
+    "lsb": 15,
+    "program": 24,
+    "sound": "Nylon Guitar 2",
+    "counts": {
+      "cc:11": 91,
+      "cc:7": 91,
+      "cc:0": 91,
+      "cc:22": 70,
+      "cc:32": 90,
+      "pb:None": 43
+    }
+  },
+  {
+    "score": 42,
+    "msb": 121,
+    "lsb": 10,
+    "program": 34,
+    "sound": "Picked Bass RX",
+    "counts": {
+      "cc:11": 51,
+      "cc:7": 51,
+      "cc:0": 51,
+      "cc:32": 50,
+      "pb:None": 42,
+      "cc:22": 31
+    }
+  },
+  {
+    "score": 42,
+    "msb": 121,
+    "lsb": 4,
+    "program": 60,
+    "sound": "Horns & Ensemble",
+    "counts": {
+      "cc:11": 42,
+      "cc:7": 42,
+      "cc:0": 42,
+      "cc:32": 42,
+      "cc:22": 37,
+      "pb:None": 42
+    }
+  },
+  {
+    "score": 41,
+    "msb": 121,
+    "lsb": 16,
+    "program": 25,
+    "sound": "Steel Guitar RX2",
+    "counts": {
+      "cc:11": 130,
+      "cc:7": 130,
+      "cc:0": 130,
+      "cc:32": 130,
+      "cc:22": 96,
+      "pb:None": 39,
+      "cc:1": 2
+    }
+  },
+  {
+    "score": 40,
+    "msb": 121,
+    "lsb": 5,
+    "program": 0,
+    "sound": "Jazz Piano",
+    "counts": {
+      "cc:11": 72,
+      "cc:7": 72,
+      "cc:0": 72,
+      "cc:32": 66,
+      "cc:22": 53,
+      "cc:64": 38,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1,
+      "pb:None": 2
+    }
+  },
+  {
+    "score": 38,
+    "msb": 121,
+    "lsb": 8,
+    "program": 24,
+    "sound": "Nylon Gtr Pro1",
+    "counts": {
+      "cc:11": 95,
+      "cc:7": 95,
+      "cc:0": 95,
+      "cc:32": 90,
+      "cc:22": 57,
+      "pb:None": 38
+    }
+  },
+  {
+    "score": 38,
+    "msb": 120,
+    "lsb": 0,
+    "program": 64,
+    "sound": "Percussion Kit",
+    "counts": {
+      "cc:11": 1231,
+      "cc:7": 1231,
+      "cc:0": 1231,
+      "cc:32": 1231,
+      "cc:22": 1182,
+      "pb:None": 38
+    }
+  },
+  {
+    "score": 36,
+    "msb": 121,
+    "lsb": 13,
+    "program": 16,
+    "sound": "Gospel Organ V.",
+    "counts": {
+      "cc:11": 336,
+      "cc:7": 336,
+      "cc:0": 336,
+      "cc:32": 314,
+      "cc:22": 355,
+      "pb:None": 28,
+      "cc:64": 8
+    }
+  },
+  {
+    "score": 36,
+    "msb": 121,
+    "lsb": 7,
+    "program": 33,
+    "sound": "Finger Bass 3",
+    "counts": {
+      "cc:11": 232,
+      "cc:7": 232,
+      "cc:0": 232,
+      "cc:32": 218,
+      "cc:22": 111,
+      "pb:None": 36
+    }
+  },
+  {
+    "score": 36,
+    "msb": 121,
+    "lsb": 0,
+    "program": 46,
+    "sound": "Harp GM",
+    "counts": {
+      "cc:11": 47,
+      "cc:7": 47,
+      "cc:0": 47,
+      "cc:32": 40,
+      "cc:22": 49,
+      "cc:64": 36
+    }
+  },
+  {
+    "score": 34,
+    "msb": 121,
+    "lsb": 4,
+    "program": 5,
+    "sound": "EP Phase",
+    "counts": {
+      "cc:11": 6,
+      "cc:7": 6,
+      "cc:0": 6,
+      "cc:32": 6,
+      "cc:22": 6,
+      "cc:64": 34,
+      "cc:8": 4,
+      "cc:67": 4,
+      "cc:100": 2,
+      "cc:103": 2,
+      "cc:6": 1,
+      "cc:66": 2,
+      "cc:115": 1,
+      "cc:116": 1,
+      "cc:110": 3,
+      "cc:121": 2,
+      "cc:4": 2,
+      "cc:19": 2,
+      "cc:5": 1
+    }
+  },
+  {
+    "score": 33,
+    "msb": 121,
+    "lsb": 1,
+    "program": 4,
+    "sound": "Detuned EP 1",
+    "counts": {
+      "cc:11": 16,
+      "cc:7": 16,
+      "cc:0": 16,
+      "cc:32": 11,
+      "cc:22": 4,
+      "cc:64": 32,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1,
+      "cc:115": 1,
+      "cc:90": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:1": 1,
+      "cc:19": 1,
+      "cc:116": 1,
+      "cc:101": 1,
+      "cc:69": 1,
+      "cc:49": 1
+    }
+  },
+  {
+    "score": 32,
+    "msb": 121,
+    "lsb": 10,
+    "program": 90,
+    "sound": "Tecno Phonic",
+    "counts": {
+      "cc:11": 43,
+      "cc:7": 43,
+      "cc:0": 43,
+      "cc:32": 43,
+      "cc:22": 43,
+      "cc:64": 32
+    }
+  },
+  {
+    "score": 31,
+    "msb": 121,
+    "lsb": 32,
+    "program": 27,
+    "sound": "Chorus Gtr Pro",
+    "counts": {
+      "cc:32": 2,
+      "cc:1": 31,
+      "cc:11": 1,
+      "cc:7": 1,
+      "cc:0": 1
+    }
+  },
+  {
+    "score": 27,
+    "msb": 121,
+    "lsb": 5,
+    "program": 36,
+    "sound": "SlapPick Bass RX",
+    "counts": {
+      "cc:11": 21,
+      "cc:7": 21,
+      "cc:0": 21,
+      "cc:32": 14,
+      "pb:None": 27,
+      "cc:22": 3
+    }
+  },
+  {
+    "score": 26,
+    "msb": 121,
+    "lsb": 11,
+    "program": 89,
+    "sound": "Vintage Pad",
+    "counts": {
+      "cc:11": 23,
+      "cc:7": 23,
+      "cc:0": 23,
+      "cc:32": 23,
+      "pb:None": 26,
+      "cc:22": 13
+    }
+  },
+  {
+    "score": 24,
+    "msb": 121,
+    "lsb": 4,
+    "program": 30,
+    "sound": "Power Chords",
+    "counts": {
+      "cc:11": 32,
+      "cc:7": 32,
+      "cc:0": 32,
+      "cc:32": 31,
+      "cc:22": 51,
+      "pb:None": 24
+    }
+  },
+  {
+    "score": 24,
+    "msb": 121,
+    "lsb": 1,
+    "program": 58,
+    "sound": "Oberkr. Tuba",
+    "counts": {
+      "cc:11": 107,
+      "cc:7": 107,
+      "cc:0": 107,
+      "cc:32": 107,
+      "cc:22": 76,
+      "pb:None": 24
+    }
+  },
+  {
+    "score": 24,
+    "msb": 121,
+    "lsb": 0,
+    "program": 50,
+    "sound": "Synth Strings1GM",
+    "counts": {
+      "cc:22": 60,
+      "cc:11": 34,
+      "cc:7": 34,
+      "cc:0": 34,
+      "cc:32": 28,
+      "pb:None": 24
+    }
+  },
+  {
+    "score": 24,
+    "msb": 121,
+    "lsb": 0,
+    "program": 4,
+    "sound": "E. Piano 1 GM",
+    "counts": {
+      "cc:11": 34,
+      "cc:7": 34,
+      "cc:0": 34,
+      "cc:22": 20,
+      "cc:32": 29,
+      "cc:64": 24,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1
+    }
+  },
+  {
+    "score": 20,
+    "msb": 121,
+    "lsb": 32,
+    "program": 61,
+    "sound": "Big Band Brass 1",
+    "counts": {
+      "cc:11": 25,
+      "cc:7": 25,
+      "cc:0": 25,
+      "cc:32": 25,
+      "cc:22": 23,
+      "cc:1": 20
+    }
+  },
+  {
+    "score": 20,
+    "msb": 121,
+    "lsb": 10,
+    "program": 56,
+    "sound": "Trumpet Pro 1",
+    "counts": {
+      "cc:11": 29,
+      "cc:7": 29,
+      "cc:0": 29,
+      "cc:32": 26,
+      "cc:22": 89,
+      "pb:None": 20
+    }
+  },
+  {
+    "score": 20,
+    "msb": 121,
+    "lsb": 5,
+    "program": 52,
+    "sound": "Take Voices 2",
+    "counts": {
+      "cc:11": 4,
+      "cc:7": 4,
+      "cc:0": 4,
+      "cc:1": 20,
+      "cc:32": 2,
+      "cc:22": 2
+    }
+  },
+  {
+    "score": 19,
+    "msb": 121,
+    "lsb": 20,
+    "program": 56,
+    "sound": "Concert Trp.Pro",
+    "counts": {
+      "pb:None": 2,
+      "cc:1": 17,
+      "cc:11": 1,
+      "cc:7": 1,
+      "cc:0": 1
+    }
+  },
+  {
+    "score": 19,
+    "msb": 121,
+    "lsb": 9,
+    "program": 32,
+    "sound": "Jazz Bass",
+    "counts": {
+      "cc:11": 25,
+      "cc:7": 25,
+      "cc:0": 25,
+      "cc:32": 25,
+      "pb:None": 19,
+      "cc:22": 23
+    }
+  },
+  {
+    "score": 19,
+    "msb": 121,
+    "lsb": 5,
+    "program": 4,
+    "sound": "Pro Dyno EP",
+    "counts": {
+      "cc:11": 37,
+      "cc:7": 37,
+      "cc:0": 37,
+      "cc:22": 54,
+      "cc:64": 19,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1,
+      "cc:32": 30
+    }
+  },
+  {
+    "score": 19,
+    "msb": 121,
+    "lsb": 4,
+    "program": 102,
+    "sound": "Pan Reso",
+    "counts": {
+      "pb:None": 13,
+      "cc:1": 6,
+      "cc:22": 4,
+      "cc:11": 1,
+      "cc:7": 1,
+      "cc:0": 1
+    }
+  },
+  {
+    "score": 18,
+    "msb": 121,
+    "lsb": 16,
+    "program": 28,
+    "sound": "Clean Guitar RX3",
+    "counts": {
+      "cc:22": 55,
+      "cc:11": 45,
+      "cc:7": 45,
+      "cc:0": 45,
+      "cc:32": 37,
+      "pb:None": 18
+    }
+  },
+  {
+    "score": 18,
+    "msb": 121,
+    "lsb": 6,
+    "program": 39,
+    "sound": "Nasty Bass",
+    "counts": {
+      "cc:11": 12,
+      "cc:7": 12,
+      "cc:0": 12,
+      "cc:32": 12,
+      "cc:22": 8,
+      "pb:None": 18
+    }
+  },
+  {
+    "score": 17,
+    "msb": 121,
+    "lsb": 13,
+    "program": 56,
+    "sound": "Flugel Horn Pro",
+    "counts": {
+      "cc:11": 6,
+      "cc:7": 6,
+      "cc:0": 6,
+      "cc:32": 6,
+      "cc:22": 21,
+      "cc:1": 17
+    }
+  },
+  {
+    "score": 16,
+    "msb": 121,
+    "lsb": 33,
+    "program": 25,
+    "sound": "Real 12 Strings",
+    "counts": {
+      "cc:11": 29,
+      "cc:7": 29,
+      "cc:0": 29,
+      "cc:32": 29,
+      "cc:22": 15,
+      "pb:None": 16
+    }
+  },
+  {
+    "score": 16,
+    "msb": 121,
+    "lsb": 5,
+    "program": 27,
+    "sound": "Proces.E.Guitar",
+    "counts": {
+      "cc:64": 16,
+      "cc:22": 18,
+      "cc:11": 20,
+      "cc:7": 20,
+      "cc:0": 20,
+      "cc:32": 20
+    }
+  },
+  {
+    "score": 16,
+    "msb": 121,
+    "lsb": 3,
+    "program": 39,
+    "sound": "Attack Pulse",
+    "counts": {
+      "pb:None": 16,
+      "cc:11": 24,
+      "cc:7": 24,
+      "cc:0": 24,
+      "cc:32": 24,
+      "cc:22": 16
+    }
+  },
+  {
+    "score": 16,
+    "msb": 121,
+    "lsb": 2,
+    "program": 59,
+    "sound": "Wah Trumpet",
+    "counts": {
+      "cc:11": 25,
+      "cc:7": 25,
+      "cc:0": 25,
+      "cc:32": 15,
+      "cc:22": 12,
+      "pb:None": 16
+    }
+  },
+  {
+    "score": 14,
+    "msb": 121,
+    "lsb": 13,
+    "program": 28,
+    "sound": "Funk Stein RX2",
+    "counts": {
+      "cc:11": 122,
+      "cc:7": 122,
+      "cc:0": 122,
+      "cc:32": 118,
+      "cc:22": 96,
+      "pb:None": 14
+    }
+  },
+  {
+    "score": 14,
+    "msb": 121,
+    "lsb": 5,
+    "program": 18,
+    "sound": "BX3 Rock 3 V.",
+    "counts": {
+      "cc:11": 30,
+      "cc:7": 30,
+      "cc:0": 30,
+      "cc:32": 27,
+      "cc:22": 74,
+      "cc:1": 14,
+      "cc:8": 4,
+      "cc:67": 4,
+      "cc:100": 2,
+      "cc:103": 2,
+      "cc:6": 2,
+      "cc:66": 2,
+      "cc:115": 1,
+      "cc:127": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:5": 1,
+      "cc:19": 1,
+      "cc:51": 1,
+      "cc:111": 1
+    }
+  },
+  {
+    "score": 14,
+    "msb": 121,
+    "lsb": 1,
+    "program": 73,
+    "sound": "Jazz Flute Expr.",
+    "counts": {
+      "pb:None": 14,
+      "cc:11": 21,
+      "cc:7": 21,
+      "cc:0": 21,
+      "cc:22": 18,
+      "cc:32": 15
+    }
+  },
+  {
+    "score": 14,
+    "msb": 120,
+    "lsb": 0,
+    "program": 34,
+    "sound": "Jazz Kit RX2",
+    "counts": {
+      "cc:11": 476,
+      "cc:7": 476,
+      "cc:0": 476,
+      "cc:32": 476,
+      "cc:22": 294,
+      "cc:64": 14
+    }
+  },
+  {
+    "score": 13,
+    "msb": 121,
+    "lsb": 32,
+    "program": 80,
+    "sound": "Sine Wave",
+    "counts": {
+      "cc:32": 3,
+      "cc:1": 13
+    }
+  },
+  {
+    "score": 13,
+    "msb": 121,
+    "lsb": 32,
+    "program": 0,
+    "sound": "Grand Piano",
+    "counts": {
+      "cc:32": 15,
+      "cc:11": 3,
+      "cc:7": 3,
+      "cc:0": 3,
+      "cc:64": 13,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:5": 1,
+      "cc:66": 1,
+      "cc:115": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:3": 1,
+      "cc:19": 1,
+      "cc:97": 1
+    }
+  },
+  {
+    "score": 13,
+    "msb": 121,
+    "lsb": 11,
+    "program": 21,
+    "sound": "Sweet Musette",
+    "counts": {
+      "cc:11": 19,
+      "cc:7": 18,
+      "cc:0": 18,
+      "cc:32": 19,
+      "cc:22": 17,
+      "cc:1": 13,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 2,
+      "cc:103": 1,
+      "cc:5": 1,
+      "cc:66": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:19": 1,
+      "cc:101": 1
+    }
+  },
+  {
+    "score": 12,
+    "msb": 121,
+    "lsb": 3,
+    "program": 57,
+    "sound": "Mute Ensemble 1",
+    "counts": {
+      "pb:None": 12
+    }
+  },
+  {
+    "score": 12,
+    "msb": 121,
+    "lsb": 2,
+    "program": 27,
+    "sound": "Club Jazz Gtr 1",
+    "counts": {
+      "cc:1": 12,
+      "cc:11": 1,
+      "cc:7": 1,
+      "cc:0": 1
+    }
+  },
+  {
+    "score": 12,
+    "msb": 120,
+    "lsb": 0,
+    "program": 48,
+    "sound": "Orchestra Kit GM",
+    "counts": {
+      "cc:11": 131,
+      "cc:7": 131,
+      "cc:0": 128,
+      "cc:32": 128,
+      "cc:22": 64,
+      "pb:None": 12
+    }
+  },
+  {
+    "score": 11,
+    "msb": 121,
+    "lsb": 7,
+    "program": 2,
+    "sound": "Grand&FM Stack",
+    "counts": {
+      "cc:11": 61,
+      "cc:7": 62,
+      "cc:0": 61,
+      "cc:32": 35,
+      "cc:22": 77,
+      "cc:64": 11,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 2,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1,
+      "cc:115": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:19": 1,
+      "cc:97": 1,
+      "cc:38": 1
+    }
+  },
+  {
+    "score": 11,
+    "msb": 121,
+    "lsb": 3,
+    "program": 4,
+    "sound": "60's E. Piano",
+    "counts": {
+      "cc:11": 33,
+      "cc:7": 33,
+      "cc:0": 33,
+      "cc:32": 33,
+      "cc:22": 50,
+      "cc:64": 11
+    }
+  },
+  {
+    "score": 10,
+    "msb": 121,
+    "lsb": 18,
+    "program": 4,
+    "sound": "Tine E.Piano RX",
+    "counts": {
+      "cc:11": 85,
+      "cc:7": 85,
+      "cc:0": 85,
+      "cc:32": 55,
+      "cc:22": 61,
+      "cc:64": 10
+    }
+  },
+  {
+    "score": 10,
+    "msb": 121,
+    "lsb": 17,
+    "program": 25,
+    "sound": "12 Strings Pro",
+    "counts": {
+      "cc:11": 181,
+      "cc:7": 181,
+      "cc:0": 181,
+      "cc:32": 181,
+      "cc:22": 110,
+      "pb:None": 10
+    }
+  },
+  {
+    "score": 10,
+    "msb": 121,
+    "lsb": 8,
+    "program": 89,
+    "sound": "Analog Pad 1",
+    "counts": {
+      "cc:11": 56,
+      "cc:7": 56,
+      "cc:0": 56,
+      "cc:32": 49,
+      "cc:22": 108,
+      "pb:None": 10
+    }
+  },
+  {
+    "score": 10,
+    "msb": 121,
+    "lsb": 8,
+    "program": 0,
+    "sound": "Rock Piano",
+    "counts": {
+      "cc:64": 4,
+      "cc:11": 13,
+      "cc:7": 13,
+      "cc:0": 13,
+      "cc:32": 4,
+      "cc:22": 29,
+      "pb:None": 6
+    }
+  },
+  {
+    "score": 10,
+    "msb": 121,
+    "lsb": 3,
+    "program": 45,
+    "sound": "Double Strings",
+    "counts": {
+      "cc:11": 57,
+      "cc:7": 57,
+      "cc:0": 57,
+      "cc:32": 57,
+      "cc:22": 26,
+      "pb:None": 10
+    }
+  },
+  {
+    "score": 10,
+    "msb": 121,
+    "lsb": 1,
+    "program": 65,
+    "sound": "Alto Breath",
+    "counts": {
+      "cc:11": 16,
+      "cc:7": 16,
+      "cc:0": 16,
+      "cc:32": 16,
+      "cc:22": 17,
+      "pb:None": 10
+    }
+  },
+  {
+    "score": 9,
+    "msb": 121,
+    "lsb": 9,
+    "program": 25,
+    "sound": "Steel Folk Gtr",
+    "counts": {
+      "cc:11": 36,
+      "cc:7": 36,
+      "cc:0": 36,
+      "cc:32": 36,
+      "cc:22": 20,
+      "pb:None": 6,
+      "cc:64": 3
+    }
+  },
+  {
+    "score": 8,
+    "msb": 121,
+    "lsb": 4,
+    "program": 23,
+    "sound": "Acc.16,8' & Bass",
+    "counts": {
+      "cc:11": 30,
+      "cc:7": 30,
+      "cc:0": 30,
+      "cc:32": 30,
+      "pb:None": 8,
+      "cc:22": 33
+    }
+  },
+  {
+    "score": 8,
+    "msb": 121,
+    "lsb": 2,
+    "program": 38,
+    "sound": "Syn Bass Reso",
+    "counts": {
+      "cc:11": 12,
+      "cc:7": 12,
+      "cc:0": 12,
+      "cc:32": 12,
+      "pb:None": 8,
+      "cc:22": 8
+    }
+  },
+  {
+    "score": 8,
+    "msb": 121,
+    "lsb": 0,
+    "program": 48,
+    "sound": "Strings Ens.1 GM",
+    "counts": {
+      "cc:22": 66,
+      "cc:11": 61,
+      "cc:7": 61,
+      "cc:0": 61,
+      "cc:32": 60,
+      "cc:64": 8
+    }
+  },
+  {
+    "score": 8,
+    "msb": 121,
+    "lsb": 0,
+    "program": 5,
+    "sound": "E. Piano 2 GM",
+    "counts": {
+      "cc:11": 11,
+      "cc:7": 12,
+      "cc:0": 11,
+      "cc:32": 7,
+      "cc:22": 3,
+      "cc:64": 8,
+      "cc:8": 1,
+      "cc:67": 2,
+      "cc:116": 1
+    }
+  },
+  {
+    "score": 6,
+    "msb": 121,
+    "lsb": 23,
+    "program": 61,
+    "sound": "Sforzato Brass",
+    "counts": {
+      "cc:11": 69,
+      "cc:7": 69,
+      "cc:0": 69,
+      "cc:32": 64,
+      "cc:22": 96,
+      "pb:None": 6
+    }
+  },
+  {
+    "score": 6,
+    "msb": 121,
+    "lsb": 20,
+    "program": 4,
+    "sound": "Suit E.Piano 1",
+    "counts": {
+      "cc:64": 6,
+      "cc:11": 32,
+      "cc:7": 32,
+      "cc:0": 32,
+      "cc:32": 22,
+      "cc:22": 16
+    }
+  },
+  {
+    "score": 6,
+    "msb": 121,
+    "lsb": 17,
+    "program": 28,
+    "sound": "Clean Guitar RX4",
+    "counts": {
+      "cc:11": 60,
+      "cc:7": 60,
+      "cc:0": 60,
+      "cc:32": 56,
+      "cc:22": 40,
+      "pb:None": 6
+    }
+  },
+  {
+    "score": 6,
+    "msb": 121,
+    "lsb": 4,
+    "program": 25,
+    "sound": "Steel Guitar 2",
+    "counts": {
+      "cc:11": 21,
+      "cc:7": 21,
+      "cc:0": 21,
+      "cc:32": 20,
+      "cc:22": 19,
+      "pb:None": 6
+    }
+  },
+  {
+    "score": 6,
+    "msb": 121,
+    "lsb": 1,
+    "program": 45,
+    "sound": "Pizz. Ensemble",
+    "counts": {
+      "cc:11": 60,
+      "cc:7": 60,
+      "cc:0": 60,
+      "cc:32": 57,
+      "cc:22": 43,
+      "cc:64": 6
+    }
+  },
+  {
+    "score": 6,
+    "msb": 120,
+    "lsb": 0,
+    "program": 125,
+    "sound": "Brush Kit 1",
+    "counts": {
+      "cc:11": 165,
+      "cc:7": 165,
+      "cc:0": 165,
+      "cc:32": 165,
+      "cc:22": 105,
+      "cc:64": 6
+    }
+  },
+  {
+    "score": 5,
+    "msb": 121,
+    "lsb": 17,
+    "program": 24,
+    "sound": "Real Nylon Gtr",
+    "counts": {
+      "cc:11": 107,
+      "cc:7": 107,
+      "cc:0": 107,
+      "cc:32": 105,
+      "cc:64": 5,
+      "cc:22": 61,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1,
+      "cc:115": 1,
+      "cc:72": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:17": 1,
+      "cc:19": 1,
+      "cc:97": 1,
+      "cc:78": 1,
+      "cc:111": 1,
+      "cc:71": 1
+    }
+  },
+  {
+    "score": 5,
+    "msb": 121,
+    "lsb": 11,
+    "program": 48,
+    "sound": "Ensemble & Solo",
+    "counts": {
+      "cc:11": 15,
+      "cc:7": 15,
+      "cc:0": 15,
+      "cc:32": 11,
+      "cc:22": 15,
+      "pb:None": 5
+    }
+  },
+  {
+    "score": 5,
+    "msb": 121,
+    "lsb": 4,
+    "program": 80,
+    "sound": "Dance Lead",
+    "counts": {
+      "cc:11": 6,
+      "cc:7": 6,
+      "cc:0": 6,
+      "cc:32": 5,
+      "cc:22": 21,
+      "cc:1": 5
+    }
+  },
+  {
+    "score": 5,
+    "msb": 121,
+    "lsb": 3,
+    "program": 50,
+    "sound": "Analog Velve",
+    "counts": {
+      "cc:22": 96,
+      "cc:11": 56,
+      "cc:7": 56,
+      "cc:0": 56,
+      "cc:32": 56,
+      "cc:64": 5
+    }
+  },
+  {
+    "score": 5,
+    "msb": 121,
+    "lsb": 0,
+    "program": 60,
+    "sound": "French Horn GM",
+    "counts": {
+      "cc:22": 33,
+      "cc:11": 16,
+      "cc:7": 16,
+      "cc:0": 16,
+      "cc:32": 13,
+      "cc:64": 5
+    }
+  },
+  {
+    "score": 4,
+    "msb": 121,
+    "lsb": 25,
+    "program": 21,
+    "sound": "Steirisch.Akk.1",
+    "counts": {
+      "cc:11": 236,
+      "cc:7": 236,
+      "cc:0": 236,
+      "cc:32": 234,
+      "pb:None": 4,
+      "cc:22": 182
+    }
+  },
+  {
+    "score": 4,
+    "msb": 121,
+    "lsb": 6,
+    "program": 28,
+    "sound": "Clean Mute Gtr",
+    "counts": {
+      "cc:11": 25,
+      "cc:7": 25,
+      "cc:0": 25,
+      "cc:32": 25,
+      "cc:22": 30,
+      "cc:64": 4
+    }
+  },
+  {
+    "score": 4,
+    "msb": 121,
+    "lsb": 4,
+    "program": 57,
+    "sound": "Soft Trombone",
+    "counts": {
+      "cc:11": 7,
+      "cc:7": 7,
+      "cc:0": 7,
+      "cc:22": 2,
+      "cc:32": 4,
+      "pb:None": 4
+    }
+  },
+  {
+    "score": 4,
+    "msb": 121,
+    "lsb": 2,
+    "program": 49,
+    "sound": "Full Strings",
+    "counts": {
+      "cc:11": 59,
+      "cc:7": 59,
+      "cc:0": 59,
+      "cc:32": 51,
+      "cc:22": 29,
+      "pb:None": 4
+    }
+  },
+  {
+    "score": 3,
+    "msb": 121,
+    "lsb": 32,
+    "program": 27,
+    "sound": "Clean Gtr Pro1",
+    "counts": {
+      "cc:32": 4,
+      "cc:64": 3
+    }
+  },
+  {
+    "score": 3,
+    "msb": 121,
+    "lsb": 32,
+    "program": 2,
+    "sound": "Grand&FM Stack",
+    "counts": {
+      "cc:32": 2,
+      "cc:64": 3,
+      "cc:11": 1,
+      "cc:7": 1,
+      "cc:0": 1
+    }
+  },
+  {
+    "score": 3,
+    "msb": 121,
+    "lsb": 4,
+    "program": 35,
+    "sound": "Dark R&B Bass1",
+    "counts": {
+      "cc:11": 77,
+      "cc:7": 77,
+      "cc:0": 77,
+      "cc:32": 77,
+      "cc:22": 58,
+      "cc:64": 3
+    }
+  },
+  {
+    "score": 2,
+    "msb": 121,
+    "lsb": 32,
+    "program": 24,
+    "sound": "Nylon Gtr Pro2",
+    "counts": {
+      "cc:32": 4,
+      "cc:64": 2,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1,
+      "cc:115": 1,
+      "cc:127": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:11": 1,
+      "cc:19": 1,
+      "cc:108": 1
+    }
+  },
+  {
+    "score": 2,
+    "msb": 121,
+    "lsb": 32,
+    "program": 4,
+    "sound": "Detuned EP 1",
+    "counts": {
+      "cc:32": 2,
+      "cc:64": 2
+    }
+  },
+  {
+    "score": 2,
+    "msb": 121,
+    "lsb": 32,
+    "program": 0,
+    "sound": "Classic Piano",
+    "counts": {
+      "cc:32": 2,
+      "cc:64": 2,
+      "cc:11": 1,
+      "cc:7": 1,
+      "cc:0": 1
+    }
+  },
+  {
+    "score": 2,
+    "msb": 121,
+    "lsb": 13,
+    "program": 24,
+    "sound": "Nylon Gtr RX2",
+    "counts": {
+      "cc:11": 103,
+      "cc:7": 103,
+      "cc:0": 103,
+      "cc:32": 103,
+      "cc:22": 64,
+      "pb:None": 2
+    }
+  },
+  {
+    "score": 2,
+    "msb": 121,
+    "lsb": 5,
+    "program": 35,
+    "sound": "Dark R&B Bass2",
+    "counts": {
+      "cc:11": 43,
+      "cc:7": 43,
+      "cc:0": 43,
+      "cc:32": 43,
+      "cc:22": 33,
+      "cc:64": 2
+    }
+  },
+  {
+    "score": 2,
+    "msb": 121,
+    "lsb": 2,
+    "program": 52,
+    "sound": "Ooh Voices",
+    "counts": {
+      "cc:11": 20,
+      "cc:7": 20,
+      "cc:0": 20,
+      "cc:32": 8,
+      "cc:22": 28,
+      "pb:None": 2
+    }
+  },
+  {
+    "score": 2,
+    "msb": 121,
+    "lsb": 2,
+    "program": 11,
+    "sound": "Vibraphone 2",
+    "counts": {
+      "cc:64": 2,
+      "cc:11": 5,
+      "cc:7": 5,
+      "cc:0": 5,
+      "cc:32": 5,
+      "cc:22": 8
+    }
+  },
+  {
+    "score": 2,
+    "msb": 120,
+    "lsb": 0,
+    "program": 42,
+    "sound": "Brush Kit RX1",
+    "counts": {
+      "cc:11": 331,
+      "cc:7": 331,
+      "cc:0": 331,
+      "cc:32": 331,
+      "cc:22": 166,
+      "cc:1": 2
+    }
+  },
+  {
+    "score": 1,
+    "msb": 121,
+    "lsb": 11,
+    "program": 24,
+    "sound": "Nylon Gtr Pro2",
+    "counts": {
+      "cc:11": 72,
+      "cc:7": 71,
+      "cc:0": 71,
+      "cc:32": 71,
+      "cc:22": 62,
+      "cc:64": 1,
+      "cc:8": 2,
+      "cc:67": 2,
+      "cc:100": 1,
+      "cc:103": 1,
+      "cc:6": 1,
+      "cc:66": 1,
+      "cc:115": 1,
+      "cc:127": 1,
+      "cc:110": 1,
+      "cc:121": 1,
+      "cc:19": 1,
+      "cc:108": 1
+    }
+  }
+]

@@ -1,0 +1,5 @@
+R13 focused transaction tests: 34 passed
+R13 core regression block: 84 passed
+R13 disjoint Doctor/Compatibility/Process block: 48 passed
+Final claimed disjoint validation: 132 passed / 0 failed
+Public API: 118 modules / 393 public functions / 0 unclassified

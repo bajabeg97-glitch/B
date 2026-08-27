@@ -1,0 +1,2159 @@
+{
+  "schema": "PA800_INSTRUMENT_INTENT_STRESS_RESULT_V1",
+  "fixture_schema": "PA800_INSTRUMENT_INTENT_STRESS_V1",
+  "scenario_count": 55,
+  "midi_case_count": 110,
+  "category_case_counts": {
+    "AUT": 14,
+    "BAS": 10,
+    "DRM": 12,
+    "ENS": 8,
+    "EXP": 10,
+    "GTR": 8,
+    "INT": 20,
+    "IO": 10,
+    "PNO": 8,
+    "SEC": 10
+  },
+  "passed_cases": 110,
+  "failed_cases": 0,
+  "pair_separation_passed": 55,
+  "pair_separation_total": 55,
+  "all_pairs_separated": true,
+  "mutations": 0,
+  "authority_granted": false,
+  "rows": [
+    {
+      "scenario_id": "INT-001",
+      "polarity": "positive",
+      "file": "INT-001_positive.mid",
+      "intent_digest": "6bd73f929e87dbe4c5ed5d61b7c8771f23915744da5aa8f31c80876bac8cf55c",
+      "track_labels": [
+        "LEAD",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-001",
+      "polarity": "negative",
+      "file": "INT-001_negative.mid",
+      "intent_digest": "bd2cd48c61d749b1de95fb28bb9bba0bad57b1376423200c3f6a639fa3e35b0c",
+      "track_labels": [
+        "LEAD",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-002",
+      "polarity": "positive",
+      "file": "INT-002_positive.mid",
+      "intent_digest": "c4031d36e6719340bd3ffe8f8c837e541b1cfded87ea20270e6540fad5491982",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-002",
+      "polarity": "negative",
+      "file": "INT-002_negative.mid",
+      "intent_digest": "a88285c99513f6164c6097f10cfa1862c242f6a63ef1d76c8c4864422941b723",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-003",
+      "polarity": "positive",
+      "file": "INT-003_positive.mid",
+      "intent_digest": "c4031d36e6719340bd3ffe8f8c837e541b1cfded87ea20270e6540fad5491982",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-003",
+      "polarity": "negative",
+      "file": "INT-003_negative.mid",
+      "intent_digest": "a88285c99513f6164c6097f10cfa1862c242f6a63ef1d76c8c4864422941b723",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-004",
+      "polarity": "positive",
+      "file": "INT-004_positive.mid",
+      "intent_digest": "6bd73f929e87dbe4c5ed5d61b7c8771f23915744da5aa8f31c80876bac8cf55c",
+      "track_labels": [
+        "LEAD",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-004",
+      "polarity": "negative",
+      "file": "INT-004_negative.mid",
+      "intent_digest": "bd2cd48c61d749b1de95fb28bb9bba0bad57b1376423200c3f6a639fa3e35b0c",
+      "track_labels": [
+        "LEAD",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-005",
+      "polarity": "positive",
+      "file": "INT-005_positive.mid",
+      "intent_digest": "c4031d36e6719340bd3ffe8f8c837e541b1cfded87ea20270e6540fad5491982",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-005",
+      "polarity": "negative",
+      "file": "INT-005_negative.mid",
+      "intent_digest": "a88285c99513f6164c6097f10cfa1862c242f6a63ef1d76c8c4864422941b723",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-006",
+      "polarity": "positive",
+      "file": "INT-006_positive.mid",
+      "intent_digest": "c4031d36e6719340bd3ffe8f8c837e541b1cfded87ea20270e6540fad5491982",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-006",
+      "polarity": "negative",
+      "file": "INT-006_negative.mid",
+      "intent_digest": "a88285c99513f6164c6097f10cfa1862c242f6a63ef1d76c8c4864422941b723",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-007",
+      "polarity": "positive",
+      "file": "INT-007_positive.mid",
+      "intent_digest": "6bd73f929e87dbe4c5ed5d61b7c8771f23915744da5aa8f31c80876bac8cf55c",
+      "track_labels": [
+        "LEAD",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-007",
+      "polarity": "negative",
+      "file": "INT-007_negative.mid",
+      "intent_digest": "bd2cd48c61d749b1de95fb28bb9bba0bad57b1376423200c3f6a639fa3e35b0c",
+      "track_labels": [
+        "LEAD",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-008",
+      "polarity": "positive",
+      "file": "INT-008_positive.mid",
+      "intent_digest": "c4031d36e6719340bd3ffe8f8c837e541b1cfded87ea20270e6540fad5491982",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-008",
+      "polarity": "negative",
+      "file": "INT-008_negative.mid",
+      "intent_digest": "a88285c99513f6164c6097f10cfa1862c242f6a63ef1d76c8c4864422941b723",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-009",
+      "polarity": "positive",
+      "file": "INT-009_positive.mid",
+      "intent_digest": "c4031d36e6719340bd3ffe8f8c837e541b1cfded87ea20270e6540fad5491982",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-009",
+      "polarity": "negative",
+      "file": "INT-009_negative.mid",
+      "intent_digest": "a88285c99513f6164c6097f10cfa1862c242f6a63ef1d76c8c4864422941b723",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-010",
+      "polarity": "positive",
+      "file": "INT-010_positive.mid",
+      "intent_digest": "6bd73f929e87dbe4c5ed5d61b7c8771f23915744da5aa8f31c80876bac8cf55c",
+      "track_labels": [
+        "LEAD",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "INT-010",
+      "polarity": "negative",
+      "file": "INT-010_negative.mid",
+      "intent_digest": "bd2cd48c61d749b1de95fb28bb9bba0bad57b1376423200c3f6a639fa3e35b0c",
+      "track_labels": [
+        "LEAD",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-001",
+      "polarity": "positive",
+      "file": "DRM-001_positive.mid",
+      "intent_digest": "9ebca62b5d3de7478257e3903ca85e6c9849e924f16a377414c28d0aafe1db24",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-001",
+      "polarity": "negative",
+      "file": "DRM-001_negative.mid",
+      "intent_digest": "ebd52b5f28696913ac544115bc35ec89ad0f82d9a72e022af7c5f8a420d892e3",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-002",
+      "polarity": "positive",
+      "file": "DRM-002_positive.mid",
+      "intent_digest": "0bbb4d0ae1194a04a6d52685ac6e82871fb3c3630f8a117a129c835e4bcd4c08",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-002",
+      "polarity": "negative",
+      "file": "DRM-002_negative.mid",
+      "intent_digest": "ebd52b5f28696913ac544115bc35ec89ad0f82d9a72e022af7c5f8a420d892e3",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-003",
+      "polarity": "positive",
+      "file": "DRM-003_positive.mid",
+      "intent_digest": "9ebca62b5d3de7478257e3903ca85e6c9849e924f16a377414c28d0aafe1db24",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-003",
+      "polarity": "negative",
+      "file": "DRM-003_negative.mid",
+      "intent_digest": "ebd52b5f28696913ac544115bc35ec89ad0f82d9a72e022af7c5f8a420d892e3",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-004",
+      "polarity": "positive",
+      "file": "DRM-004_positive.mid",
+      "intent_digest": "0bbb4d0ae1194a04a6d52685ac6e82871fb3c3630f8a117a129c835e4bcd4c08",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-004",
+      "polarity": "negative",
+      "file": "DRM-004_negative.mid",
+      "intent_digest": "ebd52b5f28696913ac544115bc35ec89ad0f82d9a72e022af7c5f8a420d892e3",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-005",
+      "polarity": "positive",
+      "file": "DRM-005_positive.mid",
+      "intent_digest": "9ebca62b5d3de7478257e3903ca85e6c9849e924f16a377414c28d0aafe1db24",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-005",
+      "polarity": "negative",
+      "file": "DRM-005_negative.mid",
+      "intent_digest": "ebd52b5f28696913ac544115bc35ec89ad0f82d9a72e022af7c5f8a420d892e3",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-006",
+      "polarity": "positive",
+      "file": "DRM-006_positive.mid",
+      "intent_digest": "0bbb4d0ae1194a04a6d52685ac6e82871fb3c3630f8a117a129c835e4bcd4c08",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "DRM-006",
+      "polarity": "negative",
+      "file": "DRM-006_negative.mid",
+      "intent_digest": "ebd52b5f28696913ac544115bc35ec89ad0f82d9a72e022af7c5f8a420d892e3",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-001",
+      "polarity": "positive",
+      "file": "BAS-001_positive.mid",
+      "intent_digest": "758a3d7ecda35f251fa2e2f6948cc66dd415ada85c461c1fe7c9e31c43115f67",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-001",
+      "polarity": "negative",
+      "file": "BAS-001_negative.mid",
+      "intent_digest": "b7c666e1ae4b3be23bb10bdb65f340d7fb53ae6a2f62ad5475e6d6bcfef488c7",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-002",
+      "polarity": "positive",
+      "file": "BAS-002_positive.mid",
+      "intent_digest": "758a3d7ecda35f251fa2e2f6948cc66dd415ada85c461c1fe7c9e31c43115f67",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-002",
+      "polarity": "negative",
+      "file": "BAS-002_negative.mid",
+      "intent_digest": "b7c666e1ae4b3be23bb10bdb65f340d7fb53ae6a2f62ad5475e6d6bcfef488c7",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-003",
+      "polarity": "positive",
+      "file": "BAS-003_positive.mid",
+      "intent_digest": "758a3d7ecda35f251fa2e2f6948cc66dd415ada85c461c1fe7c9e31c43115f67",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-003",
+      "polarity": "negative",
+      "file": "BAS-003_negative.mid",
+      "intent_digest": "b7c666e1ae4b3be23bb10bdb65f340d7fb53ae6a2f62ad5475e6d6bcfef488c7",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-004",
+      "polarity": "positive",
+      "file": "BAS-004_positive.mid",
+      "intent_digest": "758a3d7ecda35f251fa2e2f6948cc66dd415ada85c461c1fe7c9e31c43115f67",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-004",
+      "polarity": "negative",
+      "file": "BAS-004_negative.mid",
+      "intent_digest": "b7c666e1ae4b3be23bb10bdb65f340d7fb53ae6a2f62ad5475e6d6bcfef488c7",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-005",
+      "polarity": "positive",
+      "file": "BAS-005_positive.mid",
+      "intent_digest": "b42506c770ade4081764edf4849cdeacd44ac7d038cabc69121989237b9d5532",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "BAS-005",
+      "polarity": "negative",
+      "file": "BAS-005_negative.mid",
+      "intent_digest": "9514940006618dfb197f8bfb9e6204d3238f31653e40b004e8a32acf2b2d392c",
+      "track_labels": [
+        "FOUNDATION_DRUM",
+        "FOUNDATION_BASS"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-001",
+      "polarity": "positive",
+      "file": "GTR-001_positive.mid",
+      "intent_digest": "cdab62be28d4c7a9ac9806c4a07ecea0d8f7ffd2e5df3236409cedd4d22cfed7",
+      "track_labels": [
+        "COUNTER_LINE"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-001",
+      "polarity": "negative",
+      "file": "GTR-001_negative.mid",
+      "intent_digest": "81dee6322312295f835043be021dee227eb85dfaa051f4e7da67877b82a43cf2",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-002",
+      "polarity": "positive",
+      "file": "GTR-002_positive.mid",
+      "intent_digest": "cdab62be28d4c7a9ac9806c4a07ecea0d8f7ffd2e5df3236409cedd4d22cfed7",
+      "track_labels": [
+        "COUNTER_LINE"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-002",
+      "polarity": "negative",
+      "file": "GTR-002_negative.mid",
+      "intent_digest": "81dee6322312295f835043be021dee227eb85dfaa051f4e7da67877b82a43cf2",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-003",
+      "polarity": "positive",
+      "file": "GTR-003_positive.mid",
+      "intent_digest": "cdab62be28d4c7a9ac9806c4a07ecea0d8f7ffd2e5df3236409cedd4d22cfed7",
+      "track_labels": [
+        "COUNTER_LINE"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-003",
+      "polarity": "negative",
+      "file": "GTR-003_negative.mid",
+      "intent_digest": "81dee6322312295f835043be021dee227eb85dfaa051f4e7da67877b82a43cf2",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-004",
+      "polarity": "positive",
+      "file": "GTR-004_positive.mid",
+      "intent_digest": "cdab62be28d4c7a9ac9806c4a07ecea0d8f7ffd2e5df3236409cedd4d22cfed7",
+      "track_labels": [
+        "COUNTER_LINE"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "GTR-004",
+      "polarity": "negative",
+      "file": "GTR-004_negative.mid",
+      "intent_digest": "81dee6322312295f835043be021dee227eb85dfaa051f4e7da67877b82a43cf2",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-001",
+      "polarity": "positive",
+      "file": "PNO-001_positive.mid",
+      "intent_digest": "a232d05cd894f1bf42b809605b190ad34428e130e31665d6fd9d7f2174aea4dd",
+      "track_labels": [
+        "COUNTER_LINE"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-001",
+      "polarity": "negative",
+      "file": "PNO-001_negative.mid",
+      "intent_digest": "9506c4ddbc597c591b28d115942cd46f784d3c0fedb9aa87c324254101e2c42b",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-002",
+      "polarity": "positive",
+      "file": "PNO-002_positive.mid",
+      "intent_digest": "0ea23b76b707832ff2e6308e984a5a2316133241da1f55969ab76a1ea73b883b",
+      "track_labels": [
+        "COUNTER_LINE"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-002",
+      "polarity": "negative",
+      "file": "PNO-002_negative.mid",
+      "intent_digest": "7a2c9b35672d5fb66491f13bf519dc38e7cea2cd6c6f8aca2823c562fd3ff68a",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-003",
+      "polarity": "positive",
+      "file": "PNO-003_positive.mid",
+      "intent_digest": "a232d05cd894f1bf42b809605b190ad34428e130e31665d6fd9d7f2174aea4dd",
+      "track_labels": [
+        "COUNTER_LINE"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-003",
+      "polarity": "negative",
+      "file": "PNO-003_negative.mid",
+      "intent_digest": "9506c4ddbc597c591b28d115942cd46f784d3c0fedb9aa87c324254101e2c42b",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-004",
+      "polarity": "positive",
+      "file": "PNO-004_positive.mid",
+      "intent_digest": "a232d05cd894f1bf42b809605b190ad34428e130e31665d6fd9d7f2174aea4dd",
+      "track_labels": [
+        "COUNTER_LINE"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "PNO-004",
+      "polarity": "negative",
+      "file": "PNO-004_negative.mid",
+      "intent_digest": "9506c4ddbc597c591b28d115942cd46f784d3c0fedb9aa87c324254101e2c42b",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-001",
+      "polarity": "positive",
+      "file": "EXP-001_positive.mid",
+      "intent_digest": "7192bb3ec7ea29590d76f8ae304d65fbdadc0797ee78048931953c207f70f434",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-001",
+      "polarity": "negative",
+      "file": "EXP-001_negative.mid",
+      "intent_digest": "d5e27f70976bdbe65170797802418f7ce89448917bd371336ac1bc3e5de934c8",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-002",
+      "polarity": "positive",
+      "file": "EXP-002_positive.mid",
+      "intent_digest": "3c0e824f89800698dbf80e0e3d3d8719db7daacfa7a016908e700ce3081e82f3",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-002",
+      "polarity": "negative",
+      "file": "EXP-002_negative.mid",
+      "intent_digest": "7bfa90f9f2d657f0e9c3c929ab5689dc44d26e99f59926bc341626af90d5a8b4",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-003",
+      "polarity": "positive",
+      "file": "EXP-003_positive.mid",
+      "intent_digest": "dcc11db509a93156c8b5d61d9737d21cfe20f6a94c1168ad69e30419ba6162bd",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-003",
+      "polarity": "negative",
+      "file": "EXP-003_negative.mid",
+      "intent_digest": "b082bce4e6fc7d348b1fce5fe187659c9b42424d3e2b8846bc9ace398f104f4a",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-004",
+      "polarity": "positive",
+      "file": "EXP-004_positive.mid",
+      "intent_digest": "6b73291040e49baf6343045c2de652fb6009cca6c5312411a7c18131a6bde0b0",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-004",
+      "polarity": "negative",
+      "file": "EXP-004_negative.mid",
+      "intent_digest": "f937c20d220a85283e18dfa7fcea098663175686226311e6646338562efce365",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-005",
+      "polarity": "positive",
+      "file": "EXP-005_positive.mid",
+      "intent_digest": "cb2a785f0f653cf67959f10b3b2e76344f44516f6e4efae3edfc1c25dc8d9b2f",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "EXP-005",
+      "polarity": "negative",
+      "file": "EXP-005_negative.mid",
+      "intent_digest": "fff0559b758034c348b4b95a4929277e497268fb391f9813c76d67b7cc309ffa",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-001",
+      "polarity": "positive",
+      "file": "SEC-001_positive.mid",
+      "intent_digest": "b13d2278fd90a1e01e27952bf8a30b811458647de778cb7cc8e3f24ae3dd98d1",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-001",
+      "polarity": "negative",
+      "file": "SEC-001_negative.mid",
+      "intent_digest": "a37315b27f1ceb0b588a7f5f3bc12aaa500c3f33d3f4b2eb282d08da582c1bfa",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-002",
+      "polarity": "positive",
+      "file": "SEC-002_positive.mid",
+      "intent_digest": "b13d2278fd90a1e01e27952bf8a30b811458647de778cb7cc8e3f24ae3dd98d1",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-002",
+      "polarity": "negative",
+      "file": "SEC-002_negative.mid",
+      "intent_digest": "a37315b27f1ceb0b588a7f5f3bc12aaa500c3f33d3f4b2eb282d08da582c1bfa",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-003",
+      "polarity": "positive",
+      "file": "SEC-003_positive.mid",
+      "intent_digest": "b13d2278fd90a1e01e27952bf8a30b811458647de778cb7cc8e3f24ae3dd98d1",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-003",
+      "polarity": "negative",
+      "file": "SEC-003_negative.mid",
+      "intent_digest": "a37315b27f1ceb0b588a7f5f3bc12aaa500c3f33d3f4b2eb282d08da582c1bfa",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-004",
+      "polarity": "positive",
+      "file": "SEC-004_positive.mid",
+      "intent_digest": "b13d2278fd90a1e01e27952bf8a30b811458647de778cb7cc8e3f24ae3dd98d1",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-004",
+      "polarity": "negative",
+      "file": "SEC-004_negative.mid",
+      "intent_digest": "a37315b27f1ceb0b588a7f5f3bc12aaa500c3f33d3f4b2eb282d08da582c1bfa",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-005",
+      "polarity": "positive",
+      "file": "SEC-005_positive.mid",
+      "intent_digest": "b13d2278fd90a1e01e27952bf8a30b811458647de778cb7cc8e3f24ae3dd98d1",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "SEC-005",
+      "polarity": "negative",
+      "file": "SEC-005_negative.mid",
+      "intent_digest": "a37315b27f1ceb0b588a7f5f3bc12aaa500c3f33d3f4b2eb282d08da582c1bfa",
+      "track_labels": [
+        "FOUNDATION_BASS",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "ENS-001",
+      "polarity": "positive",
+      "file": "ENS-001_positive.mid",
+      "intent_digest": "c0441b02b1c0bf9fe4bc7f581c064fce9976b8f6d591611a445d4a9108d09c39",
+      "track_labels": [
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "ENS-001",
+      "polarity": "negative",
+      "file": "ENS-001_negative.mid",
+      "intent_digest": "98f475805ecd99c0e26ff4d7107520ac7cc464bc01e07d3d3f0d47761ea0cd4b",
+      "track_labels": [
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "ENS-002",
+      "polarity": "positive",
+      "file": "ENS-002_positive.mid",
+      "intent_digest": "c0441b02b1c0bf9fe4bc7f581c064fce9976b8f6d591611a445d4a9108d09c39",
+      "track_labels": [
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "ENS-002",
+      "polarity": "negative",
+      "file": "ENS-002_negative.mid",
+      "intent_digest": "98f475805ecd99c0e26ff4d7107520ac7cc464bc01e07d3d3f0d47761ea0cd4b",
+      "track_labels": [
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "ENS-003",
+      "polarity": "positive",
+      "file": "ENS-003_positive.mid",
+      "intent_digest": "c0441b02b1c0bf9fe4bc7f581c064fce9976b8f6d591611a445d4a9108d09c39",
+      "track_labels": [
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "ENS-003",
+      "polarity": "negative",
+      "file": "ENS-003_negative.mid",
+      "intent_digest": "98f475805ecd99c0e26ff4d7107520ac7cc464bc01e07d3d3f0d47761ea0cd4b",
+      "track_labels": [
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "ENS-004",
+      "polarity": "positive",
+      "file": "ENS-004_positive.mid",
+      "intent_digest": "c0441b02b1c0bf9fe4bc7f581c064fce9976b8f6d591611a445d4a9108d09c39",
+      "track_labels": [
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "ENS-004",
+      "polarity": "negative",
+      "file": "ENS-004_negative.mid",
+      "intent_digest": "98f475805ecd99c0e26ff4d7107520ac7cc464bc01e07d3d3f0d47761ea0cd4b",
+      "track_labels": [
+        "LEAD",
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-001",
+      "polarity": "positive",
+      "file": "AUT-001_positive.mid",
+      "intent_digest": "e3830a8f306308dfc3ae00a666ed499bade68b50617a78894794d4d9090f5962",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-001",
+      "polarity": "negative",
+      "file": "AUT-001_negative.mid",
+      "intent_digest": "a0fcf74fe3ea1c4426ee51f7c1d49469df82a349e76a69b600038b53df97f360",
+      "track_labels": [
+        "UNKNOWN"
+      ],
+      "unknown_tracks": 1,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-002",
+      "polarity": "positive",
+      "file": "AUT-002_positive.mid",
+      "intent_digest": "e3830a8f306308dfc3ae00a666ed499bade68b50617a78894794d4d9090f5962",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-002",
+      "polarity": "negative",
+      "file": "AUT-002_negative.mid",
+      "intent_digest": "b4a36858b5030bd378fd8e12a80472e4cae5111085a2a14d1548203a31077dee",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-003",
+      "polarity": "positive",
+      "file": "AUT-003_positive.mid",
+      "intent_digest": "e3830a8f306308dfc3ae00a666ed499bade68b50617a78894794d4d9090f5962",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-003",
+      "polarity": "negative",
+      "file": "AUT-003_negative.mid",
+      "intent_digest": "1c27613b9a868954720264cc0b00887d172a2eb20a6a16d077258a6908fc0bd1",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-004",
+      "polarity": "positive",
+      "file": "AUT-004_positive.mid",
+      "intent_digest": "e3830a8f306308dfc3ae00a666ed499bade68b50617a78894794d4d9090f5962",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-004",
+      "polarity": "negative",
+      "file": "AUT-004_negative.mid",
+      "intent_digest": "a0fcf74fe3ea1c4426ee51f7c1d49469df82a349e76a69b600038b53df97f360",
+      "track_labels": [
+        "UNKNOWN"
+      ],
+      "unknown_tracks": 1,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-005",
+      "polarity": "positive",
+      "file": "AUT-005_positive.mid",
+      "intent_digest": "e3830a8f306308dfc3ae00a666ed499bade68b50617a78894794d4d9090f5962",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-005",
+      "polarity": "negative",
+      "file": "AUT-005_negative.mid",
+      "intent_digest": "b4a36858b5030bd378fd8e12a80472e4cae5111085a2a14d1548203a31077dee",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-006",
+      "polarity": "positive",
+      "file": "AUT-006_positive.mid",
+      "intent_digest": "e3830a8f306308dfc3ae00a666ed499bade68b50617a78894794d4d9090f5962",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-006",
+      "polarity": "negative",
+      "file": "AUT-006_negative.mid",
+      "intent_digest": "1c27613b9a868954720264cc0b00887d172a2eb20a6a16d077258a6908fc0bd1",
+      "track_labels": [
+        "FOUNDATION_DRUM"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-007",
+      "polarity": "positive",
+      "file": "AUT-007_positive.mid",
+      "intent_digest": "e3830a8f306308dfc3ae00a666ed499bade68b50617a78894794d4d9090f5962",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "AUT-007",
+      "polarity": "negative",
+      "file": "AUT-007_negative.mid",
+      "intent_digest": "a0fcf74fe3ea1c4426ee51f7c1d49469df82a349e76a69b600038b53df97f360",
+      "track_labels": [
+        "UNKNOWN"
+      ],
+      "unknown_tracks": 1,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-001",
+      "polarity": "positive",
+      "file": "IO-001_positive.mid",
+      "intent_digest": "8fac13b95ed6c14e658bbcf55dd65cf7c1b598a90d6fe1f3e2423b7954a2d724",
+      "track_labels": [
+        "UNKNOWN"
+      ],
+      "unknown_tracks": 1,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-001",
+      "polarity": "negative",
+      "file": "IO-001_negative.mid",
+      "intent_digest": "cef3db1224bfa5b51c9f1e2e9f7f44e3c16f04ac30325df8c7db348d00fb1e39",
+      "track_labels": [
+        "UNKNOWN"
+      ],
+      "unknown_tracks": 1,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-002",
+      "polarity": "positive",
+      "file": "IO-002_positive.mid",
+      "intent_digest": "18de5f4034a02d684fa8c121a42bbaee34539356e6bb92f01b61a4265cdc2add",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-002",
+      "polarity": "negative",
+      "file": "IO-002_negative.mid",
+      "intent_digest": "548c43f3ae4a35978ec2d930bae3342a7a1b28b3097bb9aeed741e8d061ba17f",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-003",
+      "polarity": "positive",
+      "file": "IO-003_positive.mid",
+      "intent_digest": "4d5bedb12c42fd1f328cc195e8b68f5baef33449fa8b90298fb2e1d4d51a5f75",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-003",
+      "polarity": "negative",
+      "file": "IO-003_negative.mid",
+      "intent_digest": "0e1a7c799b6d2beaa3176847572dec40d224ea2b100d6b248810dc070b884ed2",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-004",
+      "polarity": "positive",
+      "file": "IO-004_positive.mid",
+      "intent_digest": "10b459b2d13c05d087d867db1893997de2c9ab238100056e5928346b8726e47b",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-004",
+      "polarity": "negative",
+      "file": "IO-004_negative.mid",
+      "intent_digest": "b67f88d6f55351d451292bd6f6a6b319fe4f66d3fde28b37ea607742f84cc9c9",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-005",
+      "polarity": "positive",
+      "file": "IO-005_positive.mid",
+      "intent_digest": "e36c06d24e3d66a7f30d1c6abdf2fb97aea2d6b2f692f8a743f599a61d782c0f",
+      "track_labels": [
+        "LEAD"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    },
+    {
+      "scenario_id": "IO-005",
+      "polarity": "negative",
+      "file": "IO-005_negative.mid",
+      "intent_digest": "c69ed0c34e20832cf56128caafc723cae7dd08c19286bf8b1351ef9c97a66942",
+      "track_labels": [
+        "RIFF_OSTINATO"
+      ],
+      "unknown_tracks": 0,
+      "checks": {
+        "schema": true,
+        "analysis_only": true,
+        "no_automation_apply": true,
+        "event_attribution": true,
+        "deterministic_digest": true,
+        "has_notes": true
+      },
+      "pass": true
+    }
+  ],
+  "pass": true
+}

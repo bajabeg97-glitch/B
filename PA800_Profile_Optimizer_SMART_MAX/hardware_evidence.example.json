@@ -1,0 +1,38 @@
+{
+  "schema": "PA800_HARDWARE_EVIDENCE_V1",
+  "device": "Korg Pa800",
+  "records": [
+    {
+      "id": "example_voice_001",
+      "kind": "voice",
+      "source_address": [121, 0, 24],
+      "target_address": [121, 15, 24],
+      "family": "GUITAR",
+      "aesthetic": "natural",
+      "approval": "suggest",
+      "pa800_os": "",
+      "set_name": "",
+      "character_score_1_5": null,
+      "clarity_score_1_5": null,
+      "preference_score_1_5": null,
+      "evidence_file": "",
+      "comments": "Promijeni approval tek nakon fizičkog A/B testa."
+    },
+    {
+      "id": "example_fx_001",
+      "kind": "fx",
+      "source_address": [121, 3, 0],
+      "family": "PIANO",
+      "scope": "section",
+      "approval": "suggest",
+      "pa800_os": "",
+      "set_name": "",
+      "clarity_score_1_5": null,
+      "depth_score_1_5": null,
+      "mud_score_1_5": null,
+      "preference_score_1_5": null,
+      "evidence_file": "",
+      "comments": "safe-auto/auto tek nakon istog SET/OS fizičkog A/B testa."
+    }
+  ]
+}

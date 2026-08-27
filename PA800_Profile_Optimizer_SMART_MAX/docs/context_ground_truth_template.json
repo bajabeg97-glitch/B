@@ -1,0 +1,13 @@
+{
+  "schema": "PA800_CONTEXT_GROUND_TRUTH_V1",
+  "source_id": "SHA256_OR_PRIVATE_LOCAL_ID",
+  "content_type": "song",
+  "ticks_per_beat": 192,
+  "annotator": "",
+  "tracks": [
+    {"track": 0, "channel": 1, "function": "LEAD", "notes": ""}
+  ],
+  "sections": [
+    {"start_tick": 0, "end_tick": 3072, "label": "INTRO", "notes": ""}
+  ]
+}

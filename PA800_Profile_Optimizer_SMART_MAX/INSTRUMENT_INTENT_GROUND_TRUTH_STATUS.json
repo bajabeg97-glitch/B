@@ -1,0 +1,67 @@
+{
+  "schema": "PA800_INSTRUMENT_INTENT_GROUND_TRUTH_EVALUATION_V2",
+  "status": "EXTERNAL_REQUIRED",
+  "authority_granted": false,
+  "mutations": 0,
+  "annotation_validation": {
+    "pass": true,
+    "errors": [],
+    "rows": 0
+  },
+  "file_counts": {
+    "song": 0,
+    "style": 0,
+    "kar": 0
+  },
+  "required_file_counts": {
+    "song": 100,
+    "style": 100,
+    "kar": 30
+  },
+  "coverage_complete": false,
+  "fine_roles": {
+    "macro_f1": 0.0,
+    "per_class": {},
+    "confusion_matrix": []
+  },
+  "superclasses": {
+    "macro_f1": 0.0,
+    "per_class": {},
+    "confusion_matrix": []
+  },
+  "unknown_precision": 0.0,
+  "unknown_predictions": 0,
+  "calibration": {
+    "ece": 0.0,
+    "bins": [],
+    "bin_count": 10
+  },
+  "grouped_split_audit": {
+    "pass": true,
+    "conflicting_source_hashes": {},
+    "unique_files": 0
+  },
+  "thresholds": {
+    "superclass_macro_f1": 0.9,
+    "fine_macro_f1": 0.82,
+    "unknown_precision": 0.95,
+    "ece": 0.05
+  },
+  "gates": {
+    "superclass_macro_f1": false,
+    "fine_macro_f1": false,
+    "unknown_precision": false,
+    "ece": true,
+    "no_group_leakage": true,
+    "valid_annotations": true
+  },
+  "pass": false,
+  "calibration_gate": {
+    "schema": "PA800_INTENT_CALIBRATION_GATE_V1",
+    "status": "EXTERNAL_REQUIRED",
+    "may_inform_suggestions": false,
+    "may_grant_mutation_authority": false,
+    "authority_granted": false,
+    "reason": "Ground truth calibrates confidence; mutation authority remains a separate E2/E3 decision."
+  }
+}

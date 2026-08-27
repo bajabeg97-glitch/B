@@ -1,0 +1,179 @@
+{
+  "schema": "PA800_RELEASE_FACTORY_MANIFEST_V1",
+  "files": [
+    {
+      "path": "pa800_optimizer/profiles/data/factory_sound_profiles_v1.json",
+      "bytes": 6483070,
+      "sha256": "824e702527a85e9bc38d5079ffbba32acdbb3d2e424098d48ec361f730fea4d3",
+      "check": {
+        "profiles": 542
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/factory_drum_key_profiles_v1.json",
+      "bytes": 4661336,
+      "sha256": "9d654f060d8783603f2cffe14d0a7276a3ff096388da7b7ee00400c4981870ca",
+      "check": {
+        "profiles": 2004
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/factory_velocity_semantics_v2.json",
+      "bytes": 26375552,
+      "sha256": "54104434a40709f8e2f183debc7fe099ff6c471bb9bcb74bdcf4fda3ad1dc8c3",
+      "check": {
+        "parent_profiles": 542
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/factory_atomic_max_summary.json",
+      "bytes": 1870221,
+      "sha256": "4010053fce0d23557057e4df2ae204d0c79eb97a7f8ee50eac6d8c9e19a6dc42",
+      "check": {
+        "styles": 252
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/factory_profile_stability_v1.json",
+      "bytes": 221108,
+      "sha256": "ed5cf47bb7c2439e3438e745af43241acf83f270f3afa573ecbf2b42b570d9f5",
+      "check": {
+        "profiles": 148
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/pa800_dnc_manual_registry_v1.json",
+      "bytes": 7878,
+      "sha256": "28be1226fa78f2c50ffc9e4e2aa48813bfc1175cf59f9273a308743b3afcad98",
+      "check": {
+        "sounds": 23
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/instrument_family_positive_models_v1.json",
+      "bytes": 1905,
+      "sha256": "6de3ff5fd6223860239bf40f7417848957b9822fcc9942f064aebd3dabc5e503",
+      "check": {
+        "allowed": 5
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/rare_family_evidence_v1.json",
+      "bytes": 683,
+      "sha256": "2a34f62002ccc2b8655ef4fc6686418f58af7be65e3b14989f3e660ed5e2000a",
+      "check": {
+        "eligible_auto_profiles": 0
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/pa800_profile_semantics_sources_v1.json",
+      "bytes": 7515,
+      "sha256": "0589edebe6cefbb944ee2e47a8d2a41640c62c62ecb048873214aebaba93db5d",
+      "check": {
+        "official_sources": 3
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/factory_profile_completeness_v1.json",
+      "bytes": 8849777,
+      "sha256": "85facc3388b03d84af87af3a23d254d5b7283dff2a8815a8f891253737345ebb",
+      "check": {
+        "cards": 565
+      }
+    },
+    {
+      "path": "pa800_optimizer/profiles/data/exact_instrument_neural_profiles_v1.json",
+      "bytes": 1808061,
+      "sha256": "acd21927789543b78cab53351c55e4e2b08ac54aaf39e5391bb5af46216b1bb3",
+      "check": {
+        "profiles": 565
+      }
+    },
+    {
+      "path": "PUBLIC_API_STRESS_MANIFEST.json",
+      "bytes": 178754,
+      "sha256": "ebc853a08f70de00280e60c21292dbb2af08dc93b04139eaf829e6622628ce93",
+      "check": {
+        "public_functions": 380
+      }
+    },
+    {
+      "path": "INSTRUMENT_INTENT_STRESS_MANIFEST.json",
+      "bytes": 44295,
+      "sha256": "88ede6a4931b0d541c13abef96f2b1980fd324d5a7c76334fc1b03535088362f",
+      "check": {
+        "midi_case_count": 110
+      }
+    },
+    {
+      "path": "INSTRUMENT_INTENT_STRESS_RESULT.json",
+      "bytes": 58729,
+      "sha256": "b17016cb2a36b7778e5dc8c539894895eb50318e5769b9625fa28ab5f6323bfc",
+      "check": {
+        "passed_cases": 110
+      }
+    },
+    {
+      "path": "FAMILY_INTENT_STRESS_RESULT.json",
+      "bytes": 26936,
+      "sha256": "de4f4d77c75a34bd6c51000dafcc91445979e810ac3e7f2612595f9b3c15e2f5",
+      "check": {
+        "passed_cases": 38
+      }
+    },
+    {
+      "path": "SECTION_NARRATIVE_STRESS_MANIFEST.json",
+      "bytes": 9436,
+      "sha256": "2f1eb5db764e0b894fc7886c5ba823f2cf3a7ab60e42c9ca2780d88b5c8ef548",
+      "check": {
+        "midi_case_count": 24
+      }
+    },
+    {
+      "path": "SECTION_NARRATIVE_STRESS_RESULT.json",
+      "bytes": 18869,
+      "sha256": "273f9f48e27320db39f9f16a7849334383dbceca9be979ab6db6098559b8ad16",
+      "check": {
+        "passed_cases": 24
+      }
+    },
+    {
+      "path": "INSTRUMENT_INTENT_GROUND_TRUTH_STATUS.json",
+      "bytes": 1507,
+      "sha256": "08e64c5eb1fad318634ee55bda040c05eeaafd3592250f9b058c1a83e0480f84",
+      "check": {
+        "status": "EXTERNAL_REQUIRED"
+      }
+    },
+    {
+      "path": "NEURAL_DATASET_CERTIFICATION_RESULT.json",
+      "bytes": 6796,
+      "sha256": "54a82478a4299678ffa962cdc6882e3f622042a520a88e063c328aca5a8f37b7",
+      "check": {
+        "dataset_cases": 60
+      }
+    },
+    {
+      "path": "NEURAL_ENCODER_CERTIFICATION_RESULT.json",
+      "bytes": 4872,
+      "sha256": "efb8ac25399f5a0a8bedc2d1993e569b24dc5d078ca0997db457ef84be04b504",
+      "check": {
+        "sources": 14
+      }
+    },
+    {
+      "path": "INSTRUMENT_PROFILE_CERTIFICATION_RESULT.json",
+      "bytes": 1306,
+      "sha256": "bcc09ad487ef30d3647f4d382977c576c875f09ff8bf59f50c353985afb86af2",
+      "check": {
+        "profiles": 565
+      }
+    },
+    {
+      "path": "corpus/Factory Styles.zip",
+      "bytes": 3719473,
+      "sha256": "e330277c090009d76647db512f68c14fd95f313fadc8d53c2246155fe9523c8f"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,17 @@
+PA800 AUTONOMOUS PREMIUM R11
+Focused combined regression: 87 passed, 0 failed
+
+Coverage includes:
+- encoder runtime admission
+- promoted encoder application
+- low-confidence Factory/Gold fallback
+- neural forensic regression using bundled production encoder
+- neural model acceptance / feature contract / dataset contract
+- optimizer / authority / timing-trill
+- event proposals R8
+- refiner transactions R9
+- velocity budget + FX transactions R10
+- AI Resource Brain / automation / BAJA stage / Factory-Gold router
+- config safety
+
+Not claimed: fresh complete-stress final release gate.

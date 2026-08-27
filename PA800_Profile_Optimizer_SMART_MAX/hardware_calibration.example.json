@@ -1,0 +1,11 @@
+{
+  "schema": "PA800_HARDWARE_VELOCITY_CALIBRATION_V1",
+  "addresses": {
+    "121.3.0": 0
+  },
+  "families": {
+    "PIANO": 0,
+    "BASS": 0
+  },
+  "note": "Offsets su MIDI velocity jedinice, raspon -24 do +24. Unositi samo vrijednosti potvrđene na vlastitom Pa800/SET-u."
+}

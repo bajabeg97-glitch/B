@@ -1,0 +1,20 @@
+BAJA MAX AUTONOMOUS PREMIUM R5
+
+Confirmed completed runs in this checkpoint:
+- 22 passed: selective rollback / Musical Brain / AI resource / authority package
+- 21 passed: Musical Brain + optimizer + autonomous safety package
+- 19 passed: process-certification + stress architecture + Musical Brain/autonomous safety package
+
+R4 inherited broad baseline before R5 edits:
+- 110 passed
+- 138 passed
+- 128 passed
+= 376 disjoint functional/regression tests
+
+Fresh R5 public API inventory:
+- 114 modules
+- 365 public functions
+- 0 unclassified
+
+A later broad R5 optimizer/verifier test command exceeded the execution window before summary and is intentionally not counted.
+Final COMPLETE_STRESS_RESULT remains pending completion of all resumable stress shards.

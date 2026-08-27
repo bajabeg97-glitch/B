@@ -1,0 +1,11 @@
+PA800 AUTONOMOUS PREMIUM R4 CHECKPOINT
+
+Focused Premium/optimizer/authority/resource suite: 76 PASS
+Broad regression block A: 110 PASS
+Broad regression block B: 138 PASS
+Broad regression block C (excluding stale release_integrity): 128 PASS
+Disjoint broad regression total: 376 PASS
+Public API inventory: 108 modules / 364 public functions / 0 unclassified
+Fresh complete stress trace: NOT COMPLETED (runner exceeded local execution window)
+Stale release integrity: BLOCKED BY DESIGN
+Hardware Pa800: EXTERNAL VALIDATION REQUIRED

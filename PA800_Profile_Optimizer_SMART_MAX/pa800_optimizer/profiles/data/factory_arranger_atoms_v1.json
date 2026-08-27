@@ -1,0 +1,2087 @@
+{
+  "segments": 31065,
+  "element_overall": {
+    "Variation 1": {
+      "segments": 2392,
+      "styles": 252,
+      "notes": 149169,
+      "notes_per_bar_median": 7.75,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 104.0,
+      "mean_chord_size_median": 1.25,
+      "bar_repeat_similarity_median": 0.9047619047619048,
+      "duration_mean_ticks_median": 68.64583333333334
+    },
+    "Variation 2": {
+      "segments": 2802,
+      "styles": 249,
+      "notes": 150605,
+      "notes_per_bar_median": 7.0,
+      "onsets_per_bar_median": 4.625,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 102.0,
+      "mean_chord_size_median": 1.3333333333333333,
+      "bar_repeat_similarity_median": 0.8928571428571429,
+      "duration_mean_ticks_median": 66.375
+    },
+    "Variation 3": {
+      "segments": 3239,
+      "styles": 249,
+      "notes": 192788,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 5.125,
+      "velocity_p50_median": 89.0,
+      "velocity_p90_median": 104.0,
+      "mean_chord_size_median": 1.4,
+      "bar_repeat_similarity_median": 0.8888888888888888,
+      "duration_mean_ticks_median": 68.925
+    },
+    "Variation 4": {
+      "segments": 3492,
+      "styles": 249,
+      "notes": 252169,
+      "notes_per_bar_median": 8.5,
+      "onsets_per_bar_median": 6.0,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 105.0,
+      "mean_chord_size_median": 1.509262117937635,
+      "bar_repeat_similarity_median": 0.8666666666666667,
+      "duration_mean_ticks_median": 66.84708121827411
+    },
+    "Intro 1": {
+      "segments": 3255,
+      "styles": 249,
+      "notes": 205415,
+      "notes_per_bar_median": 6.8,
+      "onsets_per_bar_median": 4.8,
+      "velocity_p50_median": 92,
+      "velocity_p90_median": 107,
+      "mean_chord_size_median": 1.2962962962962963,
+      "bar_repeat_similarity_median": 0.6687003968253968,
+      "duration_mean_ticks_median": 91.0
+    },
+    "Intro 2": {
+      "segments": 1707,
+      "styles": 244,
+      "notes": 55959,
+      "notes_per_bar_median": 7.0,
+      "onsets_per_bar_median": 4.75,
+      "velocity_p50_median": 91,
+      "velocity_p90_median": 104.1,
+      "mean_chord_size_median": 1.25,
+      "bar_repeat_similarity_median": 0.7402597402597404,
+      "duration_mean_ticks_median": 73.65
+    },
+    "Intro 3": {
+      "segments": 495,
+      "styles": 242,
+      "notes": 5319,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 7.0,
+      "velocity_p50_median": 92,
+      "velocity_p90_median": 109.10000000000001,
+      "mean_chord_size_median": 1.1428571428571428,
+      "bar_repeat_similarity_median": 0.6076923076923078,
+      "duration_mean_ticks_median": 38.57142857142857
+    },
+    "Fill 1": {
+      "segments": 2075,
+      "styles": 252,
+      "notes": 27164,
+      "notes_per_bar_median": 10.0,
+      "onsets_per_bar_median": 6.5,
+      "velocity_p50_median": 92.0,
+      "velocity_p90_median": 105.0,
+      "mean_chord_size_median": 1.3333333333333333,
+      "bar_repeat_similarity_median": 0.7142857142857143,
+      "duration_mean_ticks_median": 69.63257575757575
+    },
+    "Fill 2": {
+      "segments": 2370,
+      "styles": 252,
+      "notes": 35378,
+      "notes_per_bar_median": 11.0,
+      "onsets_per_bar_median": 7.0,
+      "velocity_p50_median": 92.0,
+      "velocity_p90_median": 105.0,
+      "mean_chord_size_median": 1.486842105263158,
+      "bar_repeat_similarity_median": 0.8,
+      "duration_mean_ticks_median": 67.3771551724138
+    },
+    "Break": {
+      "segments": 1561,
+      "styles": 252,
+      "notes": 12850,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 95.5,
+      "velocity_p90_median": 105.0,
+      "mean_chord_size_median": 1.391304347826087,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 85.70833333333334
+    },
+    "Ending 1": {
+      "segments": 3667,
+      "styles": 252,
+      "notes": 236075,
+      "notes_per_bar_median": 8.4,
+      "onsets_per_bar_median": 5.428571428571429,
+      "velocity_p50_median": 92.0,
+      "velocity_p90_median": 108,
+      "mean_chord_size_median": 1.4303797468354431,
+      "bar_repeat_similarity_median": 0.6071428571428571,
+      "duration_mean_ticks_median": 96.3921568627451
+    },
+    "Ending 2": {
+      "segments": 2079,
+      "styles": 250,
+      "notes": 74444,
+      "notes_per_bar_median": 7.5,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 92.0,
+      "velocity_p90_median": 107.9,
+      "mean_chord_size_median": 1.4666666666666666,
+      "bar_repeat_similarity_median": 0.5416666666666666,
+      "duration_mean_ticks_median": 85.375
+    },
+    "Ending 3": {
+      "segments": 1931,
+      "styles": 249,
+      "notes": 33267,
+      "notes_per_bar_median": 7.0,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 93.0,
+      "velocity_p90_median": 107.7,
+      "mean_chord_size_median": 1.4615384615384615,
+      "bar_repeat_similarity_median": 0.2,
+      "duration_mean_ticks_median": 70.57142857142857
+    }
+  },
+  "element_role": {
+    "Variation 1|DRUM": {
+      "segments": 447,
+      "styles": 238,
+      "notes": 38384,
+      "notes_per_bar_median": 12.75,
+      "onsets_per_bar_median": 8.0,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 115,
+      "mean_chord_size_median": 1.4945054945054945,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 11.714285714285714
+    },
+    "Variation 2|DRUM": {
+      "segments": 456,
+      "styles": 241,
+      "notes": 35218,
+      "notes_per_bar_median": 13.0,
+      "onsets_per_bar_median": 8.5,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 116.0,
+      "mean_chord_size_median": 1.5,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 8.59156337465014
+    },
+    "Variation 3|DRUM": {
+      "segments": 479,
+      "styles": 245,
+      "notes": 42766,
+      "notes_per_bar_median": 14.0,
+      "onsets_per_bar_median": 9.0,
+      "velocity_p50_median": 92,
+      "velocity_p90_median": 117.0,
+      "mean_chord_size_median": 1.6140350877192982,
+      "bar_repeat_similarity_median": 0.989010989010989,
+      "duration_mean_ticks_median": 7.375
+    },
+    "Variation 4|DRUM": {
+      "segments": 487,
+      "styles": 244,
+      "notes": 54823,
+      "notes_per_bar_median": 17.0,
+      "onsets_per_bar_median": 10.0,
+      "velocity_p50_median": 93,
+      "velocity_p90_median": 118.0,
+      "mean_chord_size_median": 1.6551724137931034,
+      "bar_repeat_similarity_median": 0.9795918367346939,
+      "duration_mean_ticks_median": 8.771428571428572
+    },
+    "Intro 1|DRUM": {
+      "segments": 483,
+      "styles": 242,
+      "notes": 45946,
+      "notes_per_bar_median": 12.833333333333334,
+      "onsets_per_bar_median": 8.25,
+      "velocity_p50_median": 95,
+      "velocity_p90_median": 117.0,
+      "mean_chord_size_median": 1.509433962264151,
+      "bar_repeat_similarity_median": 0.8012345679012347,
+      "duration_mean_ticks_median": 13.703703703703704
+    },
+    "Intro 2|DRUM": {
+      "segments": 305,
+      "styles": 235,
+      "notes": 13213,
+      "notes_per_bar_median": 13.0,
+      "onsets_per_bar_median": 8.75,
+      "velocity_p50_median": 92.5,
+      "velocity_p90_median": 115.0,
+      "mean_chord_size_median": 1.4285714285714286,
+      "bar_repeat_similarity_median": 0.8,
+      "duration_mean_ticks_median": 18.119402985074625
+    },
+    "Intro 3|DRUM": {
+      "segments": 240,
+      "styles": 236,
+      "notes": 3020,
+      "notes_per_bar_median": 10.0,
+      "onsets_per_bar_median": 8.5,
+      "velocity_p50_median": 93.75,
+      "velocity_p90_median": 112.30000000000001,
+      "mean_chord_size_median": 1.190909090909091,
+      "bar_repeat_similarity_median": 0.6,
+      "duration_mean_ticks_median": 27.58571428571429
+    },
+    "Fill 1|DRUM": {
+      "segments": 347,
+      "styles": 247,
+      "notes": 6780,
+      "notes_per_bar_median": 18.0,
+      "onsets_per_bar_median": 12.0,
+      "velocity_p50_median": 98,
+      "velocity_p90_median": 116.60000000000001,
+      "mean_chord_size_median": 1.5,
+      "bar_repeat_similarity_median": 0.7571428571428571,
+      "duration_mean_ticks_median": 23.4
+    },
+    "Fill 2|DRUM": {
+      "segments": 355,
+      "styles": 250,
+      "notes": 8856,
+      "notes_per_bar_median": 21.0,
+      "onsets_per_bar_median": 13.0,
+      "velocity_p50_median": 99,
+      "velocity_p90_median": 119.60000000000001,
+      "mean_chord_size_median": 1.5909090909090908,
+      "bar_repeat_similarity_median": 0.8,
+      "duration_mean_ticks_median": 21.952380952380953
+    },
+    "Break|DRUM": {
+      "segments": 277,
+      "styles": 247,
+      "notes": 4057,
+      "notes_per_bar_median": 13.0,
+      "onsets_per_bar_median": 9.0,
+      "velocity_p50_median": 100,
+      "velocity_p90_median": 118.0,
+      "mean_chord_size_median": 1.4,
+      "bar_repeat_similarity_median": 0.4,
+      "duration_mean_ticks_median": 29.256410256410255
+    },
+    "Ending 1|DRUM": {
+      "segments": 500,
+      "styles": 250,
+      "notes": 53735,
+      "notes_per_bar_median": 16.583333333333336,
+      "onsets_per_bar_median": 9.38888888888889,
+      "velocity_p50_median": 95.0,
+      "velocity_p90_median": 118.4,
+      "mean_chord_size_median": 1.6888888888888889,
+      "bar_repeat_similarity_median": 0.75,
+      "duration_mean_ticks_median": 14.666666666666666
+    },
+    "Ending 2|DRUM": {
+      "segments": 298,
+      "styles": 244,
+      "notes": 18089,
+      "notes_per_bar_median": 15.45,
+      "onsets_per_bar_median": 9.0,
+      "velocity_p50_median": 96.0,
+      "velocity_p90_median": 120.0,
+      "mean_chord_size_median": 1.6635220125786163,
+      "bar_repeat_similarity_median": 0.625,
+      "duration_mean_ticks_median": 20.021446078431374
+    },
+    "Ending 3|DRUM": {
+      "segments": 287,
+      "styles": 245,
+      "notes": 7663,
+      "notes_per_bar_median": 13.0,
+      "onsets_per_bar_median": 8.0,
+      "velocity_p50_median": 98,
+      "velocity_p90_median": 120.0,
+      "mean_chord_size_median": 1.631578947368421,
+      "bar_repeat_similarity_median": 0.125,
+      "duration_mean_ticks_median": 32.357142857142854
+    },
+    "Variation 3|PERC": {
+      "segments": 421,
+      "styles": 212,
+      "notes": 28941,
+      "notes_per_bar_median": 9.625,
+      "onsets_per_bar_median": 8.0,
+      "velocity_p50_median": 83.0,
+      "velocity_p90_median": 108,
+      "mean_chord_size_median": 1.1111111111111112,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 15.0
+    },
+    "Variation 4|PERC": {
+      "segments": 450,
+      "styles": 223,
+      "notes": 40558,
+      "notes_per_bar_median": 12.5,
+      "onsets_per_bar_median": 9.0,
+      "velocity_p50_median": 82.75,
+      "velocity_p90_median": 106.0,
+      "mean_chord_size_median": 1.2583333333333333,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 17.333333333333332
+    },
+    "Intro 1|PERC": {
+      "segments": 365,
+      "styles": 188,
+      "notes": 29618,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 6.4,
+      "velocity_p50_median": 85,
+      "velocity_p90_median": 108.0,
+      "mean_chord_size_median": 1.1492537313432836,
+      "bar_repeat_similarity_median": 0.9272727272727274,
+      "duration_mean_ticks_median": 15.0
+    },
+    "Intro 2|PERC": {
+      "segments": 221,
+      "styles": 170,
+      "notes": 8187,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 7.0,
+      "velocity_p50_median": 90,
+      "velocity_p90_median": 108.6,
+      "mean_chord_size_median": 1.11864406779661,
+      "bar_repeat_similarity_median": 0.9743589743589745,
+      "duration_mean_ticks_median": 11.851851851851851
+    },
+    "Fill 2|PERC": {
+      "segments": 289,
+      "styles": 205,
+      "notes": 4838,
+      "notes_per_bar_median": 12.0,
+      "onsets_per_bar_median": 9.0,
+      "velocity_p50_median": 85.0,
+      "velocity_p90_median": 106.8,
+      "mean_chord_size_median": 1.1578947368421053,
+      "bar_repeat_similarity_median": 0.9285714285714286,
+      "duration_mean_ticks_median": 22.0
+    },
+    "Break|PERC": {
+      "segments": 160,
+      "styles": 143,
+      "notes": 1773,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 83.0,
+      "velocity_p90_median": 102.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.36211080586080585,
+      "duration_mean_ticks_median": 22.548689138576776
+    },
+    "Ending 1|PERC": {
+      "segments": 433,
+      "styles": 218,
+      "notes": 38030,
+      "notes_per_bar_median": 12.0,
+      "onsets_per_bar_median": 8.0,
+      "velocity_p50_median": 82,
+      "velocity_p90_median": 108.0,
+      "mean_chord_size_median": 1.2777777777777777,
+      "bar_repeat_similarity_median": 0.875,
+      "duration_mean_ticks_median": 15.115384615384615
+    },
+    "Ending 2|PERC": {
+      "segments": 253,
+      "styles": 203,
+      "notes": 12330,
+      "notes_per_bar_median": 10.0,
+      "onsets_per_bar_median": 7.25,
+      "velocity_p50_median": 82,
+      "velocity_p90_median": 108.09999999999998,
+      "mean_chord_size_median": 1.2058823529411764,
+      "bar_repeat_similarity_median": 0.80625,
+      "duration_mean_ticks_median": 16.797619047619047
+    },
+    "Ending 3|PERC": {
+      "segments": 228,
+      "styles": 196,
+      "notes": 4494,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 6.0,
+      "velocity_p50_median": 82.5,
+      "velocity_p90_median": 106.6,
+      "mean_chord_size_median": 1.1143790849673203,
+      "bar_repeat_similarity_median": 0.3333333333333333,
+      "duration_mean_ticks_median": 22.36111111111111
+    },
+    "Variation 1|BASS": {
+      "segments": 454,
+      "styles": 243,
+      "notes": 13611,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 102.0,
+      "velocity_p90_median": 108.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.8,
+      "duration_mean_ticks_median": 150.55555555555554
+    },
+    "Variation 2|BASS": {
+      "segments": 457,
+      "styles": 242,
+      "notes": 11557,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 101,
+      "velocity_p90_median": 108.6,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.8000000000000002,
+      "duration_mean_ticks_median": 123.05263157894737
+    },
+    "Variation 3|BASS": {
+      "segments": 475,
+      "styles": 242,
+      "notes": 13674,
+      "notes_per_bar_median": 4.5,
+      "onsets_per_bar_median": 4.5,
+      "velocity_p50_median": 103.0,
+      "velocity_p90_median": 111.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.8061224489795918,
+      "duration_mean_ticks_median": 106.69642857142857
+    },
+    "Variation 4|BASS": {
+      "segments": 484,
+      "styles": 243,
+      "notes": 16894,
+      "notes_per_bar_median": 5.5,
+      "onsets_per_bar_median": 5.0625,
+      "velocity_p50_median": 103.0,
+      "velocity_p90_median": 112.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.8095238095238095,
+      "duration_mean_ticks_median": 100.26086956521739
+    },
+    "Intro 1|BASS": {
+      "segments": 469,
+      "styles": 237,
+      "notes": 13423,
+      "notes_per_bar_median": 3.875,
+      "onsets_per_bar_median": 3.5555555555555554,
+      "velocity_p50_median": 102,
+      "velocity_p90_median": 110.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.6220238095238095,
+      "duration_mean_ticks_median": 125.82857142857142
+    },
+    "Intro 2|BASS": {
+      "segments": 285,
+      "styles": 219,
+      "notes": 3806,
+      "notes_per_bar_median": 3.4,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 102.5,
+      "velocity_p90_median": 109.2,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.6666666666666666,
+      "duration_mean_ticks_median": 140.25
+    },
+    "Intro 3|BASS": {
+      "segments": 93,
+      "styles": 90,
+      "notes": 291,
+      "notes_per_bar_median": 2.0,
+      "onsets_per_bar_median": 1.0,
+      "velocity_p50_median": 108.0,
+      "velocity_p90_median": 114.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.3333333333333333,
+      "duration_mean_ticks_median": 143.5
+    },
+    "Fill 1|BASS": {
+      "segments": 352,
+      "styles": 251,
+      "notes": 2085,
+      "notes_per_bar_median": 5.0,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 102.0,
+      "velocity_p90_median": 108.75,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.6,
+      "duration_mean_ticks_median": 112.66666666666667
+    },
+    "Fill 2|BASS": {
+      "segments": 355,
+      "styles": 251,
+      "notes": 2412,
+      "notes_per_bar_median": 6.0,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 104,
+      "velocity_p90_median": 111.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 100.87142857142857
+    },
+    "Break|BASS": {
+      "segments": 280,
+      "styles": 250,
+      "notes": 912,
+      "notes_per_bar_median": 2.0,
+      "onsets_per_bar_median": 2.0,
+      "velocity_p50_median": 109.5,
+      "velocity_p90_median": 114.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 144.0
+    },
+    "Ending 1|BASS": {
+      "segments": 499,
+      "styles": 250,
+      "notes": 14415,
+      "notes_per_bar_median": 4.666666666666667,
+      "onsets_per_bar_median": 4.2,
+      "velocity_p50_median": 103.5,
+      "velocity_p90_median": 111.20000000000002,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.577891156462585,
+      "duration_mean_ticks_median": 132.25
+    },
+    "Ending 2|BASS": {
+      "segments": 294,
+      "styles": 242,
+      "notes": 4547,
+      "notes_per_bar_median": 4.25,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 105.75,
+      "velocity_p90_median": 113.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 126.61111111111111
+    },
+    "Ending 3|BASS": {
+      "segments": 285,
+      "styles": 245,
+      "notes": 2176,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 3.5,
+      "velocity_p50_median": 105.5,
+      "velocity_p90_median": 113.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.25,
+      "duration_mean_ticks_median": 116.14285714285714
+    },
+    "Variation 1|ACC1": {
+      "segments": 376,
+      "styles": 187,
+      "notes": 22642,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 86.0,
+      "velocity_p90_median": 95.0,
+      "mean_chord_size_median": 2.0,
+      "bar_repeat_similarity_median": 0.7765130400999966,
+      "duration_mean_ticks_median": 143.296875
+    },
+    "Variation 2|ACC1": {
+      "segments": 427,
+      "styles": 218,
+      "notes": 23698,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 85.0,
+      "velocity_p90_median": 96.0,
+      "mean_chord_size_median": 1.95,
+      "bar_repeat_similarity_median": 0.75,
+      "duration_mean_ticks_median": 120.86666666666666
+    },
+    "Variation 3|ACC1": {
+      "segments": 448,
+      "styles": 226,
+      "notes": 27055,
+      "notes_per_bar_median": 8.875,
+      "onsets_per_bar_median": 4.3125,
+      "velocity_p50_median": 85.0,
+      "velocity_p90_median": 97.0,
+      "mean_chord_size_median": 2.0,
+      "bar_repeat_similarity_median": 0.7222222222222222,
+      "duration_mean_ticks_median": 138.8534482758621
+    },
+    "Variation 4|ACC1": {
+      "segments": 462,
+      "styles": 232,
+      "notes": 34363,
+      "notes_per_bar_median": 10.25,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 88.0,
+      "velocity_p90_median": 99.0,
+      "mean_chord_size_median": 1.9189189189189189,
+      "bar_repeat_similarity_median": 0.7541288737717309,
+      "duration_mean_ticks_median": 121.67827442827443
+    },
+    "Intro 1|ACC1": {
+      "segments": 438,
+      "styles": 222,
+      "notes": 29445,
+      "notes_per_bar_median": 9.166666666666666,
+      "onsets_per_bar_median": 4.380952380952381,
+      "velocity_p50_median": 89.0,
+      "velocity_p90_median": 102.0,
+      "mean_chord_size_median": 1.8571428571428572,
+      "bar_repeat_similarity_median": 0.6136752136752137,
+      "duration_mean_ticks_median": 173.52777777777777
+    },
+    "Intro 2|ACC1": {
+      "segments": 233,
+      "styles": 172,
+      "notes": 8048,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 87,
+      "velocity_p90_median": 97.7,
+      "mean_chord_size_median": 1.6666666666666667,
+      "bar_repeat_similarity_median": 0.611111111111111,
+      "duration_mean_ticks_median": 148.8235294117647
+    },
+    "Intro 3|ACC1": {
+      "segments": 17,
+      "styles": 16,
+      "notes": 161,
+      "notes_per_bar_median": 5.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 64.0,
+      "velocity_p90_median": 78.6,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 67.47916666666667
+    },
+    "Fill 1|ACC1": {
+      "segments": 299,
+      "styles": 209,
+      "notes": 3987,
+      "notes_per_bar_median": 11.0,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 86.0,
+      "velocity_p90_median": 97.9,
+      "mean_chord_size_median": 2.2,
+      "bar_repeat_similarity_median": 0.9166666666666667,
+      "duration_mean_ticks_median": 117.45454545454545
+    },
+    "Fill 2|ACC1": {
+      "segments": 311,
+      "styles": 223,
+      "notes": 4394,
+      "notes_per_bar_median": 12.0,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 89.0,
+      "velocity_p90_median": 100.0,
+      "mean_chord_size_median": 2.25,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 103.83333333333333
+    },
+    "Break|ACC1": {
+      "segments": 231,
+      "styles": 205,
+      "notes": 1535,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 1.0,
+      "velocity_p50_median": 91.0,
+      "velocity_p90_median": 97.0,
+      "mean_chord_size_median": 3.0,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 126.0
+    },
+    "Ending 1|ACC1": {
+      "segments": 480,
+      "styles": 237,
+      "notes": 29697,
+      "notes_per_bar_median": 10.0,
+      "onsets_per_bar_median": 4.854166666666666,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 104.0,
+      "mean_chord_size_median": 1.986842105263158,
+      "bar_repeat_similarity_median": 0.5238095238095238,
+      "duration_mean_ticks_median": 172.22727272727275
+    },
+    "Ending 2|ACC1": {
+      "segments": 270,
+      "styles": 221,
+      "notes": 9073,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 88.5,
+      "velocity_p90_median": 101.8,
+      "mean_chord_size_median": 2.080409356725146,
+      "bar_repeat_similarity_median": 0.4305555555555556,
+      "duration_mean_ticks_median": 145.26488095238096
+    },
+    "Ending 3|ACC1": {
+      "segments": 260,
+      "styles": 220,
+      "notes": 4730,
+      "notes_per_bar_median": 8.5,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 101.85,
+      "mean_chord_size_median": 2.0,
+      "bar_repeat_similarity_median": 0.2,
+      "duration_mean_ticks_median": 110.85714285714286
+    },
+    "Intro 1|ACC2": {
+      "segments": 453,
+      "styles": 231,
+      "notes": 34316,
+      "notes_per_bar_median": 8.4,
+      "onsets_per_bar_median": 6.166666666666667,
+      "velocity_p50_median": 86,
+      "velocity_p90_median": 102.0,
+      "mean_chord_size_median": 1.2954545454545454,
+      "bar_repeat_similarity_median": 0.6666666666666666,
+      "duration_mean_ticks_median": 97.5223880597015
+    },
+    "Break|ACC2": {
+      "segments": 210,
+      "styles": 183,
+      "notes": 1628,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 90.25,
+      "velocity_p90_median": 96.6,
+      "mean_chord_size_median": 1.6754385964912282,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 88.25
+    },
+    "Ending 1|ACC2": {
+      "segments": 495,
+      "styles": 247,
+      "notes": 36672,
+      "notes_per_bar_median": 9.875,
+      "onsets_per_bar_median": 6.277777777777778,
+      "velocity_p50_median": 90,
+      "velocity_p90_median": 103.0,
+      "mean_chord_size_median": 1.4333333333333333,
+      "bar_repeat_similarity_median": 0.6000000000000001,
+      "duration_mean_ticks_median": 102.10909090909091
+    },
+    "Ending 2|ACC2": {
+      "segments": 277,
+      "styles": 227,
+      "notes": 12541,
+      "notes_per_bar_median": 10.5,
+      "onsets_per_bar_median": 6.0,
+      "velocity_p50_median": 89.0,
+      "velocity_p90_median": 102.0,
+      "mean_chord_size_median": 1.4666666666666666,
+      "bar_repeat_similarity_median": 0.5416666666666666,
+      "duration_mean_ticks_median": 96.42857142857143
+    },
+    "Ending 3|ACC2": {
+      "segments": 270,
+      "styles": 230,
+      "notes": 5327,
+      "notes_per_bar_median": 8.25,
+      "onsets_per_bar_median": 6.0,
+      "velocity_p50_median": 88.0,
+      "velocity_p90_median": 100.75,
+      "mean_chord_size_median": 1.3944444444444444,
+      "bar_repeat_similarity_median": 0.16666666666666666,
+      "duration_mean_ticks_median": 86.79022988505747
+    },
+    "Variation 3|ACC3": {
+      "segments": 447,
+      "styles": 224,
+      "notes": 23558,
+      "notes_per_bar_median": 6.375,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 83.0,
+      "velocity_p90_median": 92.0,
+      "mean_chord_size_median": 1.5909090909090908,
+      "bar_repeat_similarity_median": 0.75,
+      "duration_mean_ticks_median": 106.16666666666667
+    },
+    "Variation 4|ACC3": {
+      "segments": 466,
+      "styles": 232,
+      "notes": 30881,
+      "notes_per_bar_median": 6.75,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 88.0,
+      "velocity_p90_median": 99.0,
+      "mean_chord_size_median": 1.6612903225806452,
+      "bar_repeat_similarity_median": 0.6444444444444445,
+      "duration_mean_ticks_median": 98.82033788174138
+    },
+    "Intro 1|ACC3": {
+      "segments": 409,
+      "styles": 213,
+      "notes": 23997,
+      "notes_per_bar_median": 6.0,
+      "onsets_per_bar_median": 4.5,
+      "velocity_p50_median": 88,
+      "velocity_p90_median": 102,
+      "mean_chord_size_median": 1.3333333333333333,
+      "bar_repeat_similarity_median": 0.5555555555555555,
+      "duration_mean_ticks_median": 126.3
+    },
+    "Intro 3|ACC3": {
+      "segments": 14,
+      "styles": 13,
+      "notes": 112,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 79.5,
+      "velocity_p90_median": 83.35,
+      "mean_chord_size_median": 1.0909090909090908,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 40.5
+    },
+    "Fill 2|ACC3": {
+      "segments": 313,
+      "styles": 221,
+      "notes": 4508,
+      "notes_per_bar_median": 11.5,
+      "onsets_per_bar_median": 6.0,
+      "velocity_p50_median": 84.0,
+      "velocity_p90_median": 97.0,
+      "mean_chord_size_median": 1.7333333333333334,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 90.875
+    },
+    "Break|ACC3": {
+      "segments": 184,
+      "styles": 160,
+      "notes": 1501,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 87.5,
+      "velocity_p90_median": 99.75,
+      "mean_chord_size_median": 1.6666666666666667,
+      "bar_repeat_similarity_median": 0.46915584415584416,
+      "duration_mean_ticks_median": 93.0
+    },
+    "Ending 1|ACC3": {
+      "segments": 482,
+      "styles": 239,
+      "notes": 28368,
+      "notes_per_bar_median": 7.708333333333334,
+      "onsets_per_bar_median": 4.844444444444445,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 104.70000000000002,
+      "mean_chord_size_median": 1.4650406504065039,
+      "bar_repeat_similarity_median": 0.5125,
+      "duration_mean_ticks_median": 136.1
+    },
+    "Ending 2|ACC3": {
+      "segments": 272,
+      "styles": 226,
+      "notes": 9134,
+      "notes_per_bar_median": 7.0,
+      "onsets_per_bar_median": 4.55,
+      "velocity_p50_median": 86.0,
+      "velocity_p90_median": 102.0,
+      "mean_chord_size_median": 1.5611801242236025,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 122.09893048128342
+    },
+    "Ending 3|ACC3": {
+      "segments": 262,
+      "styles": 224,
+      "notes": 4622,
+      "notes_per_bar_median": 7.25,
+      "onsets_per_bar_median": 4.5,
+      "velocity_p50_median": 88.25,
+      "velocity_p90_median": 101.0,
+      "mean_chord_size_median": 1.6290849673202614,
+      "bar_repeat_similarity_median": 0.25,
+      "duration_mean_ticks_median": 85.77777777777777
+    },
+    "Variation 4|ACC4": {
+      "segments": 366,
+      "styles": 190,
+      "notes": 17774,
+      "notes_per_bar_median": 4.625,
+      "onsets_per_bar_median": 2.96875,
+      "velocity_p50_median": 88.0,
+      "velocity_p90_median": 95.9,
+      "mean_chord_size_median": 1.7741935483870968,
+      "bar_repeat_similarity_median": 0.6666666666666666,
+      "duration_mean_ticks_median": 138.0639880952381
+    },
+    "Intro 1|ACC4": {
+      "segments": 342,
+      "styles": 180,
+      "notes": 16049,
+      "notes_per_bar_median": 4.75,
+      "onsets_per_bar_median": 3.041666666666667,
+      "velocity_p50_median": 94.0,
+      "velocity_p90_median": 105.1,
+      "mean_chord_size_median": 1.254032258064516,
+      "bar_repeat_similarity_median": 0.5253401360544218,
+      "duration_mean_ticks_median": 141.87218468468467
+    },
+    "Intro 3|ACC4": {
+      "segments": 15,
+      "styles": 13,
+      "notes": 107,
+      "notes_per_bar_median": 6.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 83.5,
+      "velocity_p90_median": 84.0,
+      "mean_chord_size_median": 1.25,
+      "bar_repeat_similarity_median": null,
+      "duration_mean_ticks_median": 96.0
+    },
+    "Break|ACC4": {
+      "segments": 124,
+      "styles": 110,
+      "notes": 1000,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 2.0,
+      "velocity_p50_median": 95.25,
+      "velocity_p90_median": 99.25,
+      "mean_chord_size_median": 2.0,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 95.66666666666666
+    },
+    "Ending 1|ACC4": {
+      "segments": 412,
+      "styles": 204,
+      "notes": 20723,
+      "notes_per_bar_median": 5.666666666666667,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 90.5,
+      "velocity_p90_median": 104.0,
+      "mean_chord_size_median": 1.391304347826087,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 154.0634674922601
+    },
+    "Ending 2|ACC4": {
+      "segments": 223,
+      "styles": 187,
+      "notes": 5483,
+      "notes_per_bar_median": 5.25,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 89,
+      "velocity_p90_median": 101,
+      "mean_chord_size_median": 1.8888888888888888,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 146.88636363636363
+    },
+    "Ending 3|ACC4": {
+      "segments": 184,
+      "styles": 165,
+      "notes": 2760,
+      "notes_per_bar_median": 6.0,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 101.55000000000001,
+      "mean_chord_size_median": 1.8285714285714287,
+      "bar_repeat_similarity_median": 0.2727272727272727,
+      "duration_mean_ticks_median": 98.8
+    },
+    "Variation 4|ACC5": {
+      "segments": 302,
+      "styles": 162,
+      "notes": 10066,
+      "notes_per_bar_median": 3.6875,
+      "onsets_per_bar_median": 2.5,
+      "velocity_p50_median": 85.5,
+      "velocity_p90_median": 95.65,
+      "mean_chord_size_median": 1.7312834224598932,
+      "bar_repeat_similarity_median": 0.6118326118326118,
+      "duration_mean_ticks_median": 121.875
+    },
+    "Intro 1|ACC5": {
+      "segments": 296,
+      "styles": 157,
+      "notes": 12621,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 3.5277777777777777,
+      "velocity_p50_median": 93.5,
+      "velocity_p90_median": 107.0,
+      "mean_chord_size_median": 1.1886867088607596,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 129.51315789473682
+    },
+    "Intro 3|ACC5": {
+      "segments": 13,
+      "styles": 11,
+      "notes": 179,
+      "notes_per_bar_median": 3.0,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 75.0,
+      "velocity_p90_median": 75.0,
+      "mean_chord_size_median": 1.5833333333333333,
+      "bar_repeat_similarity_median": null,
+      "duration_mean_ticks_median": 64.17441860465117
+    },
+    "Break|ACC5": {
+      "segments": 95,
+      "styles": 84,
+      "notes": 444,
+      "notes_per_bar_median": 3.5,
+      "onsets_per_bar_median": 1.0,
+      "velocity_p50_median": 91,
+      "velocity_p90_median": 91.0,
+      "mean_chord_size_median": 2.0,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 91.4
+    },
+    "Ending 1|ACC5": {
+      "segments": 366,
+      "styles": 185,
+      "notes": 14435,
+      "notes_per_bar_median": 5.7,
+      "onsets_per_bar_median": 3.5277777777777777,
+      "velocity_p50_median": 93.0,
+      "velocity_p90_median": 106.5,
+      "mean_chord_size_median": 1.5147058823529411,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 150.08823529411765
+    },
+    "Ending 2|ACC5": {
+      "segments": 192,
+      "styles": 161,
+      "notes": 3247,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 2.75,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 98.5,
+      "mean_chord_size_median": 1.3627819548872182,
+      "bar_repeat_similarity_median": 0.38690476190476186,
+      "duration_mean_ticks_median": 165.0
+    },
+    "Ending 3|ACC5": {
+      "segments": 155,
+      "styles": 140,
+      "notes": 1495,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 2.0,
+      "velocity_p50_median": 91.0,
+      "velocity_p90_median": 98.0,
+      "mean_chord_size_median": 2.0,
+      "bar_repeat_similarity_median": 0.2,
+      "duration_mean_ticks_median": 103.0
+    },
+    "Variation 1|PERC": {
+      "segments": 327,
+      "styles": 177,
+      "notes": 22194,
+      "notes_per_bar_median": 6.333333333333333,
+      "onsets_per_bar_median": 6.0,
+      "velocity_p50_median": 87.0,
+      "velocity_p90_median": 108.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 12.0
+    },
+    "Variation 2|PERC": {
+      "segments": 373,
+      "styles": 197,
+      "notes": 19543,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 6.4375,
+      "velocity_p50_median": 84.0,
+      "velocity_p90_median": 107.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 15.0
+    },
+    "Fill 1|PERC": {
+      "segments": 271,
+      "styles": 194,
+      "notes": 3535,
+      "notes_per_bar_median": 10.0,
+      "onsets_per_bar_median": 8.0,
+      "velocity_p50_median": 84.0,
+      "velocity_p90_median": 106.8,
+      "mean_chord_size_median": 1.05,
+      "bar_repeat_similarity_median": 0.3333333333333333,
+      "duration_mean_ticks_median": 22.428571428571427
+    },
+    "Variation 1|ACC2": {
+      "segments": 361,
+      "styles": 190,
+      "notes": 30993,
+      "notes_per_bar_median": 9.5,
+      "onsets_per_bar_median": 6.75,
+      "velocity_p50_median": 83.0,
+      "velocity_p90_median": 96.0,
+      "mean_chord_size_median": 1.3513513513513513,
+      "bar_repeat_similarity_median": 0.8458333333333333,
+      "duration_mean_ticks_median": 82.5
+    },
+    "Variation 2|ACC2": {
+      "segments": 385,
+      "styles": 200,
+      "notes": 31861,
+      "notes_per_bar_median": 10.25,
+      "onsets_per_bar_median": 6.5,
+      "velocity_p50_median": 84.0,
+      "velocity_p90_median": 96.2,
+      "mean_chord_size_median": 1.4393939393939394,
+      "bar_repeat_similarity_median": 0.8502267573696145,
+      "duration_mean_ticks_median": 77.05172413793103
+    },
+    "Variation 3|ACC2": {
+      "segments": 451,
+      "styles": 227,
+      "notes": 39425,
+      "notes_per_bar_median": 11.25,
+      "onsets_per_bar_median": 7.0,
+      "velocity_p50_median": 84,
+      "velocity_p90_median": 96.1,
+      "mean_chord_size_median": 1.5,
+      "bar_repeat_similarity_median": 0.8888888888888888,
+      "duration_mean_ticks_median": 72.42857142857143
+    },
+    "Variation 4|ACC2": {
+      "segments": 475,
+      "styles": 237,
+      "notes": 46810,
+      "notes_per_bar_median": 12.0,
+      "onsets_per_bar_median": 7.5,
+      "velocity_p50_median": 86.0,
+      "velocity_p90_median": 100.0,
+      "mean_chord_size_median": 1.6428571428571428,
+      "bar_repeat_similarity_median": 0.8571428571428571,
+      "duration_mean_ticks_median": 71.63636363636364
+    },
+    "Intro 2|ACC2": {
+      "segments": 239,
+      "styles": 180,
+      "notes": 10416,
+      "notes_per_bar_median": 9.0,
+      "onsets_per_bar_median": 5.666666666666667,
+      "velocity_p50_median": 87.5,
+      "velocity_p90_median": 100.0,
+      "mean_chord_size_median": 1.3333333333333333,
+      "bar_repeat_similarity_median": 0.6611045204795205,
+      "duration_mean_ticks_median": 91.72307692307692
+    },
+    "Fill 1|ACC2": {
+      "segments": 295,
+      "styles": 206,
+      "notes": 4885,
+      "notes_per_bar_median": 12.0,
+      "onsets_per_bar_median": 8.0,
+      "velocity_p50_median": 88.0,
+      "velocity_p90_median": 99.0,
+      "mean_chord_size_median": 1.3333333333333333,
+      "bar_repeat_similarity_median": 0.8333333333333334,
+      "duration_mean_ticks_median": 73.23611111111111
+    },
+    "Fill 2|ACC2": {
+      "segments": 333,
+      "styles": 231,
+      "notes": 6150,
+      "notes_per_bar_median": 14.0,
+      "onsets_per_bar_median": 8.0,
+      "velocity_p50_median": 86.0,
+      "velocity_p90_median": 98.6,
+      "mean_chord_size_median": 1.5,
+      "bar_repeat_similarity_median": 0.8,
+      "duration_mean_ticks_median": 68.0
+    },
+    "Variation 1|ACC3": {
+      "segments": 241,
+      "styles": 119,
+      "notes": 14164,
+      "notes_per_bar_median": 7.5,
+      "onsets_per_bar_median": 4.5,
+      "velocity_p50_median": 84,
+      "velocity_p90_median": 94.0,
+      "mean_chord_size_median": 1.3661971830985915,
+      "bar_repeat_similarity_median": 0.7799180327868852,
+      "duration_mean_ticks_median": 94.23809523809524
+    },
+    "Variation 2|ACC3": {
+      "segments": 356,
+      "styles": 186,
+      "notes": 18238,
+      "notes_per_bar_median": 5.916666666666667,
+      "onsets_per_bar_median": 3.25,
+      "velocity_p50_median": 83.0,
+      "velocity_p90_median": 94.0,
+      "mean_chord_size_median": 1.495,
+      "bar_repeat_similarity_median": 0.7988095238095239,
+      "duration_mean_ticks_median": 107.04
+    },
+    "Intro 2|ACC3": {
+      "segments": 202,
+      "styles": 150,
+      "notes": 6703,
+      "notes_per_bar_median": 7.45,
+      "onsets_per_bar_median": 4.55,
+      "velocity_p50_median": 87.0,
+      "velocity_p90_median": 95.8,
+      "mean_chord_size_median": 1.4907407407407407,
+      "bar_repeat_similarity_median": 0.6388888888888888,
+      "duration_mean_ticks_median": 111.97972972972973
+    },
+    "Fill 1|ACC3": {
+      "segments": 249,
+      "styles": 172,
+      "notes": 3409,
+      "notes_per_bar_median": 11.0,
+      "onsets_per_bar_median": 6.0,
+      "velocity_p50_median": 83,
+      "velocity_p90_median": 96.0,
+      "mean_chord_size_median": 1.5,
+      "bar_repeat_similarity_median": 0.9166666666666667,
+      "duration_mean_ticks_median": 90.0
+    },
+    "Intro 3|PERC": {
+      "segments": 84,
+      "styles": 82,
+      "notes": 1265,
+      "notes_per_bar_median": 10.0,
+      "onsets_per_bar_median": 7.0,
+      "velocity_p50_median": 85.5,
+      "velocity_p90_median": 105.0,
+      "mean_chord_size_median": 1.1833333333333333,
+      "bar_repeat_similarity_median": 1.0,
+      "duration_mean_ticks_median": 23.285714285714285
+    },
+    "Variation 2|ACC4": {
+      "segments": 213,
+      "styles": 119,
+      "notes": 7519,
+      "notes_per_bar_median": 4.0,
+      "onsets_per_bar_median": 2.5,
+      "velocity_p50_median": 85,
+      "velocity_p90_median": 93.0,
+      "mean_chord_size_median": 1.4489795918367347,
+      "bar_repeat_similarity_median": 0.75,
+      "duration_mean_ticks_median": 155.83636363636364
+    },
+    "Variation 3|ACC4": {
+      "segments": 304,
+      "styles": 163,
+      "notes": 12332,
+      "notes_per_bar_median": 4.5,
+      "onsets_per_bar_median": 2.4375,
+      "velocity_p50_median": 87.0,
+      "velocity_p90_median": 94.0,
+      "mean_chord_size_median": 1.4258241758241759,
+      "bar_repeat_similarity_median": 0.75,
+      "duration_mean_ticks_median": 162.38839285714286
+    },
+    "Fill 1|ACC4": {
+      "segments": 154,
+      "styles": 114,
+      "notes": 1688,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 4.5,
+      "velocity_p50_median": 89.5,
+      "velocity_p90_median": 97.85,
+      "mean_chord_size_median": 1.75,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 88.4047619047619
+    },
+    "Fill 2|ACC4": {
+      "segments": 229,
+      "styles": 166,
+      "notes": 2563,
+      "notes_per_bar_median": 8.0,
+      "onsets_per_bar_median": 5.0,
+      "velocity_p50_median": 91.0,
+      "velocity_p90_median": 98.0,
+      "mean_chord_size_median": 2.0,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 104.38461538461539
+    },
+    "Variation 1|ACC5": {
+      "segments": 66,
+      "styles": 41,
+      "notes": 2550,
+      "notes_per_bar_median": 3.25,
+      "onsets_per_bar_median": 2.1875,
+      "velocity_p50_median": 84.25,
+      "velocity_p90_median": 90.0,
+      "mean_chord_size_median": 1.8636363636363638,
+      "bar_repeat_similarity_median": 0.9428571428571428,
+      "duration_mean_ticks_median": 148.94505494505495
+    },
+    "Variation 2|ACC5": {
+      "segments": 135,
+      "styles": 75,
+      "notes": 2971,
+      "notes_per_bar_median": 2.75,
+      "onsets_per_bar_median": 1.5,
+      "velocity_p50_median": 90.0,
+      "velocity_p90_median": 96.0,
+      "mean_chord_size_median": 1.6896551724137931,
+      "bar_repeat_similarity_median": 0.6,
+      "duration_mean_ticks_median": 126.0
+    },
+    "Variation 3|ACC5": {
+      "segments": 214,
+      "styles": 115,
+      "notes": 5037,
+      "notes_per_bar_median": 2.75,
+      "onsets_per_bar_median": 1.6875,
+      "velocity_p50_median": 85.0,
+      "velocity_p90_median": 92.9,
+      "mean_chord_size_median": 1.4166666666666665,
+      "bar_repeat_similarity_median": 0.6333333333333333,
+      "duration_mean_ticks_median": 168.33333333333334
+    },
+    "Fill 1|ACC5": {
+      "segments": 108,
+      "styles": 78,
+      "notes": 795,
+      "notes_per_bar_median": 5.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 87.5,
+      "velocity_p90_median": 95.45,
+      "mean_chord_size_median": 1.5916666666666668,
+      "bar_repeat_similarity_median": 0.5,
+      "duration_mean_ticks_median": 111.76190476190476
+    },
+    "Variation 1|ACC4": {
+      "segments": 120,
+      "styles": 66,
+      "notes": 4631,
+      "notes_per_bar_median": 5.5,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 84.5,
+      "velocity_p90_median": 97.5,
+      "mean_chord_size_median": 1.4744897959183674,
+      "bar_repeat_similarity_median": 0.8181818181818182,
+      "duration_mean_ticks_median": 105.07291666666666
+    },
+    "Intro 2|ACC5": {
+      "segments": 94,
+      "styles": 75,
+      "notes": 2126,
+      "notes_per_bar_median": 4.4,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 85.0,
+      "velocity_p90_median": 92.3,
+      "mean_chord_size_median": 1.8181818181818181,
+      "bar_repeat_similarity_median": 0.5611772486772486,
+      "duration_mean_ticks_median": 85.6875
+    },
+    "Fill 2|ACC5": {
+      "segments": 185,
+      "styles": 138,
+      "notes": 1657,
+      "notes_per_bar_median": 6.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 88.0,
+      "velocity_p90_median": 95.60000000000001,
+      "mean_chord_size_median": 2.0,
+      "bar_repeat_similarity_median": 0.75,
+      "duration_mean_ticks_median": 111.03333333333333
+    },
+    "Intro 2|ACC4": {
+      "segments": 128,
+      "styles": 100,
+      "notes": 3460,
+      "notes_per_bar_median": 4.75,
+      "onsets_per_bar_median": 3.0,
+      "velocity_p50_median": 89.5,
+      "velocity_p90_median": 100.0,
+      "mean_chord_size_median": 1.2941176470588234,
+      "bar_repeat_similarity_median": 0.6666666666666666,
+      "duration_mean_ticks_median": 122.02325581395348
+    },
+    "Intro 3|ACC2": {
+      "segments": 19,
+      "styles": 17,
+      "notes": 184,
+      "notes_per_bar_median": 5.0,
+      "onsets_per_bar_median": 4.0,
+      "velocity_p50_median": 85.0,
+      "velocity_p90_median": 89.0,
+      "mean_chord_size_median": 1.0,
+      "bar_repeat_similarity_median": 0.8,
+      "duration_mean_ticks_median": 47.75
+    }
+  },
+  "bars_by_element": {
+    "Variation 1": {
+      "n": 252,
+      "counts": {
+        "2": 51,
+        "8": 78,
+        "4": 119,
+        "12": 3,
+        "16": 1
+      },
+      "median": 4.0
+    },
+    "Variation 2": {
+      "n": 249,
+      "counts": {
+        "2": 44,
+        "8": 90,
+        "4": 110,
+        "12": 3,
+        "16": 2
+      },
+      "median": 4
+    },
+    "Variation 3": {
+      "n": 249,
+      "counts": {
+        "2": 41,
+        "8": 92,
+        "4": 111,
+        "12": 3,
+        "15": 2
+      },
+      "median": 4
+    },
+    "Variation 4": {
+      "n": 249,
+      "counts": {
+        "2": 36,
+        "8": 103,
+        "4": 103,
+        "12": 4,
+        "16": 3
+      },
+      "median": 4
+    },
+    "Intro 1": {
+      "n": 249,
+      "counts": {
+        "9": 29,
+        "10": 11,
+        "4": 58,
+        "8": 49,
+        "5": 49,
+        "2": 9,
+        "14": 1,
+        "6": 13,
+        "12": 8,
+        "7": 5,
+        "13": 4,
+        "3": 3,
+        "11": 3,
+        "20": 2,
+        "17": 1,
+        "16": 2,
+        "1": 1,
+        "21": 1
+      },
+      "median": 6
+    },
+    "Intro 2": {
+      "n": 244,
+      "counts": {
+        "2": 84,
+        "1": 22,
+        "5": 24,
+        "4": 84,
+        "3": 16,
+        "8": 7,
+        "9": 5,
+        "18": 1,
+        "6": 1
+      },
+      "median": 3.5
+    },
+    "Intro 3": {
+      "n": 242,
+      "counts": {
+        "2": 12,
+        "1": 230
+      },
+      "median": 1.0
+    },
+    "Fill 1": {
+      "n": 252,
+      "counts": {
+        "2": 13,
+        "1": 239
+      },
+      "median": 1.0
+    },
+    "Fill 2": {
+      "n": 252,
+      "counts": {
+        "2": 11,
+        "1": 241
+      },
+      "median": 1.0
+    },
+    "Break": {
+      "n": 252,
+      "counts": {
+        "2": 9,
+        "1": 243
+      },
+      "median": 1.0
+    },
+    "Ending 1": {
+      "n": 252,
+      "counts": {
+        "10": 12,
+        "3": 27,
+        "1": 6,
+        "8": 27,
+        "7": 17,
+        "6": 21,
+        "5": 51,
+        "2": 9,
+        "4": 55,
+        "9": 18,
+        "11": 4,
+        "19": 2,
+        "18": 1,
+        "12": 1,
+        "13": 1
+      },
+      "median": 5.0
+    },
+    "Ending 2": {
+      "n": 250,
+      "counts": {
+        "4": 72,
+        "7": 1,
+        "1": 28,
+        "9": 1,
+        "2": 62,
+        "3": 46,
+        "5": 30,
+        "6": 8,
+        "8": 2
+      },
+      "median": 3.0
+    },
+    "Ending 3": {
+      "n": 249,
+      "counts": {
+        "2": 176,
+        "1": 67,
+        "3": 6
+      },
+      "median": 2
+    }
+  },
+  "role_coverage_by_element": {
+    "Variation 1": {
+      "contexts": 470,
+      "BASS": 454,
+      "DRUM": 447,
+      "ACC1": 370,
+      "PERC": 327,
+      "ACC2": 359,
+      "ACC3": 241,
+      "ACC5": 66,
+      "ACC4": 117,
+      "role_presence_fraction": {
+        "DRUM": 0.951063829787234,
+        "PERC": 0.6957446808510638,
+        "BASS": 0.9659574468085106,
+        "ACC1": 0.7872340425531915,
+        "ACC2": 0.7638297872340426,
+        "ACC3": 0.5127659574468085,
+        "ACC4": 0.24893617021276596,
+        "ACC5": 0.14042553191489363
+      }
+    },
+    "Variation 2": {
+      "contexts": 470,
+      "BASS": 457,
+      "DRUM": 456,
+      "ACC1": 427,
+      "PERC": 373,
+      "ACC2": 385,
+      "ACC3": 356,
+      "ACC4": 213,
+      "ACC5": 133,
+      "role_presence_fraction": {
+        "DRUM": 0.9702127659574468,
+        "PERC": 0.7936170212765957,
+        "BASS": 0.9723404255319149,
+        "ACC1": 0.9085106382978724,
+        "ACC2": 0.8191489361702128,
+        "ACC3": 0.7574468085106383,
+        "ACC4": 0.4531914893617021,
+        "ACC5": 0.28297872340425534
+      }
+    },
+    "Variation 3": {
+      "contexts": 487,
+      "BASS": 475,
+      "ACC1": 448,
+      "PERC": 421,
+      "DRUM": 479,
+      "ACC3": 444,
+      "ACC2": 451,
+      "ACC4": 303,
+      "ACC5": 214,
+      "role_presence_fraction": {
+        "DRUM": 0.9835728952772074,
+        "PERC": 0.864476386036961,
+        "BASS": 0.9753593429158111,
+        "ACC1": 0.919917864476386,
+        "ACC2": 0.9260780287474333,
+        "ACC3": 0.9117043121149897,
+        "ACC4": 0.62217659137577,
+        "ACC5": 0.4394250513347023
+      }
+    },
+    "Variation 4": {
+      "contexts": 499,
+      "BASS": 484,
+      "ACC4": 366,
+      "ACC1": 462,
+      "ACC5": 302,
+      "PERC": 450,
+      "DRUM": 487,
+      "ACC3": 466,
+      "ACC2": 475,
+      "role_presence_fraction": {
+        "DRUM": 0.9759519038076152,
+        "PERC": 0.9018036072144289,
+        "BASS": 0.969939879759519,
+        "ACC1": 0.9258517034068137,
+        "ACC2": 0.9519038076152304,
+        "ACC3": 0.9338677354709419,
+        "ACC4": 0.7334669338677354,
+        "ACC5": 0.6052104208416834
+      }
+    },
+    "Intro 1": {
+      "contexts": 498,
+      "BASS": 468,
+      "ACC4": 341,
+      "ACC1": 436,
+      "ACC5": 296,
+      "PERC": 365,
+      "ACC2": 452,
+      "DRUM": 483,
+      "ACC3": 408,
+      "role_presence_fraction": {
+        "DRUM": 0.9698795180722891,
+        "PERC": 0.7329317269076305,
+        "BASS": 0.9397590361445783,
+        "ACC1": 0.8755020080321285,
+        "ACC2": 0.9076305220883534,
+        "ACC3": 0.8192771084337349,
+        "ACC4": 0.6847389558232931,
+        "ACC5": 0.5943775100401606
+      }
+    },
+    "Intro 2": {
+      "contexts": 314,
+      "BASS": 285,
+      "DRUM": 305,
+      "PERC": 220,
+      "ACC1": 233,
+      "ACC2": 239,
+      "ACC3": 202,
+      "ACC5": 94,
+      "ACC4": 128,
+      "role_presence_fraction": {
+        "DRUM": 0.9713375796178344,
+        "PERC": 0.7006369426751592,
+        "BASS": 0.9076433121019108,
+        "ACC1": 0.7420382165605095,
+        "ACC2": 0.7611464968152867,
+        "ACC3": 0.643312101910828,
+        "ACC4": 0.40764331210191085,
+        "ACC5": 0.29936305732484075
+      }
+    },
+    "Intro 3": {
+      "contexts": 246,
+      "BASS": 93,
+      "ACC4": 15,
+      "ACC1": 17,
+      "ACC5": 13,
+      "DRUM": 240,
+      "ACC3": 14,
+      "PERC": 84,
+      "ACC2": 19,
+      "role_presence_fraction": {
+        "DRUM": 0.975609756097561,
+        "PERC": 0.34146341463414637,
+        "BASS": 0.3780487804878049,
+        "ACC1": 0.06910569105691057,
+        "ACC2": 0.07723577235772358,
+        "ACC3": 0.056910569105691054,
+        "ACC4": 0.06097560975609756,
+        "ACC5": 0.052845528455284556
+      }
+    },
+    "Fill 1": {
+      "contexts": 357,
+      "BASS": 352,
+      "DRUM": 347,
+      "ACC1": 299,
+      "PERC": 271,
+      "ACC2": 295,
+      "ACC3": 249,
+      "ACC4": 154,
+      "ACC5": 108,
+      "role_presence_fraction": {
+        "DRUM": 0.9719887955182073,
+        "PERC": 0.7591036414565826,
+        "BASS": 0.9859943977591037,
+        "ACC1": 0.8375350140056023,
+        "ACC2": 0.8263305322128851,
+        "ACC3": 0.6974789915966386,
+        "ACC4": 0.43137254901960786,
+        "ACC5": 0.3025210084033613
+      }
+    },
+    "Fill 2": {
+      "contexts": 358,
+      "BASS": 355,
+      "ACC1": 311,
+      "PERC": 289,
+      "DRUM": 355,
+      "ACC3": 313,
+      "ACC2": 333,
+      "ACC4": 229,
+      "ACC5": 185,
+      "role_presence_fraction": {
+        "DRUM": 0.9916201117318436,
+        "PERC": 0.8072625698324022,
+        "BASS": 0.9916201117318436,
+        "ACC1": 0.8687150837988827,
+        "ACC2": 0.9301675977653632,
+        "ACC3": 0.8743016759776536,
+        "ACC4": 0.6396648044692738,
+        "ACC5": 0.5167597765363129
+      }
+    },
+    "Break": {
+      "contexts": 282,
+      "BASS": 280,
+      "ACC4": 124,
+      "ACC1": 231,
+      "ACC5": 95,
+      "PERC": 160,
+      "ACC2": 210,
+      "DRUM": 277,
+      "ACC3": 183,
+      "role_presence_fraction": {
+        "DRUM": 0.9822695035460993,
+        "PERC": 0.5673758865248227,
+        "BASS": 0.9929078014184397,
+        "ACC1": 0.8191489361702128,
+        "ACC2": 0.7446808510638298,
+        "ACC3": 0.648936170212766,
+        "ACC4": 0.4397163120567376,
+        "ACC5": 0.33687943262411346
+      }
+    },
+    "Ending 1": {
+      "contexts": 503,
+      "BASS": 499,
+      "ACC4": 405,
+      "ACC1": 471,
+      "ACC5": 364,
+      "PERC": 433,
+      "ACC2": 493,
+      "DRUM": 499,
+      "ACC3": 475,
+      "role_presence_fraction": {
+        "DRUM": 0.9920477137176938,
+        "PERC": 0.8608349900596421,
+        "BASS": 0.9920477137176938,
+        "ACC1": 0.9363817097415507,
+        "ACC2": 0.9801192842942346,
+        "ACC3": 0.9443339960238568,
+        "ACC4": 0.805168986083499,
+        "ACC5": 0.7236580516898609
+      }
+    },
+    "Ending 2": {
+      "contexts": 307,
+      "BASS": 294,
+      "ACC4": 223,
+      "ACC1": 268,
+      "ACC5": 192,
+      "PERC": 253,
+      "ACC2": 275,
+      "DRUM": 298,
+      "ACC3": 271,
+      "role_presence_fraction": {
+        "DRUM": 0.9706840390879479,
+        "PERC": 0.8241042345276873,
+        "BASS": 0.9576547231270358,
+        "ACC1": 0.8729641693811075,
+        "ACC2": 0.8957654723127035,
+        "ACC3": 0.8827361563517915,
+        "ACC4": 0.7263843648208469,
+        "ACC5": 0.6254071661237784
+      }
+    },
+    "Ending 3": {
+      "contexts": 292,
+      "BASS": 285,
+      "ACC4": 184,
+      "ACC1": 260,
+      "ACC5": 155,
+      "PERC": 228,
+      "ACC2": 270,
+      "DRUM": 287,
+      "ACC3": 262,
+      "role_presence_fraction": {
+        "DRUM": 0.9828767123287672,
+        "PERC": 0.7808219178082192,
+        "BASS": 0.976027397260274,
+        "ACC1": 0.8904109589041096,
+        "ACC2": 0.9246575342465754,
+        "ACC3": 0.8972602739726028,
+        "ACC4": 0.6301369863013698,
+        "ACC5": 0.5308219178082192
+      }
+    }
+  },
+  "variation_progression": {
+    "V1->V2": {
+      "notes_per_bar": {
+        "median_delta": 0.0,
+        "p25_delta": 0.0,
+        "p75_delta": 1.5,
+        "positive_fraction": 0.41311632359980854,
+        "n": 2089
+      },
+      "onsets_per_bar": {
+        "median_delta": 0.0,
+        "p25_delta": 0.0,
+        "p75_delta": 0.75,
+        "positive_fraction": 0.3652465294399234,
+        "n": 2089
+      },
+      "v50": {
+        "median_delta": 0.0,
+        "p25_delta": 0.0,
+        "p75_delta": 1.0,
+        "positive_fraction": 0.2656773575873624,
+        "n": 2089
+      },
+      "chord": {
+        "median_delta": 0.0,
+        "p25_delta": 0.0,
+        "p75_delta": 0.021739130434782705,
+        "positive_fraction": 0.260411680229775,
+        "n": 2089
+      }
+    },
+    "V2->V3": {
+      "notes_per_bar": {
+        "median_delta": 0.11666666666666625,
+        "p25_delta": 0.0,
+        "p75_delta": 2.5,
+        "positive_fraction": 0.501675442795596,
+        "n": 2089
+      },
+      "onsets_per_bar": {
+        "median_delta": 0.0,
+        "p25_delta": 0.0,
+        "p75_delta": 1.25,
+        "positive_fraction": 0.44327429392053613,
+        "n": 2089
+      },
+      "v50": {
+        "median_delta": 0.0,
+        "p25_delta": -1.0,
+        "p75_delta": 3.5,
+        "positive_fraction": 0.32742939205361415,
+        "n": 2089
+      },
+      "chord": {
+        "median_delta": 0.0,
+        "p25_delta": 0.0,
+        "p75_delta": 0.09375,
+        "positive_fraction": 0.31402584968884634,
+        "n": 2089
+      }
+    },
+    "V3->V4": {
+      "notes_per_bar": {
+        "median_delta": 0.25,
+        "p25_delta": 0.0,
+        "p75_delta": 3.0,
+        "positive_fraction": 0.5308760172331259,
+        "n": 2089
+      },
+      "onsets_per_bar": {
+        "median_delta": 0.0,
+        "p25_delta": 0.0,
+        "p75_delta": 1.375,
+        "positive_fraction": 0.44997606510292004,
+        "n": 2089
+      },
+      "v50": {
+        "median_delta": 0.0,
+        "p25_delta": 0.0,
+        "p75_delta": 4.0,
+        "positive_fraction": 0.35998085208233604,
+        "n": 2089
+      },
+      "chord": {
+        "median_delta": 0.0,
+        "p25_delta": 0.0,
+        "p75_delta": 0.10895270270270263,
+        "positive_fraction": 0.33556725706079465,
+        "n": 2089
+      }
+    }
+  },
+  "variation_grid_similarity": {
+    "V1->V2|DRUM": {
+      "median_jaccard": 1.0,
+      "p25": 0.8461538461538461,
+      "p75": 1.0,
+      "n": 417
+    },
+    "V2->V3|DRUM": {
+      "median_jaccard": 1.0,
+      "p25": 0.7857142857142857,
+      "p75": 1.0,
+      "n": 444
+    },
+    "V3->V4|DRUM": {
+      "median_jaccard": 1.0,
+      "p25": 0.8125,
+      "p75": 1.0,
+      "n": 461
+    },
+    "V3->V4|PERC": {
+      "median_jaccard": 1.0,
+      "p25": 0.6666666666666666,
+      "p75": 1.0,
+      "n": 403
+    },
+    "V1->V2|BASS": {
+      "median_jaccard": 1.0,
+      "p25": 0.6666666666666666,
+      "p75": 1.0,
+      "n": 421
+    },
+    "V2->V3|BASS": {
+      "median_jaccard": 0.8333333333333334,
+      "p25": 0.5714285714285714,
+      "p75": 1.0,
+      "n": 444
+    },
+    "V3->V4|BASS": {
+      "median_jaccard": 0.8571428571428571,
+      "p25": 0.5714285714285714,
+      "p75": 1.0,
+      "n": 457
+    },
+    "V1->V2|ACC1": {
+      "median_jaccard": 1.0,
+      "p25": 0.5,
+      "p75": 1.0,
+      "n": 346
+    },
+    "V2->V3|ACC1": {
+      "median_jaccard": 0.8,
+      "p25": 0.5,
+      "p75": 1.0,
+      "n": 399
+    },
+    "V3->V4|ACC1": {
+      "median_jaccard": 0.8397435897435898,
+      "p25": 0.5,
+      "p75": 1.0,
+      "n": 420
+    },
+    "V3->V4|ACC3": {
+      "median_jaccard": 0.8,
+      "p25": 0.5,
+      "p75": 1.0,
+      "n": 416
+    },
+    "V1->V2|PERC": {
+      "median_jaccard": 1.0,
+      "p25": 0.6666666666666666,
+      "p75": 1.0,
+      "n": 303
+    },
+    "V2->V3|PERC": {
+      "median_jaccard": 1.0,
+      "p25": 0.5714285714285714,
+      "p75": 1.0,
+      "n": 352
+    },
+    "V1->V2|ACC2": {
+      "median_jaccard": 1.0,
+      "p25": 0.6666666666666666,
+      "p75": 1.0,
+      "n": 316
+    },
+    "V2->V3|ACC2": {
+      "median_jaccard": 0.875,
+      "p25": 0.5714285714285714,
+      "p75": 1.0,
+      "n": 370
+    },
+    "V3->V4|ACC2": {
+      "median_jaccard": 0.875,
+      "p25": 0.6,
+      "p75": 1.0,
+      "n": 432
+    },
+    "V1->V2|ACC3": {
+      "median_jaccard": 1.0,
+      "p25": 0.5,
+      "p75": 1.0,
+      "n": 222
+    },
+    "V2->V3|ACC3": {
+      "median_jaccard": 0.75,
+      "p25": 0.4325396825396825,
+      "p75": 1.0,
+      "n": 338
+    },
+    "V2->V3|ACC4": {
+      "median_jaccard": 0.8,
+      "p25": 0.41964285714285715,
+      "p75": 1.0,
+      "n": 190
+    },
+    "V3->V4|ACC4": {
+      "median_jaccard": 0.8,
+      "p25": 0.5,
+      "p75": 1.0,
+      "n": 284
+    },
+    "V1->V2|ACC5": {
+      "median_jaccard": 1.0,
+      "p25": 0.7777777777777778,
+      "p75": 1.0,
+      "n": 57
+    },
+    "V2->V3|ACC5": {
+      "median_jaccard": 1.0,
+      "p25": 0.5,
+      "p75": 1.0,
+      "n": 115
+    },
+    "V3->V4|ACC5": {
+      "median_jaccard": 0.75,
+      "p25": 0.5,
+      "p75": 1.0,
+      "n": 199
+    },
+    "V1->V2|ACC4": {
+      "median_jaccard": 1.0,
+      "p25": 0.6458333333333333,
+      "p75": 1.0,
+      "n": 111
+    }
+  },
+  "complete_variation_role_cv_sets": 2089
+}

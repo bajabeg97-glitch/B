@@ -1,0 +1,1031 @@
+{
+  "schema": "PA800_PROCESS_COVERAGE_MIDI_V2",
+  "scope": "STRUCTURAL_AND_MANIFEST_COVERAGE_NOT_HARDWARE_CERTIFICATION",
+  "serialization": "STANDARD_MIDI_FILE",
+  "scenario_count": 52,
+  "scenarios": [
+    {
+      "stage": "A",
+      "stage_name": "SMF container preflight",
+      "polarity": "positive",
+      "name": "minimal_parse_roundtrip",
+      "file": "a_positive_minimal_parse_roundtrip.mid",
+      "sha256": "761da5bd3c8bd57a37f5b9f7c747c6695a2e3050e54cbf16068ff281f9673ece",
+      "bytes": 34,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairs": 1,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "A",
+      "stage_name": "SMF container preflight",
+      "polarity": "negative",
+      "name": "container_missing_magic",
+      "file": "a_negative_container_missing_magic.mid",
+      "sha256": "936f965345457f1626d6e7376ec83b191cb6f614b7e11d16b39296e232ad4472",
+      "bytes": 26,
+      "expected": {
+        "container_pass": false,
+        "loadable": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": false,
+        "loadable": false
+      }
+    },
+    {
+      "stage": "B",
+      "stage_name": "Mido load/save roundtrip",
+      "polarity": "positive",
+      "name": "minimal_parse_roundtrip",
+      "file": "b_positive_minimal_parse_roundtrip.mid",
+      "sha256": "761da5bd3c8bd57a37f5b9f7c747c6695a2e3050e54cbf16068ff281f9673ece",
+      "bytes": 34,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairs": 1,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "B",
+      "stage_name": "Mido load/save roundtrip",
+      "polarity": "negative",
+      "name": "container_truncated_track",
+      "file": "b_negative_container_truncated_track.mid",
+      "sha256": "d82b1b869678366eefbf199d3876d21523621a651224950869a589fd13e5f598",
+      "bytes": 24,
+      "expected": {
+        "container_pass": false,
+        "loadable": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": false,
+        "loadable": false
+      }
+    },
+    {
+      "stage": "C",
+      "stage_name": "Content type and multitrack context",
+      "polarity": "positive",
+      "name": "song_multitrack_context",
+      "file": "c_positive_song_multitrack_context.mid",
+      "sha256": "33ec459f327cddb0c79f3a0edb6811d2ac8fda22bf6ee2146f51840567e2d3c6",
+      "bytes": 92,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "tracks": 2,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "C",
+      "stage_name": "Content type and multitrack context",
+      "polarity": "negative",
+      "name": "unmatched_note_negative",
+      "file": "c_negative_unmatched_note_negative.mid",
+      "sha256": "0c445375ded8f41bc6a9c7e4c9854946d632e2866e2d1c0bd2eb7d72264d8107",
+      "bytes": 30,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairing_valid": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "D",
+      "stage_name": "Pa800 strict Style contract",
+      "polarity": "positive",
+      "name": "style_strict_contract",
+      "file": "d_positive_style_strict_contract.mid",
+      "sha256": "b9cde3fda4100b4d90713739680cf28464c7669998e7d055ab84fb721165e559",
+      "bytes": 66,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": true,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": true
+      }
+    },
+    {
+      "stage": "D",
+      "stage_name": "Pa800 strict Style contract",
+      "polarity": "negative",
+      "name": "style_uppercase_marker_reject",
+      "file": "d_negative_style_uppercase_marker_reject.mid",
+      "sha256": "0cbfe30331b74aed5232d57bcd8e7d33c95afa0de0f70b4a0240ad188d8297aa",
+      "bytes": 66,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": false,
+        "style_strict": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": false,
+        "style_strict": false
+      }
+    },
+    {
+      "stage": "E",
+      "stage_name": "Style header fallback",
+      "polarity": "positive",
+      "name": "style_minimum_header",
+      "file": "e_positive_style_minimum_header.mid",
+      "sha256": "6fa2ab92e4571e25943ea7bef848a3611d12c638532bccefe62b3d2f9b9cb3a9",
+      "bytes": 51,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": false,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": false
+      }
+    },
+    {
+      "stage": "E",
+      "stage_name": "Style header fallback",
+      "polarity": "negative",
+      "name": "style_outside_channel_reject",
+      "file": "e_negative_style_outside_channel_reject.mid",
+      "sha256": "9b4fc3fd50994d735916d757ee2acb95d85b23bf0011b1d8b3c940c66ec2f862",
+      "bytes": 66,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": false,
+        "style_strict": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": false,
+        "style_strict": false
+      }
+    },
+    {
+      "stage": "F",
+      "stage_name": "Style controller allowlist",
+      "polarity": "positive",
+      "name": "style_strict_contract",
+      "file": "f_positive_style_strict_contract.mid",
+      "sha256": "b9cde3fda4100b4d90713739680cf28464c7669998e7d055ab84fb721165e559",
+      "bytes": 66,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": true,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": true
+      }
+    },
+    {
+      "stage": "F",
+      "stage_name": "Style controller allowlist",
+      "polarity": "negative",
+      "name": "style_unsupported_cc_reject",
+      "file": "f_negative_style_unsupported_cc_reject.mid",
+      "sha256": "dc409f135f8ee8ffb1bffe832cbd6915e37778b8c98c2d38f88f372abbe7afbc",
+      "bytes": 70,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": false
+      }
+    },
+    {
+      "stage": "G",
+      "stage_name": "Sound Bank/Program identity",
+      "polarity": "positive",
+      "name": "sound_bank_program_identity",
+      "file": "g_positive_sound_bank_program_identity.mid",
+      "sha256": "4b4685ff4621404f09520c94f31dcb96a2f2e2a6679b6ccc1766b7d238ab8de4",
+      "bytes": 45,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "bank_program_events": 3,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "G",
+      "stage_name": "Sound Bank/Program identity",
+      "polarity": "negative",
+      "name": "dnc_cross_channel_negative",
+      "file": "g_negative_dnc_cross_channel_negative.mid",
+      "sha256": "7e627e0557e111acecc4ea352c84eff523e969bd413f5931031d14e21a5d0b54",
+      "bytes": 49,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "dnc_authorized": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "H",
+      "stage_name": "Multi-program authorization",
+      "polarity": "positive",
+      "name": "sound_multi_program_sequence",
+      "file": "h_positive_sound_multi_program_sequence.mid",
+      "sha256": "3b68af65f43be6c3ce0f3fcfab4bcea4412c7955059217edbf1726dcb39bc10e",
+      "bytes": 64,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "program_changes": 2,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "H",
+      "stage_name": "Multi-program authorization",
+      "polarity": "negative",
+      "name": "unmatched_note_negative",
+      "file": "h_negative_unmatched_note_negative.mid",
+      "sha256": "0c445375ded8f41bc6a9c7e4c9854946d632e2866e2d1c0bd2eb7d72264d8107",
+      "bytes": 30,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairing_valid": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "I",
+      "stage_name": "Drum Kit+Key resolution",
+      "polarity": "positive",
+      "name": "drum_kit_key_profile",
+      "file": "i_positive_drum_kit_key_profile.mid",
+      "sha256": "7c7c701fec079ea9c3b774e7f61193a4f053db3add56ed3210f03db7552fa670",
+      "bytes": 53,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "family": "DRUM_KIT",
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "I",
+      "stage_name": "Drum Kit+Key resolution",
+      "polarity": "negative",
+      "name": "style_outside_channel_reject",
+      "file": "i_negative_style_outside_channel_reject.mid",
+      "sha256": "9b4fc3fd50994d735916d757ee2acb95d85b23bf0011b1d8b3c940c66ec2f862",
+      "bytes": 66,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": false,
+        "style_strict": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": false,
+        "style_strict": false
+      }
+    },
+    {
+      "stage": "J",
+      "stage_name": "Bass/Drum timing lock",
+      "polarity": "positive",
+      "name": "bass_drum_lock",
+      "file": "j_positive_bass_drum_lock.mid",
+      "sha256": "5469d4ca3c0048cda6546d86616fbcd8dda5c08c4d5a71bcd57954a368dd07f9",
+      "bytes": 76,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "anchor_pair": true,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "J",
+      "stage_name": "Bass/Drum timing lock",
+      "polarity": "negative",
+      "name": "unmatched_note_negative",
+      "file": "j_negative_unmatched_note_negative.mid",
+      "sha256": "0c445375ded8f41bc6a9c7e4c9854946d632e2866e2d1c0bd2eb7d72264d8107",
+      "bytes": 30,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairing_valid": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "K",
+      "stage_name": "Guitar strum fingerprint",
+      "polarity": "positive",
+      "name": "guitar_strum_direction",
+      "file": "k_positive_guitar_strum_direction.mid",
+      "sha256": "aff2a4227fde2b459a8bda2fbaf68fbadfbf30884151252fe325baca8a9b9f78",
+      "bytes": 64,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "strum_direction": "UP_PITCH",
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "K",
+      "stage_name": "Guitar strum fingerprint",
+      "polarity": "negative",
+      "name": "dnc_cross_channel_negative",
+      "file": "k_negative_dnc_cross_channel_negative.mid",
+      "sha256": "7e627e0557e111acecc4ea352c84eff523e969bd413f5931031d14e21a5d0b54",
+      "bytes": 49,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "dnc_authorized": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "L",
+      "stage_name": "Piano chord and CC64 contour",
+      "polarity": "positive",
+      "name": "piano_chord_pedal",
+      "file": "l_positive_piano_chord_pedal.mid",
+      "sha256": "faa94c08e9192032af44b5d8de1e18903f9920cf39c2d397ea542fad9b1d1d58",
+      "bytes": 72,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "cc64_contour": [
+          127,
+          0
+        ],
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "L",
+      "stage_name": "Piano chord and CC64 contour",
+      "polarity": "negative",
+      "name": "unmatched_note_negative",
+      "file": "l_negative_unmatched_note_negative.mid",
+      "sha256": "0c445375ded8f41bc6a9c7e4c9854946d632e2866e2d1c0bd2eb7d72264d8107",
+      "bytes": 30,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairing_valid": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "M",
+      "stage_name": "Organ velocity/legato guard",
+      "polarity": "positive",
+      "name": "organ_legato",
+      "file": "m_positive_organ_legato.mid",
+      "sha256": "9fb6fbe1ac19a2a51d02a4cc8e5fa851a97815eeee27906643c3a5aee49cd3f6",
+      "bytes": 53,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "legato_candidate": true,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "M",
+      "stage_name": "Organ velocity/legato guard",
+      "polarity": "negative",
+      "name": "dnc_cross_channel_negative",
+      "file": "m_negative_dnc_cross_channel_negative.mid",
+      "sha256": "7e627e0557e111acecc4ea352c84eff523e969bd413f5931031d14e21a5d0b54",
+      "bytes": 49,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "dnc_authorized": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "N",
+      "stage_name": "Strings sustain/voice-leading",
+      "polarity": "positive",
+      "name": "strings_sustain_chord",
+      "file": "n_positive_strings_sustain_chord.mid",
+      "sha256": "3cfcf2f6f5a3d090bc1f34b9c6728c7a993de93b5ea6f8812ead338455adc95c",
+      "bytes": 64,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "sustain_ticks": 768,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "N",
+      "stage_name": "Strings sustain/voice-leading",
+      "polarity": "negative",
+      "name": "unmatched_note_negative",
+      "file": "n_negative_unmatched_note_negative.mid",
+      "sha256": "0c445375ded8f41bc6a9c7e4c9854946d632e2866e2d1c0bd2eb7d72264d8107",
+      "bytes": 30,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairing_valid": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "O",
+      "stage_name": "Brass expression preservation",
+      "polarity": "positive",
+      "name": "brass_expression_contour",
+      "file": "o_positive_brass_expression_contour.mid",
+      "sha256": "50e2a98957e10cffa26605612f02c3db2956357ed80335d4e1856d9368c0abb3",
+      "bytes": 53,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "expressive_controllers": true,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "O",
+      "stage_name": "Brass expression preservation",
+      "polarity": "negative",
+      "name": "dnc_cross_channel_negative",
+      "file": "o_negative_dnc_cross_channel_negative.mid",
+      "sha256": "7e627e0557e111acecc4ea352c84eff523e969bd413f5931031d14e21a5d0b54",
+      "bytes": 49,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "dnc_authorized": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "P",
+      "stage_name": "Reed breath/channel state",
+      "polarity": "positive",
+      "name": "reed_breath_contour",
+      "file": "p_positive_reed_breath_contour.mid",
+      "sha256": "bf5a11658ff589fdeca7580bca1480a15cc15d108a3ea63dd564831a008b904e",
+      "bytes": 52,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "channel_state": true,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "P",
+      "stage_name": "Reed breath/channel state",
+      "polarity": "negative",
+      "name": "dnc_cross_channel_negative",
+      "file": "p_negative_dnc_cross_channel_negative.mid",
+      "sha256": "7e627e0557e111acecc4ea352c84eff523e969bd413f5931031d14e21a5d0b54",
+      "bytes": 49,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "dnc_authorized": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "Q",
+      "stage_name": "Synth Lead bend preservation",
+      "polarity": "positive",
+      "name": "synth_lead_pitchbend",
+      "file": "q_positive_synth_lead_pitchbend.mid",
+      "sha256": "83dbbaa8934c00f7423d8e0e2042df805673b900cefc097003f0c852d091faff",
+      "bytes": 49,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "pitchwheel": -1024,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "Q",
+      "stage_name": "Synth Lead bend preservation",
+      "polarity": "negative",
+      "name": "unmatched_note_negative",
+      "file": "q_negative_unmatched_note_negative.mid",
+      "sha256": "0c445375ded8f41bc6a9c7e4c9854946d632e2866e2d1c0bd2eb7d72264d8107",
+      "bytes": 30,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairing_valid": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "R",
+      "stage_name": "Rare-family exact-only evidence",
+      "polarity": "positive",
+      "name": "rare_mallet_exact_only",
+      "file": "r_positive_rare_mallet_exact_only.mid",
+      "sha256": "da3daac89c9617356640bfd43b786043d79d20cc2d9cb4bb3711584943f43fa4",
+      "bytes": 45,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "exact_only": true,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "R",
+      "stage_name": "Rare-family exact-only evidence",
+      "polarity": "negative",
+      "name": "style_unsupported_cc_reject",
+      "file": "r_negative_style_unsupported_cc_reject.mid",
+      "sha256": "dc409f135f8ee8ffb1bffe832cbd6915e37778b8c98c2d38f88f372abbe7afbc",
+      "bytes": 70,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": false
+      }
+    },
+    {
+      "stage": "S",
+      "stage_name": "SFX immutable/preserve corridor",
+      "polarity": "positive",
+      "name": "sfx_permanent_preserve",
+      "file": "s_positive_sfx_permanent_preserve.mid",
+      "sha256": "4cee9890851c7d082d0b33a9e8bb77298afaedb39c5f4253d492881713b327ec",
+      "bytes": 52,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "must_preserve": true,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "S",
+      "stage_name": "SFX immutable/preserve corridor",
+      "polarity": "negative",
+      "name": "unmatched_note_negative",
+      "file": "s_negative_unmatched_note_negative.mid",
+      "sha256": "0c445375ded8f41bc6a9c7e4c9854946d632e2866e2d1c0bd2eb7d72264d8107",
+      "bytes": 30,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairing_valid": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "T",
+      "stage_name": "RX special-pitch protection",
+      "polarity": "positive",
+      "name": "rx_special_pitch",
+      "file": "t_positive_rx_special_pitch.mid",
+      "sha256": "90416b56973e3d696ac49a5de899308f87e1753dce3566cf2e7607a7600603c8",
+      "bytes": 53,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "special_pitch": 24,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "T",
+      "stage_name": "RX special-pitch protection",
+      "polarity": "negative",
+      "name": "dnc_cross_channel_negative",
+      "file": "t_negative_dnc_cross_channel_negative.mid",
+      "sha256": "7e627e0557e111acecc4ea352c84eff523e969bd413f5931031d14e21a5d0b54",
+      "bytes": 49,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "dnc_authorized": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "U",
+      "stage_name": "DNC channel-scoped pulse",
+      "polarity": "positive",
+      "name": "dnc_channel_scoped_pulse",
+      "file": "u_positive_dnc_channel_scoped_pulse.mid",
+      "sha256": "c991e669f72e5ac581cbce147331d32648a1bf08561583d4eaa0d3b2bb1ef438",
+      "bytes": 53,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "dnc_pulse": [
+          127,
+          0
+        ],
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "U",
+      "stage_name": "DNC channel-scoped pulse",
+      "polarity": "negative",
+      "name": "dnc_cross_channel_negative",
+      "file": "u_negative_dnc_cross_channel_negative.mid",
+      "sha256": "7e627e0557e111acecc4ea352c84eff523e969bd413f5931031d14e21a5d0b54",
+      "bytes": 49,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "dnc_authorized": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "V",
+      "stage_name": "Existing CC91/93 FX sends",
+      "polarity": "positive",
+      "name": "fx_existing_sends",
+      "file": "v_positive_fx_existing_sends.mid",
+      "sha256": "dfb96fbf7c4061f9de2180c61a2824b6234523a20fbf3945798c941fcec72319",
+      "bytes": 53,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "fx_controls": [
+          91,
+          93
+        ],
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "V",
+      "stage_name": "Existing CC91/93 FX sends",
+      "polarity": "negative",
+      "name": "style_unsupported_cc_reject",
+      "file": "v_negative_style_unsupported_cc_reject.mid",
+      "sha256": "dc409f135f8ee8ffb1bffe832cbd6915e37778b8c98c2d38f88f372abbe7afbc",
+      "bytes": 70,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": false
+      }
+    },
+    {
+      "stage": "W",
+      "stage_name": "Stable note occurrence identity",
+      "polarity": "positive",
+      "name": "note_occurrence_overlap",
+      "file": "w_positive_note_occurrence_overlap.mid",
+      "sha256": "c8b4df9c49298ad2896365ade49e8ae7ba0e0b56cb214679fcb948756152ded8",
+      "bytes": 42,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "same_pitch_occurrences": 2,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "W",
+      "stage_name": "Stable note occurrence identity",
+      "polarity": "negative",
+      "name": "unmatched_note_negative",
+      "file": "w_negative_unmatched_note_negative.mid",
+      "sha256": "0c445375ded8f41bc6a9c7e4c9854946d632e2866e2d1c0bd2eb7d72264d8107",
+      "bytes": 30,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairing_valid": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "X",
+      "stage_name": "KAR lyric preservation",
+      "polarity": "positive",
+      "name": "kar_lyrics_preserve",
+      "file": "x_positive_kar_lyrics_preserve.kar",
+      "sha256": "66b5791fe5ba5a51326a27b040acdbedc6d64866148687d23cdfc5496b7632f3",
+      "bytes": 58,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "lyrics": 1,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "X",
+      "stage_name": "KAR lyric preservation",
+      "polarity": "negative",
+      "name": "container_illegal_division",
+      "file": "x_negative_container_illegal_division.mid",
+      "sha256": "12c6c6dc7fd14b2b5e631f50d812e1fba010e2ef7402e8616bbf8170028ea65d",
+      "bytes": 26,
+      "expected": {
+        "container_pass": false,
+        "loadable": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": false,
+        "loadable": false
+      }
+    },
+    {
+      "stage": "Y",
+      "stage_name": "Event verifier negative barrier",
+      "polarity": "positive",
+      "name": "minimal_parse_roundtrip",
+      "file": "y_positive_minimal_parse_roundtrip.mid",
+      "sha256": "761da5bd3c8bd57a37f5b9f7c747c6695a2e3050e54cbf16068ff281f9673ece",
+      "bytes": 34,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairs": 1,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "Y",
+      "stage_name": "Event verifier negative barrier",
+      "polarity": "negative",
+      "name": "unmatched_note_negative",
+      "file": "y_negative_unmatched_note_negative.mid",
+      "sha256": "0c445375ded8f41bc6a9c7e4c9854946d632e2866e2d1c0bd2eb7d72264d8107",
+      "bytes": 30,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "note_pairing_valid": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true
+      }
+    },
+    {
+      "stage": "Z",
+      "stage_name": "Final atomic certification gate",
+      "polarity": "positive",
+      "name": "style_strict_contract",
+      "file": "z_positive_style_strict_contract.mid",
+      "sha256": "b9cde3fda4100b4d90713739680cf28464c7669998e7d055ab84fb721165e559",
+      "bytes": 66,
+      "expected": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": true,
+        "certification_outcome": "PASS"
+      },
+      "observed": {
+        "container_pass": true,
+        "loadable": true,
+        "style_minimum": true,
+        "style_strict": true
+      }
+    },
+    {
+      "stage": "Z",
+      "stage_name": "Final atomic certification gate",
+      "polarity": "negative",
+      "name": "container_truncated_track",
+      "file": "z_negative_container_truncated_track.mid",
+      "sha256": "d82b1b869678366eefbf199d3876d21523621a651224950869a589fd13e5f598",
+      "bytes": 24,
+      "expected": {
+        "container_pass": false,
+        "loadable": false,
+        "certification_outcome": "REJECT"
+      },
+      "observed": {
+        "container_pass": false,
+        "loadable": false
+      }
+    }
+  ]
+}
