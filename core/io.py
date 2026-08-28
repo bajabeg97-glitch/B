@@ -486,6 +486,10 @@ class MidiWriter:
     with exact byte-level reproduction where possible.
     """
     
+    def __init__(self):
+        self.current_rpn = None
+        self.current_nrpn = None
+    
     def write(self, project: MidiProject, output_path: str, 
               format_type: Optional[MidiFormat] = None):
         """Write MidiProject to MIDI file"""
@@ -494,6 +498,10 @@ class MidiWriter:
         mid = mido.MidiFile()
         mid.type = format_type.value if format_type else project.format_type.value
         mid.ticks_per_beat = project.ppqn
+        
+        # Reset RPN/NRPN state before writing
+        self.current_rpn = None
+        self.current_nrpn = None
         
         # Convert tracks
         for doc_track in project.document.tracks:
@@ -518,8 +526,8 @@ class MidiWriter:
             delta_tick = event.absolute_tick - prev_tick
             prev_tick = event.absolute_tick
             
-            msg = self._convert_event(event, delta_tick)
-            if msg:
+            msgs = self._convert_event(event, delta_tick)
+            for msg in msgs:
                 mido_track.append(msg)
                 
         # Ensure end of track
@@ -528,26 +536,124 @@ class MidiWriter:
             
         return mido_track
         
-    def _convert_event(self, event: MidiEvent, delta_tick: int):
-        """Convert MidiEvent back to mido.Message"""
+    def _convert_event(self, event: MidiEvent, delta_tick: int) -> List[mido.Message]:
+        """Convert MidiEvent back to mido.Message(s). Returns list for RPN/NRPN sequences."""
+        msgs = []
         
         if isinstance(event, NoteEvent):
             if event.event_type == MidiEventType.NOTE_ON:
-                return mido.Message('note_on', 
+                msgs.append(mido.Message('note_on', 
                                   note=event.note, 
                                   velocity=event.velocity, 
                                   channel=event.channel, 
-                                  time=delta_tick)
+                                  time=delta_tick))
             else:
-                return mido.Message('note_off',
+                msgs.append(mido.Message('note_off',
                                   note=event.note,
                                   velocity=event.release_velocity or 0,
                                   channel=event.channel,
-                                  time=delta_tick)
+                                  time=delta_tick))
                                   
         elif isinstance(event, ControllerEvent):
-            return mido.Message('control_change',
+            msgs.append(mido.Message('control_change',
                               control=event.cc,
+                              value=event.value,
+                              channel=event.channel,
+                              time=delta_tick))
+                              
+            # Track RPN/NRPN selection for null reset later
+            if event.cc == 101: # RPN MSB
+                self.current_rpn = (event.value, self.current_rpn[1] if self.current_rpn else None)
+            elif event.cc == 100: # RPN LSB
+                self.current_rpn = (self.current_rpn[0] if self.current_rpn else None, event.value)
+            elif event.cc == 99: # NRPN MSB
+                self.current_nrpn = (event.value, self.current_nrpn[1] if self.current_nrpn else None)
+            elif event.cc == 98: # NRPN LSB
+                self.current_nrpn = (self.current_nrpn[0] if self.current_nrpn else None, event.value)
+                
+        elif isinstance(event, RpnEvent):
+            # Write full RPN sequence if not already set
+            if self.current_rpn != (event.rpn_msb, event.rpn_lsb):
+                # Send RPN select
+                msgs.append(mido.Message('control_change', control=101, value=event.rpn_msb, channel=event.channel, time=delta_tick))
+                msgs.append(mido.Message('control_change', control=100, value=event.rpn_lsb, channel=event.channel, time=0))
+                self.current_rpn = (event.rpn_msb, event.rpn_lsb)
+            
+            # Send data
+            if event.value_msb is not None:
+                msgs.append(mido.Message('control_change', control=6, value=event.value_msb, channel=event.channel, time=0))
+            if event.value_lsb is not None:
+                msgs.append(mido.Message('control_change', control=38, value=event.value_lsb, channel=event.channel, time=0))
+            
+            # IMPORTANT: Send NULL RPN reset at the end to prevent corruption
+            msgs.append(mido.Message('control_change', control=101, value=127, channel=event.channel, time=0))
+            msgs.append(mido.Message('control_change', control=100, value=127, channel=event.channel, time=0))
+            self.current_rpn = None
+            
+        elif isinstance(event, NrpnEvent):
+            # Write full NRPN sequence
+            if self.current_nrpn != (event.nrpn_msb, event.nrpn_lsb):
+                msgs.append(mido.Message('control_change', control=99, value=event.nrpn_msb, channel=event.channel, time=delta_tick))
+                msgs.append(mido.Message('control_change', control=98, value=event.nrpn_lsb, channel=event.channel, time=0))
+                self.current_nrpn = (event.nrpn_msb, event.nrpn_lsb)
+            
+            # Send data
+            if event.value_msb is not None:
+                msgs.append(mido.Message('control_change', control=6, value=event.value_msb, channel=event.channel, time=0))
+            if event.value_lsb is not None:
+                msgs.append(mido.Message('control_change', control=38, value=event.value_lsb, channel=event.channel, time=0))
+            
+            # IMPORTANT: Send NULL NRPN reset
+            msgs.append(mido.Message('control_change', control=99, value=127, channel=event.channel, time=0))
+            msgs.append(mido.Message('control_change', control=98, value=127, channel=event.channel, time=0))
+            self.current_nrpn = None
+            
+        elif isinstance(event, ProgramEvent):
+            msgs.append(mido.Message('program_change',
+                                program=event.program,
+                                channel=event.channel,
+                                time=delta_tick))
+                                
+        elif isinstance(event, PitchEvent):
+            msgs.append(mido.Message('pitchwheel',
+                                pitch=event.pitch,
+                                channel=event.channel,
+                                time=delta_tick))
+                                
+        elif isinstance(event, AftertouchEvent):
+            if event.is_polyphonic:
+                msgs.append(mido.Message('polytouch',
+                                    note=event.note,
+                                    value=event.value,
+                                    channel=event.channel,
+                                    time=delta_tick))
+            else:
+                msgs.append(mido.Message('aftertouch',
+                                    value=event.value,
+                                    channel=event.channel,
+                                    time=delta_tick))
+                                    
+        elif isinstance(event, SysExEvent):
+            if event.data:
+                msgs.append(mido.Message('sysex', data=event.data, time=delta_tick))
+                
+        elif isinstance(event, MetaEvent):
+            try:
+                meta_msg = mido.MetaMessage(event.meta_type, time=delta_tick)
+                # Set attributes based on event data
+                for attr, value in event.data.items():
+                    if hasattr(meta_msg, attr):
+                        setattr(meta_msg, attr, value)
+                msgs.append(meta_msg)
+            except Exception:
+                pass  # Skip invalid meta events
+                
+        # Default: return empty list if no conversion found
+        if not msgs and delta_tick > 0:
+            # At least preserve timing with a dummy message if needed
+            pass
+            
+        return msgs if msgs else [mido.Message('control_change', control=0, value=0, time=delta_tick)]
                               value=event.value,
                               channel=event.channel,
                               time=delta_tick)
