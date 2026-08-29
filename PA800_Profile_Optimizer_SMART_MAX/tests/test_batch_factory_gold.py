@@ -1,4 +1,5 @@
 import importlib.util
+import json
 import zipfile
 from pathlib import Path
 
@@ -32,30 +33,43 @@ def test_collect_reads_midi_and_zip(tmp_path):
     zpath = tmp_path / "pack.zip"
     with zipfile.ZipFile(zpath, "w") as archive:
         archive.writestr("nested/c.midi", b"MThd")
-    zipped = batch._collect(zpath)
+    zipped = batch._collect(zpath, extract_dir=tmp_path / "extracted")
     assert len(zipped) == 1 and zipped[0].name == "c.midi"
 
 
-def test_write_batch_tex_contains_description_template(tmp_path):
-    path = tmp_path / "batch_001.tex"
-    batch.write_batch_tex(
-        path,
-        1,
+def test_write_batch_zip_packs_pass_midi_only(tmp_path):
+    work = tmp_path / "work"
+    work.mkdir()
+    good = work / "001_rumba_noci_FG.mid"
+    good.write_bytes(b"MThd\x00\x00\x00\x06\x00\x01\x00\x01\x00\x60")
+    missing = work / "002_missing_FG.mid"
+    zip_path = tmp_path / "FactoryGold_MAX_batch_001.zip"
+    packed = batch.write_batch_zip(
+        zip_path,
         [
             {
                 "index": 1,
                 "source_name": "rumba_noci.mid",
-                "output": "001_rumba_noci_FG.mid",
+                "output": str(good),
                 "changes": 12,
                 "status": "PASS",
-            }
+            },
+            {
+                "index": 2,
+                "source_name": "broken.mid",
+                "output": str(missing),
+                "changes": 0,
+                "status": "FAIL",
+            },
         ],
-        "2026-08-30 00:00 UTC",
-        batch_size=100,
     )
-    text = path.read_text(encoding="utf-8")
-    assert "Velocity = Factory profil" in text
-    assert "CC11 = Gold" in text
-    assert "rumba\\_noci.mid" in text
-    assert "batch 001" in text
-    assert "Veličina grupe: 100" in text
+    assert packed["midi_count"] == 1
+    assert zip_path.is_file()
+    with zipfile.ZipFile(zip_path) as archive:
+        names = archive.namelist()
+        assert "001_rumba_noci_FG.mid" in names
+        assert "002_missing_FG.mid" not in names
+        assert not any(name.endswith(".tex") for name in names)
+        manifest = json.loads(archive.read("batch.json"))
+    assert manifest["midi_count"] == 1
+    assert manifest["authority"]["velocity"] == "FACTORY_PROFILE_ONLY"

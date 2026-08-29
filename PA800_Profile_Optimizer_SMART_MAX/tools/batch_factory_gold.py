@@ -1,7 +1,8 @@
 """Batch MIDI through Factory velocity + Gold performance authority.
 
-Groups outputs into folders of 100 and writes a .tex catalog for each batch
-so the set can be described (žanr, tempo, Factory/Gold autoritet).
+Groups outputs into ZIP archives of 100 MIDI files.
+Velocity = Factory PROFILE_ONLY. Timing/groove/strum/fill/solo/CC11 = Gold
+where evidence allows. RX/DNC and Voice stay Factory veto.
 """
 from __future__ import annotations
 
@@ -21,9 +22,9 @@ MIDI_SUFFIXES = {".mid", ".midi", ".kar"}
 BATCH_SIZE = 100
 
 
-def _collect(source: Path) -> list[Path]:
-    if source.is_file() and source.suffix.lower() in {".zip"}:
-        dest = source.with_name(source.stem + "_extracted")
+def _collect(source: Path, extract_dir: Path | None = None) -> list[Path]:
+    if source.is_file() and source.suffix.lower() == ".zip":
+        dest = extract_dir or source.with_name(source.stem + "_extracted")
         dest.mkdir(parents=True, exist_ok=True)
         with zipfile.ZipFile(source) as archive:
             archive.extractall(dest)
@@ -32,33 +33,6 @@ def _collect(source: Path) -> list[Path]:
         return [source]
     files = [p for p in source.rglob("*") if p.is_file() and p.suffix.lower() in MIDI_SUFFIXES]
     return sorted(files, key=lambda p: str(p).lower())
-
-
-def _tex_escape(text) -> str:
-    repl = {
-        "\\": r"\textbackslash{}",
-        "&": r"\&",
-        "%": r"\%",
-        "$": r"\$",
-        "#": r"\#",
-        "_": r"\_",
-        "{": r"\{",
-        "}": r"\}",
-        "~": r"\textasciitilde{}",
-        "^": r"\textasciicircum{}",
-    }
-    return "".join(repl.get(ch, ch) for ch in str(text))
-
-
-def _authority_block() -> str:
-    return r"""
-\section{Autoritet (obavezno za deskripciju)}
-\begin{itemize}
-  \item \textbf{Velocity} --- isključivo Factory profil (\texttt{PROFILE\_ONLY}). Neural ne smije pisati velocity.
-  \item \textbf{Gold} --- groove, drum/bass pattern, strum, fill sadržaj, solo fraze, Expression CC11, ukrasi --- tamo gdje evidencija dopušta apply.
-  \item \textbf{Factory veto} --- PA800 struktura, Guitar Mode / PowerChord voicing, Brass, Strings/Pad, RX/DNC zaštita.
-\end{itemize}
-"""
 
 
 def factory_gold_config():
@@ -79,66 +53,37 @@ def factory_gold_config():
     return cfg
 
 
-def write_batch_tex(path: Path, batch_index: int, rows: list[dict], started: str, batch_size: int = BATCH_SIZE) -> None:
-    passed = sum(1 for row in rows if row.get("status") == "PASS")
-    failed = sum(1 for row in rows if row.get("status") != "PASS")
-    lines = [
-        r"\documentclass[11pt,a4paper]{article}",
-        r"\usepackage[utf8]{inputenc}",
-        r"\usepackage[T1]{fontenc}",
-        r"\usepackage[croatian]{babel}",
-        r"\usepackage{longtable,booktabs,geometry,hyperref}",
-        r"\geometry{margin=22mm}",
-        r"\title{Factory+Gold batch %03d}" % batch_index,
-        r"\author{PA800 Profile Optimizer}",
-        r"\date{%s}" % _tex_escape(started),
-        r"\begin{document}",
-        r"\maketitle",
-        _authority_block(),
-        r"\section{Kako deskriptirati ovaj batch}",
-        r"U opisu (Drive, Pa800 set lista, YouTube, katalog) napiši tačno ovo:",
-        r"\begin{quote}",
-        r"\texttt{PA800 Factory+Gold MAX --- batch %03d --- %d MIDI.}\\" % (batch_index, len(rows)),
-        r"Velocity = Factory profil (ne Gold, ne neural).\\",
-        r"Timing/gate/groove/strum/fill/solo/CC11 = Gold gdje je evidencija dovoljna.\\",
-        r"RX/DNC i Voice struktura ostaju Factory veto. Hardware A/B nije urađen.",
-        r"\end{quote}",
-        r"\section{Sažetak}",
-        r"Fajlova: %d. PASS: %d. FAIL: %d. Veličina grupe: %d." % (len(rows), passed, failed, batch_size),
-        r"\section{Popis}",
-        r"\begin{longtable}{r p{4.2cm} p{4.2cm} r p{2.2cm}}",
-        r"\toprule \# & Izvor & Izlaz & Izmjene & Status \\ \midrule",
-        r"\endfirsthead",
-        r"\toprule \# & Izvor & Izlaz & Izmjene & Status \\ \midrule",
-        r"\endhead",
-    ]
-    for row in rows:
-        lines.append(
-            "%d & %s & %s & %s & %s \\\\"
-            % (
-                row["index"],
-                _tex_escape(row.get("source_name", "")),
-                _tex_escape(Path(row.get("output") or "").name),
-                row.get("changes", 0),
-                _tex_escape(row.get("status", "")),
+def write_batch_zip(path: Path, rows: list[dict]) -> dict:
+    """Write one delivery ZIP with PASS MIDI only. No .tex."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    packed = []
+    with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        for row in rows:
+            midi = Path(row.get("output") or "")
+            if row.get("status") != "PASS" or not midi.is_file():
+                continue
+            archive.write(midi, midi.name)
+            packed.append(midi.name)
+        archive.writestr(
+            "batch.json",
+            json.dumps(
+                {
+                    "schema": "PA800_FACTORY_GOLD_BATCH_ZIP_V1",
+                    "midi_count": len(packed),
+                    "authority": {
+                        "velocity": "FACTORY_PROFILE_ONLY",
+                        "timing_gate_groove_strum_fill_solo_cc11": "GOLD_WHERE_EVIDENCE_ALLOWS",
+                        "structure_rx_dnc_voice": "FACTORY_VETO",
+                    },
+                    "files": packed,
+                    "rows": rows,
+                },
+                indent=2,
+                ensure_ascii=False,
             )
+            + "\n",
         )
-    lines += [
-        r"\bottomrule",
-        r"\end{longtable}",
-        r"\section{Polja za tvoj opis (popuni ručno)}",
-        r"\begin{itemize}",
-        r"\item Žanr / ples: \underline{\hspace{6cm}}",
-        r"\item BPM raspon: \underline{\hspace{3cm}}",
-        r"\item Tonaliteti: \underline{\hspace{6cm}}",
-        r"\item Song ili Style: \underline{\hspace{4cm}}",
-        r"\item Pa800 banka / User Style broj: \underline{\hspace{4cm}}",
-        r"\item Napomena (live, vokal, rumba, rock\ldots): \underline{\hspace{8cm}}",
-        r"\end{itemize}",
-        r"\end{document}",
-        "",
-    ]
-    path.write_text("\n".join(lines), encoding="utf-8")
+    return {"zip": str(path), "midi_count": len(packed), "files": packed}
 
 
 def process_one(optimizer, source: Path, dest: Path, report: Path):
@@ -154,32 +99,19 @@ def main(argv=None):
     parser.add_argument("--limit", type=int, default=0, help="0 = svi fajlovi")
     args = parser.parse_args(argv)
 
-    from pa800_optimizer.config import OptimizeConfig
     from pa800_optimizer.optimizer import Optimizer
 
-    cfg = OptimizeConfig()
-    # Explicit Factory+Gold MAX: velocity stays Factory PROFILE_ONLY.
-    # Autopilot is off so a coverage guard cannot lock_preserve after the user
-    # already authorized Gold timing/groove/strum/fill/solo/CC11.
-    cfg.enable_full_optimization_test()
-    cfg.velocity_factory_data_only = True
-    cfg.factory_gold_max = True
-    cfg.apply_trained_rhythm_model = True
-    cfg.trained_rhythm_only = False
-    cfg.autopilot = False
-    cfg.mode = "max"
-    cfg.export_preset = "auto"
-    optimizer = Optimizer(cfg)
+    optimizer = Optimizer(factory_gold_config())
 
-    sources = _collect(Path(args.input).expanduser().resolve())
+    out_root = Path(args.output).expanduser().resolve()
+    out_root.mkdir(parents=True, exist_ok=True)
+    sources = _collect(Path(args.input).expanduser().resolve(), extract_dir=out_root / "_extracted")
     if args.limit:
         sources = sources[: args.limit]
     if not sources:
         print("Nema MIDI/KAR fajlova u:", args.input)
         return 1
 
-    out_root = Path(args.output).expanduser().resolve()
-    out_root.mkdir(parents=True, exist_ok=True)
     started = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     ledger = {
         "schema": "PA800_FACTORY_GOLD_BATCH_V1",
@@ -192,13 +124,13 @@ def main(argv=None):
         },
         "batch_size": args.batch_size,
         "source_count": len(sources),
-        "batches": [],
+        "zips": [],
     }
 
     batch_rows: list[dict] = []
     batch_index = 1
     for i, source in enumerate(sources, 1):
-        folder = out_root / ("batch_%03d" % batch_index)
+        folder = out_root / "work" / ("batch_%03d" % batch_index)
         folder.mkdir(parents=True, exist_ok=True)
         stem = "%03d_%s" % (((i - 1) % args.batch_size) + 1, source.stem)
         dest = folder / (stem + "_FG.mid")
@@ -228,18 +160,22 @@ def main(argv=None):
             print("FAIL", i, "/", len(sources), source.name, ":", exc)
         batch_rows.append(row)
         if i % args.batch_size == 0 or i == len(sources):
-            tex = folder / ("batch_%03d.tex" % batch_index)
-            js = folder / ("batch_%03d.json" % batch_index)
-            write_batch_tex(tex, batch_index, batch_rows, started, args.batch_size)
-            js.write_text(json.dumps(batch_rows, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-            ledger["batches"].append(
-                {"batch": batch_index, "files": len(batch_rows), "tex": str(tex), "json": str(js)}
+            zip_path = out_root / ("FactoryGold_MAX_batch_%03d.zip" % batch_index)
+            packed = write_batch_zip(zip_path, batch_rows)
+            ledger["zips"].append(
+                {
+                    "batch": batch_index,
+                    "files": len(batch_rows),
+                    "midi_in_zip": packed["midi_count"],
+                    "zip": packed["zip"],
+                }
             )
+            print("ZIP", zip_path.name, "midi=", packed["midi_count"])
             batch_rows = []
             batch_index += 1
 
     (out_root / "LEDGER.json").write_text(json.dumps(ledger, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print("Gotovo. Batch foldera:", len(ledger["batches"]))
+    print("Gotovo. ZIP arhiva:", len(ledger["zips"]))
     print("Izlaz:", out_root)
     return 0 if ledger["source_count"] else 1
 
