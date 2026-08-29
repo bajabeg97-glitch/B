@@ -29,11 +29,11 @@ def classify(rows,root=ROOT):
     root=Path(root);tests={path.relative_to(root).as_posix():path.read_text(encoding='utf-8',errors='replace') for path in (root/'tests').glob('test_*.py')};out=[]
     for row in rows:
         module=row['module'];name=row['qualname'].split('.')[-1];base=module.split('.')[-1];references=[path for path,text in tests.items() if name in text and (base in text or module in text)]
-        if module=='tools.pc_validation' and name in ('run','real_mido_optimizer_checks','wheel_check','main'):
+        if module=='tools.pc_validation' and name in ('run','real_mido_optimizer_checks','wheel_check','main','create_support_archive','validate_user_midis'):
             mode='PC_EXTERNAL';reason='Requires the real-Mido/isolated-wheel PC validation environment; enforced by the Windows validation contract.'
         elif name=='main' or module.endswith(('.cli','.note_velocity_cli','.understanding_cli')):mode='CLI_CONTRACT';reason='Command entry point; exercised through subprocess/CLI contract.'
-        elif module=='tools.clean_install_smoke':mode='RELEASE_CONTRACT';reason='Build/install operation covered by isolated release artifact checks.'
-        elif module=='tools.repair_profile_data':mode='RELEASE_CONTRACT';reason='Executed in isolated release subprocesses where in-process tracing is intentionally unavailable.'
+        elif module in ('tools.clean_install_smoke','tools.repair_profile_data','tools.build_windows_revalidation','tools.sync_ci_workflow','tools.prepare_factory_gold_training'):
+            mode='RELEASE_CONTRACT';reason='Release/packaging/corpus operation covered by isolated artifact or external-zip checks.'
         elif references:mode='DIRECT_TEST_REFERENCE';reason='Referenced by explicit test module and must also appear in the execution trace.'
         elif '.gui' in module or name in ('pick_input_folder','tkinter_check'):mode='GUI_EXTERNAL';reason='Requires an interactive display or native dialog.'
         elif any(token in module for token in ('hardware','workstation')) or any(token in name.lower() for token in ('audio','hardware','record')):mode='HARDWARE_EXTERNAL';reason='Requires physical/audio/external evidence for full execution.'

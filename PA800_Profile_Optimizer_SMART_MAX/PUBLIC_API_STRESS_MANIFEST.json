@@ -1,14 +1,14 @@
 {
   "schema": "PA800_COMPLETE_PUBLIC_API_STRESS_V1",
-  "modules": 118,
-  "public_functions": 393,
+  "modules": 119,
+  "public_functions": 421,
   "declared_minimum": {
     "modules": 65,
     "public_functions": 235
   },
   "inventory": {
-    "modules": 118,
-    "public_functions": 393,
+    "modules": 119,
+    "public_functions": 421,
     "module_names": [
       "pa800_optimizer.ai_brain",
       "pa800_optimizer.analysis.context",
@@ -38,6 +38,7 @@
       "pa800_optimizer.compatibility",
       "pa800_optimizer.config",
       "pa800_optimizer.core.midi_io",
+      "pa800_optimizer.core.models_v2",
       "pa800_optimizer.core.smf_preflight",
       "pa800_optimizer.core.tolerant_factory_parser",
       "pa800_optimizer.engines.gate",
@@ -131,12 +132,12 @@
     ],
     "coverage_modes": {
       "CLI_CONTRACT": 49,
-      "DIRECT_TEST_REFERENCE": 251,
+      "DIRECT_TEST_REFERENCE": 278,
       "GUI_EXTERNAL": 7,
       "HARDWARE_EXTERNAL": 2,
-      "PC_EXTERNAL": 4,
-      "RELEASE_CONTRACT": 7,
-      "TRANSITIVE_RUNTIME_STRESS": 73
+      "PC_EXTERNAL": 6,
+      "RELEASE_CONTRACT": 9,
+      "TRANSITIVE_RUNTIME_STRESS": 70
     },
     "unclassified": 0
   },
@@ -425,11 +426,11 @@
       "test_references": [
         "tests/test_articulation_director.py",
         "tests/test_content_type.py",
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_song_map.py",
         "tests/test_family_intent_v1.py",
+        "tests/test_instrument_intent_v3.py",
         "tests/test_intent.py",
-        "tests/test_musical_understanding.py"
+        "tests/test_musical_understanding.py",
+        "tests/test_song_map.py"
       ]
     },
     {
@@ -543,8 +544,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_factory_atomic.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_factory_atomic.py"
       ]
     },
     {
@@ -604,8 +605,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
-        "tests/test_factory_usage_meter.py"
+        "tests/test_factory_usage_meter.py",
+        "tests/test_rare_family_guards.py"
       ]
     },
     {
@@ -677,8 +678,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_song_map.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_family_intent_v1.py",
+        "tests/test_song_map.py"
       ]
     },
     {
@@ -702,8 +703,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_process_negative_matrix.py",
-        "tests/test_hardware_campaign.py"
+        "tests/test_hardware_campaign.py",
+        "tests/test_process_negative_matrix.py"
       ]
     },
     {
@@ -715,9 +716,9 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
+        "tests/test_hardware_campaign.py",
         "tests/test_hardware_campaign_tools.py",
-        "tests/test_process_negative_matrix.py",
-        "tests/test_hardware_campaign.py"
+        "tests/test_process_negative_matrix.py"
       ]
     },
     {
@@ -730,9 +731,9 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_budget_fx_transactions_r10.py",
-        "tests/test_musical_brain_premium.py",
+        "tests/test_complete_stress_matrix.py",
         "tests/test_instrument_fingerprints.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_musical_brain_premium.py"
       ]
     },
     {
@@ -744,8 +745,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_instrument_fingerprints.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_instrument_fingerprints.py"
       ]
     },
     {
@@ -757,8 +758,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_family_intent_v1.py",
+        "tests/test_instrument_intent_v3.py"
       ]
     },
     {
@@ -795,11 +796,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_song_map.py",
         "tests/test_family_intent_v1.py",
+        "tests/test_instrument_intent_v3.py",
         "tests/test_intent.py",
-        "tests/test_refiner_proposals_r9.py"
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_song_map.py"
       ]
     },
     {
@@ -883,12 +884,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_section_narrative_v3.py",
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_song_map.py",
         "tests/test_family_intent_v1.py",
+        "tests/test_instrument_intent_v3.py",
+        "tests/test_musical_context.py",
         "tests/test_musical_understanding.py",
-        "tests/test_musical_context.py"
+        "tests/test_section_narrative_v3.py",
+        "tests/test_song_map.py"
       ]
     },
     {
@@ -901,8 +902,8 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_instrument_intent_v3.py",
-        "tests/test_song_map.py",
-        "tests/test_musical_understanding.py"
+        "tests/test_musical_understanding.py",
+        "tests/test_song_map.py"
       ]
     },
     {
@@ -1022,9 +1023,9 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_style_import_contract.py",
         "tests/test_process_certification_midis.py",
-        "tests/test_process_negative_matrix.py"
+        "tests/test_process_negative_matrix.py",
+        "tests/test_style_import_contract.py"
       ]
     },
     {
@@ -1139,9 +1140,9 @@
       "coverage_mode": "CLI_CONTRACT",
       "coverage_reason": "Command entry point; exercised through subprocess/CLI contract.",
       "test_references": [
-        "tests/test_section_narrative_v3.py",
+        "tests/test_complete_stress_matrix.py",
         "tests/test_musical_understanding.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_section_narrative_v3.py"
       ]
     },
     {
@@ -1226,32 +1227,32 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_automation.py",
-        "tests/test_rx_guard.py",
-        "tests/test_articulation_director.py",
-        "tests/test_rare_family_guards.py",
-        "tests/test_budget_fx_transactions_r10.py",
-        "tests/test_section_narrative_v3.py",
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_style_import_contract.py",
-        "tests/test_family_intent_v1.py",
-        "tests/test_instrument_engine_guards.py",
-        "tests/test_config_safety.py",
-        "tests/test_gate_null_profile.py",
-        "tests/test_velocity_conductor.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_authority_quality.py",
         "tests/test_agent_mesh.py",
-        "tests/test_workstation.py",
-        "tests/test_preserve_unknown.py",
+        "tests/test_ai_resource_brain.py",
+        "tests/test_articulation_director.py",
+        "tests/test_authority_quality.py",
+        "tests/test_automation.py",
+        "tests/test_budget_fx_transactions_r10.py",
+        "tests/test_compatibility.py",
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_config_safety.py",
+        "tests/test_factory_usage_meter.py",
+        "tests/test_family_intent_v1.py",
+        "tests/test_gate_null_profile.py",
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_instrument_intent_v3.py",
         "tests/test_mix_fx_director.py",
         "tests/test_optimizer.py",
         "tests/test_performance_director.py",
-        "tests/test_complete_stress_matrix.py",
-        "tests/test_ai_resource_brain.py",
+        "tests/test_preserve_unknown.py",
+        "tests/test_rare_family_guards.py",
         "tests/test_refiner_proposals_r9.py",
-        "tests/test_compatibility.py",
-        "tests/test_factory_usage_meter.py"
+        "tests/test_rx_guard.py",
+        "tests/test_section_narrative_v3.py",
+        "tests/test_style_import_contract.py",
+        "tests/test_trained_neural_application.py",
+        "tests/test_velocity_conductor.py",
+        "tests/test_workstation.py"
       ]
     },
     {
@@ -1329,18 +1330,18 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_articulation_director.py",
+        "tests/test_baja_stage_profile.py",
         "tests/test_budget_fx_transactions_r10.py",
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_song_map.py",
+        "tests/test_complete_stress_matrix.py",
         "tests/test_event_proposals_r8.py",
         "tests/test_family_intent_v1.py",
-        "tests/test_baja_stage_profile.py",
-        "tests/test_musical_brain_premium.py",
+        "tests/test_instrument_intent_v3.py",
         "tests/test_intent.py",
+        "tests/test_musical_brain_premium.py",
         "tests/test_musical_understanding.py",
+        "tests/test_refiner_proposals_r9.py",
         "tests/test_repair_audition.py",
-        "tests/test_complete_stress_matrix.py",
-        "tests/test_refiner_proposals_r9.py"
+        "tests/test_song_map.py"
       ]
     },
     {
@@ -1368,6 +1369,342 @@
       ]
     },
     {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "RpnEvent.rpn_number",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 143,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "RpnEvent.parameter_name",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 147,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "RpnEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 159,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NrpnEvent.nrpn_number",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 195,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NrpnEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 198,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "SysExEvent.manufacturer_name",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 250,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "SysExEvent.is_universal",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 254,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "SysExEvent.hex_dump",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 258,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "SysExEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 261,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "MidiEvent.generate_id",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 335,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "MidiEvent.clone",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 340,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "MidiEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 376,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NoteEvent.midi_note_to_name",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 442,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NoteEvent.frequency",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 450,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NoteEvent.gate_ratio",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 455,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NoteEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 460,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "ControllerEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 606,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "ProgramChangeEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 634,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "PitchBendEvent.normalized_value",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 655,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "PitchBendEvent.cents",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 660,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "PitchBendEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 664,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TempoEvent.bpm",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 681,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TempoEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 685,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TimeSignatureEvent.beats_per_measure",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 703,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TimeSignatureEvent.beat_unit",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 707,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TimeSignatureEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 710,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "KeySignatureEvent.key_name",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 732,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "KeySignatureEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 744,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ]
+    },
+    {
       "module": "pa800_optimizer.core.smf_preflight",
       "qualname": "preflight_smf",
       "kind": "function",
@@ -1376,9 +1713,9 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_smf_preflight.py",
+        "tests/test_midi_doctor.py",
         "tests/test_process_certification_midis.py",
-        "tests/test_midi_doctor.py"
+        "tests/test_smf_preflight.py"
       ]
     },
     {
@@ -1424,8 +1761,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_instrument_engine_guards.py",
-        "tests/test_gate_null_profile.py"
+        "tests/test_gate_null_profile.py",
+        "tests/test_instrument_engine_guards.py"
       ]
     },
     {
@@ -1461,8 +1798,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rhythm_trill_correction.py",
-        "tests/test_instrument_engine_guards.py"
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_rhythm_trill_correction.py"
       ]
     },
     {
@@ -1474,8 +1811,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
-        "tests/test_instrument_engine_guards.py"
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_rare_family_guards.py"
       ]
     },
     {
@@ -1551,8 +1888,8 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_budget_fx_transactions_r10.py",
-        "tests/test_transaction_coverage_r13.py",
-        "tests/test_refiner_proposals_r9.py"
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_transaction_coverage_r13.py"
       ]
     },
     {
@@ -1565,8 +1902,8 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_budget_fx_transactions_r10.py",
-        "tests/test_transaction_coverage_r13.py",
-        "tests/test_refiner_proposals_r9.py"
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_transaction_coverage_r13.py"
       ]
     },
     {
@@ -1819,8 +2156,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_process_negative_matrix.py",
-        "tests/test_instrument_guards.py"
+        "tests/test_instrument_guards.py",
+        "tests/test_process_negative_matrix.py"
       ]
     },
     {
@@ -1886,8 +2223,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_process_negative_matrix.py",
-        "tests/test_instrument_guards.py"
+        "tests/test_instrument_guards.py",
+        "tests/test_process_negative_matrix.py"
       ]
     },
     {
@@ -1921,8 +2258,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_process_negative_matrix.py",
-        "tests/test_instrument_guards.py"
+        "tests/test_instrument_guards.py",
+        "tests/test_process_negative_matrix.py"
       ]
     },
     {
@@ -2081,11 +2418,11 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_articulation_director.py",
-        "tests/test_rare_family_guards.py",
+        "tests/test_exact_instrument_neural_profiles.py",
+        "tests/test_instrument_engine_guards.py",
         "tests/test_max_completion_audit.py",
         "tests/test_profile_completeness.py",
-        "tests/test_instrument_engine_guards.py",
-        "tests/test_exact_instrument_neural_profiles.py"
+        "tests/test_rare_family_guards.py"
       ]
     },
     {
@@ -2097,8 +2434,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_note_velocity_max.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_note_velocity_max.py"
       ]
     },
     {
@@ -2171,8 +2508,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_optimizer.py",
-        "tests/test_midi_doctor.py"
+        "tests/test_midi_doctor.py",
+        "tests/test_optimizer.py"
       ]
     },
     {
@@ -2209,11 +2546,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rhythm_trill_correction.py",
         "tests/test_audition_queue.py",
-        "tests/test_sound_fx_intelligence.py",
         "tests/test_mix_fx_director.py",
-        "tests/test_process_negative_matrix.py"
+        "tests/test_process_negative_matrix.py",
+        "tests/test_rhythm_trill_correction.py",
+        "tests/test_sound_fx_intelligence.py"
       ]
     },
     {
@@ -2225,13 +2562,14 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rhythm_trill_correction.py",
+        "tests/test_authority_quality.py",
         "tests/test_event_proposals_r8.py",
-        "tests/test_premium_autonomous_safety.py",
         "tests/test_instrument_engine_guards.py",
         "tests/test_musical_brain_premium.py",
-        "tests/test_authority_quality.py",
-        "tests/test_musical_context.py"
+        "tests/test_musical_context.py",
+        "tests/test_premium_autonomous_safety.py",
+        "tests/test_rhythm_trill_correction.py",
+        "tests/test_models_v2_surface.py"
       ]
     },
     {
@@ -2243,8 +2581,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_premium_autonomous_safety.py",
-        "tests/test_musical_brain_premium.py"
+        "tests/test_musical_brain_premium.py",
+        "tests/test_premium_autonomous_safety.py"
       ]
     },
     {
@@ -2450,10 +2788,10 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_neural_model_acceptance.py",
-        "tests/test_trained_neural_application.py",
         "tests/test_neural_event_contract.py",
-        "tests/test_neural_self_supervised_encoder.py"
+        "tests/test_neural_model_acceptance.py",
+        "tests/test_neural_self_supervised_encoder.py",
+        "tests/test_trained_neural_application.py"
       ]
     },
     {
@@ -2638,8 +2976,8 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_model_acceptance.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_neural_self_supervised_encoder.py"
+        "tests/test_neural_self_supervised_encoder.py",
+        "tests/test_trained_neural_application.py"
       ]
     },
     {
@@ -2700,8 +3038,8 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_model_acceptance.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_neural_self_supervised_encoder.py"
+        "tests/test_neural_self_supervised_encoder.py",
+        "tests/test_trained_neural_application.py"
       ]
     },
     {
@@ -2722,9 +3060,11 @@
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
       "line": 237,
-      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
-      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
-      "test_references": []
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_complete_stress_matrix.py"
+      ]
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
@@ -2735,8 +3075,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_neural_model_acceptance.py",
         "tests/test_encoder_runtime_admission.py",
+        "tests/test_neural_model_acceptance.py",
         "tests/test_neural_self_supervised_encoder.py"
       ]
     },
@@ -2795,92 +3135,93 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_registry.py",
-        "tests/test_optional_deps.py",
-        "tests/test_process_certification_manifest.py",
-        "tests/test_automation.py",
-        "tests/test_rx_guard.py",
-        "tests/test_repair_previews.py",
-        "tests/test_verifier.py",
+        "tests/test_agent_mesh.py",
+        "tests/test_ai_resource_brain.py",
         "tests/test_articulation_director.py",
-        "tests/test_rare_family_guards.py",
-        "tests/test_budget_fx_transactions_r10.py",
-        "tests/test_content_type.py",
-        "tests/test_gui_state.py",
-        "tests/test_section_narrative_v3.py",
-        "tests/test_process_certification_runner.py",
-        "tests/test_neural_forensics.py",
-        "tests/test_gui_training.py",
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_rhythm_trill_correction.py",
-        "tests/test_musician_workflow.py",
-        "tests/test_structural_proposals.py",
-        "tests/test_song_map.py",
-        "tests/test_factory_data_bundle.py",
         "tests/test_audition_queue.py",
-        "tests/test_style_import_contract.py",
-        "tests/test_encoder_feature_contract.py",
-        "tests/test_transaction_guard_r13.py",
-        "tests/test_release_integrity.py",
-        "tests/test_smf_preflight.py",
-        "tests/test_event_proposals_r8.py",
-        "tests/test_family_intent_v1.py",
-        "tests/test_phrase_doctor.py",
-        "tests/test_drum_key_profile.py",
-        "tests/test_premium_autonomous_safety.py",
-        "tests/test_process_certification_midis.py",
-        "tests/test_factory_usage_batch.py",
-        "tests/test_profile_completeness.py",
+        "tests/test_authority_quality.py",
+        "tests/test_automation.py",
         "tests/test_baja_stage_profile.py",
-        "tests/test_factory_atomic.py",
-        "tests/test_instrument_policies.py",
-        "tests/test_instrument_engine_guards.py",
-        "tests/test_gui_hardware_campaign.py",
-        "tests/test_neural_model_acceptance.py",
+        "tests/test_budget_fx_transactions_r10.py",
+        "tests/test_chord_pattern_generator.py",
+        "tests/test_compatibility.py",
+        "tests/test_complete_stress_matrix.py",
         "tests/test_config_safety.py",
-        "tests/test_gate_null_profile.py",
-        "tests/test_musical_brain_premium.py",
-        "tests/test_note_velocity_max.py",
-        "tests/test_intent.py",
-        "tests/test_velocity_conductor.py",
+        "tests/test_content_type.py",
+        "tests/test_context_ground_truth.py",
+        "tests/test_drum_key_profile.py",
+        "tests/test_encoder_feature_contract.py",
         "tests/test_encoder_runtime_admission.py",
+        "tests/test_event_proposals_r8.py",
+        "tests/test_exact_instrument_neural_profiles.py",
+        "tests/test_factory_atomic.py",
+        "tests/test_factory_data_bundle.py",
+        "tests/test_factory_gold_corpus_router.py",
+        "tests/test_factory_usage_batch.py",
+        "tests/test_factory_usage_meter.py",
+        "tests/test_family_intent_v1.py",
+        "tests/test_gate_null_profile.py",
+        "tests/test_gui_hardware_campaign.py",
+        "tests/test_gui_state.py",
+        "tests/test_gui_training.py",
+        "tests/test_hardware_campaign.py",
         "tests/test_hardware_evidence.py",
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_instrument_fingerprints.py",
+        "tests/test_instrument_guards.py",
+        "tests/test_instrument_intent_v3.py",
+        "tests/test_instrument_policies.py",
+        "tests/test_intent.py",
+        "tests/test_intent_ground_truth_v2.py",
+        "tests/test_midi_doctor.py",
+        "tests/test_midi_io_channel_state.py",
+        "tests/test_mix_fx_director.py",
+        "tests/test_musical_brain_premium.py",
+        "tests/test_musical_context.py",
+        "tests/test_musical_understanding.py",
+        "tests/test_musician_workflow.py",
+        "tests/test_neural_dataset_forge.py",
+        "tests/test_neural_event_contract.py",
+        "tests/test_neural_forensics.py",
+        "tests/test_neural_model_acceptance.py",
+        "tests/test_neural_self_supervised_encoder.py",
+        "tests/test_note_velocity_max.py",
+        "tests/test_optimizer.py",
+        "tests/test_optional_deps.py",
+        "tests/test_pattern_advisor.py",
+        "tests/test_performance_director.py",
+        "tests/test_phrase_doctor.py",
+        "tests/test_premium_autonomous_safety.py",
+        "tests/test_preserve_unknown.py",
+        "tests/test_process_certification_manifest.py",
+        "tests/test_process_certification_midis.py",
+        "tests/test_process_certification_runner.py",
+        "tests/test_process_negative_matrix.py",
+        "tests/test_profile_completeness.py",
+        "tests/test_rare_family_guards.py",
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_registry.py",
+        "tests/test_release_integrity.py",
+        "tests/test_repair_audition.py",
+        "tests/test_repair_previews.py",
+        "tests/test_rhythm_trill_correction.py",
+        "tests/test_runtime_asset_immutability.py",
+        "tests/test_runtime_safety.py",
+        "tests/test_rx_guard.py",
+        "tests/test_section_narrative_v3.py",
+        "tests/test_smf_preflight.py",
+        "tests/test_song_map.py",
+        "tests/test_sound_fx_intelligence.py",
+        "tests/test_structural_proposals.py",
+        "tests/test_style_import_contract.py",
         "tests/test_trained_neural_application.py",
         "tests/test_training_folder_audit.py",
-        "tests/test_authority_quality.py",
-        "tests/test_sound_fx_intelligence.py",
-        "tests/test_midi_io_channel_state.py",
-        "tests/test_agent_mesh.py",
-        "tests/test_workstation.py",
-        "tests/test_exact_instrument_neural_profiles.py",
-        "tests/test_pattern_advisor.py",
-        "tests/test_runtime_asset_immutability.py",
-        "tests/test_neural_event_contract.py",
-        "tests/test_intent_ground_truth_v2.py",
-        "tests/test_preserve_unknown.py",
-        "tests/test_musical_understanding.py",
-        "tests/test_mix_fx_director.py",
-        "tests/test_process_negative_matrix.py",
-        "tests/test_neural_self_supervised_encoder.py",
-        "tests/test_repair_audition.py",
-        "tests/test_optimizer.py",
-        "tests/test_context_ground_truth.py",
-        "tests/test_instrument_fingerprints.py",
-        "tests/test_performance_director.py",
-        "tests/test_factory_gold_corpus_router.py",
-        "tests/test_midi_doctor.py",
-        "tests/test_complete_stress_matrix.py",
-        "tests/test_ai_resource_brain.py",
-        "tests/test_runtime_safety.py",
         "tests/test_transaction_coverage_r13.py",
-        "tests/test_instrument_guards.py",
-        "tests/test_neural_dataset_forge.py",
-        "tests/test_refiner_proposals_r9.py",
-        "tests/test_compatibility.py",
-        "tests/test_hardware_campaign.py",
-        "tests/test_factory_usage_meter.py",
-        "tests/test_musical_context.py",
-        "tests/test_chord_pattern_generator.py"
+        "tests/test_transaction_guard_r13.py",
+        "tests/test_velocity_conductor.py",
+        "tests/test_verifier.py",
+        "tests/test_workstation.py",
+        "tests/test_models_v2_surface.py"
       ]
     },
     {
@@ -2982,8 +3323,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_premium_autonomous_safety.py",
-        "tests/test_musical_brain_premium.py"
+        "tests/test_musical_brain_premium.py",
+        "tests/test_premium_autonomous_safety.py"
       ]
     },
     {
@@ -3029,8 +3370,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_registry.py",
-        "tests/test_rare_family_guards.py"
+        "tests/test_rare_family_guards.py",
+        "tests/test_registry.py"
       ]
     },
     {
@@ -3052,9 +3393,9 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_registry.py",
+        "tests/test_family_intent_v1.py",
         "tests/test_instrument_intent_v3.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_registry.py"
       ]
     },
     {
@@ -3076,8 +3417,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
-        "tests/test_drum_key_profile.py"
+        "tests/test_drum_key_profile.py",
+        "tests/test_rare_family_guards.py"
       ]
     },
     {
@@ -3137,9 +3478,9 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_registry.py",
+        "tests/test_complete_stress_matrix.py",
         "tests/test_profile_completeness.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_registry.py"
       ]
     },
     {
@@ -3151,8 +3492,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_registry.py",
-        "tests/test_profile_completeness.py"
+        "tests/test_profile_completeness.py",
+        "tests/test_registry.py"
       ]
     },
     {
@@ -3316,8 +3657,8 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_articulation_director.py",
-        "tests/test_rare_family_guards.py",
-        "tests/test_instrument_engine_guards.py"
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_rare_family_guards.py"
       ]
     },
     {
@@ -3453,8 +3794,8 @@
       "coverage_mode": "CLI_CONTRACT",
       "coverage_reason": "Command entry point; exercised through subprocess/CLI contract.",
       "test_references": [
-        "tests/test_section_narrative_v3.py",
-        "tests/test_musical_understanding.py"
+        "tests/test_musical_understanding.py",
+        "tests/test_section_narrative_v3.py"
       ]
     },
     {
@@ -3478,8 +3819,8 @@
       "coverage_mode": "CLI_CONTRACT",
       "coverage_reason": "Command entry point; exercised through subprocess/CLI contract.",
       "test_references": [
-        "tests/test_section_narrative_v3.py",
-        "tests/test_musical_understanding.py"
+        "tests/test_musical_understanding.py",
+        "tests/test_section_narrative_v3.py"
       ]
     },
     {
@@ -3573,11 +3914,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_verifier.py",
         "tests/test_articulation_director.py",
-        "tests/test_structural_proposals.py",
         "tests/test_encoder_runtime_admission.py",
-        "tests/test_process_negative_matrix.py"
+        "tests/test_process_negative_matrix.py",
+        "tests/test_structural_proposals.py",
+        "tests/test_verifier.py"
       ]
     },
     {
@@ -3615,8 +3956,8 @@
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_instrument_intent_v3.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_optimizer.py"
+        "tests/test_optimizer.py",
+        "tests/test_trained_neural_application.py"
       ]
     },
     {
@@ -3850,7 +4191,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_compatibility_matrix.py"
+        "tests/test_compatibility_matrix.py",
+        "tests/test_complete_stress_matrix.py"
       ]
     },
     {
@@ -3859,9 +4201,11 @@
       "kind": "function",
       "path": "tools/build_identity.py",
       "line": 25,
-      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
-      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
-      "test_references": []
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_complete_stress_matrix.py"
+      ]
     },
     {
       "module": "tools.build_identity",
@@ -3872,6 +4216,7 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
+        "tests/test_complete_stress_matrix.py",
         "tests/test_release_integrity.py"
       ]
     },
@@ -3883,7 +4228,9 @@
       "line": 53,
       "coverage_mode": "CLI_CONTRACT",
       "coverage_reason": "Command entry point; exercised through subprocess/CLI contract.",
-      "test_references": []
+      "test_references": [
+        "tests/test_complete_stress_matrix.py"
+      ]
     },
     {
       "module": "tools.build_neural_instrument_profiles",
@@ -3924,8 +4271,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_profile_completeness.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_profile_completeness.py"
       ]
     },
     {
@@ -3958,8 +4305,8 @@
       "kind": "function",
       "path": "tools/build_windows_revalidation.py",
       "line": 146,
-      "coverage_mode": "DIRECT_TEST_REFERENCE",
-      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "coverage_mode": "RELEASE_CONTRACT",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [
         "tests/test_release_integrity.py"
       ]
@@ -3981,7 +4328,7 @@
       "path": "tools/clean_install_smoke.py",
       "line": 17,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Build/install operation covered by isolated release artifact checks.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [
         "tests/test_release_integrity.py"
       ]
@@ -3993,7 +4340,7 @@
       "path": "tools/clean_install_smoke.py",
       "line": 22,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Build/install operation covered by isolated release artifact checks.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [
         "tests/test_release_integrity.py"
       ]
@@ -4387,8 +4734,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_instrument_intent_v3.py",
         "tests/test_family_intent_v1.py",
+        "tests/test_instrument_intent_v3.py",
         "tests/test_intent_ground_truth_v2.py"
       ]
     },
@@ -4445,8 +4792,8 @@
       "coverage_mode": "PC_EXTERNAL",
       "coverage_reason": "Requires the real-Mido/isolated-wheel PC validation environment; enforced by the Windows validation contract.",
       "test_references": [
-        "tests/test_release_integrity.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_release_integrity.py"
       ]
     },
     {
@@ -4489,8 +4836,8 @@
       "kind": "function",
       "path": "tools/pc_validation.py",
       "line": 117,
-      "coverage_mode": "DIRECT_TEST_REFERENCE",
-      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "coverage_mode": "PC_EXTERNAL",
+      "coverage_reason": "Requires the real-Mido/isolated-wheel PC validation environment; enforced by the Windows validation contract.",
       "test_references": [
         "tests/test_pc_ab_pack.py"
       ]
@@ -4531,8 +4878,8 @@
       "kind": "function",
       "path": "tools/pc_validation.py",
       "line": 197,
-      "coverage_mode": "DIRECT_TEST_REFERENCE",
-      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "coverage_mode": "PC_EXTERNAL",
+      "coverage_reason": "Requires the real-Mido/isolated-wheel PC validation environment; enforced by the Windows validation contract.",
       "test_references": [
         "tests/test_pc_ab_pack.py"
       ]
@@ -4555,8 +4902,8 @@
       "kind": "function",
       "path": "tools/prepare_factory_gold_training.py",
       "line": 11,
-      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
-      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "coverage_mode": "RELEASE_CONTRACT",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": []
     },
     {
@@ -4578,8 +4925,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_process_certification_runner.py",
-        "tests/test_process_certification_midis.py"
+        "tests/test_process_certification_midis.py",
+        "tests/test_process_certification_runner.py"
       ]
     },
     {
@@ -4678,7 +5025,7 @@
       "path": "tools/repair_profile_data.py",
       "line": 19,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Executed in isolated release subprocesses where in-process tracing is intentionally unavailable.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [
         "tests/test_release_integrity.py"
       ]
@@ -4690,7 +5037,7 @@
       "path": "tools/repair_profile_data.py",
       "line": 26,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Executed in isolated release subprocesses where in-process tracing is intentionally unavailable.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": []
     },
     {
@@ -4700,7 +5047,7 @@
       "path": "tools/repair_profile_data.py",
       "line": 37,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Executed in isolated release subprocesses where in-process tracing is intentionally unavailable.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": []
     },
     {
@@ -4744,10 +5091,10 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
+        "tests/test_neural_dataset_certification.py",
         "tests/test_neural_model_acceptance.py",
-        "tests/test_trained_neural_application.py",
         "tests/test_neural_self_supervised_encoder.py",
-        "tests/test_neural_dataset_certification.py"
+        "tests/test_trained_neural_application.py"
       ]
     },
     {
@@ -4813,8 +5160,8 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_process_certification_runner.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_process_certification_runner.py"
       ]
     },
     {

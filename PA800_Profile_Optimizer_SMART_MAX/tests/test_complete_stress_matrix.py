@@ -130,12 +130,21 @@ def test_tolerant_parser_detects_illegal_data_bytes_without_clipping(tmp_path):
 
 
 def test_release_helpers_render_identity_fixture_and_process_contract(tmp_path):
+    from tools.build_identity import command,sha256 as identity_sha256,stable_payload
+    from pa800_optimizer.neural.self_supervised_encoder import migrate_legacy_velocity_encoder
+    import pytest
     text=render_completeness(build_completeness())
     assert 'Complete cards: **565/565**' in text
     build_id,version=current_identity();assert len(build_id)==64 and version=='3.4.0a2'
     fixture=tmp_path/'pc_fixture.mid';make_midi(fixture,style=True,tracks=2,notes_per_track=4)
     assert len(extract_notes(mido.MidiFile(fixture)))==8
     assert len(sha256(fixture))==64
+    assert len(identity_sha256(fixture))==64
+    assert isinstance(command('git','rev-parse','--is-inside-work-tree'),str)
+    payload=stable_payload();assert payload['version']=='3.4.0a2' and payload['source_files']
+    bogus=tmp_path/'not-an-encoder.json';bogus.write_text('{"feature_names":[]}',encoding='utf-8')
+    with pytest.raises(ValueError):
+        migrate_legacy_velocity_encoder(bogus)
     report=certify(tmp_path/'process_certification',run_regression=False)
     assert report['pass'] and report['scenario_count']==52 and report['coverage']['passed_stages']==26
 

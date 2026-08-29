@@ -1,12 +1,14 @@
 {
-  "schema": "PA800_COMPLETE_STRESS_RESULT_V1",
-  "pytest_returncode": 1,
-  "pytest_stdout": "",
-  "pytest_stderr": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python: No module named pytest\n",
+  "schema": "PA800_COMPLETE_STRESS_RESULT_V2",
+  "execution_mode": "RESUMABLE_SHARDED_TRACE",
+  "pytest_returncode": 0,
+  "pytest_stdout": "........................................................................ [ 17%]\n........................................................................ [ 34%]\n........................................................................ [ 51%]\n........................................................................ [ 69%]\n........................................................................ [ 86%]\n........................................................                 [100%]\n416 passed in 333.74s (0:05:33)\n",
+  "pytest_stderr": "",
   "inventory": {
-    "modules": 108,
-    "public_functions": 341,
+    "modules": 119,
+    "public_functions": 421,
     "module_names": [
+      "pa800_optimizer.ai_brain",
       "pa800_optimizer.analysis.context",
       "pa800_optimizer.analysis.context_ground_truth",
       "pa800_optimizer.analysis.dnc_state",
@@ -34,6 +36,7 @@
       "pa800_optimizer.compatibility",
       "pa800_optimizer.config",
       "pa800_optimizer.core.midi_io",
+      "pa800_optimizer.core.models_v2",
       "pa800_optimizer.core.smf_preflight",
       "pa800_optimizer.core.tolerant_factory_parser",
       "pa800_optimizer.engines.gate",
@@ -41,6 +44,7 @@
       "pa800_optimizer.engines.timing",
       "pa800_optimizer.engines.velocity",
       "pa800_optimizer.engines.velocity_conductor",
+      "pa800_optimizer.event_proposals",
       "pa800_optimizer.gui",
       "pa800_optimizer.gui_state",
       "pa800_optimizer.hardware_evidence",
@@ -51,7 +55,9 @@
       "pa800_optimizer.midi_doctor",
       "pa800_optimizer.mix_fx_director",
       "pa800_optimizer.models",
+      "pa800_optimizer.musical_brain",
       "pa800_optimizer.musician_workflow",
+      "pa800_optimizer.mutation_arbiter",
       "pa800_optimizer.neural.corpus_router",
       "pa800_optimizer.neural.dataset_forge",
       "pa800_optimizer.neural.event_contract",
@@ -62,11 +68,17 @@
       "pa800_optimizer.note_velocity_cli",
       "pa800_optimizer.optimizer",
       "pa800_optimizer.optional_deps",
+      "pa800_optimizer.premium_control",
       "pa800_optimizer.profiles.registry",
       "pa800_optimizer.quality_gate",
+      "pa800_optimizer.quality_score",
       "pa800_optimizer.runtime_safety",
       "pa800_optimizer.safety.rx_dnc",
+      "pa800_optimizer.structural_proposals",
+      "pa800_optimizer.transaction_coverage",
+      "pa800_optimizer.transaction_guard",
       "pa800_optimizer.understanding_cli",
+      "pa800_optimizer.user_stage_profile",
       "pa800_optimizer.utils",
       "pa800_optimizer.verifier",
       "pa800_optimizer.workstation",
@@ -118,20 +130,108 @@
     ],
     "coverage_modes": {
       "CLI_CONTRACT": 49,
-      "DIRECT_TEST_REFERENCE": 218,
+      "DIRECT_TEST_REFERENCE": 278,
       "GUI_EXTERNAL": 7,
       "HARDWARE_EXTERNAL": 2,
-      "PC_EXTERNAL": 4,
-      "RELEASE_CONTRACT": 7,
-      "TRANSITIVE_RUNTIME_STRESS": 54
+      "PC_EXTERNAL": 6,
+      "RELEASE_CONTRACT": 9,
+      "TRANSITIVE_RUNTIME_STRESS": 70
     },
     "unclassified": 0
   },
-  "dynamic_hits": 0,
-  "dynamic_hit_ratio": 0.0,
-  "accounted_functions": 69,
-  "unaccounted_functions": 272,
+  "dynamic_hits": 353,
+  "dynamic_hit_ratio": 0.8385,
+  "accounted_functions": 421,
+  "unaccounted_functions": 0,
   "functions": [
+    {
+      "module": "pa800_optimizer.ai_brain",
+      "qualname": "ResourceSnapshot.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/ai_brain.py",
+      "line": 28,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.ai_brain",
+      "qualname": "BrainDecision.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/ai_brain.py",
+      "line": 47,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.ai_brain",
+      "qualname": "resource_snapshot",
+      "kind": "function",
+      "path": "pa800_optimizer/ai_brain.py",
+      "line": 88,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.ai_brain",
+      "qualname": "AIResourceBrain.decide",
+      "kind": "method",
+      "path": "pa800_optimizer/ai_brain.py",
+      "line": 105,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_ai_resource_brain.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.ai_brain",
+      "qualname": "AIResourceBrain.apply_runtime_limits",
+      "kind": "method",
+      "path": "pa800_optimizer/ai_brain.py",
+      "line": 158,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.ai_brain",
+      "qualname": "AIResourceBrain.collect_if_needed",
+      "kind": "method",
+      "path": "pa800_optimizer/ai_brain.py",
+      "line": 178,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.ai_brain",
+      "qualname": "govern_config",
+      "kind": "function",
+      "path": "pa800_optimizer/ai_brain.py",
+      "line": 185,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_ai_resource_brain.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
     {
       "module": "pa800_optimizer.analysis.context",
       "qualname": "gm_family",
@@ -141,8 +241,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context",
@@ -153,8 +253,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context",
@@ -165,8 +265,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context",
@@ -177,8 +277,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context",
@@ -189,8 +289,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context",
@@ -201,8 +301,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context",
@@ -215,8 +315,8 @@
       "test_references": [
         "tests/test_content_type.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context",
@@ -229,8 +329,8 @@
       "test_references": [
         "tests/test_content_type.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context",
@@ -241,16 +341,16 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_intent.py",
         "tests/test_articulation_director.py",
-        "tests/test_song_map.py",
-        "tests/test_musical_understanding.py",
         "tests/test_content_type.py",
+        "tests/test_family_intent_v1.py",
         "tests/test_instrument_intent_v3.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_intent.py",
+        "tests/test_musical_understanding.py",
+        "tests/test_song_map.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context_ground_truth",
@@ -263,8 +363,8 @@
       "test_references": [
         "tests/test_context_ground_truth.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.context_ground_truth",
@@ -277,8 +377,8 @@
       "test_references": [
         "tests/test_context_ground_truth.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.dnc_state",
@@ -289,8 +389,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.dnc_state",
@@ -301,8 +401,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.dnc_state",
@@ -315,8 +415,8 @@
       "test_references": [
         "tests/test_articulation_director.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.dnc_state",
@@ -327,8 +427,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_atomic",
@@ -341,8 +441,8 @@
       "test_references": [
         "tests/test_factory_atomic.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_atomic",
@@ -355,8 +455,8 @@
       "test_references": [
         "tests/test_factory_atomic.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_atomic",
@@ -369,8 +469,8 @@
       "test_references": [
         "tests/test_factory_atomic.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_atomic",
@@ -381,11 +481,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_factory_atomic.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_factory_atomic.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_atomic",
@@ -398,8 +498,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_atomic",
@@ -412,8 +512,8 @@
       "test_references": [
         "tests/test_factory_atomic.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_atomic",
@@ -426,8 +526,8 @@
       "test_references": [
         "tests/test_factory_atomic.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_atomic",
@@ -440,8 +540,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_usage",
@@ -452,11 +552,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
-        "tests/test_factory_usage_meter.py"
+        "tests/test_factory_usage_meter.py",
+        "tests/test_rare_family_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_usage",
@@ -469,8 +569,8 @@
       "test_references": [
         "tests/test_factory_usage_meter.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_usage_batch",
@@ -483,8 +583,8 @@
       "test_references": [
         "tests/test_factory_usage_batch.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_usage_batch",
@@ -497,8 +597,8 @@
       "test_references": [
         "tests/test_factory_usage_batch.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.factory_usage_batch",
@@ -511,8 +611,8 @@
       "test_references": [
         "tests/test_factory_usage_batch.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.family_intent",
@@ -525,8 +625,8 @@
       "test_references": [
         "tests/test_family_intent_v1.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.family_intent",
@@ -537,11 +637,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_song_map.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_family_intent_v1.py",
+        "tests/test_song_map.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.family_intent",
@@ -554,8 +654,8 @@
       "test_references": [
         "tests/test_family_intent_v1.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.hardware_campaign",
@@ -569,8 +669,8 @@
         "tests/test_hardware_campaign.py",
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.hardware_campaign",
@@ -581,12 +681,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_hardware_campaign_tools.py",
         "tests/test_hardware_campaign.py",
+        "tests/test_hardware_campaign_tools.py",
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.instrument_fingerprints",
@@ -597,11 +697,13 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
+        "tests/test_budget_fx_transactions_r10.py",
+        "tests/test_complete_stress_matrix.py",
         "tests/test_instrument_fingerprints.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_musical_brain_premium.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.instrument_fingerprints",
@@ -612,11 +714,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_instrument_fingerprints.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_instrument_fingerprints.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.instrument_intent",
@@ -627,11 +729,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_family_intent_v1.py",
+        "tests/test_instrument_intent_v3.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.instrument_intent",
@@ -642,11 +744,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_song_map.py",
-        "tests/test_instrument_intent_v3.py"
+        "tests/test_instrument_intent_v3.py",
+        "tests/test_song_map.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.instrument_intent",
@@ -659,8 +761,8 @@
       "test_references": [
         "tests/test_instrument_intent_v3.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.intent",
@@ -671,13 +773,14 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_intent.py",
-        "tests/test_song_map.py",
+        "tests/test_family_intent_v1.py",
         "tests/test_instrument_intent_v3.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_intent.py",
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_song_map.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.intent_ground_truth",
@@ -690,8 +793,8 @@
       "test_references": [
         "tests/test_intent_ground_truth_v2.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.intent_ground_truth",
@@ -704,8 +807,8 @@
       "test_references": [
         "tests/test_intent_ground_truth_v2.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.intent_ground_truth",
@@ -718,8 +821,8 @@
       "test_references": [
         "tests/test_intent_ground_truth_v2.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.intent_ground_truth",
@@ -732,8 +835,8 @@
       "test_references": [
         "tests/test_intent_ground_truth_v2.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.musical_context",
@@ -746,8 +849,8 @@
       "test_references": [
         "tests/test_musical_context.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.musical_context",
@@ -760,8 +863,8 @@
       "test_references": [
         "tests/test_musical_context.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.musical_context",
@@ -772,15 +875,15 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_musical_context.py",
-        "tests/test_song_map.py",
-        "tests/test_section_narrative_v3.py",
-        "tests/test_musical_understanding.py",
+        "tests/test_family_intent_v1.py",
         "tests/test_instrument_intent_v3.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_musical_context.py",
+        "tests/test_musical_understanding.py",
+        "tests/test_section_narrative_v3.py",
+        "tests/test_song_map.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.musical_understanding",
@@ -791,12 +894,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_song_map.py",
+        "tests/test_instrument_intent_v3.py",
         "tests/test_musical_understanding.py",
-        "tests/test_instrument_intent_v3.py"
+        "tests/test_song_map.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.neural_forensics",
@@ -809,8 +912,8 @@
       "test_references": [
         "tests/test_neural_forensics.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.note_velocity_max",
@@ -821,8 +924,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.note_velocity_max",
@@ -835,8 +938,8 @@
       "test_references": [
         "tests/test_note_velocity_max.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.note_velocity_max",
@@ -849,8 +952,8 @@
       "test_references": [
         "tests/test_note_velocity_max.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.note_velocity_max",
@@ -863,8 +966,8 @@
       "test_references": [
         "tests/test_note_velocity_max.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.process_certification",
@@ -878,8 +981,8 @@
         "tests/test_process_certification_manifest.py",
         "tests/test_process_certification_runner.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.section_narrative",
@@ -892,8 +995,8 @@
       "test_references": [
         "tests/test_section_narrative_v3.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.section_narrative",
@@ -904,11 +1007,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_song_map.py",
-        "tests/test_section_narrative_v3.py"
+        "tests/test_section_narrative_v3.py",
+        "tests/test_song_map.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.section_narrative",
@@ -921,8 +1024,8 @@
       "test_references": [
         "tests/test_section_narrative_v3.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.analysis.style_import_contract",
@@ -933,12 +1036,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_style_import_contract.py",
+        "tests/test_process_certification_midis.py",
         "tests/test_process_negative_matrix.py",
-        "tests/test_process_certification_midis.py"
+        "tests/test_style_import_contract.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.articulation_director",
@@ -951,8 +1054,8 @@
       "test_references": [
         "tests/test_articulation_director.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.audition_queue",
@@ -965,61 +1068,61 @@
       "test_references": [
         "tests/test_audition_queue.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.authority",
       "qualname": "audit_neural_factory_boundary",
       "kind": "function",
       "path": "pa800_optimizer/authority.py",
-      "line": 29,
+      "line": 30,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_authority_quality.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.authority",
       "qualname": "AuthorityDecision.to_dict",
       "kind": "method",
       "path": "pa800_optimizer/authority.py",
-      "line": 63,
+      "line": 71,
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.authority",
       "qualname": "authorize",
       "kind": "function",
       "path": "pa800_optimizer/authority.py",
-      "line": 66,
+      "line": 74,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_authority_quality.py",
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.authority",
       "qualname": "build_authority_ledger",
       "kind": "function",
       "path": "pa800_optimizer/authority.py",
-      "line": 76,
+      "line": 84,
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.automation",
@@ -1030,8 +1133,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.automation",
@@ -1044,8 +1147,8 @@
       "test_references": [
         "tests/test_automation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.automation",
@@ -1058,21 +1161,21 @@
       "test_references": [
         "tests/test_automation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.cli",
       "qualname": "main",
       "kind": "function",
       "path": "pa800_optimizer/cli.py",
-      "line": 8,
+      "line": 9,
       "coverage_mode": "CLI_CONTRACT",
       "coverage_reason": "Command entry point; exercised through subprocess/CLI contract.",
       "test_references": [
-        "tests/test_section_narrative_v3.py",
+        "tests/test_complete_stress_matrix.py",
         "tests/test_musical_understanding.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_section_narrative_v3.py"
       ],
       "dynamic_hit": false,
       "accounted": true
@@ -1088,8 +1191,8 @@
       "test_references": [
         "tests/test_compatibility.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.compatibility",
@@ -1102,8 +1205,8 @@
       "test_references": [
         "tests/test_compatibility.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.compatibility",
@@ -1116,86 +1219,104 @@
       "test_references": [
         "tests/test_compatibility.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.config",
       "qualname": "OptimizeConfig.lock_preserve",
       "kind": "method",
       "path": "pa800_optimizer/config.py",
-      "line": 57,
+      "line": 60,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.config",
       "qualname": "OptimizeConfig.enable_full_optimization_test",
       "kind": "method",
       "path": "pa800_optimizer/config.py",
-      "line": 69,
+      "line": 72,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_config_safety.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.config",
+      "qualname": "OptimizeConfig.enable_autonomous_baja_max",
+      "kind": "method",
+      "path": "pa800_optimizer/config.py",
+      "line": 89,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_automation.py",
+        "tests/test_config_safety.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.config",
       "qualname": "OptimizeConfig.for_mode",
       "kind": "method",
       "path": "pa800_optimizer/config.py",
-      "line": 87,
+      "line": 106,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
-        "tests/test_articulation_director.py",
-        "tests/test_performance_director.py",
-        "tests/test_velocity_conductor.py",
-        "tests/test_section_narrative_v3.py",
-        "tests/test_mix_fx_director.py",
-        "tests/test_factory_usage_meter.py",
-        "tests/test_optimizer.py",
-        "tests/test_preserve_unknown.py",
-        "tests/test_authority_quality.py",
-        "tests/test_workstation.py",
-        "tests/test_rx_guard.py",
-        "tests/test_gate_null_profile.py",
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_style_import_contract.py",
-        "tests/test_automation.py",
-        "tests/test_config_safety.py",
         "tests/test_agent_mesh.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_instrument_engine_guards.py",
+        "tests/test_ai_resource_brain.py",
+        "tests/test_articulation_director.py",
+        "tests/test_authority_quality.py",
+        "tests/test_automation.py",
+        "tests/test_budget_fx_transactions_r10.py",
         "tests/test_compatibility.py",
         "tests/test_complete_stress_matrix.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_config_safety.py",
+        "tests/test_factory_usage_meter.py",
+        "tests/test_family_intent_v1.py",
+        "tests/test_gate_null_profile.py",
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_instrument_intent_v3.py",
+        "tests/test_mix_fx_director.py",
+        "tests/test_optimizer.py",
+        "tests/test_performance_director.py",
+        "tests/test_preserve_unknown.py",
+        "tests/test_rare_family_guards.py",
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_rx_guard.py",
+        "tests/test_section_narrative_v3.py",
+        "tests/test_style_import_contract.py",
+        "tests/test_trained_neural_application.py",
+        "tests/test_velocity_conductor.py",
+        "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.config",
       "qualname": "OptimizeConfig.for_musical_preset",
       "kind": "method",
       "path": "pa800_optimizer/config.py",
-      "line": 108,
+      "line": 127,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_musician_workflow.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.midi_io",
@@ -1209,8 +1330,8 @@
         "tests/test_intent.py",
         "tests/test_repair_audition.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.midi_io",
@@ -1221,8 +1342,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.midi_io",
@@ -1233,8 +1354,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.midi_io",
@@ -1245,8 +1366,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.midi_io",
@@ -1257,8 +1378,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.midi_io",
@@ -1269,17 +1390,22 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_intent.py",
         "tests/test_articulation_director.py",
-        "tests/test_song_map.py",
-        "tests/test_repair_audition.py",
-        "tests/test_musical_understanding.py",
-        "tests/test_instrument_intent_v3.py",
+        "tests/test_baja_stage_profile.py",
+        "tests/test_budget_fx_transactions_r10.py",
         "tests/test_complete_stress_matrix.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_event_proposals_r8.py",
+        "tests/test_family_intent_v1.py",
+        "tests/test_instrument_intent_v3.py",
+        "tests/test_intent.py",
+        "tests/test_musical_brain_premium.py",
+        "tests/test_musical_understanding.py",
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_repair_audition.py",
+        "tests/test_song_map.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.midi_io",
@@ -1292,8 +1418,8 @@
       "test_references": [
         "tests/test_midi_io_channel_state.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.midi_io",
@@ -1306,8 +1432,400 @@
       "test_references": [
         "tests/test_compatibility.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "RpnEvent.rpn_number",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 143,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "RpnEvent.parameter_name",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 147,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "RpnEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 159,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NrpnEvent.nrpn_number",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 195,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NrpnEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 198,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "SysExEvent.manufacturer_name",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 250,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "SysExEvent.is_universal",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 254,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "SysExEvent.hex_dump",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 258,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "SysExEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 261,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "MidiEvent.generate_id",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 335,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "MidiEvent.clone",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 340,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "MidiEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 376,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NoteEvent.midi_note_to_name",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 442,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NoteEvent.frequency",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 450,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NoteEvent.gate_ratio",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 455,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "NoteEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 460,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "ControllerEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 606,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "ProgramChangeEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 634,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "PitchBendEvent.normalized_value",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 655,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "PitchBendEvent.cents",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 660,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "PitchBendEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 664,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TempoEvent.bpm",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 681,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TempoEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 685,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TimeSignatureEvent.beats_per_measure",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 703,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TimeSignatureEvent.beat_unit",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 707,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "TimeSignatureEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 710,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "KeySignatureEvent.key_name",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 732,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.core.models_v2",
+      "qualname": "KeySignatureEvent.to_dict",
+      "kind": "method",
+      "path": "pa800_optimizer/core/models_v2.py",
+      "line": 744,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_models_v2_surface.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.smf_preflight",
@@ -1318,12 +1836,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_smf_preflight.py",
+        "tests/test_midi_doctor.py",
         "tests/test_process_certification_midis.py",
-        "tests/test_midi_doctor.py"
+        "tests/test_smf_preflight.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.smf_preflight",
@@ -1334,8 +1852,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.tolerant_factory_parser",
@@ -1348,8 +1866,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.core.tolerant_factory_parser",
@@ -1362,8 +1880,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.engines.gate",
@@ -1377,66 +1895,66 @@
         "tests/test_gate_null_profile.py",
         "tests/test_instrument_engine_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.engines.performance_director",
       "qualname": "segment_phrases",
       "kind": "function",
       "path": "pa800_optimizer/engines/performance_director.py",
-      "line": 26,
+      "line": 27,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_performance_director.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.engines.performance_director",
       "qualname": "run_performance_director",
       "kind": "function",
       "path": "pa800_optimizer/engines/performance_director.py",
-      "line": 56,
+      "line": 90,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_performance_director.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.engines.timing",
       "qualname": "optimize_timing",
       "kind": "function",
       "path": "pa800_optimizer/engines/timing.py",
-      "line": 68,
+      "line": 100,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rhythm_trill_correction.py",
-        "tests/test_instrument_engine_guards.py"
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_rhythm_trill_correction.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.engines.velocity",
       "qualname": "optimize_velocity",
       "kind": "function",
       "path": "pa800_optimizer/engines/velocity.py",
-      "line": 60,
+      "line": 62,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
-        "tests/test_instrument_engine_guards.py"
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_rare_family_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.engines.velocity_conductor",
@@ -1450,24 +1968,144 @@
         "tests/test_rare_family_guards.py",
         "tests/test_velocity_conductor.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
-      "module": "pa800_optimizer.gui",
-      "qualname": "App.optimize_selected",
-      "kind": "method",
-      "path": "pa800_optimizer/gui.py",
-      "line": 492,
-      "coverage_mode": "GUI_EXTERNAL",
-      "coverage_reason": "Requires an interactive display or native dialog.",
+      "module": "pa800_optimizer.event_proposals",
+      "qualname": "generate_dimension_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/event_proposals.py",
+      "line": 91,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.event_proposals",
+      "qualname": "arbitrate_event_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/event_proposals.py",
+      "line": 119,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_budget_fx_transactions_r10.py",
+        "tests/test_event_proposals_r8.py",
+        "tests/test_refiner_proposals_r9.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.event_proposals",
+      "qualname": "commit_event_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/event_proposals.py",
+      "line": 168,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_budget_fx_transactions_r10.py",
+        "tests/test_event_proposals_r8.py",
+        "tests/test_refiner_proposals_r9.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.event_proposals",
+      "qualname": "generate_refiner_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/event_proposals.py",
+      "line": 238,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_refiner_proposals_r9.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.event_proposals",
+      "qualname": "arbitrate_controller_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/event_proposals.py",
+      "line": 286,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_budget_fx_transactions_r10.py",
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_transaction_coverage_r13.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.event_proposals",
+      "qualname": "commit_controller_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/event_proposals.py",
+      "line": 302,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_budget_fx_transactions_r10.py",
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_transaction_coverage_r13.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.event_proposals",
+      "qualname": "generate_velocity_budget_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/event_proposals.py",
+      "line": 320,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_budget_fx_transactions_r10.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.event_proposals",
+      "qualname": "generate_mix_fx_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/event_proposals.py",
+      "line": 354,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_budget_fx_transactions_r10.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.event_proposals",
+      "qualname": "generate_controller_diff_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/event_proposals.py",
+      "line": 375,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_transaction_coverage_r13.py"
+      ],
+      "dynamic_hit": true,
       "accounted": true
     },
     {
       "module": "pa800_optimizer.gui",
-      "qualname": "App.optimize_all",
+      "qualname": "App.optimize_selected",
       "kind": "method",
       "path": "pa800_optimizer/gui.py",
       "line": 499,
@@ -1479,7 +2117,7 @@
     },
     {
       "module": "pa800_optimizer.gui",
-      "qualname": "App.test_full_optimization_selected",
+      "qualname": "App.optimize_all",
       "kind": "method",
       "path": "pa800_optimizer/gui.py",
       "line": 506,
@@ -1491,10 +2129,22 @@
     },
     {
       "module": "pa800_optimizer.gui",
+      "qualname": "App.test_full_optimization_selected",
+      "kind": "method",
+      "path": "pa800_optimizer/gui.py",
+      "line": 513,
+      "coverage_mode": "GUI_EXTERNAL",
+      "coverage_reason": "Requires an interactive display or native dialog.",
+      "test_references": [],
+      "dynamic_hit": false,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.gui",
       "qualname": "json_compact",
       "kind": "function",
       "path": "pa800_optimizer/gui.py",
-      "line": 910,
+      "line": 964,
       "coverage_mode": "GUI_EXTERNAL",
       "coverage_reason": "Requires an interactive display or native dialog.",
       "test_references": [],
@@ -1506,7 +2156,7 @@
       "qualname": "main",
       "kind": "function",
       "path": "pa800_optimizer/gui.py",
-      "line": 914,
+      "line": 968,
       "coverage_mode": "CLI_CONTRACT",
       "coverage_reason": "Command entry point; exercised through subprocess/CLI contract.",
       "test_references": [
@@ -1527,29 +2177,29 @@
         "tests/test_gui_training.py",
         "tests/test_runtime_asset_immutability.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.gui_state",
       "qualname": "build_training_audit_command",
       "kind": "function",
       "path": "pa800_optimizer/gui_state.py",
-      "line": 18,
+      "line": 19,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_gui_training.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.gui_state",
       "qualname": "settings_path",
       "kind": "function",
       "path": "pa800_optimizer/gui_state.py",
-      "line": 38,
+      "line": 39,
       "coverage_mode": "GUI_EXTERNAL",
       "coverage_reason": "Requires an interactive display or native dialog.",
       "test_references": [],
@@ -1561,70 +2211,70 @@
       "qualname": "load_settings",
       "kind": "function",
       "path": "pa800_optimizer/gui_state.py",
-      "line": 46,
+      "line": 47,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_gui_state.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.gui_state",
       "qualname": "save_settings",
       "kind": "function",
       "path": "pa800_optimizer/gui_state.py",
-      "line": 84,
+      "line": 87,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_gui_state.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.gui_state",
       "qualname": "list_midi_files",
       "kind": "function",
       "path": "pa800_optimizer/gui_state.py",
-      "line": 114,
+      "line": 119,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_gui_state.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.gui_state",
       "qualname": "output_path_for",
       "kind": "function",
       "path": "pa800_optimizer/gui_state.py",
-      "line": 124,
+      "line": 129,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_gui_state.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.gui_state",
       "qualname": "sanitize_suffix",
       "kind": "function",
       "path": "pa800_optimizer/gui_state.py",
-      "line": 140,
+      "line": 145,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_gui_state.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.hardware_evidence",
@@ -1637,8 +2287,8 @@
       "test_references": [
         "tests/test_hardware_evidence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.hardware_evidence",
@@ -1651,8 +2301,8 @@
       "test_references": [
         "tests/test_hardware_evidence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.hardware_evidence",
@@ -1665,8 +2315,8 @@
       "test_references": [
         "tests/test_hardware_evidence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.hardware_evidence",
@@ -1679,8 +2329,8 @@
       "test_references": [
         "tests/test_hardware_evidence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.hardware_evidence",
@@ -1691,7 +2341,7 @@
       "coverage_mode": "HARDWARE_EXTERNAL",
       "coverage_reason": "Requires physical/audio/external evidence for full execution.",
       "test_references": [],
-      "dynamic_hit": false,
+      "dynamic_hit": true,
       "accounted": true
     },
     {
@@ -1706,8 +2356,8 @@
         "tests/test_instrument_guards.py",
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1718,8 +2368,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1730,8 +2380,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1742,8 +2392,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1756,8 +2406,8 @@
       "test_references": [
         "tests/test_instrument_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1770,8 +2420,8 @@
       "test_references": [
         "tests/test_instrument_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1785,8 +2435,8 @@
         "tests/test_instrument_guards.py",
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1799,8 +2449,8 @@
       "test_references": [
         "tests/test_instrument_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1811,8 +2461,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1826,8 +2476,8 @@
         "tests/test_instrument_guards.py",
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1838,8 +2488,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1852,8 +2502,8 @@
       "test_references": [
         "tests/test_instrument_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.guards",
@@ -1864,50 +2514,50 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.policies",
       "qualname": "policy_for",
       "kind": "function",
       "path": "pa800_optimizer/instruments/policies.py",
-      "line": 46,
+      "line": 77,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_instrument_policies.py",
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.policies",
       "qualname": "normalized_family",
       "kind": "function",
       "path": "pa800_optimizer/instruments/policies.py",
-      "line": 52,
+      "line": 83,
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.instruments.policies",
       "qualname": "profile_evidence_allows_mutation",
       "kind": "function",
       "path": "pa800_optimizer/instruments/policies.py",
-      "line": 56,
+      "line": 87,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_instrument_policies.py",
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.intelligence.sound_fx",
@@ -1920,8 +2570,8 @@
       "test_references": [
         "tests/test_sound_fx_intelligence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.intelligence.sound_fx",
@@ -1932,8 +2582,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.intelligence.sound_fx",
@@ -1944,8 +2594,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.intelligence.sound_fx",
@@ -1956,8 +2606,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.intelligence.sound_fx",
@@ -1970,8 +2620,8 @@
       "test_references": [
         "tests/test_sound_fx_intelligence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.intelligence.sound_fx",
@@ -1984,8 +2634,8 @@
       "test_references": [
         "tests/test_sound_fx_intelligence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.intelligence.sound_fx",
@@ -1998,8 +2648,8 @@
       "test_references": [
         "tests/test_sound_fx_intelligence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.manual.dnc",
@@ -2010,15 +2660,15 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
-        "tests/test_profile_completeness.py",
         "tests/test_articulation_director.py",
-        "tests/test_max_completion_audit.py",
+        "tests/test_exact_instrument_neural_profiles.py",
         "tests/test_instrument_engine_guards.py",
-        "tests/test_exact_instrument_neural_profiles.py"
+        "tests/test_max_completion_audit.py",
+        "tests/test_profile_completeness.py",
+        "tests/test_rare_family_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.manual.dnc",
@@ -2029,11 +2679,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_note_velocity_max.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_note_velocity_max.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.manual.dnc",
@@ -2046,8 +2696,8 @@
       "test_references": [
         "tests/test_factory_atomic.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.manual.dnc",
@@ -2060,8 +2710,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.midi_doctor",
@@ -2072,10 +2722,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_midi_doctor.py"
+        "tests/test_midi_doctor.py",
+        "tests/test_transaction_coverage_r13.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.midi_doctor",
@@ -2088,37 +2739,52 @@
       "test_references": [
         "tests/test_midi_doctor.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.midi_doctor",
+      "qualname": "repair_midi_transaction",
+      "kind": "function",
+      "path": "pa800_optimizer/midi_doctor.py",
+      "line": 39,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_transaction_coverage_r13.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.midi_doctor",
       "qualname": "scan_midi_health",
       "kind": "function",
       "path": "pa800_optimizer/midi_doctor.py",
-      "line": 45,
+      "line": 61,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_optimizer.py",
-        "tests/test_midi_doctor.py"
+        "tests/test_midi_doctor.py",
+        "tests/test_optimizer.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.midi_doctor",
       "qualname": "repair_midi",
       "kind": "function",
       "path": "pa800_optimizer/midi_doctor.py",
-      "line": 92,
+      "line": 108,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_midi_doctor.py"
+        "tests/test_midi_doctor.py",
+        "tests/test_transaction_coverage_r13.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.mix_fx_director",
@@ -2131,8 +2797,8 @@
       "test_references": [
         "tests/test_mix_fx_director.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.models",
@@ -2143,14 +2809,14 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_mix_fx_director.py",
         "tests/test_audition_queue.py",
+        "tests/test_mix_fx_director.py",
         "tests/test_process_negative_matrix.py",
         "tests/test_rhythm_trill_correction.py",
         "tests/test_sound_fx_intelligence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.models",
@@ -2161,13 +2827,32 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_musical_context.py",
         "tests/test_authority_quality.py",
+        "tests/test_event_proposals_r8.py",
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_musical_brain_premium.py",
+        "tests/test_musical_context.py",
+        "tests/test_premium_autonomous_safety.py",
         "tests/test_rhythm_trill_correction.py",
-        "tests/test_instrument_engine_guards.py"
+        "tests/test_models_v2_surface.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.musical_brain",
+      "qualname": "build_musical_decision_plan",
+      "kind": "function",
+      "path": "pa800_optimizer/musical_brain.py",
+      "line": 29,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_musical_brain_premium.py",
+        "tests/test_premium_autonomous_safety.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.musician_workflow",
@@ -2178,8 +2863,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.musician_workflow",
@@ -2190,8 +2875,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.musician_workflow",
@@ -2204,8 +2889,8 @@
       "test_references": [
         "tests/test_musician_workflow.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.musician_workflow",
@@ -2218,8 +2903,76 @@
       "test_references": [
         "tests/test_musician_workflow.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.mutation_arbiter",
+      "qualname": "audit_mutation_arbitration",
+      "kind": "function",
+      "path": "pa800_optimizer/mutation_arbiter.py",
+      "line": 21,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_musical_brain_premium.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.mutation_arbiter",
+      "qualname": "build_pre_apply_mutation_policy",
+      "kind": "function",
+      "path": "pa800_optimizer/mutation_arbiter.py",
+      "line": 60,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_musical_brain_premium.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.mutation_arbiter",
+      "qualname": "build_proposal_arbitration",
+      "kind": "function",
+      "path": "pa800_optimizer/mutation_arbiter.py",
+      "line": 95,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_musical_brain_premium.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.mutation_arbiter",
+      "qualname": "proposal_dimension_allowed",
+      "kind": "function",
+      "path": "pa800_optimizer/mutation_arbiter.py",
+      "line": 148,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.mutation_arbiter",
+      "qualname": "filter_notes_by_proposal",
+      "kind": "function",
+      "path": "pa800_optimizer/mutation_arbiter.py",
+      "line": 155,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_musical_brain_premium.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.corpus_router",
@@ -2232,8 +2985,8 @@
       "test_references": [
         "tests/test_factory_gold_corpus_router.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.corpus_router",
@@ -2246,8 +2999,8 @@
       "test_references": [
         "tests/test_factory_gold_corpus_router.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.corpus_router",
@@ -2260,8 +3013,8 @@
       "test_references": [
         "tests/test_factory_gold_corpus_router.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.dataset_forge",
@@ -2272,8 +3025,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.dataset_forge",
@@ -2286,8 +3039,8 @@
       "test_references": [
         "tests/test_neural_dataset_forge.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.dataset_forge",
@@ -2298,8 +3051,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.dataset_forge",
@@ -2312,8 +3065,8 @@
       "test_references": [
         "tests/test_neural_dataset_forge.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.dataset_forge",
@@ -2326,77 +3079,77 @@
       "test_references": [
         "tests/test_neural_dataset_forge.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.event_contract",
       "qualname": "encode_neural_contract",
       "kind": "function",
       "path": "pa800_optimizer/neural/event_contract.py",
-      "line": 61,
+      "line": 83,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_neural_model_acceptance.py",
         "tests/test_neural_event_contract.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_neural_self_supervised_encoder.py"
+        "tests/test_neural_model_acceptance.py",
+        "tests/test_neural_self_supervised_encoder.py",
+        "tests/test_trained_neural_application.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.event_contract",
       "qualname": "neural_contract_digest",
       "kind": "function",
       "path": "pa800_optimizer/neural/event_contract.py",
-      "line": 89,
+      "line": 112,
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.event_contract",
       "qualname": "validate_neural_contract",
       "kind": "function",
       "path": "pa800_optimizer/neural/event_contract.py",
-      "line": 94,
+      "line": 117,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_event_contract.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.event_contract",
       "qualname": "decode_unchanged_contract",
       "kind": "function",
       "path": "pa800_optimizer/neural/event_contract.py",
-      "line": 112,
+      "line": 138,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_event_contract.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.event_contract",
       "qualname": "public_contract",
       "kind": "function",
       "path": "pa800_optimizer/neural/event_contract.py",
-      "line": 125,
+      "line": 151,
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.instrument_profiles",
@@ -2409,8 +3162,8 @@
       "test_references": [
         "tests/test_exact_instrument_neural_profiles.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.instrument_profiles",
@@ -2423,8 +3176,8 @@
       "test_references": [
         "tests/test_exact_instrument_neural_profiles.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.instrument_profiles",
@@ -2437,165 +3190,248 @@
       "test_references": [
         "tests/test_exact_instrument_neural_profiles.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.pattern_advisor",
       "qualname": "analyze_pattern_advisor",
       "kind": "function",
       "path": "pa800_optimizer/neural/pattern_advisor.py",
-      "line": 36,
+      "line": 47,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_pattern_advisor.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.pattern_advisor",
       "qualname": "validate_pattern_advisor",
       "kind": "function",
       "path": "pa800_optimizer/neural/pattern_advisor.py",
-      "line": 71,
+      "line": 85,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_pattern_advisor.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.neural.pattern_advisor",
+      "qualname": "parse_chord_progression",
+      "kind": "function",
+      "path": "pa800_optimizer/neural/pattern_advisor.py",
+      "line": 96,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_chord_pattern_generator.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.neural.pattern_advisor",
+      "qualname": "validate_generated_pattern",
+      "kind": "function",
+      "path": "pa800_optimizer/neural/pattern_advisor.py",
+      "line": 185,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.neural.pattern_advisor",
+      "qualname": "generate_chord_pattern",
+      "kind": "function",
+      "path": "pa800_optimizer/neural/pattern_advisor.py",
+      "line": 212,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_chord_pattern_generator.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.neural.self_supervised_encoder",
+      "qualname": "encoder_runtime_admission",
+      "kind": "function",
+      "path": "pa800_optimizer/neural/self_supervised_encoder.py",
+      "line": 24,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_encoder_runtime_admission.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
       "qualname": "contract_feature_matrix",
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
-      "line": 28,
+      "line": 91,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_self_supervised_encoder.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
       "qualname": "grouped_contract_splits",
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
-      "line": 42,
+      "line": 118,
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
       "qualname": "train_self_supervised_encoder",
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
-      "line": 52,
+      "line": 128,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_model_acceptance.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_neural_self_supervised_encoder.py"
+        "tests/test_neural_self_supervised_encoder.py",
+        "tests/test_trained_neural_application.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
       "qualname": "encode_contract",
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
-      "line": 81,
+      "line": 158,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_self_supervised_encoder.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
       "qualname": "predict_masked_features",
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
-      "line": 100,
+      "line": 177,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_self_supervised_encoder.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
       "qualname": "evaluate_self_supervised_encoder",
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
-      "line": 106,
+      "line": 183,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_self_supervised_encoder.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
       "qualname": "finalize_encoder_acceptance",
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
-      "line": 120,
+      "line": 197,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_trained_neural_application.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
       "qualname": "save_encoder_model",
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
-      "line": 139,
+      "line": 216,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_model_acceptance.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_neural_self_supervised_encoder.py"
+        "tests/test_neural_self_supervised_encoder.py",
+        "tests/test_trained_neural_application.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.neural.self_supervised_encoder",
+      "qualname": "validate_encoder_feature_contract",
+      "kind": "function",
+      "path": "pa800_optimizer/neural/self_supervised_encoder.py",
+      "line": 221,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_encoder_feature_contract.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.neural.self_supervised_encoder",
+      "qualname": "migrate_legacy_velocity_encoder",
+      "kind": "function",
+      "path": "pa800_optimizer/neural/self_supervised_encoder.py",
+      "line": 237,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_complete_stress_matrix.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.self_supervised_encoder",
       "qualname": "load_encoder_model",
       "kind": "function",
       "path": "pa800_optimizer/neural/self_supervised_encoder.py",
-      "line": 144,
+      "line": 263,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
+        "tests/test_encoder_runtime_admission.py",
         "tests/test_neural_model_acceptance.py",
         "tests/test_neural_self_supervised_encoder.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.training_audit",
@@ -2608,8 +3444,8 @@
       "test_references": [
         "tests/test_training_folder_audit.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.training_audit",
@@ -2622,8 +3458,8 @@
       "test_references": [
         "tests/test_training_folder_audit.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.neural.training_audit",
@@ -2636,8 +3472,8 @@
       "test_references": [
         "tests/test_training_folder_audit.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.note_velocity_cli",
@@ -2660,82 +3496,96 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_process_certification_manifest.py",
-        "tests/test_intent.py",
-        "tests/test_factory_atomic.py",
-        "tests/test_musical_context.py",
-        "tests/test_rare_family_guards.py",
-        "tests/test_gui_hardware_campaign.py",
-        "tests/test_profile_completeness.py",
-        "tests/test_context_ground_truth.py",
-        "tests/test_gui_state.py",
-        "tests/test_neural_model_acceptance.py",
-        "tests/test_hardware_campaign.py",
-        "tests/test_phrase_doctor.py",
-        "tests/test_articulation_director.py",
-        "tests/test_song_map.py",
-        "tests/test_performance_director.py",
-        "tests/test_velocity_conductor.py",
-        "tests/test_repair_audition.py",
-        "tests/test_training_folder_audit.py",
-        "tests/test_instrument_policies.py",
-        "tests/test_process_certification_runner.py",
-        "tests/test_section_narrative_v3.py",
-        "tests/test_neural_dataset_forge.py",
-        "tests/test_mix_fx_director.py",
-        "tests/test_factory_usage_meter.py",
-        "tests/test_neural_event_contract.py",
-        "tests/test_factory_data_bundle.py",
-        "tests/test_musical_understanding.py",
-        "tests/test_optimizer.py",
-        "tests/test_instrument_guards.py",
-        "tests/test_audition_queue.py",
-        "tests/test_preserve_unknown.py",
-        "tests/test_repair_previews.py",
-        "tests/test_authority_quality.py",
-        "tests/test_musician_workflow.py",
-        "tests/test_workstation.py",
-        "tests/test_content_type.py",
-        "tests/test_pattern_advisor.py",
-        "tests/test_rx_guard.py",
-        "tests/test_gate_null_profile.py",
-        "tests/test_instrument_intent_v3.py",
-        "tests/test_gui_training.py",
-        "tests/test_style_import_contract.py",
-        "tests/test_instrument_fingerprints.py",
-        "tests/test_automation.py",
-        "tests/test_runtime_safety.py",
-        "tests/test_registry.py",
-        "tests/test_process_negative_matrix.py",
-        "tests/test_config_safety.py",
         "tests/test_agent_mesh.py",
-        "tests/test_factory_gold_corpus_router.py",
-        "tests/test_rhythm_trill_correction.py",
-        "tests/test_note_velocity_max.py",
-        "tests/test_midi_io_channel_state.py",
-        "tests/test_factory_usage_batch.py",
-        "tests/test_verifier.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_instrument_engine_guards.py",
-        "tests/test_smf_preflight.py",
+        "tests/test_ai_resource_brain.py",
+        "tests/test_articulation_director.py",
+        "tests/test_audition_queue.py",
+        "tests/test_authority_quality.py",
+        "tests/test_automation.py",
+        "tests/test_baja_stage_profile.py",
+        "tests/test_budget_fx_transactions_r10.py",
+        "tests/test_chord_pattern_generator.py",
         "tests/test_compatibility.py",
-        "tests/test_optional_deps.py",
-        "tests/test_runtime_asset_immutability.py",
-        "tests/test_process_certification_midis.py",
-        "tests/test_midi_doctor.py",
-        "tests/test_neural_forensics.py",
-        "tests/test_release_integrity.py",
-        "tests/test_hardware_evidence.py",
-        "tests/test_sound_fx_intelligence.py",
         "tests/test_complete_stress_matrix.py",
-        "tests/test_neural_self_supervised_encoder.py",
-        "tests/test_intent_ground_truth_v2.py",
+        "tests/test_config_safety.py",
+        "tests/test_content_type.py",
+        "tests/test_context_ground_truth.py",
         "tests/test_drum_key_profile.py",
+        "tests/test_encoder_feature_contract.py",
+        "tests/test_encoder_runtime_admission.py",
+        "tests/test_event_proposals_r8.py",
         "tests/test_exact_instrument_neural_profiles.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_factory_atomic.py",
+        "tests/test_factory_data_bundle.py",
+        "tests/test_factory_gold_corpus_router.py",
+        "tests/test_factory_usage_batch.py",
+        "tests/test_factory_usage_meter.py",
+        "tests/test_family_intent_v1.py",
+        "tests/test_gate_null_profile.py",
+        "tests/test_gui_hardware_campaign.py",
+        "tests/test_gui_state.py",
+        "tests/test_gui_training.py",
+        "tests/test_hardware_campaign.py",
+        "tests/test_hardware_evidence.py",
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_instrument_fingerprints.py",
+        "tests/test_instrument_guards.py",
+        "tests/test_instrument_intent_v3.py",
+        "tests/test_instrument_policies.py",
+        "tests/test_intent.py",
+        "tests/test_intent_ground_truth_v2.py",
+        "tests/test_midi_doctor.py",
+        "tests/test_midi_io_channel_state.py",
+        "tests/test_mix_fx_director.py",
+        "tests/test_musical_brain_premium.py",
+        "tests/test_musical_context.py",
+        "tests/test_musical_understanding.py",
+        "tests/test_musician_workflow.py",
+        "tests/test_neural_dataset_forge.py",
+        "tests/test_neural_event_contract.py",
+        "tests/test_neural_forensics.py",
+        "tests/test_neural_model_acceptance.py",
+        "tests/test_neural_self_supervised_encoder.py",
+        "tests/test_note_velocity_max.py",
+        "tests/test_optimizer.py",
+        "tests/test_optional_deps.py",
+        "tests/test_pattern_advisor.py",
+        "tests/test_performance_director.py",
+        "tests/test_phrase_doctor.py",
+        "tests/test_premium_autonomous_safety.py",
+        "tests/test_preserve_unknown.py",
+        "tests/test_process_certification_manifest.py",
+        "tests/test_process_certification_midis.py",
+        "tests/test_process_certification_runner.py",
+        "tests/test_process_negative_matrix.py",
+        "tests/test_profile_completeness.py",
+        "tests/test_rare_family_guards.py",
+        "tests/test_refiner_proposals_r9.py",
+        "tests/test_registry.py",
+        "tests/test_release_integrity.py",
+        "tests/test_repair_audition.py",
+        "tests/test_repair_previews.py",
+        "tests/test_rhythm_trill_correction.py",
+        "tests/test_runtime_asset_immutability.py",
+        "tests/test_runtime_safety.py",
+        "tests/test_rx_guard.py",
+        "tests/test_section_narrative_v3.py",
+        "tests/test_smf_preflight.py",
+        "tests/test_song_map.py",
+        "tests/test_sound_fx_intelligence.py",
+        "tests/test_structural_proposals.py",
+        "tests/test_style_import_contract.py",
+        "tests/test_trained_neural_application.py",
+        "tests/test_training_folder_audit.py",
+        "tests/test_transaction_coverage_r13.py",
+        "tests/test_transaction_guard_r13.py",
+        "tests/test_velocity_conductor.py",
+        "tests/test_verifier.py",
+        "tests/test_workstation.py",
+        "tests/test_models_v2_surface.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.optional_deps",
@@ -2748,8 +3598,8 @@
       "test_references": [
         "tests/test_optional_deps.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.optional_deps",
@@ -2762,8 +3612,8 @@
       "test_references": [
         "tests/test_optional_deps.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.optional_deps",
@@ -2776,8 +3626,8 @@
       "test_references": [
         "tests/test_optional_deps.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.optional_deps",
@@ -2794,6 +3644,111 @@
       "accounted": true
     },
     {
+      "module": "pa800_optimizer.premium_control",
+      "qualname": "context_ood_status",
+      "kind": "function",
+      "path": "pa800_optimizer/premium_control.py",
+      "line": 18,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.premium_control",
+      "qualname": "mutation_budget_for",
+      "kind": "function",
+      "path": "pa800_optimizer/premium_control.py",
+      "line": 35,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.premium_control",
+      "qualname": "scale_mutation_budget",
+      "kind": "function",
+      "path": "pa800_optimizer/premium_control.py",
+      "line": 60,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.premium_control",
+      "qualname": "effective_mutation_budget",
+      "kind": "function",
+      "path": "pa800_optimizer/premium_control.py",
+      "line": 72,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_premium_autonomous_safety.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.premium_control",
+      "qualname": "audit_performance_budget",
+      "kind": "function",
+      "path": "pa800_optimizer/premium_control.py",
+      "line": 90,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_musical_brain_premium.py",
+        "tests/test_premium_autonomous_safety.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.premium_control",
+      "qualname": "apply_selective_budget_rollback",
+      "kind": "function",
+      "path": "pa800_optimizer/premium_control.py",
+      "line": 142,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_musical_brain_premium.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.premium_control",
+      "qualname": "recovery_record",
+      "kind": "function",
+      "path": "pa800_optimizer/premium_control.py",
+      "line": 214,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_premium_autonomous_safety.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.premium_control",
+      "qualname": "reconcile_change_ledger_after_selective_rollback",
+      "kind": "function",
+      "path": "pa800_optimizer/premium_control.py",
+      "line": 226,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
       "module": "pa800_optimizer.profiles.registry",
       "qualname": "ProfileRegistry.velocity_family_profile",
       "kind": "method",
@@ -2805,8 +3760,8 @@
         "tests/test_rare_family_guards.py",
         "tests/test_registry.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2817,8 +3772,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2829,12 +3784,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
+        "tests/test_family_intent_v1.py",
         "tests/test_instrument_intent_v3.py",
-        "tests/test_registry.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_registry.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2845,8 +3800,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2857,11 +3812,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
-        "tests/test_drum_key_profile.py"
+        "tests/test_drum_key_profile.py",
+        "tests/test_rare_family_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2872,11 +3827,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
-        "tests/test_articulation_director.py"
+        "tests/test_articulation_director.py",
+        "tests/test_rare_family_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2887,8 +3842,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2902,8 +3857,8 @@
         "tests/test_rare_family_guards.py",
         "tests/test_sound_fx_intelligence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2916,8 +3871,8 @@
       "test_references": [
         "tests/test_registry.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2928,12 +3883,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
+        "tests/test_complete_stress_matrix.py",
         "tests/test_profile_completeness.py",
-        "tests/test_registry.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_registry.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2947,8 +3902,8 @@
         "tests/test_profile_completeness.py",
         "tests/test_registry.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2961,8 +3916,8 @@
       "test_references": [
         "tests/test_sound_fx_intelligence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2973,8 +3928,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2985,8 +3940,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -2999,8 +3954,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.profiles.registry",
@@ -3013,8 +3968,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.quality_gate",
@@ -3027,8 +3982,32 @@
       "test_references": [
         "tests/test_authority_quality.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.quality_score",
+      "qualname": "evidence_quality_snapshot",
+      "kind": "function",
+      "path": "pa800_optimizer/quality_score.py",
+      "line": 37,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.quality_score",
+      "qualname": "compare_quality",
+      "kind": "function",
+      "path": "pa800_optimizer/quality_score.py",
+      "line": 53,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.runtime_safety",
@@ -3039,11 +4018,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_runtime_safety.py",
-        "tests/test_process_negative_matrix.py"
+        "tests/test_process_negative_matrix.py",
+        "tests/test_runtime_safety.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.runtime_safety",
@@ -3056,8 +4035,8 @@
       "test_references": [
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.runtime_safety",
@@ -3068,11 +4047,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_runtime_safety.py",
-        "tests/test_process_negative_matrix.py"
+        "tests/test_process_negative_matrix.py",
+        "tests/test_runtime_safety.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.runtime_safety",
@@ -3083,11 +4062,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_runtime_safety.py",
-        "tests/test_process_negative_matrix.py"
+        "tests/test_process_negative_matrix.py",
+        "tests/test_runtime_safety.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.safety.rx_dnc",
@@ -3100,8 +4079,8 @@
       "test_references": [
         "tests/test_instrument_engine_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.safety.rx_dnc",
@@ -3112,12 +4091,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_rare_family_guards.py",
         "tests/test_articulation_director.py",
-        "tests/test_instrument_engine_guards.py"
+        "tests/test_instrument_engine_guards.py",
+        "tests/test_rare_family_guards.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.safety.rx_dnc",
@@ -3130,8 +4109,140 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.structural_proposals",
+      "qualname": "clone_midi",
+      "kind": "function",
+      "path": "pa800_optimizer/structural_proposals.py",
+      "line": 18,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.structural_proposals",
+      "qualname": "build_sound_address_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/structural_proposals.py",
+      "line": 42,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_structural_proposals.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.structural_proposals",
+      "qualname": "arbitrate_sound_address_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/structural_proposals.py",
+      "line": 77,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_structural_proposals.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.structural_proposals",
+      "qualname": "commit_sound_address_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/structural_proposals.py",
+      "line": 100,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_structural_proposals.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.structural_proposals",
+      "qualname": "build_articulation_insert_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/structural_proposals.py",
+      "line": 125,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_structural_proposals.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.structural_proposals",
+      "qualname": "commit_articulation_insert_proposals",
+      "kind": "function",
+      "path": "pa800_optimizer/structural_proposals.py",
+      "line": 142,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_structural_proposals.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.structural_proposals",
+      "qualname": "verify_sound_transaction_replay",
+      "kind": "function",
+      "path": "pa800_optimizer/structural_proposals.py",
+      "line": 166,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.structural_proposals",
+      "qualname": "verify_articulation_transaction_replay",
+      "kind": "function",
+      "path": "pa800_optimizer/structural_proposals.py",
+      "line": 171,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.transaction_coverage",
+      "qualname": "audit_transaction_coverage",
+      "kind": "function",
+      "path": "pa800_optimizer/transaction_coverage.py",
+      "line": 5,
+      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
+      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "test_references": [],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.transaction_guard",
+      "qualname": "audit_optimizer_transaction_bypasses",
+      "kind": "function",
+      "path": "pa800_optimizer/transaction_guard.py",
+      "line": 11,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_transaction_guard_r13.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.understanding_cli",
@@ -3142,10 +4253,10 @@
       "coverage_mode": "CLI_CONTRACT",
       "coverage_reason": "Command entry point; exercised through subprocess/CLI contract.",
       "test_references": [
-        "tests/test_section_narrative_v3.py",
-        "tests/test_musical_understanding.py"
+        "tests/test_musical_understanding.py",
+        "tests/test_section_narrative_v3.py"
       ],
-      "dynamic_hit": false,
+      "dynamic_hit": true,
       "accounted": true
     },
     {
@@ -3159,7 +4270,7 @@
       "test_references": [
         "tests/test_musical_understanding.py"
       ],
-      "dynamic_hit": false,
+      "dynamic_hit": true,
       "accounted": true
     },
     {
@@ -3171,10 +4282,38 @@
       "coverage_mode": "CLI_CONTRACT",
       "coverage_reason": "Command entry point; exercised through subprocess/CLI contract.",
       "test_references": [
-        "tests/test_section_narrative_v3.py",
-        "tests/test_musical_understanding.py"
+        "tests/test_musical_understanding.py",
+        "tests/test_section_narrative_v3.py"
       ],
       "dynamic_hit": false,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.user_stage_profile",
+      "qualname": "apply_stage_sound_defaults",
+      "kind": "function",
+      "path": "pa800_optimizer/user_stage_profile.py",
+      "line": 45,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_baja_stage_profile.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
+    },
+    {
+      "module": "pa800_optimizer.user_stage_profile",
+      "qualname": "apply_percussion_40_percent",
+      "kind": "function",
+      "path": "pa800_optimizer/user_stage_profile.py",
+      "line": 84,
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_baja_stage_profile.py"
+      ],
+      "dynamic_hit": true,
       "accounted": true
     },
     {
@@ -3186,8 +4325,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.utils",
@@ -3200,8 +4339,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.utils",
@@ -3214,8 +4353,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.utils",
@@ -3228,8 +4367,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.utils",
@@ -3242,24 +4381,26 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.verifier",
       "qualname": "verify",
       "kind": "function",
       "path": "pa800_optimizer/verifier.py",
-      "line": 155,
+      "line": 170,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_articulation_director.py",
+        "tests/test_encoder_runtime_admission.py",
         "tests/test_process_negative_matrix.py",
+        "tests/test_structural_proposals.py",
         "tests/test_verifier.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3270,11 +4411,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_workstation.py",
-        "tests/test_style_import_contract.py"
+        "tests/test_style_import_contract.py",
+        "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3287,8 +4428,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3299,12 +4440,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_optimizer.py",
         "tests/test_instrument_intent_v3.py",
+        "tests/test_optimizer.py",
         "tests/test_trained_neural_application.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3317,8 +4458,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3331,8 +4472,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3345,8 +4486,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3359,8 +4500,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3373,8 +4514,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3387,8 +4528,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3401,8 +4542,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3415,8 +4556,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3429,8 +4570,8 @@
       "test_references": [
         "tests/test_workstation.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "pa800_optimizer.workstation",
@@ -3465,8 +4606,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.articulation_audition",
@@ -3477,8 +4618,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.articulation_audition",
@@ -3489,8 +4630,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.articulation_audition",
@@ -3503,8 +4644,8 @@
       "test_references": [
         "tests/test_articulation_audition.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.articulation_audition",
@@ -3541,8 +4682,8 @@
       "test_references": [
         "tests/test_audition_queue.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.build_audition_queue",
@@ -3577,10 +4718,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_compatibility_matrix.py"
+        "tests/test_compatibility_matrix.py",
+        "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.build_identity",
@@ -3588,11 +4730,13 @@
       "kind": "function",
       "path": "tools/build_identity.py",
       "line": 25,
-      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
-      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
-      "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "coverage_mode": "DIRECT_TEST_REFERENCE",
+      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "test_references": [
+        "tests/test_complete_stress_matrix.py"
+      ],
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.build_identity",
@@ -3603,10 +4747,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
+        "tests/test_complete_stress_matrix.py",
         "tests/test_release_integrity.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.build_identity",
@@ -3616,7 +4761,9 @@
       "line": 53,
       "coverage_mode": "CLI_CONTRACT",
       "coverage_reason": "Command entry point; exercised through subprocess/CLI contract.",
-      "test_references": [],
+      "test_references": [
+        "tests/test_complete_stress_matrix.py"
+      ],
       "dynamic_hit": false,
       "accounted": true
     },
@@ -3629,8 +4776,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.build_neural_instrument_profiles",
@@ -3641,8 +4788,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.build_neural_instrument_profiles",
@@ -3665,11 +4812,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_profile_completeness.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_profile_completeness.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.build_profile_completeness",
@@ -3682,8 +4829,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.build_profile_completeness",
@@ -3705,13 +4852,13 @@
       "kind": "function",
       "path": "tools/build_windows_revalidation.py",
       "line": 146,
-      "coverage_mode": "DIRECT_TEST_REFERENCE",
-      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "coverage_mode": "RELEASE_CONTRACT",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [
         "tests/test_release_integrity.py"
       ],
       "dynamic_hit": false,
-      "accounted": false
+      "accounted": true
     },
     {
       "module": "tools.build_windows_revalidation",
@@ -3732,7 +4879,7 @@
       "path": "tools/clean_install_smoke.py",
       "line": 17,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Build/install operation covered by isolated release artifact checks.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [
         "tests/test_release_integrity.py"
       ],
@@ -3746,7 +4893,7 @@
       "path": "tools/clean_install_smoke.py",
       "line": 22,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Build/install operation covered by isolated release artifact checks.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [
         "tests/test_release_integrity.py"
       ],
@@ -3774,8 +4921,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.compatibility_matrix",
@@ -3788,8 +4935,8 @@
       "test_references": [
         "tests/test_compatibility_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.compatibility_matrix",
@@ -3802,8 +4949,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.compatibility_matrix",
@@ -3830,8 +4977,8 @@
       "test_references": [
         "tests/test_corrupt_midi_corpus.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.create_context_ground_truth",
@@ -3844,8 +4991,8 @@
       "test_references": [
         "tests/test_musical_context.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.create_context_ground_truth",
@@ -3870,8 +5017,8 @@
       "test_references": [
         "tests/test_hardware_campaign_tools.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.create_hardware_campaign",
@@ -3896,8 +5043,8 @@
       "test_references": [
         "tests/test_intent_ground_truth_v2.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.create_instrument_intent_ground_truth",
@@ -3934,8 +5081,8 @@
       "test_references": [
         "tests/test_family_intent_v1.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.evaluate_family_intent_stress",
@@ -3961,8 +5108,8 @@
         "tests/test_hardware_campaign_tools.py",
         "tests/test_process_negative_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.evaluate_hardware_campaign",
@@ -3985,8 +5132,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.evaluate_instrument_intent_ground_truth",
@@ -3999,8 +5146,8 @@
       "test_references": [
         "tests/test_intent_ground_truth_v2.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.evaluate_instrument_intent_ground_truth",
@@ -4025,8 +5172,8 @@
       "test_references": [
         "tests/test_instrument_intent_v3.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.evaluate_instrument_intent_stress",
@@ -4051,8 +5198,8 @@
       "test_references": [
         "tests/test_section_narrative_v3.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.evaluate_section_narrative_stress",
@@ -4079,8 +5226,8 @@
       "test_references": [
         "tests/test_factory_data_bundle.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.factory_data_bundle",
@@ -4093,8 +5240,8 @@
       "test_references": [
         "tests/test_factory_data_bundle.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.factory_data_bundle",
@@ -4107,8 +5254,8 @@
       "test_references": [
         "tests/test_factory_data_bundle.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.final_release_gate",
@@ -4121,8 +5268,8 @@
       "test_references": [
         "tests/test_final_release_gate.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.final_release_gate",
@@ -4159,8 +5306,8 @@
       "test_references": [
         "tests/test_instrument_family_holdout.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.instrument_family_holdout",
@@ -4183,8 +5330,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.instrument_intent_stress_midis",
@@ -4195,11 +5342,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_intent_ground_truth_v2.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_family_intent_v1.py",
+        "tests/test_intent_ground_truth_v2.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.instrument_intent_stress_midis",
@@ -4210,12 +5357,12 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
+        "tests/test_family_intent_v1.py",
         "tests/test_instrument_intent_v3.py",
-        "tests/test_intent_ground_truth_v2.py",
-        "tests/test_family_intent_v1.py"
+        "tests/test_intent_ground_truth_v2.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.instrument_intent_stress_midis",
@@ -4240,8 +5387,8 @@
       "test_references": [
         "tests/test_max_completion_audit.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.max_completion_audit",
@@ -4254,8 +5401,8 @@
       "test_references": [
         "tests/test_max_completion_audit.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.max_completion_audit",
@@ -4278,8 +5425,8 @@
       "coverage_mode": "PC_EXTERNAL",
       "coverage_reason": "Requires the real-Mido/isolated-wheel PC validation environment; enforced by the Windows validation contract.",
       "test_references": [
-        "tests/test_release_integrity.py",
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_release_integrity.py"
       ],
       "dynamic_hit": false,
       "accounted": true
@@ -4295,8 +5442,8 @@
       "test_references": [
         "tests/test_pc_ab_pack.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.pc_validation",
@@ -4309,8 +5456,8 @@
       "test_references": [
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.pc_validation",
@@ -4330,13 +5477,13 @@
       "kind": "function",
       "path": "tools/pc_validation.py",
       "line": 117,
-      "coverage_mode": "DIRECT_TEST_REFERENCE",
-      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "coverage_mode": "PC_EXTERNAL",
+      "coverage_reason": "Requires the real-Mido/isolated-wheel PC validation environment; enforced by the Windows validation contract.",
       "test_references": [
         "tests/test_pc_ab_pack.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.pc_validation",
@@ -4380,13 +5527,13 @@
       "kind": "function",
       "path": "tools/pc_validation.py",
       "line": 197,
-      "coverage_mode": "DIRECT_TEST_REFERENCE",
-      "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
+      "coverage_mode": "PC_EXTERNAL",
+      "coverage_reason": "Requires the real-Mido/isolated-wheel PC validation environment; enforced by the Windows validation contract.",
       "test_references": [
         "tests/test_pc_ab_pack.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.pc_validation",
@@ -4408,11 +5555,11 @@
       "kind": "function",
       "path": "tools/prepare_factory_gold_training.py",
       "line": 11,
-      "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
-      "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
+      "coverage_mode": "RELEASE_CONTRACT",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [],
       "dynamic_hit": false,
-      "accounted": false
+      "accounted": true
     },
     {
       "module": "tools.prepare_factory_gold_training",
@@ -4435,11 +5582,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_process_certification_runner.py",
-        "tests/test_process_certification_midis.py"
+        "tests/test_process_certification_midis.py",
+        "tests/test_process_certification_runner.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.process_certification_midis",
@@ -4466,8 +5613,8 @@
       "test_references": [
         "tests/test_rare_family_evidence.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.rare_family_evidence",
@@ -4529,8 +5676,8 @@
         "tests/test_compatibility_matrix.py",
         "tests/test_complete_stress_matrix.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.release_audit",
@@ -4553,7 +5700,7 @@
       "path": "tools/repair_profile_data.py",
       "line": 19,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Executed in isolated release subprocesses where in-process tracing is intentionally unavailable.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [
         "tests/test_release_integrity.py"
       ],
@@ -4567,7 +5714,7 @@
       "path": "tools/repair_profile_data.py",
       "line": 26,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Executed in isolated release subprocesses where in-process tracing is intentionally unavailable.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [],
       "dynamic_hit": false,
       "accounted": true
@@ -4579,7 +5726,7 @@
       "path": "tools/repair_profile_data.py",
       "line": 37,
       "coverage_mode": "RELEASE_CONTRACT",
-      "coverage_reason": "Executed in isolated release subprocesses where in-process tracing is intentionally unavailable.",
+      "coverage_reason": "Release/packaging/corpus operation covered by isolated artifact or external-zip checks.",
       "test_references": [],
       "dynamic_hit": false,
       "accounted": true
@@ -4607,8 +5754,8 @@
       "test_references": [
         "tests/test_instrument_profile_certification.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.run_instrument_profile_certification",
@@ -4631,13 +5778,13 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_neural_model_acceptance.py",
         "tests/test_neural_dataset_certification.py",
-        "tests/test_trained_neural_application.py",
-        "tests/test_neural_self_supervised_encoder.py"
+        "tests/test_neural_model_acceptance.py",
+        "tests/test_neural_self_supervised_encoder.py",
+        "tests/test_trained_neural_application.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.run_neural_dataset_certification",
@@ -4662,8 +5809,8 @@
       "test_references": [
         "tests/test_neural_encoder_certification.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.run_neural_encoder_certification",
@@ -4682,14 +5829,14 @@
       "qualname": "run",
       "kind": "function",
       "path": "tools/run_neural_forensic_regression.py",
-      "line": 21,
+      "line": 20,
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
         "tests/test_neural_forensics.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.run_neural_forensic_regression",
@@ -4712,10 +5859,11 @@
       "coverage_mode": "DIRECT_TEST_REFERENCE",
       "coverage_reason": "Referenced by explicit test module and must also appear in the execution trace.",
       "test_references": [
-        "tests/test_complete_stress_matrix.py"
+        "tests/test_complete_stress_matrix.py",
+        "tests/test_process_certification_runner.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.run_process_certification",
@@ -4742,8 +5890,8 @@
       "test_references": [
         "tests/test_section_narrative_v3.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.section_narrative_stress_midis",
@@ -4756,8 +5904,8 @@
       "test_references": [
         "tests/test_section_narrative_v3.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.section_narrative_stress_midis",
@@ -4808,8 +5956,8 @@
       "test_references": [
         "tests/test_voice_holdout.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.voice_holdout",
@@ -4832,8 +5980,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.voice_upgrade_audition",
@@ -4844,8 +5992,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.voice_upgrade_audition",
@@ -4856,8 +6004,8 @@
       "coverage_mode": "TRANSITIVE_RUNTIME_STRESS",
       "coverage_reason": "Reached through optimizer or module-level stress scenarios; execution trace verifies actual hits.",
       "test_references": [],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.voice_upgrade_audition",
@@ -4870,8 +6018,8 @@
       "test_references": [
         "tests/test_voice_upgrade_audition.py"
       ],
-      "dynamic_hit": false,
-      "accounted": false
+      "dynamic_hit": true,
+      "accounted": true
     },
     {
       "module": "tools.voice_upgrade_audition",
@@ -4898,5 +6046,6 @@
       "accounted": true
     }
   ],
-  "pass": false
+  "shards_completed": 1,
+  "pass": true
 }
