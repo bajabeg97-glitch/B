@@ -18,7 +18,10 @@ except ModuleNotFoundError:
     from tools.public_api_stress import ROOT,build_manifest
 
 
-META_RELEASE_TESTS={'tests/test_complete_stress_matrix.py','tests/test_max_completion_audit.py','tests/test_release_integrity.py','tests/test_final_release_gate.py'}
+# Only tests that consume COMPLETE_STRESS_RESULT.json / release_audit pass.
+# API-surface tests in test_complete_stress_matrix.py must run in the producer
+# so DIRECT_TEST_REFERENCE functions actually appear in the execution trace.
+META_RELEASE_TESTS={'tests/test_release_integrity.py'}
 
 def _tests():
     # Stress produces the evidence consumed by meta release tests. Running those

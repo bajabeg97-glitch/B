@@ -45,6 +45,7 @@ tests/test_intent.py
 tests/test_intent_ground_truth_v2.py
 tests/test_max_completion_audit.py
 tests/test_midi_doctor.py
+tests/test_models_v2_surface.py
 tests/test_midi_io_channel_state.py
 tests/test_mix_fx_director.py
 tests/test_musical_brain_premium.py
