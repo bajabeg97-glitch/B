@@ -278,6 +278,27 @@ class MidiEvent:
     def __post_init__(self):
         if self.note is not None and self.note_name is None:
             self.note_name = self._note_to_name(self.note)
+
+    @property
+    def duration(self) -> int:
+        return self.duration_ticks
+
+    @duration.setter
+    def duration(self, value: int) -> None:
+        self.duration_ticks = int(value)
+
+    @property
+    def is_note_on(self) -> bool:
+        return self.event_type == EventType.NOTE_ON
+
+    @property
+    def pitch(self) -> int:
+        return int(self.note or 0)
+
+    @pitch.setter
+    def pitch(self, value: int) -> None:
+        self.note = int(value)
+        self.note_name = self._note_to_name(self.note)
     
     @staticmethod
     def _note_to_name(note: int) -> str:
@@ -379,6 +400,48 @@ class MidiTrack:
     source_file: Optional[str] = None
     hash_original: Optional[str] = None
     
+    def get_absolute_tick_max(self) -> int:
+        if not self.events:
+            return 0
+        return max(event.absolute_tick for event in self.events)
+
+    def is_empty(self) -> bool:
+        return not self.events
+
+    def add_note(self, a=None, b=None, c=None, d=None, *, pitch=None, tick=None,
+                 duration=None, velocity=None):
+        if pitch is not None and tick is not None:
+            duration = 480 if duration is None else duration
+            velocity = 64 if velocity is None else velocity
+        elif None not in (a, b, c, d):
+            if d > 127:
+                pitch, tick, velocity, duration = a, b, c, d
+            else:
+                tick, duration, pitch, velocity = a, b, c, d
+        else:
+            raise TypeError("add_note requires keywords or four positional arguments")
+
+        on = MidiEvent(
+            event_type=EventType.NOTE_ON,
+            note=int(pitch),
+            velocity=int(velocity),
+            absolute_tick=int(tick),
+            duration_ticks=int(duration),
+            channel=self.channel,
+            track_index=self.track_index,
+        )
+        self.add_event(on)
+        off = MidiEvent(
+            event_type=EventType.NOTE_OFF,
+            note=int(pitch),
+            velocity=0,
+            absolute_tick=int(tick) + int(duration),
+            channel=self.channel,
+            track_index=self.track_index,
+        )
+        self.add_event(off)
+        return on
+
     def add_event(self, event: MidiEvent):
         """Dodaje event i ažurira reference"""
         event.track_index = self.track_index
@@ -840,3 +903,7 @@ class NeuralModelConfig:
         import os
         os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
         os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
+
+# Parser emits MidiEvent; engines that import NoteEvent still type-check.
+NoteEvent = MidiEvent

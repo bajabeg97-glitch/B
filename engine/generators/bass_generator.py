@@ -13,7 +13,7 @@ class BassGenerator:
     def generate_ornament_layer(self, base_track: MidiTrack) -> MidiTrack:
         """Kreira dodatni track samo sa ornamentima (ghost notes, slides)."""
         
-        doc = base_track.document if hasattr(base_track, 'document') else MidiDocument()
+        doc = getattr(base_track, "document", None) or MidiDocument()
         ornament_track = doc.add_track(name="Bass Ornaments")
         ornament_track.program_change(0, 38)  # Synth Bass (ili isti kao original)
         

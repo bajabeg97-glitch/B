@@ -296,10 +296,11 @@ class MidiParser:
                 absolute_tick
             )
             if rpn_data:
+                payload = {k: v for k, v in rpn_data.items() if k != "type"}
                 if rpn_data['type'] == 'rpn':
-                    event.rpn_data = RpnData(**rpn_data)
+                    event.rpn_data = RpnData(**payload)
                 elif rpn_data['type'] == 'nrpn':
-                    event.nrpn_data = NrpnData(**rpn_data)
+                    event.nrpn_data = NrpnData(**payload)
             
         elif msg.type == 'program_change':
             event.event_type = EventType.PROGRAM_CHANGE
@@ -381,6 +382,22 @@ class MidiWriter:
     Lossless MIDI Writer
     Eksportuje MidiDocument u .mid fajl
     """
+
+    def write(self, project, output_path: Optional[str] = None, format_type: Optional[int] = None):
+        document = project.document if hasattr(project, "document") and project.document else project
+        if output_path:
+            return self.write_file(document, output_path, format_type)
+        import os
+        import tempfile
+        fd, path = tempfile.mkstemp(suffix=".mid")
+        os.close(fd)
+        try:
+            self.write_file(document, path, format_type)
+            with open(path, "rb") as handle:
+                return handle.read()
+        finally:
+            if os.path.exists(path):
+                os.remove(path)
     
     def write_file(self, document: MidiDocument, filepath: str, 
                    format_type: Optional[int] = None) -> str:

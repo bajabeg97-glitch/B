@@ -17,7 +17,7 @@ import random
 class AutoEnhancer:
     def __init__(self, project: MidiProject):
         self.project = project
-        self.document = project.active_document
+        self.document = getattr(project, "active_document", None) or project.document
         self.chord_analyzer = ChordAnalyzer()
         self.role_detector = RoleDetector()
         

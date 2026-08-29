@@ -65,8 +65,10 @@ class GoldVelocityEngine:
             # Da li kasnije note imaju tendenciju biti tiše/glasnije?
             time_diffs = np.diff(positions)
             vel_diffs = np.diff(velocities)
-            if len(time_diffs) > 0 and len(vel_diffs) > 0:
+            if len(time_diffs) > 1 and len(vel_diffs) > 1 and np.std(time_diffs) > 0 and np.std(vel_diffs) > 0:
                 corr = np.corrcoef(time_diffs[:len(vel_diffs)], vel_diffs)[0, 1]
+                if np.isnan(corr):
+                    corr = 0.0
             else:
                 corr = 0.0
         else:

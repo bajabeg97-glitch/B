@@ -13,7 +13,7 @@ class HarmonyGenerator:
     def generate_harmony_track(self, solo_track: MidiTrack, interval: str = 'third', style: str = 'pop') -> MidiTrack:
         """Kreira novi track sa harmonijom za dato solo."""
         
-        doc = solo_track.document if hasattr(solo_track, 'document') else MidiDocument()
+        doc = getattr(solo_track, "document", None) or MidiDocument()
         harmony_track = doc.add_track(name=f"Solo Harmony ({interval})")
         
         # Postavi instrument (Strings ili Choir)

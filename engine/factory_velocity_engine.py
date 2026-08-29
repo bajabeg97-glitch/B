@@ -98,24 +98,24 @@ class FactoryVelocityEngine:
         # Primjer: Velocity > 100 → dodaj Brightness boost
         if event.velocity > 100:
             brightness_cc = min(127, int((event.velocity - 100) * 2.5))
-            cc_event = MidiEvent(
-                event_type='control_change',
+            from core.models import ControllerEvent
+            cc_event = ControllerEvent(
                 channel=event.channel,
                 absolute_tick=event.absolute_tick,
-                control=74,  # Brightness
-                value=brightness_cc
+                cc_number=74,  # Brightness
+                value=brightness_cc,
             )
             result_events.append(cc_event)
             
         # Primjer: Ghost note → dodaj malo Timbre/Harmonic content
         elif event.velocity < 50:
             timbre_cc = max(0, int(50 - event.velocity))
-            cc_event = MidiEvent(
-                event_type='control_change',
+            from core.models import ControllerEvent
+            cc_event = ControllerEvent(
                 channel=event.channel,
                 absolute_tick=event.absolute_tick,
-                control=71,  # Harmonic Content
-                value=timbre_cc
+                cc_number=71,  # Harmonic Content
+                value=timbre_cc,
             )
             result_events.append(cc_event)
             

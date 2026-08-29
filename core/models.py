@@ -330,6 +330,20 @@ class NoteEvent(MidiEvent):
         octave = (self.pitch // 12) - 1
         note = notes[self.pitch % 12]
         return f"{note}{octave}"
+
+    @property
+    def note(self) -> int:
+        """Alias for pitch (engine compatibility)."""
+        return self.pitch
+
+    @note.setter
+    def note(self, value: int) -> None:
+        self.pitch = int(value)
+        self.data['pitch'] = self.pitch
+
+    @property
+    def is_note_on(self) -> bool:
+        return bool(self.note_on)
     
     def to_dict(self) -> Dict[str, Any]:
         base = super().to_dict()
@@ -814,12 +828,80 @@ class MidiTrack:
         """Uklanja događaj po ID-u (alias za remove_event radi kompatibilnosti)"""
         return self.remove_event(str(event_id))
 
-    def get_event_by_id(self, event_id: int) -> Optional['MidiEvent']:
-        """Pronalazi događaj po ID-u"""
+    def get_event_by_id(self, event_id) -> Optional['MidiEvent']:
+        """Pronalazi događaj po ID-u (string UUID ili int)."""
+        sid = str(event_id)
         for event in self.events:
-            if event.event_id == event_id:
+            if str(event.event_id) == sid:
                 return event
         return None
+
+    def is_empty(self) -> bool:
+        return not self.events
+
+    def get_program_change(self) -> int:
+        for event in self.events:
+            if isinstance(event, ProgramEvent):
+                return event.program
+        return self.program
+
+    def get_duration_bars(self, ppqn: int = 480, beats: int = 4) -> int:
+        if not self.events:
+            return 1
+        max_tick = max(event.absolute_tick for event in self.events)
+        ticks_per_bar = max(1, ppqn * beats)
+        return max(1, (max_tick + ticks_per_bar - 1) // ticks_per_bar)
+
+    def get_absolute_tick_max(self) -> int:
+        if not self.events:
+            return 0
+        return max(event.absolute_tick for event in self.events)
+
+    def program_change(self, channel: int, program: int) -> None:
+        self.channel = channel
+        self.program = program
+        self.add_event(ProgramEvent(program=program, channel=channel, absolute_tick=0))
+
+    def add_note(self, a=None, b=None, c=None, d=None, *, pitch=None, tick=None,
+                 duration=None, velocity=None):
+        """
+        Add a note-on/note-off pair.
+
+        Keyword form: add_note(tick=..., duration=..., pitch=..., velocity=...)
+        Positional:
+          - duration > 127 → (pitch, tick, velocity, duration)  [Suno]
+          - otherwise       → (tick, duration, pitch, velocity) [generators]
+        """
+        if pitch is not None and tick is not None:
+            duration = 480 if duration is None else duration
+            velocity = 64 if velocity is None else velocity
+        elif None not in (a, b, c, d):
+            if d > 127:
+                pitch, tick, velocity, duration = a, b, c, d
+            else:
+                tick, duration, pitch, velocity = a, b, c, d
+        else:
+            raise TypeError("add_note requires keywords or four positional arguments")
+
+        on = NoteEvent(
+            note_on=True,
+            pitch=int(pitch),
+            velocity=int(velocity),
+            absolute_tick=int(tick),
+            duration_ticks=int(duration),
+            duration=int(duration),
+            channel=self.channel,
+        )
+        self.add_event(on)
+        off = NoteEvent(
+            note_on=False,
+            pitch=int(pitch),
+            velocity=0,
+            absolute_tick=int(tick) + int(duration),
+            channel=self.channel,
+        )
+        self.add_event(off)
+        return on
     
     def _update_analytics(self):
         """Ažurira analitičke podatke track-a"""
@@ -908,11 +990,20 @@ class MidiDocument:
     def __post_init__(self):
         self._calculate_duration()
     
-    def add_track(self, track: MidiTrack) -> int:
-        """Dodaje track i vraća njegov index"""
+    def add_track(self, track: Optional[MidiTrack] = None, name: str = "") -> MidiTrack:
+        """Dodaje track i vraća ga (generatori očekuju objekat, ne index)."""
+        if track is None:
+            track = MidiTrack(document=self, name=name)
+        else:
+            track.document = self
+            if name:
+                track.name = name
         track.track_index = len(self.tracks)
         self.tracks.append(track)
-        return track.track_index
+        return track
+
+    def get_tempo(self) -> float:
+        return float(self.tempo_bpm)
     
     def remove_track(self, track_index: int) -> bool:
         """Uklanja track po indexu"""
@@ -1174,6 +1265,34 @@ class MidiProject:
                 summary.append(f"  - Track {track.track_index}: {track.name or track.instrument} (Ch: {track.channel + 1})")
         
         return "\n".join(summary)
+
+    @property
+    def active_document(self) -> MidiDocument:
+        return self.document
+
+    @active_document.setter
+    def active_document(self, doc: MidiDocument) -> None:
+        self.document = doc
+        if doc is not None:
+            doc.project = self
+
+    @property
+    def ppqn(self) -> int:
+        return self.document.ppqn
+
+    @property
+    def format_type(self) -> int:
+        return self.document.format
+
+    @classmethod
+    def load(cls, filepath: str) -> "MidiProject":
+        from core.io import load_midi
+        return load_midi(filepath)
+
+    def save(self, filepath: str) -> str:
+        from core.io import save_midi
+        save_midi(self, filepath)
+        return filepath
 
 
 # Helper funkcije za kreiranje događaja

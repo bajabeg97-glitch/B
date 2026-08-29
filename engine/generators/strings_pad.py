@@ -18,11 +18,11 @@ class StringsPadGenerator:
         
         # Ako nema akorda, kreiraj jednostavne dugote note
         if not self.chords:
-            self._generate_simple_pad(pad_track)
+            self._generate_simple_pad(pad_track, dynamics)
             
         return pad_track
     
-    def _generate_simple_pad(self, track: MidiTrack):
+    def _generate_simple_pad(self, track: MidiTrack, dynamics: str = "crescendo"):
         """Jednostavan pad: dugi akordi svaka 2 takta."""
         tick = 0
         ppq = 480

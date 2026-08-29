@@ -27,6 +27,16 @@ Arhiva: [PA800 Profile Optimizer BAJA MAX AUTONOMOUS PREMIUM R13 CHECKPOINT](PA8
 
 Detaljna dokumentacija: [`PA800_Profile_Optimizer_SMART_MAX/README.md`](PA800_Profile_Optimizer_SMART_MAX/README.md)
 
+## Testovi
+
+```bash
+python -m venv .venv
+.venv/bin/pip install -r requirements-dev.txt
+.venv/bin/python -m pytest tests midi_workstation/tests
+```
+
+Status (šta prolazi, šta je namjerno BLOCKED): [`PROJECT_STATUS.md`](PROJECT_STATUS.md)
+
 ## MIDI Velocity Optimizer GUI
 
 ```bat

@@ -23,7 +23,7 @@ class SongSkeletonEngine:
     def build_skeleton(self, project: MidiProject) -> SongSkeleton:
         """Gradi kompletnu strukturu pjesme iz MIDI projekta."""
         doc = project.document
-        self.ppqn = doc.header.ppqn
+        self.ppqn = getattr(doc, "ppqn", 480)
         
         # 1. Ekstrakcija Tempo i Time Signature mapa
         tempo_map = self._extract_tempo_map(doc)
@@ -57,9 +57,11 @@ class SongSkeletonEngine:
         # Pretraži sve trackove za Tempo evente
         for track in doc.tracks:
             for event in track.events:
-                if hasattr(event, 'event_type') and event.event_type == 'tempo':
-                    # Mido tempo je microseconds per quarter note
-                    if hasattr(event, 'tempo'):
+                etype = event.event_type.value if hasattr(event.event_type, "value") else str(event.event_type)
+                if etype in ("tempo", "set_tempo"):
+                    if getattr(event, "tempo_bpm", None):
+                        current_bpm = event.tempo_bpm
+                    elif getattr(event, "tempo", None):
                         current_bpm = 60000000 / event.tempo
                     tempo_map[event.absolute_tick] = current_bpm
                     
@@ -74,7 +76,8 @@ class SongSkeletonEngine:
         
         for track in doc.tracks:
             for event in track.events:
-                if hasattr(event, 'event_type') and event.event_type == 'time_signature':
+                etype = event.event_type.value if hasattr(event.event_type, "value") else str(event.event_type)
+                if etype in ("time_signature",):
                     if hasattr(event, 'numerator') and hasattr(event, 'denominator'):
                         time_sig_map[event.absolute_tick] = (event.numerator, event.denominator)
                         
@@ -243,13 +246,15 @@ class SongSkeletonEngine:
         notes = []
         for track_idx, track in enumerate(doc.tracks):
             for event in track.events:
-                if isinstance(event, NoteEvent):
+                etype = event.event_type.value if hasattr(event.event_type, "value") else str(getattr(event, "event_type", ""))
+                is_note = etype in ("note_on",) or (isinstance(event, NoteEvent) and etype != "note_off")
+                if is_note and getattr(event, "note", None) is not None:
                     if start_tick <= event.absolute_tick < end_tick:
                         notes.append(MusicalNote(
-                            pitch=event.note,
+                            pitch=event.note if event.note is not None else getattr(event, "pitch", 0),
                             velocity=event.velocity,
                             start_tick=event.absolute_tick,
-                            duration_ticks=event.duration,
+                            duration_ticks=getattr(event, "duration_ticks", None) or getattr(event, "duration", 0) or 0,
                             channel=event.channel,
                             track_index=track_idx
                         ))

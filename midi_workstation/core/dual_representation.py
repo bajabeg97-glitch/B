@@ -137,11 +137,15 @@ class Phrase:
 
 @dataclass
 class Section:
-    id: str
-    type: SectionType
-    start_tick: int
-    end_tick: int
-    bar_count: int
+    id: str = ""
+    type: SectionType = SectionType.UNKNOWN
+    start_tick: int = 0
+    end_tick: int = 0
+    bar_count: int = 0
+    name: str = ""
+    start_bar: int = 0
+    length: int = 0
+    energy: float = 0.5
     key_signature: Optional[str] = None
     tempo_bpm: float = 120.0
     energy_curve: List[float] = field(default_factory=list)  # Energy po taktu
@@ -152,6 +156,16 @@ class Section:
     active_roles: List[InstrumentRole] = field(default_factory=list)
     density_target: float = 0.5  # 0.0 - 1.0
 
+    def __post_init__(self):
+        if self.name and not self.id:
+            self.id = self.name
+        if self.length and not self.bar_count:
+            self.bar_count = self.length
+        if self.start_bar and not self.start_tick:
+            self.start_tick = max(0, self.start_bar - 1) * 1920
+        if self.length and not self.end_tick:
+            self.end_tick = self.start_tick + self.length * 1920
+
 @dataclass
 class SongSkeleton:
     """
@@ -161,6 +175,9 @@ class SongSkeleton:
     title: str = "Untitled"
     total_ticks: int = 0
     ppqn: int = 480
+    bpm: float = 120.0
+    key: Optional[str] = None
+    style: str = ""
     time_signatures: List[Tuple[int, int, int]] = field(default_factory=list)  # (tick, numerator, denominator)
     tempo_map: List[Tuple[int, float]] = field(default_factory=list)  # (tick, bpm)
     

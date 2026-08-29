@@ -217,5 +217,7 @@ class ForensicAuditor:
         print("="*60)
 
 if __name__ == "__main__":
-    auditor = ForensicAuditor("/workspace")
+    from pathlib import Path
+    root = Path(__file__).resolve().parent
+    auditor = ForensicAuditor(str(root))
     auditor.scan_all()

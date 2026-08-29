@@ -5,9 +5,9 @@ Pretvara tekstualni prompt u kompletan MIDI aranžman.
 
 import random
 import math
-from core.dual_representation import SongSkeleton, Section, Phrase, NoteEvent
-from core.models import MidiProject, MidiDocument, MidiTrack
-from core.io import MidiWriter
+from midi_workstation.core.dual_representation import SongSkeleton, Section, Phrase, MusicalNote as NoteEvent
+from midi_workstation.core.models import MidiProject, MidiDocument, MidiTrack
+from midi_workstation.core.io import MidiWriter
 
 class SunoMIDIEngine:
     def __init__(self):
