@@ -1,0 +1,54 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[croatian]{babel}
+\usepackage{geometry,hyperref,booktabs,verbatim}
+\geometry{margin=22mm}
+\title{Kako deskriptirati Factory+Gold MIDI batch}
+\author{PA800 Profile Optimizer}
+\begin{document}
+\maketitle
+
+\section{Šta je urađeno}
+Svaki MIDI prolazi \textbf{Factory + Gold MAX}:
+\begin{itemize}
+  \item \textbf{Velocity} --- samo Factory profil (\texttt{PROFILE\_ONLY}). Gold i neural \emph{ne} smiju dirati velocity.
+  \item \textbf{Sve ostalo što evidencija dozvoli} --- Gold: groove, drum/bass, strum, fill sadržaj, solo, Expression CC11, ukrasi.
+  \item \textbf{Factory veto} --- Pa800 struktura, Guitar Mode, PowerChord voicing, Brass, Strings/Pad, RX/DNC.
+\end{itemize}
+
+Izlaz je podijeljen \textbf{po 100 fajlova}:
+\texttt{output/factory\_gold\_batches/batch\_001/} \ldots{}
+Uz svaku grupu ide \texttt{batch\_00N.tex} (katalog) i \texttt{batch\_00N.json}.
+
+\section{Jedna rečenica za Drive / katalog}
+Kopiraj ovo uz svaki batch zip:
+
+\begin{verbatim}
+PA800 Factory+Gold MAX, batch NNN, 100 MIDI.
+Velocity = Factory profil (ne Gold, ne AI).
+Ritam/gate/groove/strum/fill/solo/CC11 = Gold gdje je evidencija.
+RX/DNC i Voice = Factory. Hardware A/B nije rađen.
+\end{verbatim}
+
+\section{Polja koja ti trebaš dopisati}
+\begin{itemize}
+  \item Žanr (rumba, rock, narodna, sevdah, pop\ldots)
+  \item BPM i tonalitet
+  \item Song ili Style
+  \item Pa800 User Style / Song broj
+  \item Da li je za vokal ili instrumental
+\end{itemize}
+
+\section{Komanda}
+\begin{verbatim}
+cd PA800_Profile_Optimizer_SMART_MAX
+python tools/batch_factory_gold.py PUTANJA_DO_ZIP_ILI_FOLDERA
+\end{verbatim}
+
+Google Drive arhiva \texttt{1wwk4C8vCwtQRqtDPaqWQaoYob3AbF7uu} nije dostupna iz ovog sandboxa
+(TLS \texttt{SSL\_ERROR\_SYSCALL}). Stavi ZIP u projekat i pokreni komandu na taj fajl.
+
+Demo MIDI iz \texttt{midi\_workstation/} \textbf{nisu} taj Drive pack.
+
+\end{document}

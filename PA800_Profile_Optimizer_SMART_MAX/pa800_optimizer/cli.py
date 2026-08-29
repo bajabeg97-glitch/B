@@ -32,6 +32,7 @@ def main(argv=None):
     ap.add_argument('--variant-label',default='optimized')
     ap.add_argument('--audio-reference',help='Optional WAV/audio reference to attach to the committed variant')
     ap.add_argument('--test-full-optimization',action='store_true',help='Explicit audition mode: apply every non-destructive optimization path; RX/DNC, identity and verifier blocks remain active')
+    ap.add_argument('--factory-gold-max',action='store_true',help='Velocity from Factory profiles only; timing/groove/strum/fill/solo/CC11 from Gold where evidence allows')
     ap.add_argument('--chords',help='Generate a chord-conditioned pattern, e.g. "C | Am | F | G7"; pitch-only explicit generator path')
     ap.add_argument('--no-solo-revoice',action='store_true',help='Preserve Solo/Lead pitches during --chords generation')
     ns=ap.parse_args(argv)
@@ -67,6 +68,9 @@ def main(argv=None):
     cfg.mix_fx_policy=mix_policy;cfg.enable_mix_fx_director=mix_policy!='off';cfg.apply_mix_fx_director=mix_policy=='apply'
     apply_export_preset(cfg,ns.export_preset)
     if ns.test_full_optimization:cfg.enable_full_optimization_test()
+    if ns.factory_gold_max:
+        cfg.enable_autonomous_baja_max();cfg.autopilot=False;cfg.mode='max';cfg.export_preset='auto'
+        cfg.velocity_factory_data_only=True;cfg.factory_gold_max=True
     rep=Optimizer(cfg).optimize(ns.input,ns.output,ns.report)
     if ns.session:
         session=WorkstationSession(ns.session);variant=session.record_variant(ns.input,ns.output,ns.report,asdict(cfg),ns.variant_label,build_mixer_snapshot(rep))
